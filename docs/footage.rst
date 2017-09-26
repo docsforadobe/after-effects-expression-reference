@@ -87,5 +87,3 @@ Returns the name of the footage item as shown in the Project panel.
 **Type**
 
 String
-
-----

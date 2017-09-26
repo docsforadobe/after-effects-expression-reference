@@ -1,27 +1,104 @@
 Light
 ######
+**Description**
 
-Light objects have the same attributes and methods as Layer objects, except for source, effect, mask, width, height, anchorPoint, scale, opacity, audioLevels, timeRemap, and all the material properties.
+Light objects have the same attributes and methods as Layer objects, except for:
 
-pointOfInterest
-Return type: Property [3]. Returns the point of interest values for a light in world space.
+* ``source``
+* ``effect``
+* ``mask``
+* ``width``
+* ``height``
+* ``anchorPoint``
+* ``scale``
+* ``opacity``
+* ``audioLevels``
+* ``timeRemap``
+* all the material properties
 
-intensity
-Return type: Property. Returns the intensity values of a light as a percentage.
+.. note::
+	David Van Brink provides an instructional article and sample project on his `omino pixel blog <http://www.adobe.com/go/learn_ae_ominoflashing>`_ that shows how to use expressions with lights.
 
-color
-Return type: Property [4]. Returns the color value of a light.
+----
 
-coneAngle
-Return type: Property. Returns the cone angle of a light, in degrees.
+Light.pointOfInterest
+*************
+**Description**
 
-coneFeather
-Return type: Property. Returns the cone feather value of a light as a percentage.
+Returns the point of interest values for a light in world space.
 
-shadowDarkness
-Return type: Property. Returns the shadow darkness value of a light as a percentage.
+**Type**
 
-shadowDiffusion
-Return type: Property. Returns the shadow diffusion value of a light, in pixels.
+Array (3-dimensional)
 
-David Van Brink provides an instructional article and sample project on his omino pixel blog that show how to use expressions with lights.
+----
+
+Light.intensity
+*************
+**Description**
+
+Returns the intensity values of a light as a percentage.
+
+**Type**
+
+Number
+
+----
+
+Light.color
+*************
+**Description**
+
+Returns the color value of a light.
+
+**Type**
+
+Array (4-dimensional)
+
+----
+
+Light.coneAngle
+*************
+**Description**
+
+Returns the cone angle of a light, in degrees.
+
+**Type**
+
+Number
+
+----
+
+Light.coneFeather
+*************
+**Description**
+
+Returns the cone feather value of a light as a percentage.
+
+**Type**
+
+Number
+
+----
+
+Light.shadowDarkness
+*************
+**Description**
+
+Returns the shadow darkness value of a light as a percentage.
+
+**Type**
+
+Number
+
+----
+
+Light.shadowDiffusion
+*************
+**Description**
+
+Returns the shadow diffusion value of a light, in pixels.
+
+**Type**
+
+Number

@@ -1,11 +1,13 @@
 Effect
 ################################################
 
+----
+
 Effect.active
 *********************************************
 **Description**
 
-Returns ``true`` if the effect is turned on (the `effect switch` is selected).
+Returns ``true`` if the effect is turned on (the *effect switch* is selected).
 
 **Type**
 

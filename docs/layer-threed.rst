@@ -1,106 +1,158 @@
 Layer 3D
 #########
 
-orientation
+----
+
+Layer.orientation
 *********************************************
 **Description**
+
 Returns the 3D orientation value, in degrees, for a 3D layer.
 
 **Type**
-Property [3]
 
-rotationX
+Array (3-dimensional)
+
+----
+
+Layer.rotationX
 *********************************************
 **Description**
+
 Returns the x rotation value, in degrees, for a 3D layer.
 
 **Type**
-Property
 
-rotationY
+Number
+
+----
+
+Layer.rotationY
 *********************************************
 **Description**
+
 Returns the y rotation value, in degrees, for a 3D layer.
 
 **Type**
-Property
 
-rotationZ
+Number
+
+----
+
+Layer.rotationZ
 *********************************************
 **Description**
+
 Returns the z rotation value, in degrees, for a 3D layer.
 
 **Type**
-Property
 
-lightTransmission
+Number
+
+----
+
+Layer.lightTransmission
 *********************************************
 **Description**
+
 Returns the value of the Light Transmission property for a 3D layer.
 
 **Type**
-Property
 
-castsShadows
+Number
+
+----
+
+Layer.castsShadows
 *********************************************
 **Description**
-Returns a value of 1.0 if the layer casts shadows.
+
+Returns a value of ``1.0`` if the layer casts shadows and ``2`` if the property is set to ``Only``.
 
 **Type**
-Property
 
-acceptsShadows
+Number
+
+----
+
+Layer.acceptsShadows
 *********************************************
 **Description**
-Returns a value of 1.0 if the layer accepts shadows.
+
+Returns a value of ``1`` if the layer accepts shadows and ``2`` if the property is set to ``Only``.
 
 **Type**
-Property
 
-acceptsLights
+Number
+
+----
+
+Layer.acceptsLights
 *********************************************
 **Description**
-Returns a value of 1.0 if the layer accepts lights.
+
+Returns a value of ``1`` if the layer accepts lights.
 
 **Type**
-Property
 
-ambient
+Boolean Number
+
+----
+
+Layer.ambient
 *********************************************
 **Description**
+
 Returns the ambient component value as a percentage.
 
 **Type**
-Property
 
-diffuse
+Number
+
+----
+
+Layer.diffuse
 *********************************************
 **Description**
+
 Returns the diffuse component value as a percentage.
 
 **Type**
-Property
 
-specular
+Number
+
+----
+
+Layer.specular
 *********************************************
 **Description**
+
 Returns the specular component value as a percentage.
 
 **Type**
-Property
 
-shininess
+Number
+
+----
+
+Layer.shininess
 *********************************************
 **Description**
+
 Returns the shininess component value as a percentage.
 
 **Type**
-Property
 
-metal
+Number
+
+----
+
+Layer.metal
 *********************************************
 **Description**
+
 Returns the metal component value as a percentage.
 
 **Type**
-Property
+
+Number

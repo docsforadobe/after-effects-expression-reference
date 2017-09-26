@@ -1,7 +1,9 @@
 Other Math
 ##########
 
-degreesToRadians(degrees)
+----
+
+degreesToRadians(``degrees``)
 *************************
 **Description**
 
@@ -9,15 +11,17 @@ Converts degrees to radians.
 
 **Parameters**
 
-======= ======
-degrees Number
-======= ======
+=========== ======
+``degrees`` Number
+=========== ======
 
 **Type**
 
 Number
 
-radiansToDegrees(radians)
+----
+
+radiansToDegrees(``radians``)
 *************************
 **Description**
 
@@ -25,9 +29,9 @@ Converts radians to degrees.
 
 **Parameters**
 
-======= ======
-radians Number
-======= ======
+=========== ======
+``radians`` Number
+=========== ======
 
 **Type**
 

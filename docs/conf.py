@@ -18,8 +18,8 @@ project = u'After Effects Expression Reference'
 copyright = u'1992-2017 Adobe Systems Incorporated'
 author = u'Adobe Systems Incorporated'
 
-version = u'0.0.1'
-release = u'0.0.1'
+version = u'0.0.2'
+release = u'0.0.2'
 
 pygments_style = 'sphinx'
 
