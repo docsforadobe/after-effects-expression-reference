@@ -1,15 +1,15 @@
 After Effects Expression Reference
 ----------------------------------
 
-`The reference is still being edited and improved upon. You will find pages that are not yet properly marked up.`
-
+`The reference is still being edited and improved upon.`
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :caption: Introduction
 
     introduction
-
+    resources
+    examples
 
 .. toctree::
     :maxdepth: 1
