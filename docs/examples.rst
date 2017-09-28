@@ -1,6 +1,9 @@
 Examples
 ############
 
+.. note::
+	Many of the examples in this section are based on expressions provided by Dan Ebberts.
+
 Make a layer revolve in a circle
 ******************************************
 
