@@ -34,6 +34,7 @@ After Effects Expression Reference
     effect
     mask
     property
+    path-property
     key
     markerkey
 
