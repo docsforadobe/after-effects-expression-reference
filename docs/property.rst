@@ -241,6 +241,9 @@ offset    Repeats the specified segment, but offsets each cycle by the differenc
 continue  Does not repeat the specified segment, but continues to animate a property based on the velocity at the first or last keyframe. For example, if the last keyframe of a Scale property of a layer is ``100%``, the layer continues to scale from ``100%`` to the Out point, instead of looping directly back to the Out point. This type does not accept a keyframes or duration argument.
 ========= =====================================
 
+.. tip::
+	Use ``loopIn("continue") + loopOut("continue") - value`` to have a continued motion before and after the property's keyframes. *Tip from Paul Slemmer.*
+
 **Type**
 
 Number or Array
