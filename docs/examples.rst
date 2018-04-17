@@ -4,6 +4,24 @@ Examples
 .. note::
 	Many of the examples in this section are based on expressions provided by Dan Ebberts.
 
+----
+
+Get this project's AEP name (AE 15.1+ only)
+*******************************************
+
+While there is no method to directly access your AEP's name, you CAN get the full path to the AEP.
+
+With some string manipulation, you can derive the aep name from this::
+
+  var aepName = thisProject.fullPath.split($.os.indexOf("Windows") > -1 ? "\\" : "/").pop();
+
+If you wanted to write "Unsaved" in that case, you can use the following expression::
+
+	var aepName = thisProject.fullPath.split($.os.indexOf("Windows") > -1 ? "\\" : "/").pop();
+	aepName = aepName === "" ? "Unsaved" : aepName;
+
+----
+
 Make a layer revolve in a circle
 ******************************************
 
