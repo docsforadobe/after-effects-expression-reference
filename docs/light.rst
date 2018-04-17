@@ -22,7 +22,7 @@ Light objects have the same attributes and methods as Layer objects, except for:
 ----
 
 Light.pointOfInterest
-*************
+**********************
 **Description**
 
 Returns the point of interest values for a light in world space.
@@ -34,7 +34,7 @@ Array (3-dimensional)
 ----
 
 Light.intensity
-*************
+***************
 **Description**
 
 Returns the intensity values of a light as a percentage.
@@ -58,7 +58,7 @@ Array (4-dimensional)
 ----
 
 Light.coneAngle
-*************
+***************
 **Description**
 
 Returns the cone angle of a light, in degrees.
@@ -70,7 +70,7 @@ Number
 ----
 
 Light.coneFeather
-*************
+*****************
 **Description**
 
 Returns the cone feather value of a light as a percentage.
@@ -82,7 +82,7 @@ Number
 ----
 
 Light.shadowDarkness
-*************
+*********************
 **Description**
 
 Returns the shadow darkness value of a light as a percentage.
@@ -94,7 +94,7 @@ Number
 ----
 
 Light.shadowDiffusion
-*************
+*********************
 **Description**
 
 Returns the shadow diffusion value of a light, in pixels.

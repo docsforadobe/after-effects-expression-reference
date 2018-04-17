@@ -1,10 +1,8 @@
 Global
 ######
 
-----
-
 comp(``name``)
-**********
+**************
 **Description**
 
 Retrieves another composition by name.
@@ -22,7 +20,7 @@ Comp
 ----
 
 footage(``name``)
-*************
+*****************
 **Description**
 
 Retrieves a footage item by name.
@@ -112,7 +110,7 @@ Number
 ----
 
 posterizeTime(``framesPerSecond``)
-******************************
+**********************************
 **Description**
 
 This expression allows you to set the frame rate for a property to be lower than the frame rate of the composition.

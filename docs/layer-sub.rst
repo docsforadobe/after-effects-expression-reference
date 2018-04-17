@@ -23,7 +23,7 @@ Comp or Footage
 ----
 
 Layer.sourceTime(``t=time``)
-*********************
+******************************
 **Description**
 
 Returns the layer source corresponding to time ``t``.
@@ -44,7 +44,7 @@ Number
 ----
 
 Layer.effect(``name``)
-*********************
+**********************
 **Description**
 
 After Effects finds the effect by its name in the Effect Controls panel. The name can be the default name or a user-defined name. If multiple effects have the same name, the effect closest to the top of the Effect Controls panel is used.
@@ -66,7 +66,7 @@ Effect
 ----
 
 Layer.effect(``index``)
-*********************
+***********************
 **Description**
 
 After Effects finds the effect by its index in the Effect Controls panel, starting at ``1`` and counting from the top.

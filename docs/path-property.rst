@@ -45,7 +45,7 @@ String
 ----
 
 pathProperty.points(``t=time``)
-*****************
+*******************************
 **Description**
 
 Get the x,y coordinates of all points on a path. Coordinates for layer mask path points are relative to the layer's origin in its upper-left hand corner. Coordinates for Bezier shape path points are are relative to the anchor point of the path's shape group (ex., "Transform: Shape 1 > Anchor Point"). Coordinates for brush stroke path points are relative to the start of the stroke; the first point is ``[0,0]``. This method can be passed into the ``createPath()`` method for the points parameter when duplicating a path.
@@ -99,7 +99,7 @@ Array of number pair arrays, rounded to the fourth decimal place
 ----
 
 pathProperty.isClosed()
-*****************
+***********************
 **Description**
 
 Determines if the path is open or closed. Returns ``true`` if the path is closed, ``false`` if the path is open. This method can be passed into the ``createPath()`` method for the ``is_closed`` parameter when duplicating a path.

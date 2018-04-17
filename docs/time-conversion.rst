@@ -9,7 +9,7 @@ Time conversion
 ----
 
 timeToFrames(``t=time + thisComp.displayStartTime``, ``fps=1.0 / thisComp.frameDuration``, ``isDuration=false``)
-*****************************************************************************************************************
+**********************************************************************************************7*******************
 **Desciption**
 
 Converts the value of `t`, which defaults to the current composition time, to an integer number of frames. The number of frames per second is specified in the fps argument, which defaults to the frame rate of the current composition (``1.0 / thisComp.frameDuration``).
@@ -50,7 +50,7 @@ Number
 ----
 
 timeToTimecode(``t=time + thisComp.displayStartTime``, ``timecodeBase=30``, ``isDuration=false``)
-********************************************************************************************
+*************************************************************************************************
 **Desciption**
 
 Converts the value of ``t`` to a String representing timecode. See timeToFrames for an explanation of the ``t`` and ``isDuration`` arguments. The ``timecodeBase`` value, which defaults to ``30``, specifies the number of frames in one second.

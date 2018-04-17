@@ -1,8 +1,6 @@
 Layer General
 ################################################
 
-----
-
 Layer.width
 *********************************************
 **Description**
@@ -44,7 +42,9 @@ Layer.parent
 **Description**
 
 Returns the parent Layer object of the layer, if it has one.
+
 Example::
+
 	position[0] + parent.width
 
 **Type**
@@ -57,7 +57,9 @@ Layer.hasParent
 *********************************************
 **Description**
 
-Returns true if the layer has a parent or false if it doesn’t. Use the hasParent attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present. For example, the following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position. If the layer is given a parent later, then the behavior of the layer changes accordingly::
+Returns true if the layer has a parent or false if it doesn’t. Use the hasParent attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present. For example, the following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position.
+
+If the layer is given a parent later, then the behavior of the layer changes accordingly::
 
 	idx = index;
 	if (hasParent) {
@@ -78,6 +80,7 @@ Layer.inPoint
 Returns the In point of the layer, in seconds.
 
 .. note::
+
 	In general, the value of outPoint is greater than the value of inPoint. However, if a layer is reversed in time, the value of inPoint is greater than the value of outPoint. Similarly, the value of startTime can be greater than the value of inPoint.
 
 **Type**
@@ -171,7 +174,7 @@ Boolean
 ----
 
 Layer.sampleImage(``point``, ``radius=[0.5, 0.5]``, ``postEffect=true``, ``t=time``)
-*********************************************
+**************************************************************************************
 **Description**
 
 Samples the color and alpha channel values of a layer and returns the average alpha-weighted value of the pixels within the specified distance of the point as an array: ``[red, green, blue, alpha]``.

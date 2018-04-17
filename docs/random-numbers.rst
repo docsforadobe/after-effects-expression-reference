@@ -123,7 +123,7 @@ Number or Array
 ----
 
 gaussRandom(``minValOrArray``, ``maxValOrArray``)
-***********************************************
+**************************************************
 **Description**
 
 If ``minValOrArray`` and ``maxValOrArray`` are ``Numbers``, this method returns a random number. Approximately ``90%`` of the results are in the range from ``minValOrArray`` to ``maxValOrArray``, and the remaining ``10%`` are outside this range.

@@ -20,7 +20,7 @@ Camera objects have the same attributes and methods as Layer objects, except for
 .. _Camera.pointOfInterest:
 
 Camera.pointOfInterest
-***************
+**********************
 **Description**
 
 Returns the point of interest values of a camera in world space.
@@ -34,7 +34,7 @@ Array (3 dimensional)
 .. _Camera.zoom:
 
 Camera.zoom
-****
+***********
 **Description**
 
 Returns the zoom values of a camera in pixels.
@@ -54,7 +54,7 @@ Number
 .. _Camera.depthOfField:
 
 Camera.depthOfField
-************
+*******************
 **Description**
 
 Returns ``1`` if the Depth Of Field property of a camera is on, or returns ``0`` if the Depth Of Field property is off.
@@ -68,7 +68,7 @@ Boolean Number
 .. _Camera.focusDistance:
 
 Camera.focusDistance
-*************
+********************
 **Description**
 
 Returns the focus distance value of a camera, in pixels.
@@ -82,7 +82,7 @@ Number
 .. _Camera.aperture:
 
 Camera.aperture
-********
+***************
 **Description**
 
 Returns the aperture value of a camera, in pixels.
@@ -96,7 +96,7 @@ Number
 .. _Camera.blurLevel:
 
 Camera.blurLevel
-*********
+****************
 **Description**
 
 Returns the blur level value of a camera as a percentage.
@@ -110,7 +110,7 @@ Number
 .. _Camera.active:
 
 Camera.active
-******
+*************
 **Description**
 
 Returns ``true`` if the camera:

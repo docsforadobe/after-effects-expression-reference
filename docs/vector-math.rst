@@ -87,7 +87,7 @@ Array
 ----
 
 clamp(``value``, ``limit1``, ``limit2``)
-***************************
+*****************************************
 **Description**
 
 The value of each component of ``value`` is constrained to fall between the values of the corresponding values of ``limit1`` and ``limit2``.
@@ -181,7 +181,7 @@ Number
 ----
 
 length(``point1``, ``point2``)
-***************************
+******************************
 **Description**
 
 Returns the distance between two points. The ``point2`` argument is optional.
@@ -206,7 +206,7 @@ Number
 ----
 
 lookAt(``fromPoint``, ``atPoint``)
-***************************
+***********************************
 **Description**
 
 The argument ``fromPoint`` is the location in world space of the layer you want to orient. The argument ``atPoint`` is the point in world space you want to point the layer at. The return value can be used as an expression for the Orientation property, making the z-axis of the layer point at atPoint.

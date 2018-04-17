@@ -79,7 +79,7 @@ String
 ----
 
 Marker.frameTarget
-***************
+******************
 **Description**
 
 Contents of Frame Target field in marker dialog box.
@@ -91,7 +91,7 @@ String
 ----
 
 Marker.eventCuePoint
-***************
+********************
 **Description**
 
 Setting for cue point type in marker dialog box. True for Event; false for Navigation.
@@ -103,7 +103,7 @@ Boolean
 ----
 
 Marker.cuePointName
-***************
+*******************
 **Description**
 
 Contents of cue point Name field in marker dialog box.
@@ -115,7 +115,7 @@ String
 ----
 
 Marker.parameters
-***************
+*****************
 **Description**
 
 Contents of Parameter Name and Parameter Value fields in marker dialog box.

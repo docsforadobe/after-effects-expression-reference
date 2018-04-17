@@ -7,7 +7,7 @@ Mask
 ----
 
 Mask.maskOpacity
-***********
+****************
 **Description**
 
 Returns the opacity value of a mask as a percentage.
@@ -19,7 +19,7 @@ Number
 ----
 
 Mask.maskFeather
-***********
+*****************
 **Description**
 
 Returns the feather value of a mask, in pixels.
@@ -31,7 +31,7 @@ Number
 ----
 
 Mask.maskExpansion
-*************
+******************
 **Description**
 
 Returns the expansion value of a mask, in pixels.
@@ -43,7 +43,7 @@ Number
 ----
 
 Mask.invert
-******
+***********
 **Description**
 
 Returns ``true`` if the mask is inverted or ``false`` if it is not.

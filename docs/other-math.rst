@@ -1,10 +1,8 @@
 Other Math
 ##########
 
-----
-
 degreesToRadians(``degrees``)
-*************************
+*****************************
 **Description**
 
 Converts degrees to radians.
@@ -22,7 +20,7 @@ Number
 ----
 
 radiansToDegrees(``radians``)
-*************************
+*****************************
 **Description**
 
 Converts radians to degrees.
