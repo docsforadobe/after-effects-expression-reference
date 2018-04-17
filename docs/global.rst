@@ -39,6 +39,18 @@ Footage
 
 ----
 
+thisProject
+***********
+**Description**
+
+Represents the project which contains the expression.
+
+**Type**
+
+Project
+
+----
+
 thisComp
 ********
 **Description**

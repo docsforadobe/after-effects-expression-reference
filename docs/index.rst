@@ -8,6 +8,7 @@ After Effects Expression Reference
     :caption: Introduction
 
     introduction
+    .. changelog
     resources
     examples
 
@@ -27,6 +28,7 @@ After Effects Expression Reference
     :maxdepth: 1
     :caption: Objects
 
+    project
     comp
     footage
     camera
