@@ -43,6 +43,39 @@ Number
 
 ----
 
+Layer.sourceRectAtTime(``t = time, includeExtents = false``)
+************************************************************
+**Description**
+
+Returns a JavaScript object with four attributes: ``[top, left, width, height]``
+
+Extents apply only to shape layers and paragraph text layers.
+
+Shape layer extents increase the size of the layer bounds as necessary.
+
+Paragraph text layers returns the bounds of the paragraph box.
+
+.. note::
+  After Effects 13.2 and later.
+  Paragraph text extents added in After Effects 15.1.
+
+Example::
+
+  myTextLayer.sourceRectAtTime().width
+
+**Parameters**
+
+================ ======
+`t`              Number
+`includeExtents` Bool
+================ ======
+
+**Type**
+
+Array (4-dimensional)
+
+----
+
 Layer.effect(``name``)
 **********************
 **Description**
