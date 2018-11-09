@@ -120,10 +120,24 @@ Marker.parameters
 
 Contents of Parameter Name and Parameter Value fields in marker dialog box.
 
-For example, if you have a parameter named ‚Äúbackground color‚Äù, then you can use the following expression to access its value at the nearest marker::
+For example, if you have a parameter named ìbackground colorî, then you can use the following expression to access its value at the nearest marker::
 
 	thisComp.marker.nearestKey(time).parameters["background color"]
 
 **Type**
 
 Associative array of String values
+
+----
+
+Marker.protectedRegion
+**********************
+**Description**
+
+State of the Protected Region option in the Composition Marker dialog box. When true, the composition marker behaves as a protected region. Will also return true for protected region markers on nested composition layers, but is otherwise not applicable to layer markers.
+
+Available in After Effects 16.0 or later.
+
+**Type**
+
+Boolean
