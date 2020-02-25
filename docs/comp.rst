@@ -65,6 +65,28 @@ Layer, Light, or Camera
 
 ----
 
+Comp.layerByComment(``comment``)
+********************
+**Description**
+
+Retrieves a layer by matching the comment parameter to the value in the layer's Comment column. The matches are simple text matches. They will match partial words, and are case sensitive. Matching does not appear to use regular expressions or wildcards. If duplicate comments exist, After Effects uses the first (topmost) one in the Timeline panel.
+
+Example::
+
+	thisComp.layerByComment("Control") //note this will match a layer with a comment "Controller" or "Motion Control"
+
+**Parameters**
+
+======== ======
+``comment`` String
+======== ======
+
+**Type**
+
+Layer, Light, or Camera
+
+----
+
 Comp.marker
 ***********
 **Description**
