@@ -3,7 +3,7 @@
 Global
 ######
 
-.. _comp:
+.. _Global.comp:
 
 comp(``name``)
 **************
@@ -24,7 +24,7 @@ Comp
 
 ----
 
-.. _footage:
+.. _Global.footage:
 
 footage(``name``)
 *****************
@@ -45,7 +45,7 @@ Footage
 
 ----
 
-.. _thisProject:
+.. _Global.thisProject:
 
 thisProject
 ***********
@@ -60,7 +60,7 @@ Project
 
 ----
 
-.. _thisComp:
+.. _Global.thisComp:
 
 thisComp
 ********
@@ -75,7 +75,7 @@ Comp
 
 ----
 
-.. _thisLayer:
+.. _Global.thisLayer:
 
 thisLayer
 *********
@@ -90,7 +90,7 @@ Layer, Light, or Camera
 
 ----
 
-.. _thisProperty:
+.. _Global.thisProperty:
 
 thisProperty
 ************
@@ -105,7 +105,7 @@ Property
 
 ----
 
-.. _time:
+.. _Global.time:
 
 time
 ****
@@ -120,7 +120,7 @@ Number
 
 ----
 
-.. _colorDepth:
+.. _Global.colorDepth:
 
 colorDepth
 **********
@@ -135,7 +135,7 @@ Number
 
 ----
 
-.. _posterizeTime:
+.. _Global.posterizeTime:
 
 posterizeTime(``framesPerSecond``)
 **********************************
@@ -163,7 +163,7 @@ Number
 
 ----
 
-.. _value:
+.. _Global.value:
 
 value
 *****
