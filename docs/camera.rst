@@ -115,6 +115,132 @@ Number
 
 ----
 
+.. _Camera.irisShape:
+
+Camera.irisShape
+****************
+
+**Description**
+
+Returns the iris shape value from 1-10, corresponding to the selected dropdown value.
+
+.. note: Value ``2`` is reserved for the divider.
+
+**Type**
+
+Number
+
+----
+
+.. _Camera.irisRotation:
+
+Camera.irisRotation
+*******************
+
+**Description**
+
+Returns the iris rotation value, in degrees.
+
+**Type**
+
+Number
+
+----
+
+.. _Camera.irisRoundness:
+
+Camera.irisRoundness
+********************
+
+**Description**
+
+Returns the camera iris roundness value as a percentage.
+
+**Type**
+
+Number
+
+----
+
+.. _Camera.irisAspectRatio:
+
+Camera.irisAspectRatio
+**********************
+
+**Description**
+
+Returns the camera iris aspect ratio, from 1 to 100.
+
+**Type**
+
+Number
+
+----
+
+.. _Camera.irisDiffractionFringe:
+
+Camera.irisDiffractionFringe
+****************************
+
+**Description**
+
+Returns the camera iris diffraction fringe, from 1 to 100.
+
+**Type**
+
+Number
+
+----
+
+.. _Camera.highlightGain:
+
+Camera.highlightGain
+********************
+
+**Description**
+
+Returns the camera highlight gain, from 1 to 100.
+
+**Type**
+
+Number
+
+----
+
+.. _Camera.highlightThreshold:
+
+Camera.highlightThreshold
+*************************
+
+**Description**
+
+Returns the camera highlight threshhold.
+
+- In an 8-bit comp, this value ranges from 0 to 100
+- In a 16-bit comp, this value ranges from 0 to 32768
+- In a 32-bit comp, this value ranges from 0 to 1.0
+
+**Type**
+
+Number
+
+----
+
+.. _Camera.highlightSaturation:
+
+Camera.highlightSaturation
+**************************
+
+**Description**
+
+Returns the camera highlight saturation, from 1 to 100.
+
+**Type**
+
+Number
+
+----
+
 .. _Camera.active:
 
 Camera.active
