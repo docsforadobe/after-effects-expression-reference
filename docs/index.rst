@@ -49,3 +49,11 @@ After Effects Expression Reference
     layer-properties
     layer-space
     layer-threed
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Text
+
+    text
+    text-sourcetext
+    text-style
