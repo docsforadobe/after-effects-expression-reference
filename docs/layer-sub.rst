@@ -1,3 +1,5 @@
+.. _LayerSubObjects:
+
 Layer Sub-objects
 #################
 
@@ -6,8 +8,11 @@ Layer Sub-objects
 
 ----
 
+.. _Layer.source:
+
 Layer.source
 *********************
+
 **Description**
 
 Returns the source Comp or source Footage object for the layer. Default time is adjusted to the time in the source.
@@ -22,8 +27,11 @@ Comp or Footage
 
 ----
 
+.. _Layer.sourceTime:
+
 Layer.sourceTime(``t=time``)
 ******************************
+
 **Description**
 
 Returns the layer source corresponding to time ``t``.
@@ -43,8 +51,11 @@ Number
 
 ----
 
+.. _Layer.sourceRectAtTime:
+
 Layer.sourceRectAtTime(``t = time, includeExtents = false``)
 ************************************************************
+
 **Description**
 
 Returns a JavaScript object with four attributes: ``[top, left, width, height]``
@@ -76,8 +87,11 @@ Array (4-dimensional)
 
 ----
 
+.. _Layer.effect:
+
 Layer.effect(``name``)
 **********************
+
 **Description**
 
 After Effects finds the effect by its name in the Effect Controls panel. The name can be the default name or a user-defined name. If multiple effects have the same name, the effect closest to the top of the Effect Controls panel is used.
@@ -100,6 +114,7 @@ Effect
 
 Layer.effect(``index``)
 ***********************
+
 **Description**
 
 After Effects finds the effect by its index in the Effect Controls panel, starting at ``1`` and counting from the top.
@@ -116,8 +131,11 @@ Effect
 
 ----
 
+.. _Layer.mask:
+
 Layer.mask(``name``)
 *********************
+
 **Description**
 
 The name can be the default name or a user-defined name. If multiple masks have the same name, the first (topmost) mask is used.
@@ -140,6 +158,7 @@ Mask
 
 Layer.mask(``index``)
 *********************
+
 **Description**
 
 After Effects finds the mask by its index in the Timeline panel, starting at ``1`` and counting from the top.

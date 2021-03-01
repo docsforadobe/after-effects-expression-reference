@@ -1,3 +1,5 @@
+.. _MarkerKey:
+
 MarkerKey
 #########
 
@@ -30,8 +32,11 @@ Dan Ebberts provides a tutorial on the `After Effects Developer Center <http://w
 
 ----
 
+.. _Marker.duration:
+
 Marker.duration
 ***************
+
 **Description**
 
 Duration, in seconds, of marker.
@@ -42,8 +47,11 @@ Number
 
 ----
 
+.. _Marker.comment:
+
 Marker.comment
 ***************
+
 **Description**
 
 Contents of Comment field in marker dialog box.
@@ -54,8 +62,11 @@ String
 
 ----
 
+.. _Marker.chapter:
+
 Marker.chapter
 ***************
+
 **Description**
 
 Contents of Chapter field in marker dialog box.
@@ -66,8 +77,11 @@ String
 
 ----
 
+.. _Marker.url:
+
 Marker.url
 ***************
+
 **Description**
 
 Contents of URL field in marker dialog box.
@@ -78,8 +92,11 @@ String
 
 ----
 
+.. _Marker.frameTarget:
+
 Marker.frameTarget
 ******************
+
 **Description**
 
 Contents of Frame Target field in marker dialog box.
@@ -90,8 +107,11 @@ String
 
 ----
 
+.. _Marker.eventCuePoint:
+
 Marker.eventCuePoint
 ********************
+
 **Description**
 
 Setting for cue point type in marker dialog box. True for Event; false for Navigation.
@@ -102,8 +122,11 @@ Boolean
 
 ----
 
+.. _Marker.cuePointName:
+
 Marker.cuePointName
 *******************
+
 **Description**
 
 Contents of cue point Name field in marker dialog box.
@@ -114,13 +137,16 @@ String
 
 ----
 
+.. _Marker.parameters:
+
 Marker.parameters
 *****************
+
 **Description**
 
 Contents of Parameter Name and Parameter Value fields in marker dialog box.
 
-For example, if you have a parameter named “background color”, then you can use the following expression to access its value at the nearest marker::
+For example, if you have a parameter named ï¿½background colorï¿½, then you can use the following expression to access its value at the nearest marker::
 
 	thisComp.marker.nearestKey(time).parameters["background color"]
 
@@ -130,8 +156,11 @@ Associative array of String values
 
 ----
 
+.. _Marker.protectedRegion:
+
 Marker.protectedRegion
 **********************
+
 **Description**
 
 State of the Protected Region option in the Composition Marker dialog box. When true, the composition marker behaves as a protected region. Will also return true for protected region markers on nested composition layers, but is otherwise not applicable to layer markers.

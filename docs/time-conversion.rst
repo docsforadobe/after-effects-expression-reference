@@ -1,4 +1,6 @@
-Time conversion
+.. _TimeConversion:
+
+Time Conversion
 ###############
 
 .. note::
@@ -8,8 +10,11 @@ Time conversion
 
 ----
 
+.. _timeToFrames:
+
 timeToFrames(``t=time + thisComp.displayStartTime``, ``fps=1.0 / thisComp.frameDuration``, ``isDuration=false``)
-**********************************************************************************************7*******************
+****************************************************************************************************************
+
 **Desciption**
 
 Converts the value of `t`, which defaults to the current composition time, to an integer number of frames. The number of frames per second is specified in the fps argument, which defaults to the frame rate of the current composition (``1.0 / thisComp.frameDuration``).
@@ -30,8 +35,11 @@ Number
 
 ----
 
+.. _framesToTime:
+
 framesToTime(``frames``, ``fps=1.0 / thisComp.frameDuration``)
 ****************************************************************
+
 **Desciption**
 
 The inverse of timeToFrames. Returns the time corresponding to the frames argument, which is required. It doesn’t have to be an integer. See timeToFrames for explanation of the ``fps`` argument.
@@ -49,8 +57,11 @@ Number
 
 ----
 
+.. _timeToTimecode:
+
 timeToTimecode(``t=time + thisComp.displayStartTime``, ``timecodeBase=30``, ``isDuration=false``)
 *************************************************************************************************
+
 **Desciption**
 
 Converts the value of ``t`` to a String representing timecode. See timeToFrames for an explanation of the ``t`` and ``isDuration`` arguments. The ``timecodeBase`` value, which defaults to ``30``, specifies the number of frames in one second.
@@ -69,8 +80,11 @@ String
 
 ----
 
+.. _timeToNTSCTimecode:
+
 timeToNTSCTimecode(``t=time + thisComp.displayStartTime``, ``ntscDropFrame=false``, ``isDuration=false``)
 ***********************************************************************************************************
+
 **Desciption**
 
 Converts ``t`` to a ``String`` representing NTSC timecode. See timeToFrames for an explanation of the ``t`` and ``isDuration`` arguments. If ``ntscDropFrame`` is ``false`` (the default), the result ``String`` is NTSC non-drop-frame timecode. If ``ntscDropFrame`` is ``true``, the result ``String`` is NTSC drop-frame timecode.
@@ -89,8 +103,11 @@ String
 
 ----
 
+.. _timeToFeetAndFrames:
+
 timeToFeetAndFrames(``t=time + thisComp.displayStartTime``, ``fps=1.0 / thisComp.frameDuration``, ``framesPerFoot=16``, ``isDuration=false``)
 ******************************************************************************************************************************************************************
+
 **Desciption**
 
 Converts the value of ``t`` to a ``String`` representing feet of film and frames. See timeToFrames for an explanation of the ``t``, ``fps``, and ``isDuration`` arguments. The ``framesPerFoot`` argument specifies the number of frames in one foot of film. It defaults to ``16``, which is the most common rate for 35mm footage.
@@ -109,8 +126,11 @@ String
 
 ----
 
+.. _timeToCurrentFormat:
+
 timeToCurrentFormat(``t=time + thisComp.displayStartTime``, ``fps=1.0 / thisComp.frameDuration``, ``isDuration=false``)
 ******************************************************************************************************************************************************************
+
 **Desciption**
 
 Converts the value of ``t`` to a ``String`` representing time in the current Project Settings display format. See timeToFrames for a definition of all the arguments.

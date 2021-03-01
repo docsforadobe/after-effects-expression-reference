@@ -1,8 +1,13 @@
+.. _Project:
+
 Project
 ################################################
 
+.. _Project.fullPath:
+
 Project.fullPath
 *********************************************
+
 **Description**
 
 The platform-specific absolute file path, including the project file name. If the project has not been saved, it returns an empty string.
@@ -17,8 +22,11 @@ String
 
 ----
 
+.. _Project.bitsPerChannel:
+
 Project.bitsPerChannel
 *********************************************
+
 **Description**
 
 The color depth of the project in bits per channel (bpc), as set in *Project Settings > Color Management*
@@ -35,8 +43,11 @@ Number
 
 ----
 
+.. _Project.linearBlending:
+
 Project.linearBlending
 *********************************************
+
 **Description**
 
 The state of the Blend Colors Using 1.0 Gamma option in *Project Settings > Color Management*.

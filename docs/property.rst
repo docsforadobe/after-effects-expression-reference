@@ -1,3 +1,5 @@
+.. _Property:
+
 Property
 #########
 
@@ -15,8 +17,11 @@ In this example, the propertyGroup method for each brush stroke targets the Brus
 
 ----
 
+.. _Property.value:
+
 value
 *****************
+
 **Description**
 
 Returns the value of a property at the current time.
@@ -27,8 +32,11 @@ Number, Array, or String
 
 ----
 
+.. _Property.valueAtTime:
+
 valueAtTime(``t``)
 ******************
+
 **Description**
 
 Returns the value of a property at the specified time, in seconds.
@@ -38,7 +46,7 @@ For example, to have a property value for each frame chosen randomly from a set 
 	valueAtTime(random(4))
 
 .. note::
-	Dan Ebberts provides more examples and techniques for using the ``valueAtTime`` and ``velocityAtTime`` methods on his `MotionScript website <http://www.motionscript.com/mastering-expressions/follow-the-leader.html>`_.
+	Dan Ebberts provides more examples and techniques for using the ``valueAtTime`` and ``velocityAtTime`` methods on `MotionScript <http://www.motionscript.com/mastering-expressions/follow-the-leader.html>`_.
 
 **Parameters**
 
@@ -52,8 +60,11 @@ Number or Array
 
 ----
 
+.. _Property.velocity:
+
 velocity
 *****************
+
 **Description**
 
 Returns the temporal velocity value at the current time. For spatial properties, such as Position, it returns the tangent vector value. The result is the same dimension as the property.
@@ -64,8 +75,11 @@ Number or Array
 
 ----
 
+.. _Property.velocityAtTime:
+
 velocityAtTime(``t``)
 **********************
+
 **Description**
 
 Returns the temporal velocity value at the specified time.
@@ -82,8 +96,11 @@ Number or Array
 
 ----
 
+.. _Property.speed:
+
 speed
 *****************
+
 **Description**
 
 Returns a 1D, positive speed value equal to the speed at which the property is changing at the default time. This element can be used only for spatial properties.
@@ -94,8 +111,11 @@ Number
 
 ----
 
+.. _Property.speedAtTime:
+
 speedAtTime(``t``)
 ******************
+
 **Description**
 
 Returns the spatial speed value at the specified time.
@@ -112,8 +132,11 @@ Number
 
 ----
 
+.. _Property.wiggle:
+
 wiggle(``freq``, ``amp``, ``octaves=1``, ``amp_mult=0.5``, ``t=time``)
 ***********************************************************************
+
 **Description**
 
 Randomly shakes (wiggles) the value of the property.
@@ -147,7 +170,7 @@ This example, on a two-dimensional property, wiggles only along the y-axis::
 	[value[0],w[1]];
 
 .. note::
-	Dan Ebberts provides an example expression and a detailed explanation on his `MotionScript website <http://www.motionscript.com/design-guide/looping-wiggle.html>`_ that shows how to use the time parameter of the wiggle method to create a looping animation.
+	Dan Ebberts provides an example expression and a detailed explanation on his `website <http://www.motionscript.com/design-guide/looping-wiggle.html>`_ that shows how to use the time parameter of the wiggle method to create a looping animation.
 
 **Parameters**
 
@@ -165,8 +188,11 @@ Number or Array
 
 ----
 
+.. _Property.temporalWiggle:
+
 temporalWiggle(``freq``, ``amp``, ``octaves=1``, ``amp_mult=0.5``, ``t=time``)
 ******************************************************************************
+
 **Description**
 
 Samples the property at a wiggled time.
@@ -203,8 +229,11 @@ Number or Array
 
 ----
 
+.. _Property.smooth:
+
 smooth(``width=.2``, ``samples=5``, ``t=time``)
 *************************************************
+
 **Description**
 
 Smooths the property values over time, converting large, brief deviations in the value to smaller, more evenly distributed deviations. This smoothing is accomplished by applying a box filter to the value of the property at the specified time. The width value is the range of time (in seconds) over which the filter is averaged. The samples value is the number of discrete samples evenly spaced over time; use a larger value for greater smoothness (but decreased performance). Generally, you’ll want samples to be an odd number so that the value at the current time is included in the average.
@@ -227,8 +256,11 @@ Number or Array
 
 ----
 
+.. _Property.loopIn:
+
 loopIn(``type="cycle"``, ``numKeyframes=0``)
 ************************************************
+
 **Description**
 
 Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer. The numKeyframes value determines what segment is looped: The segment looped is the portion of the layer from the first keyframe to the numKeyframes+1 keyframe. For example, loopIn("cycle", 3) loops the segment bounded by the first and fourth keyframes. The default value of 0 means that all keyframes loop. You can use keyframe-looping methods to repeat a series of keyframes. You can use these methods on most properties. Exceptions include properties that can’t be expressed by simple numeric values in the Timeline panel, such as the Source Text property, path shape properties, and the Histogram property for the Levels effect. Keyframes or duration values that are too large are clipped to the maximum allowable value. Values that are too small result in a constant loop.
@@ -250,8 +282,11 @@ Number or Array
 
 ----
 
+.. _Property.loopOut:
+
 loopOut(``type="cycle"``, ``numKeyframes=0``)
 **********************************************
+
 **Description**
 
 Loops a segment of time that is measured from the last keyframe on the layer back toward the In point of the layer. The loop plays until the Out point of the layer. The specified number of keyframes determines the segment to loop. The numKeyframes value sets the number of keyframe segments to loop; the specified range is measured backward from the last keyframe.
@@ -267,8 +302,11 @@ Number or Array
 
 ----
 
+.. _Property.loopInDuration:
+
 loopInDuration(``type="cycle"``, ``duration=0``)
 **************************************************
+
 **Description**
 
 Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer. Specified duration determines the segment to loop. The duration value sets the number of composition seconds in a segment to loop; the specified range is measured from the first keyframe.
@@ -281,8 +319,11 @@ Number or Array
 
 ----
 
+.. _Property.loopOutDuration:
+
 loopOutDuration(``type="cycle"``, ``duration=0``)
 **************************************************
+
 **Description**
 
 Loops a segment of time that is measured from the last keyframe on the layer back toward the In point of the layer. The loop plays until the Out point of the layer. Specified duration determines the segmetn to loop. The duration value sets the number of composition seconds in a segment to loop; the specified range is measured backward from the last keyframe.
@@ -295,8 +336,11 @@ Number or Array
 
 ----
 
+.. _Property.key:
+
 key(``index``)
 *****************
+
 **Description**
 
 Returns the Key or MarkerKey object by number.
@@ -317,6 +361,7 @@ Key or MarkerKey
 
 key(``markerName``)
 *******************
+
 **Description**
 
 Returns the MarkerKey object with this name. Use only on marker properties.
@@ -331,8 +376,11 @@ MarkerKey
 
 ----
 
+.. _Property.nearestKey:
+
 nearestKey(``t``)
 *****************
+
 **Description**
 
 Returns the Key or MarkerKey object nearest to a designated time ``t``.
@@ -349,8 +397,11 @@ Key or MarkerKey
 
 ----
 
+.. _Property.numKeys:
+
 numKeys
 *****************
+
 **Description**
 
 Returns the number of keyframes on a property. Returns the number of markers on a marker property.
@@ -364,8 +415,11 @@ Number
 
 ----
 
+.. _Property.propertyGroup:
+
 propertyGroup(``countUp=1``)
 ******************************
+
 **Description**
 
 Returns a group of properties relative to the property on which the expression is written.
@@ -384,8 +438,11 @@ Group
 
 ----
 
+.. _Property.propertyIndex:
+
 propertyIndex
 *****************
+
 **Description**
 
 Returns the index of a property relative to other properties in its property group, including property groups within masks, effects, text animators, selectors, shapes, trackers, and track points.
@@ -396,8 +453,11 @@ Number
 
 ----
 
+.. _Property.name:
+
 name
 *****************
+
 **Description**
 
 Returns the name of the property or property group.

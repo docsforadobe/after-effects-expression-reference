@@ -8,7 +8,7 @@ After Effects Expression Reference
     :caption: Introduction
 
     introduction
-    .. changelog
+    changelog
     resources
     examples
 

@@ -1,8 +1,13 @@
+.. _LayerGeneral:
+
 Layer General
 ################################################
 
+.. _Layer.width:
+
 Layer.width
 *********************************************
+
 **Description**
 
 Returns the width of the layer, in pixels. It is the same as ``source.width``.
@@ -13,8 +18,11 @@ Number
 
 ----
 
+.. _Layer.height:
+
 Layer.height
 *********************************************
+
 **Description**
 
 Returns the height of the layer, in pixels. It is the same as ``source.height``.
@@ -25,8 +33,11 @@ Number
 
 ----
 
+.. _Layer.index:
+
 Layer.index
 *********************************************
+
 **Description**
 
 Returns the index number of the layer in the composition.
@@ -37,8 +48,11 @@ Number
 
 ----
 
+.. _Layer.parent:
+
 Layer.parent
 *********************************************
+
 **Description**
 
 Returns the parent Layer object of the layer, if it has one.
@@ -53,8 +67,11 @@ Layer, Light, or Camera
 
 ----
 
+.. _Layer.hasParent:
+
 Layer.hasParent
 *********************************************
+
 **Description**
 
 Returns true if the layer has a parent or false if it doesn’t. Use the hasParent attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present. For example, the following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position.
@@ -73,8 +90,11 @@ Boolean
 
 ----
 
+.. _Layer.inPoint:
+
 Layer.inPoint
 *********************************************
+
 **Description**
 
 Returns the In point of the layer, in seconds.
@@ -89,8 +109,11 @@ Number
 
 ----
 
+.. _Layer.outPoint:
+
 Layer.outPoint
 *********************************************
+
 **Description**
 
 Returns the Out point of the layer, in seconds.
@@ -101,8 +124,11 @@ Number
 
 ----
 
+.. _Layer.startTime:
+
 Layer.startTime
 *********************************************
+
 **Description**
 
 Returns the start time of the layer, in seconds.
@@ -113,8 +139,11 @@ Number
 
 ----
 
+.. _Layer.hasVideo:
+
 Layer.hasVideo
 *********************************************
+
 **Description**
 
 Returns ``true`` if the layer has video, or ``false`` if it doesn’t.
@@ -125,8 +154,11 @@ Boolean
 
 ----
 
+.. _Layer.hasAudio:
+
 Layer.hasAudio
 *********************************************
+
 **Description**
 
 Returns ``true`` if the layer has audio or ``false`` if it doesn’t.
@@ -137,8 +169,11 @@ Boolean
 
 ----
 
+.. _Layer.active:
+
 Layer.active
 *********************************************
+
 **Description**
 
 Returns ``true`` if the Video switch  is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; ``false`` otherwise.
@@ -149,8 +184,11 @@ Boolean
 
 ----
 
+.. _Layer.enabled:
+
 Layer.enabled
 *********************************************
+
 **Description**
 
 Returns true if the Video switch  is on for the layer; false otherwise.
@@ -161,8 +199,11 @@ Boolean
 
 ----
 
+.. _Layer.audioActive:
+
 Layer.audioActive
 *********************************************
+
 **Description**
 
 Returns true if the Audio switch  is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; false otherwise.
@@ -173,8 +214,11 @@ Boolean
 
 ----
 
+.. _Layer.sampleImage:
+
 Layer.sampleImage(``point``, ``radius=[0.5, 0.5]``, ``postEffect=true``, ``t=time``)
 **************************************************************************************
+
 **Description**
 
 Samples the color and alpha channel values of a layer and returns the average alpha-weighted value of the pixels within the specified distance of the point as an array: ``[red, green, blue, alpha]``.

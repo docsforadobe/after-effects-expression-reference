@@ -1,13 +1,19 @@
+.. _LayerProperties:
+
 Layer Properties
 ################################################
+
 **Description**
 
 When you add masks, effects, paint, or text to a layer, After Effects adds new properties to the Timeline panel. There are too many of these properties to list here, so use the pick whip to learn the syntax for referring to them in your expressions.
 
 ----
 
+.. _Layer.anchorPoint:
+
 Layer.anchorPoint
 *********************************************
+
 **Description**
 
 Returns the anchor point value of the layer in the coordinate system of the layer (layer space).
@@ -18,8 +24,11 @@ Array of Numbers (2- or 3-dimensional)
 
 ----
 
+.. _Layer.position:
+
 Layer.position
 *********************************************
+
 **Description**
 
 Returns the position value of the layer, in world space if the layer has no parent. If the layer has a parent, it returns the position value of the layer in the coordinate system of the parent layer (in the layer space of the parent layer).
@@ -30,8 +39,11 @@ Array of Numbers (2- or 3-dimensional)
 
 ----
 
+.. _Layer.scale:
+
 Layer.scale
 *********************************************
+
 **Description**
 
 Returns the scale value of the layer, expressed as a percentage.
@@ -42,8 +54,11 @@ Array of Numbers (2- or 3-dimensional)
 
 ----
 
+.. _Layer.rotation:
+
 Layer.rotation
 *********************************************
+
 **Description**
 
 Returns the rotation value of the layer in degrees. For a 3D layer, it returns the z rotation value in degrees.
@@ -54,8 +69,11 @@ Number
 
 ----
 
+.. _Layer.opacity:
+
 Layer.opacity
 *********************************************
+
 **Description**
 
 Returns the opacity value for the layer, expressed as a percentage.
@@ -66,8 +84,11 @@ Number
 
 ----
 
+.. _Layer.audioLevels:
+
 Layer.audioLevels
 *********************************************
+
 **Description**
 
 Returns the value of the Audio Levels property of the layer, in decibels. This value is a 2D value; the first value represents the left audio channel, and the second value represents the right. The value is not the amplitude of the audio track of the source material. Instead, it is the value of the Audio Levels property, which may be affected by keyframes.
@@ -78,8 +99,11 @@ Array of Numbers (2-dimensional)
 
 ----
 
+.. _Layer.timeRemap:
+
 Layer.timeRemap
 *********************************************
+
 **Description**
 
 Returns the value of the Time Remap property, in seconds, if Time Remap is enabled.
@@ -90,8 +114,11 @@ Number
 
 ----
 
+.. _Layer.marker.key:
+
 Layer.marker.key(``index``)
 *********************************************
+
 **Description**
 
 Returns the MarkerKey object of the layer marker with the specified index.
@@ -110,6 +137,7 @@ MarkerKey
 
 Layer.marker.key(``name``)
 *********************************************
+
 **Description**
 
 Returns the MarkerKey object of the layer marker with the specified name. The name value is the name of the marker, as typed in the comment field in the marker dialog box, for example, ``marker.key("ch1")``. If more than one marker on the layer has the same name, this method returns the marker that occurs first in time (in layer time). The value for a marker key is a ``String``, not a ``Number``.
@@ -132,8 +160,11 @@ MarkerKey
 
 ----
 
+.. _Layer.marker.nearestKey:
+
 Layer.marker.nearestKey(``t``)
 *********************************************
+
 **Description**
 
 Returns the layer marker that is nearest in time to t.
@@ -158,8 +189,11 @@ MarkerKey
 
 ----
 
+.. _Layer.marker.numKeys:
+
 Layer.marker.numKeys
 *********************************************
+
 **Description**
 
 Returns the total number of markers on the layer.
@@ -170,8 +204,11 @@ Number
 
 ----
 
+.. _Layer.name:
+
 Layer.name
 *********************************************
+
 **Description**
 
 Returns the name of the layer.

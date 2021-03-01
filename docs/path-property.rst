@@ -1,3 +1,5 @@
+.. _PathProperty:
+
 Path Property
 #############
 
@@ -32,8 +34,11 @@ Reads the coordinates of the first vertex of Mask 1 on Dark Gray Solid 1 and con
 
 ----
 
+.. _PathProperty.name:
+
 name
 *****************
+
 **Description**
 
 Returns the name of the property.
@@ -44,8 +49,11 @@ String
 
 ----
 
-pathProperty.points(``t=time``)
+.. _PathProperty.points:
+
+PathProperty.points(``t=time``)
 *******************************
+
 **Description**
 
 Get the x,y coordinates of all points on a path. Coordinates for layer mask path points are relative to the layer's origin in its upper-left hand corner. Coordinates for Bezier shape path points are are relative to the anchor point of the path's shape group (ex., "Transform: Shape 1 > Anchor Point"). Coordinates for brush stroke path points are relative to the start of the stroke; the first point is ``[0,0]``. This method can be passed into the ``createPath()`` method for the points parameter when duplicating a path.
@@ -64,8 +72,11 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ----
 
-pathProperty.inTangents(``t=time``)
+.. _PathProperty.inTangents:
+
+PathProperty.inTangents(``t=time``)
 *****************************************
+
 **Description**
 
 Get the x,y coordinates of the incoming tangent handle for all points on a path. Tangent coordinate values are offset relative to the parent point's coordinates. i.e., The value [0,0] creates no curvature at the incoming tangent. This method can be passed into the createPath() method for the inTangents parameter when duplicating a path.
@@ -78,8 +89,11 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ----
 
-pathProperty.outTangents(``t=time``)
+.. _PathProperty.outTangents:
+
+PathProperty.outTangents(``t=time``)
 *****************************************
+
 **Description**
 
 Get the x, y coordinates of the outgoing tangent handle for all points on a path. Tangent coordinate values are offset relative to the parent point's coordinates. i.e., The value ``[0,0]`` creates no curvature at the outgoing tangent. This method can be passed into the createPath() method for the outTangents parameter when duplicating a path.
@@ -98,8 +112,11 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ----
 
-pathProperty.isClosed()
+.. _PathProperty.isClosed:
+
+PathProperty.isClosed()
 ***********************
+
 **Description**
 
 Determines if the path is open or closed. Returns ``true`` if the path is closed, ``false`` if the path is open. This method can be passed into the ``createPath()`` method for the ``is_closed`` parameter when duplicating a path.
@@ -110,8 +127,11 @@ Boolean
 
 ----
 
-pathProperty.pointOnPath(``percentage=0.5``, ``t=time``)
+.. _PathProperty.pointOnPath:
+
+PathProperty.pointOnPath(``percentage=0.5``, ``t=time``)
 *************************************************************************
+
 **Description**
 
 Get the x, y coordinates of an arbitrary point along a path. The point is expressed as a percentage of the arc-length of the path. 0% is the first point and 100% is the last point. When the path is closed, 0%
@@ -133,7 +153,9 @@ A number pair array
 
 ----
 
-pathProperty.tangentOnPath(``percentage=0.5``, ``t=time``)
+.. _PathProperty.tangentOnPath:
+
+PathProperty.tangentOnPath(``percentage=0.5``, ``t=time``)
 *************************************************************************
 
 **Description**
@@ -156,8 +178,11 @@ A number pair array
 
 ----
 
-pathProperty.normalOnPath(``percentage=0.5``, ``t=time``)
+.. _PathProperty.normalOnPath:
+
+PathProperty.normalOnPath(``percentage=0.5``, ``t=time``)
 *************************************************************************
+
 **Description**
 
 Get the calculated x,y coordinates of the normal for an arbitrary point along a path. Coordinate values of normals are offset relative to the parent point's coordinates. i.e., The value ``[0,0]`` is the same as the parent point. The normal's parent point is expressed as a percentage of the arc-length of the path. Read the description of the ``pointOnPath()`` method for
@@ -178,8 +203,11 @@ A number pair array
 
 ----
 
-pathProperty.createPath(``points=[[0,0], [100,0], [100,100], [0,100]]``, ``inTangents=[]``, ``outTangents=[]``, ``is_closed=true``)
+.. _PathProperty.createPath:
+
+PathProperty.createPath(``points=[[0,0], [100,0], [100,100], [0,100]]``, ``inTangents=[]``, ``outTangents=[]``, ``is_closed=true``)
 ***********************************************************************************************************************************************
+
 **Description**
 
 Creates a path object from a set of points and tangents.

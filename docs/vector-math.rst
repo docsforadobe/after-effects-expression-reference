@@ -1,5 +1,7 @@
+.. _VectorMath:
+
 Vector Math
-############
+###########
 
 Vector Math functions are global methods that perform operations on arrays, treating them as mathematical vectors. Unlike built-in JavaScript methods, such as ``Math.sin``, these methods are not used with the Math prefix. Unless otherwise specified, Vector Math methods are lenient about dimensions and return a value that is the dimension of the largest input Array object, filling in missing elements with zeros.
 
@@ -10,8 +12,11 @@ For example, the expression ``add([10, 20], [1, 2, 3])`` returns ``[11, 22, 3]``
 
 ----
 
+.. _add:
+
 add(``vec1``, ``vec2``)
 ***************************
+
 **Description**
 
 Adds two vectors.
@@ -29,8 +34,11 @@ Array
 
 ----
 
+.. _sub:
+
 sub(``vec1``, ``vec2``)
 ***************************
+
 **Description**
 
 Subtracts two vectors.
@@ -48,8 +56,11 @@ Array
 
 ----
 
+.. _mul:
+
 mul(``vec``, ``amount``)
 ***************************
+
 **Description**
 
 Multiplies every element of the vector by the amount.
@@ -67,8 +78,11 @@ Array
 
 ----
 
+.. _div:
+
 div(``vec``, ``amount``)
 ***************************
+
 **Description**
 
 Divides every element of the vector by the amount.
@@ -86,8 +100,11 @@ Array
 
 ----
 
+.. _clamp:
+
 clamp(``value``, ``limit1``, ``limit2``)
 *****************************************
+
 **Description**
 
 The value of each component of ``value`` is constrained to fall between the values of the corresponding values of ``limit1`` and ``limit2``.
@@ -106,8 +123,11 @@ Number or Array
 
 ----
 
+.. _dot:
+
 dot(``vec1``, ``vec2``)
 ***************************
+
 **Description**
 
 Returns the dot (inner) product of the vector arguments.
@@ -125,8 +145,11 @@ Number
 
 ----
 
+.. _cross:
+
 cross(``vec1``, ``vec2``)
 ***************************
+
 **Description**
 
 Returns the vector cross product of ``vec1`` and ``vec2``. Refer to a math reference or JavaScript guide for more information.
@@ -144,8 +167,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _normalize:
+
 normalize(``vec``)
 ***************************
+
 **Description**
 
 Normalizes the vector so that its length is ``1.0``. Using the normalize method is a short way of performing the operation ``div(vec, length(vec))``.
@@ -162,8 +188,11 @@ Array
 
 ----
 
+.. _length:
+
 length(``vec``)
 ***************************
+
 **Description**
 
 Returns the length of vector ``vec``.
@@ -182,6 +211,7 @@ Number
 
 length(``point1``, ``point2``)
 ******************************
+
 **Description**
 
 Returns the distance between two points. The ``point2`` argument is optional.
@@ -205,8 +235,11 @@ Number
 
 ----
 
+.. _lookAt:
+
 lookAt(``fromPoint``, ``atPoint``)
 ***********************************
+
 **Description**
 
 The argument ``fromPoint`` is the location in world space of the layer you want to orient. The argument ``atPoint`` is the point in world space you want to point the layer at. The return value can be used as an expression for the Orientation property, making the z-axis of the layer point at atPoint.

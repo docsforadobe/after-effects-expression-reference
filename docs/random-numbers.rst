@@ -1,13 +1,18 @@
+.. _RandomNumbers:
+
 Random Numbers
-###############
+##############
 
 .. note::
 	The wiggle method—which is used to randomly vary a property value—is in the Property attributes and methods category. See Property attributes and methods.
 
 ----
 
+.. _seedRandom:
+
 seedRandom(``offset``, ``timeless=false``)
 ***********************************************
+
 **Description**
 
 The random and gaussRandom methods use a seed value that controls the sequence of numbers. By default, the seed is computed as a function of a unique layer identifier, the property within the layer, the current time, and an offset value of ``0``. Call seedRandom to set the offset to something other than 0 to create a different random sequence. Use true for the timeless argument to not use the current time as input to the random seed. Using true for the timeless argument allows you to generate a random number that doesn’t vary depending on the time of evaluation. The offset value, but not the timeless value, is also used to control the initial value of the wiggle function.
@@ -32,8 +37,11 @@ None
 
 ----
 
+.. _random:
+
 random()
 ***********************************************
+
 **Description**
 
 Returns a random number in the range ``0–1``.
@@ -49,6 +57,7 @@ Number
 
 random(``maxValOrArray``)
 ***********************************************
+
 **Description**
 
 If ``maxValOrArray`` is a ``Number``, this method returns a number in the range from ``0`` to ``maxValOrArray``. If ``maxValOrArray`` is an ``Array``, this method returns an Array with the same dimension as ``maxValOrArray``, with each component ranging from ``0`` to the corresponding component of ``maxValOrArray``.
@@ -67,6 +76,7 @@ Number or Array
 
 random(``minValOrArray``, ``maxValOrArray``)
 ***********************************************
+
 **Description**
 
 If ``minValOrArray`` and ``maxValOrArray`` are ``Numbers``, this method returns a number in the range from ``minValOrArray`` to ``maxValOrArray``.
@@ -88,8 +98,11 @@ Number or Array
 
 ----
 
+.. _gaussRandom:
+
 gaussRandom()
 ***********************************************
+
 **Description**
 
 The results have a Gaussian (bell-shaped) distribution. Approximately ``90%`` of the results are in the range ``0–1``, and the remaining ``10%`` are outside this range.
@@ -102,6 +115,7 @@ Number
 
 gaussRandom(``maxValOrArray``)
 ***********************************************
+
 **Description**
 
 When ``maxValOrArray`` is a ``Number``, this method returns a random number. Approximately ``90%`` of the results are in the ``0`` to ``maxValOrArray`` range, and the remaining ``10%`` are outside this range.
@@ -124,6 +138,7 @@ Number or Array
 
 gaussRandom(``minValOrArray``, ``maxValOrArray``)
 **************************************************
+
 **Description**
 
 If ``minValOrArray`` and ``maxValOrArray`` are ``Numbers``, this method returns a random number. Approximately ``90%`` of the results are in the range from ``minValOrArray`` to ``maxValOrArray``, and the remaining ``10%`` are outside this range.
@@ -145,8 +160,11 @@ Number or Array
 
 ----
 
+.. _noise:
+
 noise(``valOrArray``)
 ***********************************************
+
 **Description**
 
 Returns a number in the range from ``-1`` to ``1``. The noise is not actually random; it is based on Perlin noise, which means that the return values for two input values that are near one another tend to be near one another. This type of noise is useful when you want a sequence of seemingly random numbers that don’t vary wildly from one to the other—as is usually the case when animating any apparently random natural motion.

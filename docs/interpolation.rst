@@ -1,3 +1,5 @@
+.. _Interpolation:
+
 Interpolation
 #############
 
@@ -15,8 +17,11 @@ Andrew Devis provides a `pair of video tutorials <http://blogs.adobe.com/toddkop
 
 ----
 
+.. _Interpolation.linear:
+
 linear(``t``, ``tMin``, ``tMax``, ``value1``, ``value2``)
 *********************************************************
+
 **Description**
 
 Returns ``value1`` when ``t <= tMin``. Returns ``value2`` when ``t >= tMax``. Returns a linear interpolation between ``value1`` and ``value2`` when ``tMin < t < tMax``.
@@ -49,6 +54,7 @@ Number or Array
 
 linear(``t``, ``value1``, ``value2``)
 *********************************************
+
 **Description**
 
 Returns a value that linearly interpolates from ``value1`` to ``value2`` as ``t`` ranges from ``0`` to ``1``. Returns ``value1`` when ``t <= 0``. Returns ``value2`` when ``t >= 1``.
@@ -67,28 +73,11 @@ Number or Array
 
 ----
 
-ease(``t``, ``value1``, ``value2``)
-*********************************************
-**Description**
-
-Similar to linear with the same arguments, except that the interpolation eases in and out so that the velocity is ``0`` at the start and end points. This method results in a smooth animation.
-
-**Parameters**
-
-========== ===============
-``t``      Number
-``value1`` Number or Array
-``value2`` Number or Array
-========== ===============
-
-**Type**
-
-Number or Array
-
-----
+.. _Interpolation.ease:
 
 ease(``t``, ``tMin``, ``tMax``, ``value1``, ``value2``)
 *********************************************************
+
 **Description**
 
 Similar to linear with the same arguments, except that the interpolation eases in and out so that the velocity is ``0`` at the start and end points. This method results in a smooth animation.
@@ -109,11 +98,12 @@ Number or Array
 
 ----
 
-easeIn(``t``, ``value1``, ``value2``)
+ease(``t``, ``value1``, ``value2``)
 *********************************************
+
 **Description**
 
-Similar to ease, except that the tangent is ``0`` only on the ``value1`` side and interpolation is ``linear`` on the ``value2`` side.
+Similar to linear with the same arguments, except that the interpolation eases in and out so that the velocity is ``0`` at the start and end points. This method results in a smooth animation.
 
 **Parameters**
 
@@ -129,8 +119,11 @@ Number or Array
 
 ----
 
+.. _Interpolation.easeIn:
+
 easeIn(``t``, ``tMin``, ``tMax``, ``value1``, ``value2``)
 **********************************************************
+
 **Description**
 
 Similar to ease, except that the tangent is ``0`` only on the ``tMin`` side and interpolation is ``linear`` on the ``tMax`` side.
@@ -151,11 +144,12 @@ Number or Array
 
 ----
 
-easeOut(``t``, ``value1``, ``value2``)
+easeIn(``t``, ``value1``, ``value2``)
 *********************************************
+
 **Description**
 
-Similar to ease, except that the tangent is ``0`` only on the ``value2`` side and interpolation is ``linear`` on the ``value1`` side.
+Similar to ease, except that the tangent is ``0`` only on the ``value1`` side and interpolation is ``linear`` on the ``value2`` side.
 
 **Parameters**
 
@@ -171,8 +165,11 @@ Number or Array
 
 ----
 
+.. _Interpolation.easeOut:
+
 easeOut(``t``, ``tMin``, ``tMax``, ``value1``, ``value2``)
 ************************************************************
+
 **Description**
 
 Similar to ease, except that the tangent is ``0`` only on the ``tMax`` side and interpolation is ``linear`` on the ``tMin`` side.
@@ -183,6 +180,27 @@ Similar to ease, except that the tangent is ``0`` only on the ``tMax`` side and 
 ``t``      Number
 ``tMin``   Number
 ``tMax``   Number
+``value1`` Number or Array
+``value2`` Number or Array
+========== ===============
+
+**Type**
+
+Number or Array
+
+----
+
+easeOut(``t``, ``value1``, ``value2``)
+*********************************************
+
+**Description**
+
+Similar to ease, except that the tangent is ``0`` only on the ``value2`` side and interpolation is ``linear`` on the ``value1`` side.
+
+**Parameters**
+
+========== ===============
+``t``      Number
 ``value1`` Number or Array
 ``value2`` Number or Array
 ========== ===============

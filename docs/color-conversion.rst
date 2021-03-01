@@ -1,3 +1,5 @@
+.. _ColorConversion:
+
 Color Conversion
 ################
 
@@ -5,8 +7,11 @@ Harry Frank provides a video tutorial on his `graymachine website <http://www.gr
 
 ----
 
+.. _rgbToHsl:
+
 rgbToHsl(``rgbaArray``)
 ***********************
+
 **Description**
 
 Converts a color in RGBA space to HSLA space. The input is an Array of normalized red, green, blue, and alpha channel values, all in the range of 0.0 to 1.0. The resulting value is an Array of hue, saturation, lightness, and alpha channel values, also in the range of 0.0 to 1.0.
@@ -27,8 +32,11 @@ Array (4-dimensional)
 
 ----
 
+.. _hslToRgb:
+
 hslToRgb(``hslaArray``)
 ***********************
+
 **Description**
 
 Converts a color in HSLA space to RGBA space. This conversion is the opposite of the conversion performed by the rgbToHsl method.
@@ -45,8 +53,11 @@ Array (4-dimensional)
 
 ----
 
+.. _hexToRgb:
+
 hexToRgb(``hexString``)
 ***********************
+
 **Description**
 
 Converts a color in hex triplet space to RGB space, or in hex quartet space to RGBA space. For hex triplets, the alpha channel defaults to 1.0.

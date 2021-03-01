@@ -1,3 +1,5 @@
+.. _Key:
+
 Key
 ################################################
 
@@ -12,8 +14,11 @@ The following expression, when written on an Opacity property with keyframes, ig
 
 ----
 
+.. _Key.value:
+
 Key.value
 *********************************************
+
 **Description**
 
 Returns the value of the keyframe.
@@ -24,8 +29,11 @@ Number or Array
 
 ----
 
+.. _Key.time:
+
 Key.time
 *********************************************
+
 **Description**
 
 Returns the time of the keyframe.
@@ -36,8 +44,11 @@ Number
 
 ----
 
+.. _Key.index:
+
 Key.index
 *********************************************
+
 **Description**
 
 Returns the index of the keyframe.

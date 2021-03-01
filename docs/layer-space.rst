@@ -1,3 +1,5 @@
+.. _LayerSpaceTransforms:
+
 Layer Space Transforms
 ################################################
 
@@ -15,8 +17,11 @@ Composition (comp) and world space are the same for 2D layers. For 3D layers, ho
 
 ----
 
+.. _toComp:
+
 toComp(``point``, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a point from layer space to composition space.
@@ -34,8 +39,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _fromComp:
+
 fromComp(``point``, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a point from composition space to layer space. The resulting point in a 3D layer may have a nonzero value even though it is in layer space.
@@ -57,8 +65,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _toWorld:
+
 toWorld(``point``, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a point from layer space to view-independent world space.
@@ -86,8 +97,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _fromWorld:
+
 fromWorld(``point``, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a point from world space to layer space.
@@ -111,8 +125,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _toCompVec:
+
 toCompVec(vec, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a vector from layer space to composition space.
@@ -134,8 +151,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _fromCompVec:
+
 fromCompVec(vec, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a vector from composition space to layer space.
@@ -158,8 +178,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _toWorldVec:
+
 toWorldVec(vec, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a vector from layer space to world space.
@@ -183,8 +206,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _fromWorldVec:
+
 fromWorldVec(``vec``, ``t=time``)
 *********************************************
+
 **Description**
 
 Transforms a vector from world space to layer space.
@@ -206,8 +232,11 @@ Array (2- or 3-dimensional)
 
 ----
 
+.. _fromCompToSurface:
+
 fromCompToSurface(``point``, ``t=time``)
 *********************************************
+
 **Description**
 
 Projects a point located in composition space to a point on the surface of the layer (zero z-value) at the location where it appears when viewed from the active camera. This method is useful for setting effect control points. Use with 3D layers only.

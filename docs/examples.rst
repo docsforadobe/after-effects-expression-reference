@@ -1,3 +1,5 @@
+.. _Examples:
+
 Examples
 ############
 
@@ -85,7 +87,7 @@ This example expression instructs a layer to be at the same position as the next
 All layers follow the same path, and each is delayed 0.5 seconds from the previous.
 
 .. note::
-	Dan Ebberts provides more examples and techniques for creating trails of images on his `MotionScript website <http://www.motionscript.com/mastering-expressions/follow-the-leader.html>`_.
+	Dan Ebberts provides more examples and techniques for creating trails of images on his `MotionScript <http://www.motionscript.com/mastering-expressions/follow-the-leader.html>`_.
 
 ----
 
@@ -139,7 +141,7 @@ Apply the following expression to the Opacity property of a 3D layer::
   if (toCompVec([0, 0, 1])[2] > 0 ) value else 0
 
 .. note::
-	Dan Ebberts explains this expression on his `MotionScript website <http://www.adobe.com/go/learn_ae_motionscriptinvisiblelayer>`_.
+	Dan Ebberts explains this expression on his `site <http://www.adobe.com/go/learn_ae_motionscriptinvisiblelayer>`_.
 
 ----
 
@@ -225,4 +227,4 @@ Apply the following expression to the Focus Distance property of a camera layer 
 	dot(V1,V2);
 
 .. note::
-	Dan Ebberts explains this expression example in detail on his `Motionscript website <http://motionscript.com/design-guide/auto-focus.html>`_.
+	Dan Ebberts explains this expression example in detail on his `website <http://motionscript.com/design-guide/auto-focus.html>`_.
