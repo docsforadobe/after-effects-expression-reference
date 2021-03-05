@@ -33,6 +33,7 @@ After Effects Expression Reference
     footage
     camera
     light
+    group
     effect
     mask
     property
