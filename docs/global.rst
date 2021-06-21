@@ -177,7 +177,7 @@ To change a property to a random value within a specified range, every 12 frames
   var minValue = 50;
   var maxValue = 100;
 
-  posterizeTime(1 / framesToTime(holdFrames);
+  posterizeTime(1 / framesToTime(holdFrames));
 
   var newValue = random(minValue, maxValue);
   newValue;
