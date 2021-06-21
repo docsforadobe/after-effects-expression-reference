@@ -137,29 +137,52 @@ Number
 
 .. _Global.posterizeTime:
 
-posterizeTime(``framesPerSecond``)
-**********************************
+posterizeTime(``updatesPerSecond``)
+***********************************
 
 **Description**
 
 This expression allows you to set the frame rate for a property to be lower than the frame rate of the composition.
 
-For example, the following expression updates the property value with a random value once per second::
-
-	posterizeTime(1);
-	random()
+The value passed in is _the number of times per second_ the expression should evaluate.
 
 **Parameters**
 
-===================  ======
-``framesPerSecond``  Number
-===================  ======
+====================  ======
+``updatesPerSecond``  Number
+====================  ======
 
-The framesPerSecond value becomes the frame rate from which the rest of the expression operates.
+The ``updatesPerSecond`` value becomes the rate at which the rest of the expression operates.
 
 **Type**
 
 Number
+
+**Examples**
+
+To change a property to a random value 1 time per second::
+
+  posterizeTime(1);
+
+  random()
+
+To change a 2d property (such as Position or Scale) to a random value 3 times per second::
+
+  posterizeTime(3);
+
+  var newValue = random(0, 100);
+  [newValue, newValue];
+
+To change a property to a random value within a specified range, every 12 frames::
+
+  var holdFrames = 12;
+  var minValue = 50;
+  var maxValue = 100;
+
+  posterizeTime(1 / framesToTime(holdFrames);
+
+  var newValue = random(minValue, maxValue);
+  newValue;
 
 ----
 
