@@ -144,15 +144,13 @@ posterizeTime(``updatesPerSecond``)
 
 This expression allows you to set the frame rate for a property to be lower than the frame rate of the composition.
 
-The value passed in is _the number of times per second_ the expression should evaluate.
+The ``updatesPerSecond`` value passed in is *the number of times per second* the expression should evaluate.
 
 **Parameters**
 
 ====================  ======
 ``updatesPerSecond``  Number
 ====================  ======
-
-The ``updatesPerSecond`` value becomes the rate at which the rest of the expression operates.
 
 **Type**
 
