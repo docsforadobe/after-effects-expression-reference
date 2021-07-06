@@ -1,31 +1,33 @@
-**Description**
+# After Effects Expression Reference
 
-This repo hosts the source files for the `After Effects Expression Reference` that will soon be hosted on an Aenhancers sub-directory. It is still in development, so feel free to contribute.
+This repo hosts the After Effects Expression Reference RST docs, linked into a http://readthedocs.io system hosted at https://ae-expressions.docsforadobe.dev/
 
 The original documentation can be found over at `Adobe <https://helpx.adobe.com/after-effects/using/expression-language-reference.html>`_
 
 ----
 
-**Contribution**
+## Contribution
 
 Contributors are welcome and encouraged to suggest fixes, adjustments, notes/warnings, and anything else that may help the project.
 
+This project uses reStructuredText. For a reference on how to write reStructuredText check out this [quickref](http://docutils.sourceforge.net/docs/user/rst/quickref.html).
+
 ----
 
-**Build HTML Locally**
+## Build HTML Locally
 
 You may want to build the HTML locally before pushing, in order to ensure that the result is what you'd expect. These files aren't included in the git repo, nor are they used online; this is solely to create a local, offline version of the online docs.
 
 - Install ``Python 2.7``
 - Install ``pip``
-- Navigate to the project directory and run ``pip install -r requirements.txt``
+- Navigate to the project directory and use the command ``pip install -r requirements.txt``
 - Build the docs using ``make html``
 
 ----
 
-**Admonitions Usage**
+## Admonitions Usage
 
-Currently, the following `admonitions <http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions>`_ are in use in this project. Try to keep one piece of data per note, for easier parsing.
+Currently, the following [admonitions](http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions) are in use in this project. Try to keep one piece of data per note, for easier parsing.
 
 	.. note::
 		Notes detail version added, and/or relevant pieces of information.
@@ -38,6 +40,17 @@ Currently, the following `admonitions <http://docutils.sourceforge.net/docs/ref/
 
 ----
 
-**Licensing & Ownership**
+## Adding undocumented attributes or methods
 
-This project exists for educational purposes only. All content is copyright Adobe Systems Incorporated.
+If you find attributes or methods that are not mentioned in this documentation, and they are not publically announced by Adobe, please add this warning to attribute/method so the user knows to use it at their own risk.
+
+	.. warning::
+	  	This method/property is officially undocumented and was found via research. The information here may be inaccurate, and this whole method/property may disappear or stop working some point. Please contribute if you have more information on it!
+
+----
+
+## Licensing & Ownership
+
+This project exists for educational purposes only.
+
+All content is copyright Adobe Systems Incorporated.
