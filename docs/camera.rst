@@ -43,7 +43,7 @@ Camera.zoom
 
 Returns the zoom values of a camera in pixels.
 
-Here’s an expression for the Scale property of a layer that maintains the relative size of the layer in frame while changing the z position (depth) of a layer or the Zoom value of a camera::
+Here's an expression for the Scale property of a layer that maintains the relative size of the layer in frame while changing the z position (depth) of a layer or the Zoom value of a camera::
 
 	cam = thisComp.activeCamera;
 	distance = length(sub(position, cam.position));

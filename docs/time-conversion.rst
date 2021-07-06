@@ -42,7 +42,7 @@ framesToTime(``frames``, ``fps=1.0 / thisComp.frameDuration``)
 
 **Desciption**
 
-The inverse of timeToFrames. Returns the time corresponding to the frames argument, which is required. It doesn’t have to be an integer. See timeToFrames for explanation of the ``fps`` argument.
+The inverse of timeToFrames. Returns the time corresponding to the frames argument, which is required. It doesn't have to be an integer. See timeToFrames for explanation of the ``fps`` argument.
 
 **Parameters**
 

@@ -236,7 +236,7 @@ smooth(``width=.2``, ``samples=5``, ``t=time``)
 
 **Description**
 
-Smooths the property values over time, converting large, brief deviations in the value to smaller, more evenly distributed deviations. This smoothing is accomplished by applying a box filter to the value of the property at the specified time. The width value is the range of time (in seconds) over which the filter is averaged. The samples value is the number of discrete samples evenly spaced over time; use a larger value for greater smoothness (but decreased performance). Generally, you’ll want samples to be an odd number so that the value at the current time is included in the average.
+Smooths the property values over time, converting large, brief deviations in the value to smaller, more evenly distributed deviations. This smoothing is accomplished by applying a box filter to the value of the property at the specified time. The width value is the range of time (in seconds) over which the filter is averaged. The samples value is the number of discrete samples evenly spaced over time; use a larger value for greater smoothness (but decreased performance). Generally, you'll want samples to be an odd number so that the value at the current time is included in the average.
 
 Example::
 
@@ -263,7 +263,7 @@ loopIn(``type="cycle"``, ``numKeyframes=0``)
 
 **Description**
 
-Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer. The numKeyframes value determines what segment is looped: The segment looped is the portion of the layer from the first keyframe to the numKeyframes+1 keyframe. For example, loopIn("cycle", 3) loops the segment bounded by the first and fourth keyframes. The default value of 0 means that all keyframes loop. You can use keyframe-looping methods to repeat a series of keyframes. You can use these methods on most properties. Exceptions include properties that can’t be expressed by simple numeric values in the Timeline panel, such as the Source Text property, path shape properties, and the Histogram property for the Levels effect. Keyframes or duration values that are too large are clipped to the maximum allowable value. Values that are too small result in a constant loop.
+Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer. The numKeyframes value determines what segment is looped: The segment looped is the portion of the layer from the first keyframe to the numKeyframes+1 keyframe. For example, loopIn("cycle", 3) loops the segment bounded by the first and fourth keyframes. The default value of 0 means that all keyframes loop. You can use keyframe-looping methods to repeat a series of keyframes. You can use these methods on most properties. Exceptions include properties that can't be expressed by simple numeric values in the Timeline panel, such as the Source Text property, path shape properties, and the Histogram property for the Levels effect. Keyframes or duration values that are too large are clipped to the maximum allowable value. Values that are too small result in a constant loop.
 
 ========= =====================================
 ``type``  result

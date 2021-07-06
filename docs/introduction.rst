@@ -5,7 +5,7 @@ Introduction
 
 Use the After Effects expression elements along with standard JavaScript elements to write your expressions. You can use the Expression Language menu at any time to insert methods and attributes into an expression, and you can use the pick whip at any time to insert properties.
 
-If an argument description contains an equal sign (=) and a value (such as t=time or width=.2), then the argument uses the included default value if you don’t specify a different value.
+If an argument description contains an equal sign (=) and a value (such as t=time or width=.2), then the argument uses the included default value if you don't specify a different value.
 
 Some argument descriptions include a number in square brackets—this number indicates the dimension of the expected property or Array.
 

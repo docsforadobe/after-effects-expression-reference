@@ -40,7 +40,7 @@ What's new and changed for expressions?
 `After Effects 17.1 <https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheMay2020releaseversion171>`_ (May 19 2020)
 ***************************************************************************************************************************************
 
-- Fixed: An issue with Expression editor to auto-complete ‘timeToFrames’ function.
+- Fixed: An issue with Expression editor to auto-complete 'timeToFrames' function.
 
 ----
 

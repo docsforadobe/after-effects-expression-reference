@@ -17,7 +17,7 @@ Carl Larsen provides a video tutorial on the `Creative COW website <http://libra
 
 Chris Zwar provides an example project on `chriszwar.com <http://chriszwar.com/wordpress/2008/11/imagegrids/>`_ for automatically arranging still images or videos into a grid (like a video wall). You can easily adjust position and spacing with sliders that are connected to a system of expressions. There are three compositions in the project—one for stills, one for videos, and one to create an auto-storyboard in which a video is sampled at user-defined intervals and aligned into a grid.
 
-`JJ Gifford’s website <http://www.adobe.com/go/learn_ae_jjgiffordexpressions>`_ provides several example projects that demonstrate how to use expressions.
+`JJ Gifford's website <http://www.adobe.com/go/learn_ae_jjgiffordexpressions>`_ provides several example projects that demonstrate how to use expressions.
 
 Maltaannon (Jerzy Drozda, Jr.) provides a video tutorial on `maltaanon.com <http://maltaannon.com/articles/after-effects/smart-volume-meter/>`_ that shows how to use expressions to create a volume meter using the results of the Convert Audio To Keyframes command.
 
