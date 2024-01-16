@@ -8,7 +8,7 @@ These functions are accessible from :ref:`SourceText.style` after AE 17.0.
 For more info on working with text styles, see:
 
 - `Use Expressions to Edit and Access Text Properties on helpx.adobe.com <https://helpx.adobe.com/after-effects/user-guide.html/after-effects/using/expressions-text-properties.ug.html>`_
-- `After Effects 2020: Express Yourself (and Your Text) on blog.adobe.com <https://blog.adobe.com/en/2020/01/24/after-effects-2020-express-yourself-and-your-text.html#gs.uwyfgz>`_
+- `After Effects 2020: Express Yourself (and Your Text) on blog.adobe.com <https://blog.adobe.com/en/publish/2020/01/24/after-effects-2020-express-yourself-and-your-text>`_
 
 ----
 
