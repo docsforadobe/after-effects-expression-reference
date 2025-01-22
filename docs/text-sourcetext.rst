@@ -3,7 +3,7 @@
 Source Text
 ###########
 
-These functions are accessible from :ref:`Text.sourceText` after AE 17.0.
+These functions are accessible on the :ref:`Text.sourceText` object in AE 17.0 and later.
 
 ----
 
@@ -14,7 +14,7 @@ SourceText.style
 
 **Description**
 
-Returns the text style object for a given ``sourceText`` property.
+Returns the :ref:`TextStyle` object for a given ``sourceText`` property.
 
 **Type**
 
@@ -29,7 +29,7 @@ SourceText.getStyleAt(``charIndex``, ``t = time``)
 
 **Description**
 
-This function returns the style value of a particular character at a specific time.
+This function returns the :ref:`TextStyle` object of a particular character at a specific time.
 
 In case the style is keyframed and changes over time, use the second ``time`` parameter to specify the target time to get the style at.
 
@@ -57,7 +57,7 @@ For example, to get the style of the first character at the beginning of the tim
 .. _SourceText.createStyle:
 
 SourceText.createStyle()
-**************************************************
+*************************
 
 **Description**
 
@@ -73,4 +73,93 @@ None.
 
 **Type**
 
-Empty :ref:`TextStyle` object
+Empty :ref:`TextStyle` object.
+
+----
+
+.. _SourceText.isVerticalText:
+
+SourceText.isVerticalText
+**************************
+
+.. note::
+  This functionality was added in After Effects 25.0.
+
+**Description**
+
+Returns ``true`` if the Text layer is vertical and ``false`` if it is horizontal.
+
+**Parameters**
+
+None.
+
+**Type**
+
+Boolean
+
+----
+
+.. _SourceText.isHorizontalText:
+
+SourceText.isHorizontalText
+****************************
+
+.. note::
+  This functionality was added in After Effects 25.0.
+
+**Description**
+
+Returns ``true`` if the Text layer is horizontal and ``false`` if it is vertical.
+
+**Parameters**
+
+None.
+
+**Type**
+
+Boolean
+
+----
+
+.. _SourceText.isPointText:
+
+SourceText.isPointText
+***********************
+
+.. note::
+  This functionality was added in After Effects 25.0.
+
+**Description**
+
+Returns ``true`` if a Text layer is Point text. If the Text layer is Paragraph text, it returns ``false``.
+
+**Parameters**
+
+None.
+
+**Type**
+
+Boolean
+
+----
+
+.. _SourceText.isParagraphText:
+
+SourceText.isParagraphText
+***************************
+
+.. note::
+  This functionality was added in After Effects 25.0.
+
+**Description**
+
+Returns ``true`` if a Text layer is Paragraph text. If the Text layer is a Point text, it returns ``false``.
+
+**Parameters**
+
+None.
+
+**Type**
+
+Boolean
+

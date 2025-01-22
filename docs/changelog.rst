@@ -8,6 +8,79 @@ What's new and changed for expressions?
 
 ----
 
+.. _Changelog.25-0:
+
+`After Effects 25.0 <https://helpx.adobe.com/after-effects/using/whats-new/2025.html>`_ (October 2024)
+*****************************************************************************************************************************************
+
+Added many new text style properties and methods for both characters and paragraphs, as well as the ability to control per-character styling through expressions.
+
+- New attributes of `.sourceText`:
+    - Added: :ref:`SourceText.isPointText`
+    - Added: :ref:`SourceText.isParagraphText`
+    - Added: :ref:`SourceText.isHorizontalText`
+    - Added: :ref:`SourceText.isVerticalText`
+
+- New per-character style properties and methods:
+    - Added: :ref:`TextStyle.replaceText() <TextStyle.replaceText>`
+    - Added: :ref:`TextStyle.baselineDirection`
+    - Added: :ref:`TextStyle.setBaselineDirection() <TextStyle.setBaselineDirection>`
+    - Added: :ref:`TextStyle.baselineOption`
+    - Added: :ref:`TextStyle.setBaselineOption() <TextStyle.setBaselineOption>`
+    - Added: :ref:`TextStyle.digitSet`
+    - Added: :ref:`TextStyle.setDigitSet() <TextStyle.setDigitSet>`
+    - Added: :ref:`TextStyle.isLigature`
+    - Added: :ref:`TextStyle.setLigature() <TextStyle.setLigature>`
+    - Added: :ref:`TextStyle.tsume`
+    - Added: :ref:`TextStyle.setTsume() <TextStyle.setTsume>`
+    - Added: :ref:`TextStyle.verticalScaling`
+    - Added: :ref:`TextStyle.setVerticalScaling() <TextStyle.setVerticalScaling>`
+    - Added: :ref:`TextStyle.horizontalScaling`
+    - Added: :ref:`TextStyle.setHorizontalScaling() <TextStyle.setHorizontalScaling>`
+    - Added: :ref:`TextStyle.lineJoin`
+    - Added: :ref:`TextStyle.setLineJoin() <TextStyle.setLineJoin>`
+
+- New paragraph style properties and methods:
+    - Added: :ref:`TextStyle.direction`
+    - Added: :ref:`TextStyle.setDirection() <TextStyle.setDirection>`
+    - Added: :ref:`TextStyle.isEveryLineComposer`
+    - Added: :ref:`TextStyle.setEveryLineComposer() <TextStyle.setEveryLineComposer>`
+    - Added: :ref:`TextStyle.firstLineIndent`
+    - Added: :ref:`TextStyle.setFirstLineIndent() <TextStyle.setFirstLineIndent>`
+    - Added: :ref:`TextStyle.isHangingRoman`
+    - Added: :ref:`TextStyle.setHangingRoman() <TextStyle.setHangingRoman>`
+    - Added: :ref:`TextStyle.justification`
+    - Added: :ref:`TextStyle.setJustification() <TextStyle.setJustification>`
+    - Added: :ref:`TextStyle.leadingType`
+    - Added: :ref:`TextStyle.setLeadingType() <TextStyle.setLeadingType>`
+    - Added: :ref:`TextStyle.leftMargin`
+    - Added: :ref:`TextStyle.setLeftMargin() <TextStyle.setLeftMargin>`
+    - Added: :ref:`TextStyle.rightMargin`
+    - Added: :ref:`TextStyle.setRightMargin() <TextStyle.setRightMargin>`
+    - Added: :ref:`TextStyle.spaceAfter`
+    - Added: :ref:`TextStyle.setSpaceAfter() <TextStyle.setSpaceAfter>`
+    - Added: :ref:`TextStyle.spaceBefore`
+    - Added: :ref:`TextStyle.setSpaceBefore() <TextStyle.setSpaceBefore>`
+
+- Existing style methods updated to allow per-character styles:
+    - Changed: :ref:`TextStyle.setFontSize() <TextStyle.setFontSize>`
+    - Changed: :ref:`TextStyle.setFont() <TextStyle.setFont>`
+    - Changed: :ref:`TextStyle.setFauxBold() <TextStyle.setFauxBold>`
+    - Changed: :ref:`TextStyle.setFauxItalic() <TextStyle.setFauxItalic>`
+    - Changed: :ref:`TextStyle.setAllCaps() <TextStyle.setAllCaps>`
+    - Changed: :ref:`TextStyle.setSmallCaps() <TextStyle.setSmallCaps>`
+    - Changed: :ref:`TextStyle.setTracking() <TextStyle.setTracking>`
+    - Changed: :ref:`TextStyle.setLeading() <TextStyle.setLeading>`
+    - Changed: :ref:`TextStyle.setAutoLeading() <TextStyle.setAutoLeading>`
+    - Changed: :ref:`TextStyle.setBaselineShift() <TextStyle.setBaselineShift>`
+    - Changed: :ref:`TextStyle.setApplyFill() <TextStyle.setApplyFill>`
+    - Changed: :ref:`TextStyle.setFillColor() <TextStyle.setFillColor>`
+    - Changed: :ref:`TextStyle.setApplyStroke() <TextStyle.setApplyStroke>`
+    - Changed: :ref:`TextStyle.setStrokeColor() <TextStyle.setStrokeColor>`
+    - Changed: :ref:`TextStyle.setStrokeWidth() <TextStyle.setStrokeWidth>`
+
+----
+
 .. _Changelog.17-7:
 
 `After Effects 17.7 <https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheFebruary2021releaseversion177>`_ (Feb 2021)
