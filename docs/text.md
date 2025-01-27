@@ -18,7 +18,7 @@ String of text content, or [Source Text](text-sourcetext.md#sourcetext) (AE 17.0
 
 ---
 
-## Text.Font…
+## Text.Font...
 
 **Description**
 

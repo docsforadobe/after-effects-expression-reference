@@ -9,12 +9,12 @@ What's new and changed for expressions?
 Added many new text style properties and methods for both characters and paragraphs, as well as the ability to control per-character styling through expressions.
 
 - New attributes of .sourceText:
-  : - Added: [SourceText.isPointText](text-sourcetext.md#sourcetext-ispointtext)
+    - Added: [SourceText.isPointText](text-sourcetext.md#sourcetext-ispointtext)
     - Added: [SourceText.isParagraphText](text-sourcetext.md#sourcetext-isparagraphtext)
     - Added: [SourceText.isHorizontalText](text-sourcetext.md#sourcetext-ishorizontaltext)
     - Added: [SourceText.isVerticalText](text-sourcetext.md#sourcetext-isverticaltext)
 - New per-character style properties and methods:
-  : - Added: [TextStyle.replaceText()](text-style.md#textstyle-replacetext)
+    - Added: [TextStyle.replaceText()](text-style.md#textstyle-replacetext)
     - Added: [TextStyle.baselineDirection](text-style.md#textstyle-baselinedirection)
     - Added: [TextStyle.setBaselineDirection()](text-style.md#textstyle-setbaselinedirection)
     - Added: [TextStyle.baselineOption](text-style.md#textstyle-baselineoption)
@@ -32,7 +32,7 @@ Added many new text style properties and methods for both characters and paragra
     - Added: [TextStyle.lineJoin](text-style.md#textstyle-linejoin)
     - Added: [TextStyle.setLineJoin()](text-style.md#textstyle-setlinejoin)
 - New paragraph style properties and methods:
-  : - Added: [TextStyle.direction](text-style.md#textstyle-direction)
+    - Added: [TextStyle.direction](text-style.md#textstyle-direction)
     - Added: [TextStyle.setDirection()](text-style.md#textstyle-setdirection)
     - Added: [TextStyle.isEveryLineComposer](text-style.md#textstyle-iseverylinecomposer)
     - Added: [TextStyle.setEveryLineComposer()](text-style.md#textstyle-seteverylinecomposer)
@@ -53,7 +53,7 @@ Added many new text style properties and methods for both characters and paragra
     - Added: [TextStyle.spaceBefore](text-style.md#textstyle-spacebefore)
     - Added: [TextStyle.setSpaceBefore()](text-style.md#textstyle-setspacebefore)
 - Existing style methods updated to allow per-character styles:
-  : - Changed: [TextStyle.setFontSize()](text-style.md#textstyle-setfontsize)
+    - Changed: [TextStyle.setFontSize()](text-style.md#textstyle-setfontsize)
     - Changed: [TextStyle.setFont()](text-style.md#textstyle-setfont)
     - Changed: [TextStyle.setFauxBold()](text-style.md#textstyle-setfauxbold)
     - Changed: [TextStyle.setFauxItalic()](text-style.md#textstyle-setfauxitalic)
@@ -111,18 +111,18 @@ Added many new text style properties and methods for both characters and paragra
 
 - Implemented Dropdown Menu Expression Control
 - Expression Editor improvements:
-  - You can now use the new scrolling functionality to prevent the scroll from adjusting incorrectly when the box is resized by typing the return character.
-  - Prevent numbers from matching in an autocomplete list if the variable begins with a number. Smarter autocomplete prevents from overriding closing brackets and quotes.
-  - You can now scale font size for Hi-DPI displays.
-  - Graph editor now commits changes in preferences for all the open graph editors.
-  - If you enable syntax highlight, the folding icon buttons in the UI now respect the default and background color, or the line numbers color and background color.
+    - You can now use the new scrolling functionality to prevent the scroll from adjusting incorrectly when the box is resized by typing the return character.
+    - Prevent numbers from matching in an autocomplete list if the variable begins with a number. Smarter autocomplete prevents from overriding closing brackets and quotes.
+    - You can now scale font size for Hi-DPI displays.
+    - Graph editor now commits changes in preferences for all the open graph editors.
+    - If you enable syntax highlight, the folding icon buttons in the UI now respect the default and background color, or the line numbers color and background color.
 - Expression performance improvements:
-  - After Effects now attempts to detect an expression that does not change throughout a comp and calculates the expression only once. Load your favorite expression-filled comp and experience the improved performance.
-  - Any expression using [posterizeTime()](global.md#global-posterizetime) now calculates only once for the entire comp, not on every frame.
+    - After Effects now attempts to detect an expression that does not change throughout a comp and calculates the expression only once. Load your favorite expression-filled comp and experience the improved performance.
+    - Any expression using [posterizeTime()](global.md#global-posterizetime) now calculates only once for the entire comp, not on every frame.
 - Added: Extended expressions access to Text properties.
-  - Added: [Text.Font…](text.md#text-font)
-  - Added: [Source Text](text-sourcetext.md#sourcetext)
-  - Added: [Text Style](text-style.md#textstyle)
+    - Added: [Text.Font...](text.md#text-font)
+    - Added: [Source Text](text-sourcetext.md#sourcetext)
+    - Added: [Text Style](text-style.md#textstyle)
 
 ---
 
@@ -176,30 +176,30 @@ Added many new text style properties and methods for both characters and paragra
 - Added: Property Link pick whip
 - Added: Support for custom expression function libraries
 - Added: Expression access to [Project](project.md#project)
-  - Added: [Project.fullPath](project.md#project-fullpath)
-  - Added: [Project.bitsPerChannel](project.md#project-bitsperchannel)
-  - Added: [Project.linearBlending](project.md#project-linearblending)
+    - Added: [Project.fullPath](project.md#project-fullpath)
+    - Added: [Project.bitsPerChannel](project.md#project-bitsperchannel)
+    - Added: [Project.linearBlending](project.md#project-linearblending)
 
 ---
 
 ## [After Effects 15.0 (CC)](https://community.adobe.com/t5/after-effects/expression-and-scripting-improvements-in-after-effects-october-2017-pdf/td-p/4787866) (Oct 18 2017)
 
 - Added: Expression access to data in JSON files
-  - Added: [footage sourceText](footage.md#footage-sourcetext) attribute
-  - Added: [footage sourceData](footage.md#footage-sourcedata) attribute
-  - Added: [footage dataValue](footage.md#footage-datavalue) method
-  - Added: [footage dataKeyCount](footage.md#footage-datakeycount) method
-  - Added: [footage dataKeyTimes](footage.md#footage-datakeytimes) method
-  - Added: [footage dataKeyValues](footage.md#footage-datakeyvalues) method
+    - Added: [footage sourceText](footage.md#footage-sourcetext) attribute
+    - Added: [footage sourceData](footage.md#footage-sourcedata) attribute
+    - Added: [footage dataValue](footage.md#footage-datavalue) method
+    - Added: [footage dataKeyCount](footage.md#footage-datakeycount) method
+    - Added: [footage dataKeyTimes](footage.md#footage-datakeytimes) method
+    - Added: [footage dataKeyValues](footage.md#footage-datakeyvalues) method
 - Added: Expression access to path points on masks, Bezier shapes, and brush strokes
-  - Added: [path points](path-property.md#pathproperty-points) method
-  - Added: [path inTangents](path-property.md#pathproperty-intangents) method
-  - Added: [path outTangents](path-property.md#pathproperty-outtangents) method
-  - Added: [path isClosed](path-property.md#pathproperty-isclosed) method
-  - Added: [path pointOnPath](path-property.md#pathproperty-pointonpath) method
-  - Added: [path tangentOnPath](path-property.md#pathproperty-tangentonpath) method
-  - Added: [path normalOnPath](path-property.md#pathproperty-normalonpath) method
-  - Added: [path createPath](path-property.md#pathproperty-createpath) method
+    - Added: [path points](path-property.md#pathproperty-points) method
+    - Added: [path inTangents](path-property.md#pathproperty-intangents) method
+    - Added: [path outTangents](path-property.md#pathproperty-outtangents) method
+    - Added: [path isClosed](path-property.md#pathproperty-isclosed) method
+    - Added: [path pointOnPath](path-property.md#pathproperty-pointonpath) method
+    - Added: [path tangentOnPath](path-property.md#pathproperty-tangentonpath) method
+    - Added: [path normalOnPath](path-property.md#pathproperty-normalonpath) method
+    - Added: [path createPath](path-property.md#pathproperty-createpath) method
 
 ---
 
@@ -229,13 +229,13 @@ Added many new text style properties and methods for both characters and paragra
 
 - Added iris and highlight properties for camera layers to the expression language menu
 - - Added: [Camera.irisShape](camera.md#camera-irisshape)
-  - Added: [Camera.irisRotation](camera.md#camera-irisrotation)
-  - Added: [Camera.irisRoundness](camera.md#camera-irisroundness)
-  - Added: [Camera.irisAspectRatio](camera.md#camera-irisaspectratio)
-  - Added: [Camera.irisDiffractionFringe](camera.md#camera-irisdiffractionfringe)
-  - Added: [Camera.highlightGain](camera.md#camera-highlightgain)
-  - Added: [Camera.highlightThreshold](camera.md#camera-highlightthreshold)
-  - Added: [Camera.highlightSaturation](camera.md#camera-highlightsaturation)
+    - Added: [Camera.irisRotation](camera.md#camera-irisrotation)
+    - Added: [Camera.irisRoundness](camera.md#camera-irisroundness)
+    - Added: [Camera.irisAspectRatio](camera.md#camera-irisaspectratio)
+    - Added: [Camera.irisDiffractionFringe](camera.md#camera-irisdiffractionfringe)
+    - Added: [Camera.highlightGain](camera.md#camera-highlightgain)
+    - Added: [Camera.highlightThreshold](camera.md#camera-highlightthreshold)
+    - Added: [Camera.highlightSaturation](camera.md#camera-highlightsaturation)
 
 ---
 
