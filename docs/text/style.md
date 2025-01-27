@@ -1165,7 +1165,7 @@ This will only affect the Text layer when [KerningType](#textstylekerningtype) i
 | `value`          | Number | Required. The value to set the Kerning Value.                  |
 | `characterIndex` | Number | Required. The character index for the substring to be applied. |
 
-#### Type
+#### Returns
 
 None
 
@@ -1197,7 +1197,7 @@ The value will be applied to the entire Text layer unless a start index and numb
 | `startIndex`      | Number                                                                      | Optional. The start index for the substring to be replaced. Defaults to `0`.                                       |
 | `numOfCharacters` | Number                                                                      | Optional. The length of the substring to be changed. Defaults to the number of characters until end of the string. |
 
-#### Type
+#### Returns
 
 None
 
@@ -1575,7 +1575,7 @@ The value will be set for the entire Text layer unless `startIndex` and `numOfCh
 | `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
 | `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
-#### Type
+#### Returns
 
 None
 
