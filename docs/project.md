@@ -8,7 +8,7 @@ The platform-specific absolute file path, including the project file name. If th
 
 Example:
 
-```default
+```js
 thisProject.fullPath
 ```
 
@@ -27,7 +27,7 @@ They are one of 8, 16, or 32. Equivalent to the scripting project attribute app.
 
 Example:
 
-```default
+```js
 thisProject.bitsPerChannel
 ```
 
@@ -46,7 +46,7 @@ Equivalent to the scripting project attribute app.project.linearBlending.
 
 Example:
 
-```default
+```js
 thisProject.linearBlending
 ```
 

@@ -12,7 +12,7 @@ Converts a color in RGBA space to HSLA space. The input is an Array of normalize
 
 Example:
 
-```default
+```js
 rgbToHsl.effect("Change Color")("Color To Change")
 ```
 

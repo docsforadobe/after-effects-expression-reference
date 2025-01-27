@@ -40,7 +40,7 @@ Transforms a point from composition space to layer space. The resulting point in
 
 Example:
 
-```default
+```js
 fromComp(thisComp.layer(2).position)
 ```
 
@@ -64,7 +64,7 @@ Transforms a point from layer space to view-independent world space.
 
 Example:
 
-```default
+```js
 toWorld.effect("Bulge")("Bulge Center")
 ```
 
@@ -94,7 +94,7 @@ Transforms a point from world space to layer space.
 
 Example:
 
-```default
+```js
 fromWorld(thisComp.layer(2).position)
 ```
 
@@ -120,7 +120,7 @@ Transforms a vector from layer space to composition space.
 
 Example:
 
-```default
+```js
 toCompVec([1,0])
 ```
 
@@ -144,7 +144,7 @@ Transforms a vector from composition space to layer space.
 
 Example (2D layer):
 
-```default
+```js
 dir = sub(position, thisComp.layer(2).position);
 fromCompVec(dir)
 ```
@@ -169,7 +169,7 @@ Transforms a vector from layer space to world space.
 
 Example:
 
-```default
+```js
 p1 = effect("Eye Bulge 1")("Bulge Center");
 p2 = effect("Eye Bulge 2")("Bulge Center");
 toWorld(sub(p1, p2))
@@ -195,7 +195,7 @@ Transforms a vector from world space to layer space.
 
 Example:
 
-```default
+```js
 fromWorld(thisComp.layer(2).position)
 ```
 

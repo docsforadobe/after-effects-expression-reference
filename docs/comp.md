@@ -8,7 +8,7 @@ Retrieves the layer by number (order in the Timeline panel).
 
 Example:
 
-```default
+```js
 thisComp.layer(3)
 ```
 
@@ -31,7 +31,7 @@ Retrieves the layer by name. Names are matched according to layer name, or sourc
 
 Example:
 
-```default
+```js
 thisComp.layer("Solid 1")
 ```
 
@@ -72,7 +72,7 @@ Retrieves a layer by matching the comment parameter to the value in the layer's 
 
 Example:
 
-```default
+```js
 thisComp.layerByComment("Control") //note this will match a layer with a comment "Controller" or "Motion Control"
 ```
 
@@ -108,7 +108,7 @@ Returns the MarkerKey object of the marker with the specified index. The index r
 
 For example, this expression returns the time of the first composition marker:
 
-```default
+```js
 thisComp.marker.key(1).time
 ```
 
@@ -131,7 +131,7 @@ Returns the MarkerKey object of the marker with the specified name. The name val
 
 For example, this expression returns the time of the composition marker with the name "0":
 
-```default
+```js
 thisComp.marker.key("0").time
 ```
 
@@ -154,13 +154,13 @@ Returns the marker that is nearest in time to t.
 
 For example, this expression returns the time of the composition marker nearest to the time of 1 second:
 
-```default
+```js
 thisComp.marker.nearestKey(1).time
 ```
 
 This expression returns the time of the composition marker nearest to the current time:
 
-```default
+```js
 thisComp.marker.nearestKey(time).time
 ```
 

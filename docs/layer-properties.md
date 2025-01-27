@@ -115,7 +115,7 @@ Returns the MarkerKey object of the layer marker with the specified name. The na
 
 This expression on a property ramps the value of the property from `0` to `100` between two markers identified by name:
 
-```default
+```js
 m1 = marker.key("Start").time;
 m2 = marker.key("End").time;
 linear(time, m1, m2, 0, 100);
@@ -140,13 +140,13 @@ Returns the layer marker that is nearest in time to t.
 
 For example, this expression returns the time of the marker on the layer nearest to the time of `1` second:
 
-```default
+```js
 marker.nearestKey(1).time
 ```
 
 This expression returns the time of the marker on the layer nearest to the current time:
 
-```default
+```js
 marker.nearestKey(time).time
 ```
 

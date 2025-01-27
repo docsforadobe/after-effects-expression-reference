@@ -100,7 +100,7 @@ The `eval()` method can be used to convert the string to an array of sourceData 
 
 For example:
 
-```default
+```js
 var myData = eval(footage("sample.json").sourceText);
 myData.sampleValue;
 ```
@@ -123,13 +123,13 @@ Individual data streams can be referenced as hierarchal attributes of the data.
 
 For example, given a data stream named "Color", the following will return the value of "Color" from the first data object:
 
-```default
+```js
 footage("sample.json").sourceData[0].Color
 ```
 
 Typical use is to assign a JSON file's `sourceData` to a variable, and then reference the desired data stream. For example:
 
-```default
+```js
 var myData = footage("sample.json").sourceData;
 myData[0].Color;
 ```
@@ -150,13 +150,13 @@ Accepts a single array value to define the path in the hierarchy to the desired 
 
 For example, to return data of the first child:
 
-```default
+```js
 footage("sample.mgjson").dataValue([0])
 ```
 
 Or to return data of the first child in the second group:
 
-```default
+```js
 footage("sample.mgjson").dataValue([1][0])
 ```
 
@@ -181,13 +181,13 @@ Accepts a single array value to define the path in the hierarchy to the desired 
 
 For example, to return the count of samples for the first child:
 
-```default
+```js
 footage("sample.mgjson").dataKeyCount([0])
 ```
 
 Or to return the count of samples for the second group:
 
-```default
+```js
 footage("sample.mgjson").dataKeyCount([1][0])
 ```
 
@@ -214,7 +214,7 @@ Accepts a single array value to define the path in the hierarchy to the desired 
 
 The following example returns the times of samples between 1 second and 3 seconds for the first child:
 
-```default
+```js
 footage("sample.mgjson").dataKeyTimes([0], 1, 3)
 ```
 
@@ -243,7 +243,7 @@ Accepts a single array value to define the path in the hierarchy to the desired 
 
 The following example returns the values of samples between 1 second and 3 seconds for the first child:
 
-```default
+```js
 footage("sample.mgjson").dataKeyValues([0], 1, 3)
 ```
 

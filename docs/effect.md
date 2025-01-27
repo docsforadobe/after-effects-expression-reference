@@ -20,7 +20,7 @@ Returns a property within an effect. Effect control points are always in layer s
 
 Example:
 
-```default
+```js
 effect("Bulge").param("Bulge Height")
 ```
 

@@ -6,7 +6,7 @@ When you access a Key object, you can get time, index, and value properties from
 
 The following expression, when written on an Opacity property with keyframes, ignores the keyframe values and uses only the placement of the keyframes in time to determine where a flash should occur:
 
-```default
+```js
 d = Math.abs(time - nearestKey(time).time);
 easeOut(d, 0, .1, 100, 0)
 ```

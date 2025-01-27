@@ -44,7 +44,7 @@ Returns the parent Layer object of the layer, if it has one.
 
 Example:
 
-```default
+```js
 position[0] + parent.width
 ```
 
@@ -62,7 +62,7 @@ Returns true if the layer has a parent or false if it doesn't. Use the hasParent
 
 If the layer is given a parent later, then the behavior of the layer changes accordingly:
 
-```default
+```js
 idx = index;
 if (hasParent) {
         idx = parent.index;
@@ -185,7 +185,7 @@ If `postEffect` is `true`, the sampled values are for the layer after masks and 
 
 This example samples a rectangle 4 pixels wide and 3 pixels high, centered around a point 100 pixels down and to the right of the upper-left corner of the layer:
 
-```default
+```js
 thisComp.layer(1).sampleImage([100, 100], [2, 1.5])
 ```
 

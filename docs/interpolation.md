@@ -22,7 +22,7 @@ Returns `value1` when `t <= tMin`. Returns `value2` when `t >= tMax`. Returns a 
 
 For example, this expression on the Opacity property causes Opacity values to ramp linearly from `20%` to `80%` over the time from `0` seconds to `6` seconds:
 
-```default
+```js
 linear(time, 0, 6, 20, 80)
 ```
 
@@ -30,7 +30,7 @@ This method—like all the Interpolation methods—can also be used to convert f
 
 For example, this expression on the Opacity property converts the Opacity values from the range `0%`-`100%` to the range `20%`-`80%`:
 
-```default
+```js
 linear(value, 0, 100, 20, 80)
 ```
 

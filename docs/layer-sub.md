@@ -13,7 +13,7 @@ Returns the source Comp or source Footage object for the layer. Default time is 
 
 Example:
 
-```default
+```js
 source.layer(1).position
 ```
 
@@ -61,7 +61,7 @@ Paragraph text extents added in After Effects 15.1.
 
 Example:
 
-```default
+```js
 myTextLayer.sourceRectAtTime().width
 ```
 
@@ -85,7 +85,7 @@ After Effects finds the effect by its name in the Effect Controls panel. The nam
 
 Example:
 
-```default
+```js
 effect("Fast Blur")("Blurriness")
 ```
 
@@ -125,7 +125,7 @@ The name can be the default name or a user-defined name. If multiple masks have 
 
 Example:
 
-```default
+```js
 mask("Mask 1")
 ```
 

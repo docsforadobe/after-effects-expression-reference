@@ -181,14 +181,14 @@ any greater length. The incoming and outgoing tangent handles of the points are 
 
 For example, the following expression will remove curves from Mask 1 by not passing the inTangents or outTangents parameters:
 
-```default
+```js
 myMask = mask("Mask 1").path;
 myMask.createPath(myMask.points());
 ```
 
 The following example passes the points and tangents of Mask 1 and converts it to an open path by setting `is_closed` to false:
 
-```default
+```js
 myMask = mask("Mask 1").path;
 myMask.createPath(myMask.points(), myMask.inTangents(), myMask.outTangents(), false);
 ```

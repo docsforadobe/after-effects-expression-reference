@@ -11,13 +11,13 @@ While there is no method to directly access your AEP's name, you CAN get the ful
 
 With some string manipulation, you can derive the aep name from this:
 
-```default
+```js
 var aepName = thisProject.fullPath.split($.os.indexOf("Windows") > -1 ? "\\" : "/").pop();
 ```
 
 If you wanted to write "Unsaved" in that case, you can use the following expression:
 
-```default
+```js
 var aepName = thisProject.fullPath.split($.os.indexOf("Windows") > -1 ? "\\" : "/").pop();
 aepName = aepName === "" ? "Unsaved" : aepName;
 ```
@@ -30,7 +30,7 @@ You can create an expression without using properties from other layers. For exa
 
 1. Select a layer, press P to reveal its Position property in the Timeline panel, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch to the left of the property name.
 2. Enter the following in the expression field:
-   ```default
+   ```js
    [(thisComp.width/2), (thisComp.height/2)] + [Math.sin(time)*50, -Math.cos(time)*50]
    ```
 
@@ -46,11 +46,11 @@ You can use the pick whip to link rotation values between layers to animate the 
 4. Set Rotation keyframes for the hour hand.
 5. Select the Rotation property for the minute hand and choose `Animation > Add Expression.`
 6. Drag the pick whip to the Rotation property for the hour hand. The following expression appears:
-   ```default
+   ```js
    thisComp.layer("hour hand").rotation
    ```
 7. To make the minute hand rotate 12 times as fast as the hour hand, add `* 12` at the end of the expression as follows:
-   ```default
+   ```js
    thisComp.layer("hour hand").rotation * 12
    ```
 
@@ -64,7 +64,7 @@ This example expression positions and maintains one layer at a balanced distance
 2. Animate the positions of the first two layers in the Timeline panel.
 3. Select the third layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch  button to the left of the property name.
 4. Enter the following in the expression field:
-   ```default
+   ```js
    (thisComp.layer(1).position + thisComp.layer(2).position)/2
    ```
 
@@ -78,7 +78,7 @@ This example expression instructs a layer to be at the same position as the next
 2. Animate the position of the first layer.
 3. Select the second layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch  button to the left of the property name.
 4. Enter the following in the expression field:
-   ```default
+   ```js
    thisComp.layer(thisLayer, -1).position.valueAtTime(time - .5)
    ```
 5. Duplicate the last layer five times by selecting it and pressing Ctrl+D (Windows) or Command+D (Mac OS) five times.
@@ -101,7 +101,7 @@ You can also use other effects, such as Ripple, with this expression.
 3. Apply the Bulge effect to the other layer. (See Apply an effect or animation preset.)
 4. Select the Bulge Center property of the Bulge effect in the Timeline panel and choose Animation > Add Expression, or Alt-click (Windows) or Option-click (Mac OS) the stopwatch  button for the property.
 5. Select the default expression text and type the following:
-   ```default
+   ```js
    fromWorld(thisComp.layer("Magnifier").position)
    ```
 
@@ -111,7 +111,7 @@ You can also use other effects, such as Ripple, with this expression.
 
 Apply the following expression to the Opacity property of a 3D layer:
 
-```default
+```js
 startFade = 500; // Start fade 500 pixels from camera.
 endFade = 1500;  // End fade 1500 pixels from camera.
 
@@ -137,7 +137,7 @@ The fade starts at a distance of `500` pixels from the camera and is complete at
 
 Apply the following expression to the Opacity property of a 3D layer:
 
-```default
+```js
 if (toCompVec([0, 0, 1])[2] > 0 ) value else 0
 ```
 
@@ -150,7 +150,7 @@ if (toCompVec([0, 0, 1])[2] > 0 ) value else 0
 
 Apply the following expression to the Scale property of a 3D layer:
 
-```default
+```js
 if (toCompVec([0, 0, 1])[2] > 0 ) value else [-value[0], value[1], value[2]]
 ```
 
@@ -160,7 +160,7 @@ if (toCompVec([0, 0, 1])[2] > 0 ) value else [-value[0], value[1], value[2]]
 
 Apply the following expression to a Scale property to make a layer wobble at each marker:
 
-```default
+```js
 n = 0;
 t = 0;
 
@@ -188,7 +188,7 @@ You can use any expression in place of the wiggle expression used here, to begin
 
 Apply the following expression to a property to wiggle it beginning at time 2 seconds:
 
-```default
+```js
 timeToStart = 2;
 if (time > timeToStart) {
 wiggle(3,25);
@@ -199,7 +199,7 @@ wiggle(3,25);
 
 Apply the following expression to a property to stop wiggling it at time 4 seconds:
 
-```default
+```js
 timeToStop = 4;
 
 if (time > timeToStop) {
@@ -211,7 +211,7 @@ if (time > timeToStop) {
 
 Apply the following expression to a property to start wiggling it at time 2 seconds and stop wiggling it at time 4 seconds:
 
-```default
+```js
 timeToStart = 2;
 timeToStop = 4;
 
@@ -228,7 +228,7 @@ if ((time > timeToStart) && (time < timeToStop)) {
 
 Apply the following expression to the Focus Distance property of a camera layer to have its focus distance match the distance to the anchor point of a layer named "target":
 
-```default
+```js
 target = thisComp.layer("target");
 V1 = target.toWorld(target.anchorPoint) - toWorld([0,0,0]);
 V2 = toWorldVec([0,0,1]);

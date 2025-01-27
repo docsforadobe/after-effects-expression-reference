@@ -180,7 +180,7 @@ For example, `length(point1, point2)` is the same as `length(sub(point1, point2)
 
 For example, add this expression to the Focus Distance property of a camera to lock the focal plane to the camera's point of interest so that the point of interest is in focus:
 
-```default
+```js
 length(position, pointOfInterest)
 ```
 
@@ -206,7 +206,7 @@ This method is especially useful for cameras and lights. If you use this express
 
 For example, this expression on the Orientation property of a spot light makes the light point at the anchor point of layer number 1 in the same composition:
 
-```default
+```js
 lookAt(position, thisComp.layer(1).position)
 ```
 

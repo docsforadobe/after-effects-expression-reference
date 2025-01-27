@@ -127,7 +127,7 @@ Number
 
 To change a property to a random value 1 time per second:
 
-```default
+```js
 posterizeTime(1);
 
 random()
@@ -135,7 +135,7 @@ random()
 
 To change a 2d property (such as Position or Scale) to a random value 3 times per second:
 
-```default
+```js
 posterizeTime(3);
 
 var newValue = random(0, 100);
@@ -144,7 +144,7 @@ var newValue = random(0, 100);
 
 To change a property to a random value within a specified range, every 12 frames:
 
-```default
+```js
 var holdFrames = 12;
 var minValue = 50;
 var maxValue = 100;

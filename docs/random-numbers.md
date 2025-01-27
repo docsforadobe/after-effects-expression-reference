@@ -13,7 +13,7 @@ The random and gaussRandom methods use a seed value that controls the sequence o
 
 For example, this expression on the Opacity property sets the Opacity value to a random value that does not vary with time:
 
-```default
+```js
 seedRandom(123456, true);
 random()*100
 ```
@@ -149,7 +149,7 @@ Returns a number in the range from `-1` to `1`. The noise is not actually random
 
 Example:
 
-```default
+```js
 rotation + 360*noise(time)
 ```
 

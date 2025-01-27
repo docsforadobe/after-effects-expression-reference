@@ -7,7 +7,7 @@ Animating with the propertyGroup method and propertyIndex attribute
 
 In this example, the propertyGroup method for each brush stroke targets the Brush property group because that group is two property groups up from the Rotation property. The propertyIndex attribute in each Brush stroke then returns a unique value for each Brush stroke. The resulting value is then multiplied by the `time` and `200` and applied to each rotation value, rotating each brush stroke differently, creating swirling paint strokes:
 
-```default
+```js
 propertyGroup(2).propertyIndex * time * 200
 propertyGroup(2).propertyIndex * time * 200
 ```
@@ -36,7 +36,7 @@ Returns the value of a property at the specified time, in seconds.
 
 For example, to have a property value for each frame chosen randomly from a set of four values, set your four values as keyframes at `0`, `1`, `2`, and `3` seconds, and then apply the following expression to the property:
 
-```default
+```js
 valueAtTime(random(4))
 ```
 
@@ -130,7 +130,7 @@ Randomly shakes (wiggles) the value of the property.
 
 Example:
 
-```default
+```js
 position.wiggle(5, 20, 3, 0.5)
 ```
 
@@ -138,14 +138,14 @@ This produces about `5` wiggles per second with an average size of about 20 pixe
 
 This example, on a two-dimensional property such as Scale, wiggles both dimensions by the same amount:
 
-```default
+```js
 v = wiggle(5, 10);
 [v[0], v[0]]
 ```
 
 This example, on a two-dimensional property, wiggles only along the y-axis:
 
-```default
+```js
 freq = 3;
 amp = 50;
 w = wiggle(freq,amp);
@@ -190,7 +190,7 @@ For this function to be meaningful, the property it samples must be animated, be
 
 Example:
 
-```default
+```js
 scale.temporalWiggle(5, 0.2)
 ```
 
@@ -217,7 +217,7 @@ Smooths the property values over time, converting large, brief deviations in the
 
 Example:
 
-```default
+```js
 position.smooth(0.1, 5)
 ```
 
@@ -379,7 +379,7 @@ This method lets you establish name-independent relationships in the property hi
 
 This example returns the number of properties in the group that contains the property on which the expression is written:
 
-```default
+```js
 thisProperty.propertyGroup(1).numProperties
 ```
 

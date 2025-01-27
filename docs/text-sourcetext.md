@@ -29,7 +29,7 @@ In case the style is keyframed and changes over time, use the second `time` para
 
 For example, to get the style of the first character at the beginning of the timeline:
 
-```default
+```js
 text.sourceText.getStyleAt(0,0);
 ```
 
@@ -53,7 +53,7 @@ Used to initialize an empty [Text Style](text-style.md#textstyle) object in whic
 
 For example, to create a new style with font size 300 and the font Impact:
 
-```default
+```js
 text.sourceText.createStyle().setFontSize(300).setFont("Impact");
 ```
 

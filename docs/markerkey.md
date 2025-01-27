@@ -8,7 +8,7 @@ Expressions have access to all the values for a marker that you can set in the C
 
 This expression on the Source Text property of a text layer displays the time, duration, index, comment (name), chapter, URL, frame target, and cue point name for the layer marker nearest the current time, and whether the marker is for an event cue point:
 
-```default
+```js
 m = thisLayer.marker.nearestKey(time);
 s = "time:" + timeToCurrentFormat(m.time) + "\r" +
 "duration: " + m.duration + "\r" +
@@ -123,7 +123,7 @@ Contents of Parameter Name and Parameter Value fields in marker dialog box.
 
 For example, if you have a parameter named �background color�, then you can use the following expression to access its value at the nearest marker:
 
-```default
+```js
 thisComp.marker.nearestKey(time).parameters["background color"]
 ```
 

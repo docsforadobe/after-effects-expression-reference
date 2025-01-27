@@ -39,7 +39,7 @@ This is used when you want to define (or inherit) a [Text Style](#text-style) wh
 
 For example, to inherit the style and content from another layer:
 
-```default
+```js
 const referenceText = thisComp.layer("Source Layer Name").text.sourceText;
 
 const style = referenceText.getStyleAt(0,0);
@@ -48,7 +48,7 @@ style.setText(referenceText);
 
 Or to create a custom style and then set the text within the expression:
 
-```default
+```js
 text.sourceText.createStyle().setFontSize(300).setFont("Impact").setText("Hello world!");
 ```
 
@@ -76,7 +76,7 @@ This is used when you want to define (or inherit) a [Text Style](#text-style), w
 
 For example, to create a custom style and then set a substring of the text within the expression:
 
-```default
+```js
 // assume the value of the source text is "Old Text"
 const referenceText = thisComp.layer("Source Layer Name").text.sourceText;
 const style = referenceText.getStyleAt(0,0);
