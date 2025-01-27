@@ -25,7 +25,7 @@ nav:
         - Footage: objects/footage.md
         - Camera: objects/camera.md
         - Light: objects/light.md
-        - Group: objects/group.md
+        - Property Group: objects/propertygroup.md
         - Effect: objects/effect.md
         - Mask: objects/mask.md
         - Property: objects/property.md
