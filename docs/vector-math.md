@@ -5,7 +5,7 @@ Vector Math functions are global methods that perform operations on arrays, trea
 For example, the expression `add([10, 20], [1, 2, 3])` returns `[11, 22, 3]`.
 
 !!! note
-    [JJ Gifford’s website](http://www.adobe.com/go/learn_ae_jjgiffordexpressionsgeometrytrig) provides explanations and examples that show how to use simple geometry and trigonometry with expressions.
+    [JJ Gifford's website](http://www.adobe.com/go/learn_ae_jjgiffordexpressionsgeometrytrig) provides explanations and examples that show how to use simple geometry and trigonometry with expressions.
 
 ---
 
@@ -178,7 +178,7 @@ Returns the distance between two points. The `point2` argument is optional.
 
 For example, `length(point1, point2)` is the same as `length(sub(point1, point2))`.
 
-For example, add this expression to the Focus Distance property of a camera to lock the focal plane to the camera’s point of interest so that the point of interest is in focus:
+For example, add this expression to the Focus Distance property of a camera to lock the focal plane to the camera's point of interest so that the point of interest is in focus:
 
 ```default
 length(position, pointOfInterest)

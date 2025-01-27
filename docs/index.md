@@ -30,7 +30,7 @@ The reference is still being edited and improved upon.
   * [After Effects 5.0 (Apr 2001)](changelog.md#after-effects-5-0-apr-2001)
 * [Resources](resources.md)
 * [Examples](examples.md)
-  * [Get this project’s AEP name (AE 15.1+ only)](examples.md#get-this-project-s-aep-name-ae-15-1-only)
+  * [Get this project's AEP name (AE 15.1+ only)](examples.md#get-this-project-s-aep-name-ae-15-1-only)
   * [Make a layer revolve in a circle](examples.md#make-a-layer-revolve-in-a-circle)
   * [Rotate the hands of a clock](examples.md#rotate-the-hands-of-a-clock)
   * [Position one layer between two others](examples.md#position-one-layer-between-two-others)

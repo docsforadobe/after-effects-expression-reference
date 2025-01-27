@@ -5,9 +5,9 @@
 
 ---
 
-## Get this project’s AEP name (AE 15.1+ only)
+## Get this project's AEP name (AE 15.1+ only)
 
-While there is no method to directly access your AEP’s name, you CAN get the full path to the AEP.
+While there is no method to directly access your AEP's name, you CAN get the full path to the AEP.
 
 With some string manipulation, you can derive the aep name from this:
 
@@ -15,7 +15,7 @@ With some string manipulation, you can derive the aep name from this:
 var aepName = thisProject.fullPath.split($.os.indexOf("Windows") > -1 ? "\\" : "/").pop();
 ```
 
-If you wanted to write “Unsaved” in that case, you can use the following expression:
+If you wanted to write "Unsaved" in that case, you can use the following expression:
 
 ```default
 var aepName = thisProject.fullPath.split($.os.indexOf("Windows") > -1 ? "\\" : "/").pop();
@@ -226,7 +226,7 @@ if ((time > timeToStart) && (time < timeToStop)) {
 
 ## Match camera focal plane to another layer
 
-Apply the following expression to the Focus Distance property of a camera layer to have its focus distance match the distance to the anchor point of a layer named “target”:
+Apply the following expression to the Focus Distance property of a camera layer to have its focus distance match the distance to the anchor point of a layer named "target":
 
 ```default
 target = thisComp.layer("target");

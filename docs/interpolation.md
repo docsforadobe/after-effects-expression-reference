@@ -4,7 +4,7 @@
 
 For all the Interpolation methods, the argument `t` is often `time` or `value`, though it can have other values, instead. If `t` is `time`, the interpolation between values happens over a duration. If `t` is `value`, then the expression maps one range of values to a new range of values.
 
-For additional explanations and examples of the Interpolation methods, see [JJ Gifford’s website](http://www.adobe.com/go/learn_ae_jjgiffordexpressionsinterpolation).
+For additional explanations and examples of the Interpolation methods, see [JJ Gifford's website](http://www.adobe.com/go/learn_ae_jjgiffordexpressionsinterpolation).
 
 Chris and Trish Meyer provide additional information and examples for these methods in an article on the [ProVideo Coalition website](http://provideocoalition.com/index.php/cmg_keyframes/story/deeper_modes_of_expression_part_2_interpolation_methods/).
 

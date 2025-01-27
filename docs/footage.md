@@ -121,13 +121,13 @@ The structure of the JSON file will determine the size and complexity of the arr
 
 Individual data streams can be referenced as hierarchal attributes of the data.
 
-For example, given a data stream named “Color”, the following will return the value of “Color” from the first data object:
+For example, given a data stream named "Color", the following will return the value of "Color" from the first data object:
 
 ```default
 footage("sample.json").sourceData[0].Color
 ```
 
-Typical use is to assign a JSON file’s `sourceData` to a variable, and then reference the desired data stream. For example:
+Typical use is to assign a JSON file's `sourceData` to a variable, and then reference the desired data stream. For example:
 
 ```default
 var myData = footage("sample.json").sourceData;
@@ -208,7 +208,7 @@ The number of samples in the dynamic data stream.
 
 Returns the time in seconds for the samples of a specificed dynamic data stream in a MGJSON file.
 
-Optionally specify the time span from which to return samples. By default the time for all samples between `startTime` and `endTime` in the dynamicdata stream are returned, as defined by the data stream’s `samplesTemporalExtent` property in the MGJSON file.
+Optionally specify the time span from which to return samples. By default the time for all samples between `startTime` and `endTime` in the dynamicdata stream are returned, as defined by the data stream's `samplesTemporalExtent` property in the MGJSON file.
 
 Accepts a single array value to define the path in the hierarchy to the desired dynamic data stream.
 
@@ -237,7 +237,7 @@ Array of numbers representing the sample times.
 
 Returns the values for the samples of a specificed dynamic data stream in a MGJSON file.
 
-Optionally specify the time span from which to return samples. By default the time for all samples between startTime and endTime in the dynamicdata stream are returned, as defined by the data stream’s `samplesTemporalExtent` property in the MGJSON file.
+Optionally specify the time span from which to return samples. By default the time for all samples between startTime and endTime in the dynamicdata stream are returned, as defined by the data stream's `samplesTemporalExtent` property in the MGJSON file.
 
 Accepts a single array value to define the path in the hierarchy to the desired dynamic data stream.
 

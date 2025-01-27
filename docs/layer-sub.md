@@ -1,7 +1,7 @@
 # Layer Sub-objects
 
 !!! note
-    For After Effects CC and CS6, the Expression language menu, the “Layer Sub-objects”, “Layer General”, “Layer Properties”, “Layer 3D”, and “Layer Space Transforms” have been arranged into a “Layer” submenu.
+    For After Effects CC and CS6, the Expression language menu, the "Layer Sub-objects", "Layer General", "Layer Properties", "Layer 3D", and "Layer Space Transforms" have been arranged into a "Layer" submenu.
 
 ---
 

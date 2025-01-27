@@ -1,6 +1,6 @@
 # Group
 
-All properties in the Timeline are organized into groups, which share some attributes of properties like `name` and `propertyIndex`. Groups can have a fixed number of properties (e.g. an individual effect whose properties don’t change) or a variable number of properties (e.g. the Effects group itself which can have any number of effect within it).
+All properties in the Timeline are organized into groups, which share some attributes of properties like `name` and `propertyIndex`. Groups can have a fixed number of properties (e.g. an individual effect whose properties don't change) or a variable number of properties (e.g. the Effects group itself which can have any number of effect within it).
 
 * **Top-level groups in a Layer:**
   : * Motion Trackers

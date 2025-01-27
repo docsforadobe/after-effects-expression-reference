@@ -49,7 +49,7 @@ text.sourceText.getStyleAt(0,0);
 
 **Description**
 
-Used to initialize an empty [Text Style](text-style.md#textstyle) object in which you’d manually bake in specific values.
+Used to initialize an empty [Text Style](text-style.md#textstyle) object in which you'd manually bake in specific values.
 
 For example, to create a new style with font size 300 and the font Impact:
 

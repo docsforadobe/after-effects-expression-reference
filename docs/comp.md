@@ -68,7 +68,7 @@ Layer, Light, or Camera
 
 **Description**
 
-Retrieves a layer by matching the comment parameter to the value in the layer’s Comment column. The matches are simple text matches. They will match partial words, and are case sensitive. Matching does not appear to use regular expressions or wildcards. If duplicate comments exist, After Effects uses the first (topmost) one in the Timeline panel.
+Retrieves a layer by matching the comment parameter to the value in the layer's Comment column. The matches are simple text matches. They will match partial words, and are case sensitive. Matching does not appear to use regular expressions or wildcards. If duplicate comments exist, After Effects uses the first (topmost) one in the Timeline panel.
 
 Example:
 
@@ -127,9 +127,9 @@ MarkerKey
 
 **Description**
 
-Returns the MarkerKey object of the marker with the specified name. The name value is the name of the marker, as typed in the comment field in the marker dialog box, for example, marker.key(“1”). For a composition marker, the default name is a number. If more than one marker in the composition has the same name, this method returns the marker that occurs first in time (in composition time). The value for a marker key is a String, not a Number.
+Returns the MarkerKey object of the marker with the specified name. The name value is the name of the marker, as typed in the comment field in the marker dialog box, for example, marker.key("1"). For a composition marker, the default name is a number. If more than one marker in the composition has the same name, this method returns the marker that occurs first in time (in composition time). The value for a marker key is a String, not a Number.
 
-For example, this expression returns the time of the composition marker with the name “0”:
+For example, this expression returns the time of the composition marker with the name "0":
 
 ```default
 thisComp.marker.key("0").time

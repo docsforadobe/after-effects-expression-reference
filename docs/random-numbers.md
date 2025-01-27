@@ -9,7 +9,7 @@
 
 **Description**
 
-The random and gaussRandom methods use a seed value that controls the sequence of numbers. By default, the seed is computed as a function of a unique layer identifier, the property within the layer, the current time, and an offset value of `0`. Call seedRandom to set the offset to something other than 0 to create a different random sequence. Use true for the timeless argument to not use the current time as input to the random seed. Using true for the timeless argument allows you to generate a random number that doesn’t vary depending on the time of evaluation. The offset value, but not the timeless value, is also used to control the initial value of the wiggle function.
+The random and gaussRandom methods use a seed value that controls the sequence of numbers. By default, the seed is computed as a function of a unique layer identifier, the property within the layer, the current time, and an offset value of `0`. Call seedRandom to set the offset to something other than 0 to create a different random sequence. Use true for the timeless argument to not use the current time as input to the random seed. Using true for the timeless argument allows you to generate a random number that doesn't vary depending on the time of evaluation. The offset value, but not the timeless value, is also used to control the initial value of the wiggle function.
 
 For example, this expression on the Opacity property sets the Opacity value to a random value that does not vary with time:
 
@@ -72,7 +72,7 @@ If `minValOrArray` and `maxValOrArray` are `Numbers`, this method returns a numb
 
 If the arguments are `Arrays`, this method returns an `Array` with the same dimension as the argument with the greater dimension, with each component in the range from the corresponding component of `minValOrArray` to the corresponding component of `maxValOrArray`.
 
-For example, the expression `random([100, 200], [300, 400])` returns an `Array` whose first value is in the range `100–300` and whose second value is in the range `200–400`. If the dimensions of the two input Arrays don’t match, higher-dimension values of the shorter Array are filled out with zeros.
+For example, the expression `random([100, 200], [300, 400])` returns an `Array` whose first value is in the range `100–300` and whose second value is in the range `200–400`. If the dimensions of the two input Arrays don't match, higher-dimension values of the shorter Array are filled out with zeros.
 
 **Parameters**
 
@@ -145,7 +145,7 @@ Number or Array
 
 **Description**
 
-Returns a number in the range from `-1` to `1`. The noise is not actually random; it is based on Perlin noise, which means that the return values for two input values that are near one another tend to be near one another. This type of noise is useful when you want a sequence of seemingly random numbers that don’t vary wildly from one to the other—as is usually the case when animating any apparently random natural motion.
+Returns a number in the range from `-1` to `1`. The noise is not actually random; it is based on Perlin noise, which means that the return values for two input values that are near one another tend to be near one another. This type of noise is useful when you want a sequence of seemingly random numbers that don't vary wildly from one to the other—as is usually the case when animating any apparently random natural motion.
 
 Example:
 

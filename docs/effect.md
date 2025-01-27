@@ -39,7 +39,7 @@ Property
 
 **Description**
 
-Returns a property within an effect. Effect control points are always in layer space. For example, effect(“Bulge”).param(4) returns the Bulge Height property.
+Returns a property within an effect. Effect control points are always in layer space. For example, effect("Bulge").param(4) returns the Bulge Height property.
 
 **Parameters**
 

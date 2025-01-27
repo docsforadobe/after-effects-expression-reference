@@ -963,7 +963,7 @@ A [TextStyle object](#textstyle).
 Returns the value of Justification of the first paragraph of a Text layer.
 
 !!! WARNING
-    The left and right values for alignment/justification will be reversed if the Text layer’s [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
+    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
 
 **Type**
 
@@ -992,7 +992,7 @@ Predefined string as defined in [JustificationType](). One of the following:
 Used to set the Justification for the entire Text layer.
 
 !!! WARNING
-    The left and right values for alignment/justification will be reversed if the Text layer’s [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
+    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
 
 **Parameters**
 
