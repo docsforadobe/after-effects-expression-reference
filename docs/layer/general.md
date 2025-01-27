@@ -143,7 +143,7 @@ Boolean
 
 #### Description
 
-Returns `true` if the Video switch  is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
+Returns `true` if the Video switch is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
 
 #### Type
 

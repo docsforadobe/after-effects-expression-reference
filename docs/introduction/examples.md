@@ -62,7 +62,7 @@ This example expression positions and maintains one layer at a balanced distance
 
 1. Start with three layers.
 2. Animate the positions of the first two layers in the Timeline panel.
-3. Select the third layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch  button to the left of the property name.
+3. Select the third layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.
 4. Enter the following in the expression field:
    ```js
    (thisComp.layer(1).position + thisComp.layer(2).position)/2
@@ -76,7 +76,7 @@ This example expression instructs a layer to be at the same position as the next
 
 1. Start with two solid-color layers that are scaled to approximately 30% of the composition size. (See Solid-color layers and solid-color footage items.)
 2. Animate the position of the first layer.
-3. Select the second layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch  button to the left of the property name.
+3. Select the second layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.
 4. Enter the following in the expression field:
    ```js
    thisComp.layer(thisLayer, -1).position.valueAtTime(time - .5)
@@ -99,7 +99,7 @@ You can also use other effects, such as Ripple, with this expression.
 1. Start with two layers. Make one layer a magnifying glass or similar object with a hole in the middle and name it Magnifier. (See Creating layers.)
 2. Animate the position of the magnifying glass layer. (See Motion paths.)
 3. Apply the Bulge effect to the other layer. (See Apply an effect or animation preset.)
-4. Select the Bulge Center property of the Bulge effect in the Timeline panel and choose Animation > Add Expression, or Alt-click (Windows) or Option-click (Mac OS) the stopwatch  button for the property.
+4. Select the Bulge Center property of the Bulge effect in the Timeline panel and choose Animation > Add Expression, or Alt-click (Windows) or Option-click (Mac OS) the stopwatch button for the property.
 5. Select the default expression text and type the following:
    ```js
    fromWorld(thisComp.layer("Magnifier").position)
