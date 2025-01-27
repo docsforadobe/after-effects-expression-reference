@@ -2,7 +2,7 @@
 
 `text.sourceText.style`
 
-Most of these functions are accessible from the [SourceText.style](text-sourcetext.md#sourcetextstyle) object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control percharacter styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.
+Most of these functions are accessible from the [SourceText.style](./sourcetext.md#sourcetextstyle) object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control percharacter styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.
 
 !!! note
     When using per-character styling, line breaks and spaces are also considered characters and must be accounted for (or skipped, if desired) when calcuating character indexes.
