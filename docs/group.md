@@ -29,7 +29,7 @@ All properties in the Timeline are organized into groups, which share some attri
 
 Returns the number of properties or groups directly within a group. This does not include properties nested inside child groups.
 
-!!! TIP
+!!! tip
     Find the number of effects applied to a layer with `thisLayer("ADBE Effect Parade").numProperties` using the match name to remain language-agnostic.
 
 **Type**

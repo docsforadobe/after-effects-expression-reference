@@ -583,8 +583,11 @@ Predefined string as defined in [ReturnedKerningType](). Read-only. One of the f
 **Description**
 
 Used to set the Kerning Type. The value will be applied to the entire Text layer unless a start index and number of characters are specified.
-Please note that `manual` is not a valid value for this method. To set manual kerning, use [TextStyle.setKerning(value, characterIndex)](#textstyle-setkerning).
-Also, please note that automatic kerning will take a precendence over manual kerning.
+
+!!! note
+    `manual` is not a valid value for this method. To set manual kerning, use [TextStyle.setKerning(value, characterIndex)](#textstyle-setkerning).
+
+    Also, note that automatic kerning will take a precendence over manual kerning.
 
 **Type**
 

@@ -68,11 +68,11 @@ Example:
 toWorld.effect("Bulge")("Bulge Center")
 ```
 
-..note::
-: Dan Ebberts provides an expression on his [MotionScript website](http://www.motionscript.com/design-guide/auto-orient-y-only.html) that uses the `toWorld` method to auto-orient a layer along only one axis. This is useful, for example, for having characters turn from side to side to follow the camera while remaining upright.
+!!! tip
+    Dan Ebberts provides an expression on his [MotionScript website](http://www.motionscript.com/design-guide/auto-orient-y-only.html) that uses the `toWorld` method to auto-orient a layer along only one axis. This is useful, for example, for having characters turn from side to side to follow the camera while remaining upright.
 
-..note::
-: Rich Young provides a set of expressions on his [AE Portal website](http://aeportal.blogspot.com/2010/02/fly-around-cc-sphered-layer-in-after.html) that use the toWorld method link a camera and light to a layer with the CC Sphere effect.
+!!! tip
+    Rich Young provides a set of expressions on his [AE Portal website](http://aeportal.blogspot.com/2010/02/fly-around-cc-sphered-layer-in-after.html) that use the toWorld method link a camera and light to a layer with the CC Sphere effect.
 
 **Parameters**
 

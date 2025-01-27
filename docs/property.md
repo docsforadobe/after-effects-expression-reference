@@ -247,7 +247,7 @@ Loops a segment of time that is measured from the first keyframe on the layer fo
 | offset   | Repeats the specified segment, but offsets each cycle by the difference in the value of the property at the start and end of the segment, multiplied by the number of times the segment has looped.                                                                                                                                                                                   |
 | continue | Does not repeat the specified segment, but continues to animate a property based on the velocity at the first or last keyframe. For example, if the last keyframe of a Scale property of a layer is `100%`, the layer continues to scale from `100%` to the Out point, instead of looping directly back to the Out point. This type does not accept a keyframes or duration argument. |
 
-!!! TIP
+!!! tip
     Use `loopIn("continue") + loopOut("continue") - value` to have a continued motion before and after the property's keyframes. *Tip from Paul Slemmer.*
 
 **Type**
