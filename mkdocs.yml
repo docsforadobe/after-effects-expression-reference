@@ -8,7 +8,6 @@ repo_name: "after-effects-expression-reference"
 nav:
     - Home: index.md
     - Introduction:
-        - Introduction: introduction.md
         - Changelog: changelog.md
         - Resources: resources.md
         - Examples: examples.md
