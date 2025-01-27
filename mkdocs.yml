@@ -8,40 +8,40 @@ repo_name: "after-effects-expression-reference"
 nav:
     - Home: index.md
     - Introduction:
-        - Changelog: changelog.md
-        - Resources: resources.md
-        - Examples: examples.md
+        - Changelog: introduction/changelog.md
+        - Resources: introduction/resources.md
+        - Examples: introduction/examples.md
     - General:
-        - Global: global.md
-        - Time Conversion: time-conversion.md
-        - Vector Math: vector-math.md
-        - Random Numbers: random-numbers.md
-        - Interpolation: interpolation.md
-        - Color Conversion: color-conversion.md
-        - Other Math: other-math.md
+        - Global: general/global.md
+        - Time Conversion: general/time-conversion.md
+        - Vector Math: general/vector-math.md
+        - Random Numbers: general/random-numbers.md
+        - Interpolation: general/interpolation.md
+        - Color Conversion: general/color-conversion.md
+        - Other Math: general/other-math.md
     - Objects:
-        - Project: project.md
-        - Comp: comp.md
-        - Footage: footage.md
-        - Camera: camera.md
-        - Light: light.md
-        - Group: group.md
-        - Effect: effect.md
-        - Mask: mask.md
-        - Property: property.md
-        - Path Property: path-property.md
-        - Key: key.md
-        - MarkerKey: markerkey.md
+        - Project: objects/project.md
+        - Comp: objects/comp.md
+        - Footage: objects/footage.md
+        - Camera: objects/camera.md
+        - Light: objects/light.md
+        - Group: objects/group.md
+        - Effect: objects/effect.md
+        - Mask: objects/mask.md
+        - Property: objects/property.md
+        - Path Property: objects/path-property.md
+        - Key: objects/key.md
+        - MarkerKey: objects/markerkey.md
     - Layer:
-        - Layer Sub-objects: layer-sub.md
-        - Layer General: layer-general.md
-        - Layer Properties: layer-properties.md
-        - Layer Space Transforms: layer-space.md
-        - Layer 3D: layer-threed.md
+        - Layer Sub-objects: layer/sub-objects.md
+        - Layer General: layer/general.md
+        - Layer Properties: layer/properties.md
+        - Layer Space Transforms: layer/layer-space-transforms.md
+        - Layer 3D: layer/threed.md
     - Text:
-        - Text: text.md
-        - Source Text: text-sourcetext.md
-        - Text Style: text-style.md
+        - Text: text/text.md
+        - Source Text: text/sourcetext.md
+        - Text Style: text/style.md
 
 
 # Do not touch below-- shared for all docs
