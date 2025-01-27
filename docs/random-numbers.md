@@ -125,7 +125,7 @@ Number or Array
 
 If `minValOrArray` and `maxValOrArray` are `Numbers`, this method returns a random number. Approximately `90%` of the results are in the range from `minValOrArray` to `maxValOrArray`, and the remaining `10%` are outside this range.
 
-If the arguments are `Arrays`, this method returns an `Array` of random numbers with the same dimension as the argument with the greater dimension. For each component, approximately `90%``of the results are in the range from the corresponding component of ``minValOrArray` to the corresponding component of `maxValOrArray`, and the remaining `10%` are outside this range.
+If the arguments are `Arrays`, this method returns an `Array` of random numbers with the same dimension as the argument with the greater dimension. For each component, approximately 90% of the results are in the range from the corresponding component of `minValOrArray` to the corresponding component of `maxValOrArray`, and the remaining `10%` are outside this range.
 
 The results have a Gaussian (bell-shaped) distribution.
 

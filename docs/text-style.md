@@ -1325,7 +1325,7 @@ A [TextStyle object](#text-style).
 
 #### Description
 
-Returns ``true`` if the Text layer if Every-Line Composer is set for the first paragraph of a Text layer and ``false`` if Single-Line Composer is set for the first paragraph of a Text layer
+Returns `true` if the Text layer if Every-Line Composer is set for the first paragraph of a Text layer and `false` if Single-Line Composer is set for the first paragraph of a Text layer
 
 #### Type
 
