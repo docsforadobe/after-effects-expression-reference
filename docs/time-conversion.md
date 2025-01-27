@@ -1,7 +1,7 @@
 # Time Conversion
 
-#### NOTE
-If you want more control over the look of timecode in your footage, use the timeToCurrentFormat method or other timeTo methods to generate the timecode instead of using the Timecode or Numbers effect.
+!!! note
+    If you want more control over the look of timecode in your footage, use the timeToCurrentFormat method or other timeTo methods to generate the timecode instead of using the Timecode or Numbers effect.
 
 Create a text layer, add an expression to the Source Text property, and enter timeToCurrentFormat() in the expression field. With this method, you can format and animate the timecode text. In addition, the timecode uses the same display style defined by the current project settings.
 
@@ -109,8 +109,8 @@ String
 
 Converts the value of `t` to a `String` representing time in the current Project Settings display format. See timeToFrames for a definition of all the arguments.
 
-#### NOTE
-An optional `ntscDropFrame` argument was added to the `timeToCurrentFormat()` function in After Effects CS5.5 and later. Default: `ntscDropFrame=thisComp.ntscDropFrame`.
+!!! note
+    An optional `ntscDropFrame` argument was added to the `timeToCurrentFormat()` function in After Effects CS5.5 and later. Default: `ntscDropFrame=thisComp.ntscDropFrame`.
 
 **Parameters**
 

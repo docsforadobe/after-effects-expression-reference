@@ -24,8 +24,8 @@ This function returns the [Text Style](text-style.md#textstyle) object of a part
 
 In case the style is keyframed and changes over time, use the second `time` parameter to specify the target time to get the style at.
 
-#### NOTE
-Using [SourceText.style](#sourcetext-style) is the same as using `text.sourceText.getStyleAt(0,0)`
+!!! note
+    Using [SourceText.style](#sourcetext-style) is the same as using `text.sourceText.getStyleAt(0,0)`
 
 For example, to get the style of the first character at the beginning of the timeline:
 
@@ -69,8 +69,8 @@ Empty [Text Style](text-style.md#textstyle) object.
 
 ## SourceText.isVerticalText
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -88,8 +88,8 @@ Boolean
 
 ## SourceText.isHorizontalText
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -107,8 +107,8 @@ Boolean
 
 ## SourceText.isPointText
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -126,8 +126,8 @@ Boolean
 
 ## SourceText.isParagraphText
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 

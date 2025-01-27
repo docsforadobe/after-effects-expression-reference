@@ -40,8 +40,8 @@ For example, to have a property value for each frame chosen randomly from a set 
 valueAtTime(random(4))
 ```
 
-#### NOTE
-Dan Ebberts provides more examples and techniques for using the `valueAtTime` and `velocityAtTime` methods on [MotionScript](http://www.motionscript.com/mastering-expressions/follow-the-leader.html).
+!!! note
+    Dan Ebberts provides more examples and techniques for using the `valueAtTime` and `velocityAtTime` methods on [MotionScript](http://www.motionscript.com/mastering-expressions/follow-the-leader.html).
 
 **Parameters**
 
@@ -152,8 +152,8 @@ w = wiggle(freq,amp);
 [value[0],w[1]];
 ```
 
-#### NOTE
-Dan Ebberts provides an example expression and a detailed explanation on his [website](http://www.motionscript.com/design-guide/looping-wiggle.html) that shows how to use the time parameter of the wiggle method to create a looping animation.
+!!! note
+    Dan Ebberts provides an example expression and a detailed explanation on his [website](http://www.motionscript.com/design-guide/looping-wiggle.html) that shows how to use the time parameter of the wiggle method to create a looping animation.
 
 **Parameters**
 
@@ -247,8 +247,8 @@ Loops a segment of time that is measured from the first keyframe on the layer fo
 | offset   | Repeats the specified segment, but offsets each cycle by the difference in the value of the property at the start and end of the segment, multiplied by the number of times the segment has looped.                                                                                                                                                                                   |
 | continue | Does not repeat the specified segment, but continues to animate a property based on the velocity at the first or last keyframe. For example, if the last keyframe of a Scale property of a layer is `100%`, the layer continues to scale from `100%` to the Out point, instead of looping directly back to the Out point. This type does not accept a keyframes or duration argument. |
 
-#### TIP
-Use `loopIn("continue") + loopOut("continue") - value` to have a continued motion before and after the property’s keyframes. *Tip from Paul Slemmer.*
+!!! TIP
+    Use `loopIn("continue") + loopOut("continue") - value` to have a continued motion before and after the property’s keyframes. *Tip from Paul Slemmer.*
 
 **Type**
 
@@ -264,8 +264,8 @@ Loops a segment of time that is measured from the last keyframe on the layer bac
 
 For example, `loopOut("cycle", 1)` loops the segment bounded by the last keyframe and second-to-last keyframe. The default value of 0 means that all keyframes loop. See the entry for loopIn for more information.
 
-#### NOTE
-David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://omino.com/pixelblog/2007/11/23/salmonella/) that show how to use the Echo effect, the Particle Playground effect, and the `loopOut` method to animate a swarm of stylized swimming bacteria.
+!!! note
+    David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://omino.com/pixelblog/2007/11/23/salmonella/) that show how to use the Echo effect, the Particle Playground effect, and the `loopOut` method to animate a swarm of stylized swimming bacteria.
 
 **Type**
 
@@ -358,8 +358,8 @@ Key or MarkerKey
 
 Returns the number of keyframes on a property. Returns the number of markers on a marker property.
 
-#### NOTE
-If you use the Separate Dimensions command to separate the dimensions of the Position property into individual components, the number of keyframes changes, so the value returned by this method changes.
+!!! note
+    If you use the Separate Dimensions command to separate the dimensions of the Position property into individual components, the number of keyframes changes, so the value returned by this method changes.
 
 **Type**
 

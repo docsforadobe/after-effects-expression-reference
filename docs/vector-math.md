@@ -4,8 +4,8 @@ Vector Math functions are global methods that perform operations on arrays, trea
 
 For example, the expression `add([10, 20], [1, 2, 3])` returns `[11, 22, 3]`.
 
-#### NOTE
-[JJ Gifford’s website](http://www.adobe.com/go/learn_ae_jjgiffordexpressionsgeometrytrig) provides explanations and examples that show how to use simple geometry and trigonometry with expressions.
+!!! note
+    [JJ Gifford’s website](http://www.adobe.com/go/learn_ae_jjgiffordexpressionsgeometrytrig) provides explanations and examples that show how to use simple geometry and trigonometry with expressions.
 
 ---
 

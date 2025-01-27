@@ -2,8 +2,8 @@
 
 Most of these functions are accessible from the [SourceText.style](text-sourcetext.md#sourcetext-style) object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control per-character styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.
 
-#### NOTE
-When using per-character styling, line breaks and spaces are also considered characters and must be accounted for (or skipped, if desired) when calcuating character indexes.
+!!! note
+    When using per-character styling, line breaks and spaces are also considered characters and must be accounted for (or skipped, if desired) when calcuating character indexes.
 
 For more info on working with text styles, see:
 
@@ -52,8 +52,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.replaceText(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -558,8 +558,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.kerningType
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -577,8 +577,8 @@ Predefined string as defined in [ReturnedKerningType](). Read-only. One of the f
 
 ## TextStyle.setKerningType(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -608,8 +608,8 @@ None
 
 ## TextStyle.kerning
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -623,8 +623,8 @@ Number. Read-only.
 
 ## TextStyle.setKerning(`value`, `characterIndex`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -644,8 +644,8 @@ None
 
 ## TextStyle.tsume
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -659,8 +659,8 @@ Number (between 0 and 1).
 
 ## TextStyle.setTsume(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -681,8 +681,8 @@ None
 
 ## TextStyle.verticalScaling
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -696,8 +696,8 @@ Number
 
 ## TextStyle.setVerticalScaling(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -718,8 +718,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.horizontalScaling
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -733,8 +733,8 @@ Number
 
 ## TextStyle.setHorizontalScaling(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -755,8 +755,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.lineJoin
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -774,8 +774,8 @@ Predefined string as defined in [LineJoinType](). One of the following:
 
 ## TextStyle.setLineJoin(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -796,8 +796,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.baselineOption
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -815,8 +815,8 @@ Predefined string as defined in [BaselineOptionType](). One of the following:
 
 ## TextStyle.setBaselineOption(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -837,8 +837,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.digitSet
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -855,8 +855,8 @@ Predefined string as defined in [DigitSetType](). One of the following:
 
 ## TextStyle.setDigitSet(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -877,8 +877,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.isLigature
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -892,8 +892,8 @@ Boolean
 
 ## TextStyle.setLigature(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -914,8 +914,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.baselineDirection
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -933,8 +933,8 @@ Predefined string as defined in [BaselineDirectionType](). One of the following:
 
 ## TextStyle.setBaselineDirection(`value`, `startIndex`, `numOfCharacters`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -955,15 +955,15 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.justification
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
 Returns the value of Justification of the first paragraph of a Text layer.
 
-#### WARNING
-The left and right values for alignment/justification will be reversed if the Text layer’s [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
+!!! WARNING
+    The left and right values for alignment/justification will be reversed if the Text layer’s [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
 
 **Type**
 
@@ -981,18 +981,18 @@ Predefined string as defined in [JustificationType](). One of the following:
 
 ## TextStyle.setJustification(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
 Used to set the Justification for the entire Text layer.
 
-#### WARNING
-The left and right values for alignment/justification will be reversed if the Text layer’s [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
+!!! WARNING
+    The left and right values for alignment/justification will be reversed if the Text layer’s [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
 
 **Parameters**
 
@@ -1007,8 +1007,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.direction
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1025,11 +1025,11 @@ Predefined string as defined in [DirectionType](). One of the following:
 
 ## TextStyle.setDirection(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1048,8 +1048,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.leftMargin
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1063,11 +1063,11 @@ Number
 
 ## TextStyle.setLeftMargin(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1086,8 +1086,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.rightMargin
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1101,11 +1101,11 @@ Number
 
 ## TextStyle.setRightMargin(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1124,8 +1124,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.spaceAfter
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1139,11 +1139,11 @@ Number
 
 ## TextStyle.setSpaceAfter(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1162,8 +1162,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.spaceBefore
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1177,11 +1177,11 @@ Number
 
 ## TextStyle.setSpaceBefore(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1200,8 +1200,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.firstLineIndent
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1215,11 +1215,11 @@ Number
 
 ## TextStyle.setFirstLineIndent(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1238,8 +1238,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.isEveryLineComposer
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1253,11 +1253,11 @@ Boolean
 
 ## TextStyle.setEveryLineComposer(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1276,8 +1276,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.isHangingRoman
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1291,11 +1291,11 @@ Boolean
 
 ## TextStyle.setHangingRoman(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 
@@ -1314,8 +1314,8 @@ A [TextStyle object](#textstyle).
 
 ## TextStyle.leadingType
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
 **Description**
 
@@ -1332,11 +1332,11 @@ Predefined string as defined in [LeadingType](). One of the following:
 
 ## TextStyle.setLeadingType(`value`)
 
-#### NOTE
-This functionality was added in After Effects 25.0.
+!!! note
+    This functionality was added in After Effects 25.0.
 
-#### WARNING
-This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+!!! WARNING
+    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
 
 **Description**
 

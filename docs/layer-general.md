@@ -82,8 +82,8 @@ Boolean
 
 Returns the In point of the layer, in seconds.
 
-#### NOTE
-In general, the value of outPoint is greater than the value of inPoint. However, if a layer is reversed in time, the value of inPoint is greater than the value of outPoint. Similarly, the value of startTime can be greater than the value of inPoint.
+!!! note
+    In general, the value of outPoint is greater than the value of inPoint. However, if a layer is reversed in time, the value of inPoint is greater than the value of outPoint. Similarly, the value of startTime can be greater than the value of inPoint.
 
 **Type**
 
@@ -189,17 +189,17 @@ This example samples a rectangle 4 pixels wide and 3 pixels high, centered aroun
 thisComp.layer(1).sampleImage([100, 100], [2, 1.5])
 ```
 
-#### NOTE
-The postEffect parameter refers to effects applied directly to the layer, not to effects applied indirectly, such as with an adjustment layer.
+!!! note
+    The postEffect parameter refers to effects applied directly to the layer, not to effects applied indirectly, such as with an adjustment layer.
 
-#### NOTE
-Using sampleImage in an expression no longer disables multiprocessing.
+!!! note
+    Using sampleImage in an expression no longer disables multiprocessing.
 
-#### NOTE
-Dan Ebberts provides an example of how to use the sampleImage method on his MotionScript website.
+!!! note
+    Dan Ebberts provides an example of how to use the sampleImage method on his MotionScript website.
 
-#### NOTE
-Todd Kopriva provides instructions for using the sampleImage method and the Point Control effect to monitor colors for a specified point during color correction on his After Effects Region of Interest blog.
+!!! note
+    Todd Kopriva provides instructions for using the sampleImage method and the Point Control effect to monitor colors for a specified point during color correction on his After Effects Region of Interest blog.
 
 **Parameters**
 

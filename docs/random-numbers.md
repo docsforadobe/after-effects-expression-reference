@@ -1,7 +1,7 @@
 # Random Numbers
 
-#### NOTE
-The wiggle method—which is used to randomly vary a property value—is in the Property attributes and methods category. See Property attributes and methods.
+!!! note
+    The wiggle method—which is used to randomly vary a property value—is in the Property attributes and methods category. See Property attributes and methods.
 
 ---
 
@@ -38,8 +38,8 @@ None
 
 Returns a random number in the range `0–1`.
 
-#### NOTE
-In After Effects CC and CS6, the behavior of random() is changed to be more random when layer IDs are close together. The wiggle() expression is not affected.
+!!! note
+    In After Effects CC and CS6, the behavior of random() is changed to be more random when layer IDs are close together. The wiggle() expression is not affected.
 
 **Type**
 

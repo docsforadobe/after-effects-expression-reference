@@ -91,8 +91,8 @@ Layer, Light, or Camera
 
 **Description**
 
-#### NOTE
-You cannot access a composition marker by marker number. If you have a project created in a previous version of After Effects that uses composition marker numbers in expressions, you must change those calls to use marker.key(name) instead. Because the default name of a composition marker is a number, converting the reference to use the name is often just a matter of surrounding the number with quotation marks.
+!!! note
+    You cannot access a composition marker by marker number. If you have a project created in a previous version of After Effects that uses composition marker numbers in expressions, you must change those calls to use marker.key(name) instead. Because the default name of a composition marker is a number, converting the reference to use the name is often just a matter of surrounding the number with quotation marks.
 
 **Type**
 
@@ -253,8 +253,8 @@ Number
 
 Returns true if the timecode is in drop-frame format.
 
-#### NOTE
-Available in After Effects CS5.5 and later.
+!!! note
+    Available in After Effects CS5.5 and later.
 
 **Type**
 

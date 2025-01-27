@@ -1,7 +1,7 @@
 # Mask
 
-#### NOTE
-You can link Mask Path properties to other path properties (paths in a shape layer and brush strokes), but the properties are not accessible for direct numerical manipulation through expressions.
+!!! note
+    You can link Mask Path properties to other path properties (paths in a shape layer and brush strokes), but the properties are not accessible for direct numerical manipulation through expressions.
 
 ---
 

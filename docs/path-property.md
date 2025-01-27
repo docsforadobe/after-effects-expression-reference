@@ -1,7 +1,7 @@
 # Path Property
 
-#### NOTE
-Available in After Effects CC18 and later.
+!!! note
+    Available in After Effects CC18 and later.
 
 **Example 1**
 

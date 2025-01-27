@@ -1,7 +1,7 @@
 # Layer Sub-objects
 
-#### NOTE
-For After Effects CC and CS6, the Expression language menu, the “Layer Sub-objects”, “Layer General”, “Layer Properties”, “Layer 3D”, and “Layer Space Transforms” have been arranged into a “Layer” submenu.
+!!! note
+    For After Effects CC and CS6, the Expression language menu, the “Layer Sub-objects”, “Layer General”, “Layer Properties”, “Layer 3D”, and “Layer Space Transforms” have been arranged into a “Layer” submenu.
 
 ---
 
@@ -29,8 +29,8 @@ Comp or Footage
 
 Returns the layer source corresponding to time `t`.
 
-#### NOTE
-After Effects CS5.5 and later
+!!! note
+    After Effects CS5.5 and later
 
 **Parameters**
 
@@ -55,8 +55,8 @@ Shape layer extents increase the size of the layer bounds as necessary.
 
 Paragraph text layers returns the bounds of the paragraph box.
 
-#### NOTE
-After Effects 13.2 and later.
+!!! note
+    After Effects 13.2 and later.
 Paragraph text extents added in After Effects 15.1.
 
 Example:

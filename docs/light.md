@@ -16,8 +16,8 @@ Light objects have the same attributes and methods as Layer objects, except for:
 * `timeRemap`
 * all the material properties
 
-#### NOTE
-David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://www.adobe.com/go/learn_ae_ominoflashing) that shows how to use expressions with lights.
+!!! note
+    David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://www.adobe.com/go/learn_ae_ominoflashing) that shows how to use expressions with lights.
 
 ---
 
