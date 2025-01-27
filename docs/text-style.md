@@ -10,19 +10,32 @@ For more info on working with text styles, see:
 - [Use Expressions to Edit and Access Text Properties on helpx.adobe.com](https://helpx.adobe.com/after-effects/user-guide.html/after-effects/using/expressions-text-properties.ug.html)
 - [After Effects 2020: Express Yourself (and Your Text) on blog.adobe.com](https://blog.adobe.com/en/publish/2020/01/24/after-effects-2020-express-yourself-and-your-text)
 
-All the methods for [Text Style](#textstyle) will return a [Text Style](#textstyle) object, so you can call them in a chain, e.g.:
+### Chaining
 
-```default
+All the methods for [Text Style](#text-style) will return a [Text Style](#text-style) object, so you can call them in a chain, e.g.:
+
+```js
 text.sourceText.style.setFont("Times New Roman").setFontSize(42).setText("New Text");
 ```
 
+!!! tip
+    You can also format this chain with line breaks to make it easier to read:
+    ```js
+    text.sourceText.style
+        .setFont("Times New Roman")
+        .setFontSize(42)
+        .setText("New Text");
+    ```
+
 ---
 
-## TextStyle.setText(`value`)
+## TextStyle.setText()
+
+`textStyle.setText(value)`
 
 **Description**
 
-This is used when you want to define (or inherit) a [Text Style](#textstyle) while setting the text content separately.
+This is used when you want to define (or inherit) a [Text Style](#text-style) while setting the text content separately.
 
 For example, to inherit the style and content from another layer:
 
@@ -46,18 +59,20 @@ text.sourceText.createStyle().setFontSize(300).setFont("Impact").setText("Hello 
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
-## TextStyle.replaceText(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.replaceText()
+
+`textStyle.replaceText(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 **Description**
 
-This is used when you want to define (or inherit) a [Text Style](#textstyle), while setting the content for a substring of the text.
+This is used when you want to define (or inherit) a [Text Style](#text-style), while setting the content for a substring of the text.
 
 For example, to create a custom style and then set a substring of the text within the expression:
 
@@ -79,7 +94,7 @@ style.replaceText("New", 0, 4);
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -95,7 +110,9 @@ Number
 
 ---
 
-## TextStyle.setFontSize(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setFontSize()
+
+`textStyle.setFontSize(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -110,7 +127,7 @@ Used to set the Font Size to a specified value. The value will be set for the en
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -126,7 +143,9 @@ String
 
 ---
 
-## TextStyle.setFont(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setFont()
+
+`textStyle.setFont(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -141,7 +160,7 @@ Used to set the font to a specified value. The value will be set for the entire 
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -157,7 +176,9 @@ Boolean
 
 ---
 
-## TextStyle.setFauxBold(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setFauxBold()
+
+`textStyle.setFauxBold(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -172,7 +193,7 @@ Used to set the Faux Bold status. The value will be set for the entire Text laye
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -188,7 +209,9 @@ Boolean
 
 ---
 
-## TextStyle.setFauxItalic(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setFauxItalic()
+
+`textStyle.setFauxItalic(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -203,7 +226,7 @@ Used to set the Faux Italics status. The value will be set for the entire Text l
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -219,7 +242,9 @@ Boolean
 
 ---
 
-## TextStyle.setAllCaps(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setAllCaps()
+
+`textStyle.setAllCaps(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -234,7 +259,7 @@ Used to set the All Caps status. The value will be set for the entire Text layer
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -250,7 +275,9 @@ Boolean
 
 ---
 
-## TextStyle.setSmallCaps(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setSmallCaps()
+
+`textStyle.setSmallCaps(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -265,7 +292,7 @@ Used to set the Small Caps status. The value will be set for the entire Text lay
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -281,7 +308,9 @@ Number
 
 ---
 
-## TextStyle.setTracking(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setTracking()
+
+`textStyle.setTracking(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -296,7 +325,7 @@ Used to set the Tracking to a specified value. The value will be set for the ent
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -312,7 +341,9 @@ Number
 
 ---
 
-## TextStyle.setLeading(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setLeading()
+
+`textStyle.setLeading(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -329,7 +360,7 @@ Keep in mind that [TextStyle.isAutoLeading](#textstyleisautoleading) must be `fa
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -345,7 +376,9 @@ Boolean
 
 ---
 
-## TextStyle.setAutoLeading(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setAutoLeading()
+
+`textStyle.setAutoLeading(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -360,7 +393,7 @@ Used to set the Auto Leading status. The value will be set for the entire Text l
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -376,7 +409,9 @@ Number
 
 ---
 
-## TextStyle.setBaselineShift(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setBaselineShift()
+
+`textStyle.setBaselineShift(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -391,7 +426,7 @@ Used to set the Baseline Shift to a specified value. The value will be set for t
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -407,7 +442,9 @@ Boolean
 
 ---
 
-## TextStyle.setApplyFill(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setApplyFill()
+
+`textStyle.setApplyFill(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -422,7 +459,7 @@ Used to set whether Fill Color is enabled. The value will be set for the entire 
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -438,7 +475,9 @@ Array of Numbers.
 
 ---
 
-## TextStyle.setFillColor(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setFillColor()
+
+`textStyle.setFillColor(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -455,7 +494,7 @@ Keep in mind that [TextStyle.applyFill](#textstyleapplyfill) must be `true` in o
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -471,7 +510,9 @@ Boolean
 
 ---
 
-## TextStyle.setApplyStroke(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setApplyStroke()
+
+`textStyle.setApplyStroke(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -486,7 +527,7 @@ Used to set whether Stroke is enabled. The value will be set for the entire Text
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -502,7 +543,9 @@ Array of numbers
 
 ---
 
-## TextStyle.setStrokeColor(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setStrokeColor()
+
+`textStyle.setStrokeColor(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -519,7 +562,7 @@ Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` 
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -535,7 +578,9 @@ Number
 
 ---
 
-## TextStyle.setStrokeWidth(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setStrokeWidth()
+
+`textStyle.setStrokeWidth(value, startIndex, numOfCharacters)`
 
 **Description**
 
@@ -552,7 +597,7 @@ Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` 
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -575,7 +620,9 @@ Predefined string as defined in [ReturnedKerningType](). Read-only. One of the f
 
 ---
 
-## TextStyle.setKerningType(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setKerningType()
+
+`textStyle.setKerningType(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -624,7 +671,9 @@ Number. Read-only.
 
 ---
 
-## TextStyle.setKerning(`value`, `characterIndex`)
+## TextStyle.setKerning()
+
+`textStyle.setKerning(value, characterIndex)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -660,7 +709,9 @@ Number (between 0 and 1).
 
 ---
 
-## TextStyle.setTsume(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setTsume()
+
+`textStyle.setTsume(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -697,7 +748,9 @@ Number
 
 ---
 
-## TextStyle.setVerticalScaling(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setVerticalScaling()
+
+`textStyle.setVerticalScaling(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -715,7 +768,7 @@ Used to set the Vertical Scaling to a specified value. The value will be set for
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -734,7 +787,9 @@ Number
 
 ---
 
-## TextStyle.setHorizontalScaling(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setHorizontalScaling()
+
+`textStyle.setHorizontalScaling(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -752,7 +807,7 @@ Used to set the Horizontal Scaling to a specified value. The value will be set f
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -775,7 +830,9 @@ Predefined string as defined in [LineJoinType](). One of the following:
 
 ---
 
-## TextStyle.setLineJoin(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setLineJoin()
+
+`textStyle.setLineJoin(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -793,7 +850,7 @@ Used to set the Line Join Type to a specified value. The value will be set for t
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -816,7 +873,9 @@ Predefined string as defined in [BaselineOptionType](). One of the following:
 
 ---
 
-## TextStyle.setBaselineOption(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setBaselineOption()
+
+`textStyle.setBaselineOption(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -834,7 +893,7 @@ Used to set the baseline option to a specified predefined string. The value will
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -856,7 +915,9 @@ Predefined string as defined in [DigitSetType](). One of the following:
 
 ---
 
-## TextStyle.setDigitSet(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setDigitSet()
+
+`textStyle.setDigitSet(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -874,7 +935,7 @@ Used to set the Digit Set to a specified predefined string. The value will be se
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -893,7 +954,9 @@ Boolean
 
 ---
 
-## TextStyle.setLigature(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setLigature()
+
+`textStyle.setLigature(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -911,7 +974,7 @@ Used to enable or disable ligatures. The value will be set for the entire Text l
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -934,7 +997,9 @@ Predefined string as defined in [BaselineDirectionType](). One of the following:
 
 ---
 
-## TextStyle.setBaselineDirection(`value`, `startIndex`, `numOfCharacters`)
+## TextStyle.setBaselineDirection()
+
+`textStyle.setBaselineDirection(value, startIndex, numOfCharacters)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -952,7 +1017,7 @@ Used to set the Baseline Direction to a specified predefined string. The value w
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -982,7 +1047,9 @@ Predefined string as defined in [JustificationType](). One of the following:
 
 ---
 
-## TextStyle.setJustification(`value`)
+## TextStyle.setJustification()
+
+`textStyle.setJustification(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1004,7 +1071,7 @@ Used to set the Justification for the entire Text layer.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1026,7 +1093,9 @@ Predefined string as defined in [DirectionType](). One of the following:
 
 ---
 
-## TextStyle.setDirection(`value`)
+## TextStyle.setDirection()
+
+`textStyle.setDirection(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1045,7 +1114,7 @@ Used to set the Direction for the entire Text layer, either `left-to-right` or `
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1064,7 +1133,9 @@ Number
 
 ---
 
-## TextStyle.setLeftMargin(`value`)
+## TextStyle.setLeftMargin()
+
+`textStyle.setLeftMargin(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1083,7 +1154,7 @@ Used to set the Left Margin of a Text layer to a specified value.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1102,7 +1173,9 @@ Number
 
 ---
 
-## TextStyle.setRightMargin(`value`)
+## TextStyle.setRightMargin()
+
+`textStyle.setRightMargin(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1121,7 +1194,7 @@ Used to set the Right Margin of a Text layer to a specified value.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1140,7 +1213,9 @@ Number
 
 ---
 
-## TextStyle.setSpaceAfter(`value`)
+## TextStyle.setSpaceAfter()
+
+`textStyle.setSpaceAfter(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1159,7 +1234,7 @@ Used to set the Space After attribute of a Text layer to a specified value.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1178,7 +1253,9 @@ Number
 
 ---
 
-## TextStyle.setSpaceBefore(`value`)
+## TextStyle.setSpaceBefore()
+
+`textStyle.setSpaceBefore(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1197,7 +1274,7 @@ Used to set the Space Before attribute of a Text layer to a specified value.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1216,7 +1293,9 @@ Number
 
 ---
 
-## TextStyle.setFirstLineIndent(`value`)
+## TextStyle.setFirstLineIndent()
+
+`textStyle.setFirstLineIndent(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1235,7 +1314,7 @@ Used to set the First Line Indent of a Text layer to a specified value.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1254,7 +1333,9 @@ Boolean
 
 ---
 
-## TextStyle.setEveryLineComposer(`value`)
+## TextStyle.setEveryLineComposer()
+
+`textStyle.setEveryLineComposer(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1273,7 +1354,7 @@ Used to enable or disable the Every-Line Composer for the entire Text layer.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1292,7 +1373,9 @@ Boolean
 
 ---
 
-## TextStyle.setHangingRoman(`value`)
+## TextStyle.setHangingRoman()
+
+`textStyle.setHangingRoman(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1311,7 +1394,7 @@ Used to enable or disable Hanging Roman Punctuation for the entire Text layer.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
 
 ---
 
@@ -1333,7 +1416,9 @@ Predefined string as defined in [LeadingType](). One of the following:
 
 ---
 
-## TextStyle.setLeadingType(`value`)
+## TextStyle.setLeadingType()
+
+`textStyle.setLeadingType(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1352,4 +1437,4 @@ Used to set the Leading Type for the entire Text layer.
 
 **Returns**
 
-A [TextStyle object](#textstyle).
+A [TextStyle object](#text-style).
