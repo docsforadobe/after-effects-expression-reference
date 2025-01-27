@@ -35,9 +35,9 @@ text.sourceText.getStyleAt(0,0);
 
 #### Parameters
 
-| `index`   | Number. The index of the letter or character whose style is needed                           |
+| `index`   | Number | The index of the letter or character whose style is needed                           |
 |-----------|----------------------------------------------------------------------------------------------|
-| `time`    | Number, optional. The time within the composition to get the style from. Defaults to `time`. |
+| `time`    | Number | Optional. The time within the composition to get the style from. Defaults to `time`. |
 
 #### Type
 

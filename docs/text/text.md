@@ -10,7 +10,8 @@ This category holds generic text-related entries for text layers.
 
 Returns the text content of a text layer.
 
-As of After Effects 17.0, this property returns the [Source Text](text-sourcetext.md) object to access text style properties. If no style properties are specified, this returns the text content as expected.
+!!! note
+    As of After Effects 17.0, this property returns the [Source Text](text-sourcetext.md) object to access text style properties. If no style properties are specified, this returns the text content as expected.
 
 #### Type
 
