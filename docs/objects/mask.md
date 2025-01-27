@@ -1,11 +1,14 @@
 # Mask
 
-`mask("Mask 1")`
+`thisLayer.mask("Mask 1")`
 
 This category contains information relating to mask objects. To manipulate the actual mask *path*, see [Mask Path](#maskmaskpath).
 
 !!! note
     You can link Mask Path properties to other path properties (paths in a shape layer and brush strokes), but the properties are not accessible for direct numerical manipulation through expressions.
+
+!!! info
+    On this page, we're going to use `thisLayer.mask("Mask 1")` as a demonstration on how to use these items, however note that any method that returns a [Mask](#) will work.
 
 ---
 
@@ -13,7 +16,7 @@ This category contains information relating to mask objects. To manipulate the a
 
 ### Mask.invert
 
-`mask("Mask 1").invert`
+`thisLayer.mask("Mask 1").invert`
 
 #### Description
 
@@ -27,7 +30,7 @@ Boolean
 
 ### Mask.maskExpansion
 
-`mask("Mask 1").maskExpansion`
+`thisLayer.mask("Mask 1").maskExpansion`
 
 #### Description
 
@@ -41,7 +44,7 @@ Number
 
 ### Mask.maskFeather
 
-`mask("Mask 1").maskFeather`
+`thisLayer.mask("Mask 1").maskFeather`
 
 #### Description
 
@@ -55,7 +58,7 @@ Number
 
 ### Mask.maskOpacity
 
-`mask("Mask 1").maskOpacity`
+`thisLayer.mask("Mask 1").maskOpacity`
 
 #### Description
 
@@ -69,7 +72,7 @@ Number
 
 ### Mask.maskPath
 
-`mask("Mask 1").maskPath`
+`thisLayer.mask("Mask 1").maskPath`
 
 #### Description
 

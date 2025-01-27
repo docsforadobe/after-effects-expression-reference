@@ -13,7 +13,7 @@ Because the XMP metadata in a footage item can be converted into layer markers f
 Dan Ebberts provides a tutorial on the [After Effects Developer Center](http://www.adobe.com/devnet/aftereffects/) that includes an example of using XMP metadata with expressions.
 
 !!! info
-    On this page, we're going to use `thisComp.marker.key(1)` as a demonstration on how to call these attributes, however note that any method that returns a [MarkerKey](#) will work.
+    On this page, we're going to use `thisComp.marker.key(1)` as a demonstration on how to use these items, however note that any method that returns a [MarkerKey](#) will work.
 
 ---
 
