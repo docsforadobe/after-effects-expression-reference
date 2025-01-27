@@ -61,7 +61,7 @@ Number
 
 #### Description
 
-Returns true if the timecode is in drop-frame format.
+Returns `true` if the timecode is in drop-frame format.
 
 #### Type
 

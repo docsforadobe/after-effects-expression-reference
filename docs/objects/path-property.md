@@ -193,7 +193,7 @@ myMask = mask("Mask 1").path;
 myMask.createPath(myMask.points());
 ```
 
-The following example passes the points and tangents of Mask 1 and converts it to an open path by setting `is_closed` to false:
+The following example passes the points and tangents of Mask 1 and converts it to an open path by setting `is_closed` to `false`:
 
 ```js
 myMask = mask("Mask 1").path;

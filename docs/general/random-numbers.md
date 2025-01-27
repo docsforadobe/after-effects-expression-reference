@@ -9,7 +9,15 @@
 
 #### Description
 
-The random and gaussRandom methods use a seed value that controls the sequence of numbers. By default, the seed is computed as a function of a unique layer identifier, the property within the layer, the current time, and an offset value of `0`. Call seedRandom to set the offset to something other than 0 to create a different random sequence. Use true for the timeless argument to not use the current time as input to the random seed. Using true for the timeless argument allows you to generate a random number that doesn't vary depending on the time of evaluation. The offset value, but not the timeless value, is also used to control the initial value of the wiggle function.
+The random and gaussRandom methods use a seed value that controls the sequence of numbers.
+
+By default, the seed is computed as a function of a unique layer identifier, the property within the layer, the current time, and an offset value of `0`.
+
+Call `seedRandom()` to set the offset to something other than 0 to create a different random sequence.
+
+The offset value–but not the timeless value–is also used to control the initial value of the wiggle function.
+
+Use `true` for the timeless argument to not use the current time as input to the random seed. Using `true` for the timeless argument allows you to generate a random number that doesn't vary depending on the time of evaluation.
 
 For example, this expression on the Opacity property sets the Opacity value to a random value that does not vary with time:
 

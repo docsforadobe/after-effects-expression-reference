@@ -95,7 +95,9 @@ String
 
 #### Description
 
-Setting for cue point type in marker dialog box. True for Event; false for Navigation.
+Setting for cue point type in marker dialog box.
+
+`true` for Event; `false` for Navigation.
 
 #### Type
 
@@ -140,7 +142,11 @@ Associative array of String values
 
 #### Description
 
-State of the Protected Region option in the Composition Marker dialog box. When true, the composition marker behaves as a protected region. Will also return true for protected region markers on nested composition layers, but is otherwise not applicable to layer markers.
+State of the Protected Region option in the Composition Marker dialog box.
+
+When `true`, the composition marker behaves as a protected region.
+
+Will also return `true` for protected region markers on nested composition layers, but is otherwise not applicable to layer markers.
 
 #### Type
 

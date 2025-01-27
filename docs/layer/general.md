@@ -58,7 +58,7 @@ Layer, Light, or Camera
 
 #### Description
 
-Returns true if the layer has a parent or false if it doesn't. Use the hasParent attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present. For example, the following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position.
+Returns `true` if the layer has a parent or `false` if it doesn't. Use the hasParent attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present. For example, the following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position.
 
 If the layer is given a parent later, then the behavior of the layer changes accordingly:
 
@@ -155,7 +155,7 @@ Boolean
 
 #### Description
 
-Returns true if the Video switch  is on for the layer; false otherwise.
+Returns `true` if the Video switch is on for the layer; `false` otherwise.
 
 #### Type
 
@@ -167,7 +167,7 @@ Boolean
 
 #### Description
 
-Returns true if the Audio switch  is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; false otherwise.
+Returns `true` if the Audio switch is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
 
 #### Type
 

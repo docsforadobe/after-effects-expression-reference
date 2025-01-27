@@ -68,7 +68,7 @@ thisComp.layer("Solid 1")
 
 #### Description
 
-Retrieves the layer that is relIndex layers above or below otherLayer. For example, `thisComp.layer(thisLayer, 1).active` returns true if the next layer down in the Timeline panel is active.
+Retrieves the layer that is relIndex layers above or below otherLayer. For example, `thisComp.layer(thisLayer, 1).active` returns `true` if the next layer down in the Timeline panel is active.
 
 #### Parameters
 
@@ -294,7 +294,7 @@ Number
 
 #### Description
 
-Returns true if the timecode is in drop-frame format.
+Returns `true` if the timecode is in drop-frame format.
 
 !!! note
     This functionality was added in After Effects CS5.5
