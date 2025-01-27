@@ -102,7 +102,8 @@ Number
 
 Returns the iris shape value from 1-10, corresponding to the selected dropdown value.
 
-<!-- note: Value ``2`` is reserved for the divider. -->
+!!! note
+    Value `2` is reserved for the divider.
 
 **Type**
 
