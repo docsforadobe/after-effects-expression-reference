@@ -54,6 +54,8 @@ extra:
 theme:
     name: material
     custom_dir: overrides
+    icon:
+        annotation: material/plus-circle-outline
     features:
         - announce.dismiss
         - content.action.edit
@@ -88,6 +90,7 @@ extra_css:
 
 markdown_extensions:
     - admonition
+    - attr_list
     - pymdownx.superfences
     - toc:
         title: Page Contents
