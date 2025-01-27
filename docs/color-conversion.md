@@ -4,58 +4,76 @@ Harry Frank provides a video tutorial on his [graymachine website](http://www.gr
 
 ---
 
-## rgbToHsl(`rgbaArray`)
+## rgbToHsl()
+
+`rgbToHsl(rgbaArray)`
 
 #### Description
 
-Converts a color in RGBA space to HSLA space. The input is an Array of normalized red, green, blue, and alpha channel values, all in the range of 0.0 to 1.0. The resulting value is an Array of hue, saturation, lightness, and alpha channel values, also in the range of 0.0 to 1.0.
+Converts a color in RGBA space to HSLA space.
 
-Example:
+The input is an Array of normalized red, green, blue, and alpha channel values, all in the range of `0.0` to `1.0`.
+
+The resulting value is an Array of hue, saturation, lightness, and alpha channel values, also in the range of `0.0` to `1.0`.
+
+#### Parameters
+
+|  Parameter  |               Type               |              Description               |
+| ----------- | -------------------------------- | -------------------------------------- |
+| `rgbaArray` | Array of numbers (4-dimensional) | RGBA values, in the range `[0.0..1.0]` |
+
+#### Type
+
+HSLA Array (4-dimensional)
+
+#### Example:
 
 ```js
 rgbToHsl.effect("Change Color")("Color To Change")
 ```
 
-#### Parameters
-
-| `rgbaArray`   | Array (4-dimensional)   |
-|---------------|-------------------------|
-
-#### Type
-
-Array (4-dimensional)
-
 ---
 
-## hslToRgb(`hslaArray`)
+## hslToRgb()
+
+`hslToRgb(hslaArray)`
 
 #### Description
 
-Converts a color in HSLA space to RGBA space. This conversion is the opposite of the conversion performed by the rgbToHsl method.
+Converts a color in HSLA space to RGBA space.
+
+This conversion is the opposite of the conversion performed by the [rgbToHsl()](#rgbtohsl) method.
 
 #### Parameters
 
-| `hslaArray`   | Array (4-dimensional)   |
-|---------------|-------------------------|
+|  Parameter  |               Type               |              Description               |
+| ----------- | -------------------------------- | -------------------------------------- |
+| `hslaArray` | Array of numbers (4-dimensional) | HSLA values, in the range `[0.0..1.0]` |
 
 #### Type
 
-Array (4-dimensional)
+RGBA Array (4-dimensional)
 
 ---
 
-## hexToRgb(`hexString`)
+## hexToRgb()
+
+`hexToRgb(hexString)`
+
+!!! note
+    This functionality was added in After Effects 16.0.
 
 #### Description
 
-Converts a color in hex triplet space to RGB space, or in hex quartet space to RGBA space. For hex triplets, the alpha channel defaults to 1.0.
+Converts a color in hex triplet space to RGB space, or in hex quartet space to RGBA space.
 
-Available in After Effects 16.0 or later.
+For hex triplets, the alpha channel defaults to 1.0.
 
 #### Parameters
 
-| `hexString`   | String representing an hex triplet (6 digits, no alpha channel) or quartet (8 digits, includes alpha channel) containing only numerals or characters A–F. Optional leading characters 0x, 0X, or # will be ignored. Characters beyond 8 digits will be ignored.   |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  Parameter  |  Type  |                                                                                                                      Description                                                                                                                      |
+| ----------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hexString` | String | Hex triplet (6 digits, no alpha channel) or quartet (8 digits, includes alpha channel) containing only numerals or characters A–F.<br/><br/>Optional leading characters 0x, 0X, or # will be ignored.<br/>Characters beyond 8 digits will be ignored. |
 
 #### Type
 
@@ -68,4 +86,5 @@ Any of the following will return `[1.0, 0.0, 1.0, 1.0]`:
 - `hexToRgb("FF00FF")`
 - `hexToRgb("#FF00FF")`
 - `hexToRgb("0xFF00FF")`
-- `hexToRgb("0XFF00FFFF")` Note: This inputs an 8-digit hex quartet; the last two digits set alpha channel to 1.0.
+- `hexToRgb("0XFF00FFFF")`
+    - **Note:** This inputs an 8-digit hex quartet; the last two digits set alpha channel to 1.0.
