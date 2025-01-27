@@ -1,5 +1,7 @@
 # Text Style
 
+`text.sourceText.style`
+
 Most of these functions are accessible from the [SourceText.style](text-sourcetext.md#sourcetextstyle) object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control percharacter styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.
 
 !!! note
@@ -31,41 +33,48 @@ text.sourceText.style.setFont("Times New Roman").setFontSize(42).setText("New Te
 
 ## TextStyle.setText()
 
-`textStyle.setText(value)`
+`text.sourceText.style.setText(value)`
 
 #### Description
 
 This is used when you want to define (or inherit) a [Text Style](#text-style) while setting the text content separately.
 
-For example, to inherit the style and content from another layer:
-
-```js
-const referenceText = thisComp.layer("Source Layer Name").text.sourceText;
-
-const style = referenceText.getStyleAt(0,0);
-style.setText(referenceText);
-```
-
-Or to create a custom style and then set the text within the expression:
-
-```js
-text.sourceText.createStyle().setFontSize(300).setFont("Impact").setText("Hello world!");
-```
-
 #### Parameters
 
-| `value`   | String. The text to set.   |
-|-----------|----------------------------|
+| Parameter |  Type  |   Description    |
+| --------- | ------ | ---------------- |
+| `value`   | String | The text to set. |
 
 #### Returns
 
 A [TextStyle object](#text-style).
 
+#### Examples
+
+To inherit the style and content from another layer:
+
+```js
+const referenceText = thisComp.layer("Source Layer Name").text.sourceText;
+
+const style = referenceText.getStyleAt(0, 0);
+style.setText(referenceText);
+```
+
+To create a custom style and then set the text within the expression:
+
+```js
+text.sourceText
+    .createStyle()
+    .setFontSize(300)
+    .setFont("Impact")
+    .setText("Hello world!");
+```
+
 ---
 
 ## TextStyle.replaceText()
 
-`textStyle.replaceText(value, startIndex, numOfCharacters)`
+`text.sourceText.style.replaceText(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -74,31 +83,36 @@ A [TextStyle object](#text-style).
 
 This is used when you want to define (or inherit) a [Text Style](#text-style), while setting the content for a substring of the text.
 
-For example, to create a custom style and then set a substring of the text within the expression:
+#### Parameters
+
+|     Parameter     |  Type  | Description |                                                                                                           |
+| ----------------- | ------ | ----------- | --------------------------------------------------------------------------------------------------------- |
+| `value`           | String | Required.   | The text to set.                                                                                          |
+| `startIndex`      | Number | Optional.   | The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional.   | The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+
+#### Returns
+
+A [TextStyle object](#text-style).
+
+#### Example
+
+To create a custom style and then set a substring of the text within the expression:
 
 ```js
 // assume the value of the source text is "Old Text"
 const referenceText = thisComp.layer("Source Layer Name").text.sourceText;
 const style = referenceText.getStyleAt(0,0);
 
- // This will change the text from "Old Text" to "NewText" as the first 4 characters are replaced.
+// This will change the text from "Old Text" to "NewText" as the first 4 characters are replaced.
 style.replaceText("New", 0, 4);
 ```
-
-#### Parameters
-
-| `value`           | Required. String. The text to set.                                                                                          |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
-
-#### Returns
-
-A [TextStyle object](#text-style).
 
 ---
 
 ## TextStyle.fontSize
+
+`text.sourceText.style.fontSize`
 
 #### Description
 
@@ -112,18 +126,21 @@ Number
 
 ## TextStyle.setFontSize()
 
-`textStyle.setFontSize(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setFontSize(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Font Size to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Font Size to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Number. The Font Size to set.                                                                                     |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The Font Size to set.                                                                                     |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -132,6 +149,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.font
+
+`text.sourceText.style.font`
 
 #### Description
 
@@ -145,18 +164,21 @@ String
 
 ## TextStyle.setFont()
 
-`textStyle.setFont(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setFont(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the font to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the font to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. String. The font to set.                                                                                          |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | String | Required. The font to set.                                                                                          |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -165,6 +187,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isFauxBold
+
+`text.sourceText.style.isFauxBold`
 
 #### Description
 
@@ -178,18 +202,21 @@ Boolean
 
 ## TextStyle.setFauxBold()
 
-`textStyle.setFauxBold(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setFauxBold(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Faux Bold status. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Faux Bold status.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable Faux Bold.                                                                  |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable Faux Bold.                                                                   |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -198,6 +225,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isFauxItalic
+
+`text.sourceText.style.isFauxItalic`
 
 #### Description
 
@@ -211,18 +240,21 @@ Boolean
 
 ## TextStyle.setFauxItalic()
 
-`textStyle.setFauxItalic(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setFauxItalic(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Faux Italics status. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Faux Italics status.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable Faux Italics.                                                               |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable Faux Italics.                                                                |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -231,6 +263,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isAllCaps
+
+`text.sourceText.style.isAllCaps`
 
 #### Description
 
@@ -244,18 +278,21 @@ Boolean
 
 ## TextStyle.setAllCaps()
 
-`textStyle.setAllCaps(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setAllCaps(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the All Caps status. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the All Caps status.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable All Caps.                                                                   |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable All Caps.                                                                    |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -264,6 +301,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isSmallCaps
+
+`text.sourceText.style.isSmallCaps`
 
 #### Description
 
@@ -277,18 +316,21 @@ Boolean
 
 ## TextStyle.setSmallCaps()
 
-`textStyle.setSmallCaps(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setSmallCaps(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Small Caps status. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Small Caps status.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable Small Caps.                                                                 |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable Small Caps.                                                                  |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -297,6 +339,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.tracking
+
+`text.sourceText.style.tracking`
 
 #### Description
 
@@ -310,18 +354,21 @@ Number
 
 ## TextStyle.setTracking()
 
-`textStyle.setTracking(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setTracking(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Tracking to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Tracking to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Number. The Tracking value to set.                                                                                |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The Tracking value to set.                                                                                |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -330,6 +377,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.leading
+
+`text.sourceText.style.leading`
 
 #### Description
 
@@ -343,20 +392,23 @@ Number
 
 ## TextStyle.setLeading()
 
-`textStyle.setLeading(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setLeading(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Leading to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Leading to a specified value.
 
-Keep in mind that [TextStyle.isAutoLeading](#textstyleisautoleading) must be `false` in order for setLeading() to have any visible affect. You can set Leading to a value other than Auto in the Properties or Character panel, or via [TextStyle.setAutoLeading(value, startIndex, numOfCharacters)](#textstylesetautoleading).
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+
+Keep in mind that [TextStyle.isAutoLeading](#textstyleisautoleading) must be `false` in order for `setLeading()` to have any visible affect. You can set Leading to a value other than Auto in the Properties or Character panel, or via [TextStyle.setAutoLeading()](#textstylesetautoleading).
 
 #### Parameters
 
-| `value`           | Required. Number. The Leading value to set.                                                                                 |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The Leading value to set.                                                                                 |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -365,6 +417,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isAutoLeading
+
+`text.sourceText.style.isAutoLeading`
 
 #### Description
 
@@ -378,18 +432,21 @@ Boolean
 
 ## TextStyle.setAutoLeading()
 
-`textStyle.setAutoLeading(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setAutoLeading(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Auto Leading status. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Auto Leading status.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable Auto Leading.                                                               |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable Auto Leading.                                                                |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -398,6 +455,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.baselineShift
+
+`text.sourceText.style.baselineShift`
 
 #### Description
 
@@ -411,18 +470,21 @@ Number
 
 ## TextStyle.setBaselineShift()
 
-`textStyle.setBaselineShift(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setBaselineShift(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Baseline Shift to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Baseline Shift to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Number. The Baseline Shift value to set.                                                                          |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The Baseline Shift value to set.                                                                          |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -431,6 +493,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.applyFill
+
+`text.sourceText.style.applyFill`
 
 #### Description
 
@@ -444,18 +508,21 @@ Boolean
 
 ## TextStyle.setApplyFill()
 
-`textStyle.setApplyFill(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setApplyFill(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set whether Fill Color is enabled. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set whether Fill Color is enabled.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable Fill.                                                                       |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable Fill.                                                                        |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -464,6 +531,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.fillColor
+
+`text.sourceText.style.fillColor`
 
 #### Description
 
@@ -477,20 +546,23 @@ Array of Numbers.
 
 ## TextStyle.setFillColor()
 
-`textStyle.setFillColor(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setFillColor(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the text Fill Color. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the text Fill Color.
 
-Keep in mind that [TextStyle.applyFill](#textstyleapplyfill) must be `true` in order for the fill color to show up. You can set it to `true` by enabling Fill in the Properties or Character panel, or by using [TextStyle.setApplyFill(value, startIndex, numOfCharacters)](#textstylesetapplyfill).
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+
+Keep in mind that [TextStyle.applyFill](#textstyleapplyfill) must be `true` in order for the fill color to show up. You can set it to `true` by enabling Fill in the Properties or Character panel, or by using [TextStyle.setApplyFill()](#textstylesetapplyfill).
 
 #### Parameters
 
-| `value`           | Required. Array of numbers. `[R, G, B]` with each value between 0.0 to 1.0.                                                 |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |       Type       |                                                     Description                                                     |
+| ----------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Array of numbers | Required. `[R, G, B]` with each value between `0.0` and `1.0`.                                                      |
+| `startIndex`      | Number           | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number           | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -499,6 +571,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.applyStroke
+
+`text.sourceText.style.applyStroke`
 
 #### Description
 
@@ -512,18 +586,21 @@ Boolean
 
 ## TextStyle.setApplyStroke()
 
-`textStyle.setApplyStroke(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setApplyStroke(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set whether Stroke is enabled. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set whether Stroke is enabled.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable Stroke.                                                                     |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable Stroke.                                                                      |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -532,6 +609,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.strokeColor
+
+`text.sourceText.style.strokeColor`
 
 #### Description
 
@@ -545,20 +624,23 @@ Array of numbers
 
 ## TextStyle.setStrokeColor()
 
-`textStyle.setStrokeColor(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setStrokeColor(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Stroke Color. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Stroke Color.
 
-Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` and [TextStyle.strokeWidth](#textstylestrokewidth) must be greater than zero in order for any stroke color to be shown. You can set these by enabling Stroke or increasing Stroke Width in the Properties or Character panel, or by using [TextStyle.setApplyStroke(value, startIndex, numOfCharacters)](#textstylesetapplystroke) and [TextStyle.setStrokeWidth(value, startIndex, numOfCharacters)](#textstylesetstrokewidth), respectively.
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+
+Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` and [TextStyle.strokeWidth](#textstylestrokewidth) must be greater than zero in order for any stroke color to be shown. You can set these by enabling Stroke or increasing Stroke Width in the Properties or Character panel, or by using [TextStyle.setApplyStroke()](#textstylesetapplystroke) and [TextStyle.setStrokeWidth()](#textstylesetstrokewidth), respectively.
 
 #### Parameters
 
-| `value`           | Required. Array of numbers. `[R, G, B]` with each value between 0.0 to 1.0.                                                 |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |       Type       |                                                     Description                                                     |
+| ----------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Array of numbers | Required. `[R, G, B]` with each value between `0.0` and `1.0`.                                                      |
+| `startIndex`      | Number           | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number           | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -567,6 +649,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.strokeWidth
+
+`text.sourceText.style.strokeWidth`
 
 #### Description
 
@@ -580,20 +664,23 @@ Number
 
 ## TextStyle.setStrokeWidth()
 
-`textStyle.setStrokeWidth(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setStrokeWidth(value[, startIndex, numOfCharacters])`
 
 #### Description
 
-Used to set the Stroke Width to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Stroke Width to a specified value.
 
-Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` in order to see any change in stroke width. You can set this either by enabling Stroke in the Properties or Character panel, or via [TextStyle.setApplyStroke(value, startIndex, numOfCharacters)](#textstylesetapplystroke).
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+
+Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` in order to see any change in stroke width. You can set this either by enabling Stroke in the Properties or Character panel, or via [TextStyle.setApplyStroke()](#textstylesetapplystroke).
 
 #### Parameters
 
-| `value`           | Required. Number. The value to set the Stroke Width.                                                                        |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The value to set the Stroke Width.                                                                        |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -602,6 +689,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.kerningType
+
+`text.sourceText.style.kerningType`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -612,7 +701,7 @@ Returns the Kerning Type for a Text layer.
 
 #### Type
 
-Predefined string as defined in [ReturnedKerningType](). Read-only. One of the following:
+Read-only. Predefined string. One of:
 
 - `manual`
 - `metrics`
@@ -622,33 +711,29 @@ Predefined string as defined in [ReturnedKerningType](). Read-only. One of the f
 
 ## TextStyle.setKerningType()
 
-`textStyle.setKerningType(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setKerningType(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Kerning Type. The value will be applied to the entire Text layer unless a start index and number of characters are specified.
+Used to set the Kerning Type.
+
+The value will be applied to the entire Text layer unless a start index and number of characters are specified.
 
 !!! note
-    `manual` is not a valid value for this method. To set manual kerning, use [TextStyle.setKerning(value, characterIndex)](#textstylesetkerning).
+    `manual` is not a valid value for this method. To set manual kerning, use [TextStyle.setKerning()](#textstylesetkerning).
 
     Also, note that automatic kerning will take a precendence over manual kerning.
 
-#### Type
-
-Predefined string as defined in [KerningType](). One of the following:
-
-- `metrics`
-- `optical`
-
 #### Parameters
 
-| `value`           | Required. Predefined string as defined in [KerningType](). The value to set for Kerning Type.                              |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                         |
-| `numOfCharacters` | Optional. Number. The length of the substring to be changed. Defaults to the number of characters until end of the string. |
+|     Parameter     |                                    Type                                     |                                                    Description                                                     |
+| ----------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `value`           | `metrics` or `optical`, as defined in [KerningType](#textstylekerningtype). | Required. The value to set for Kerning Type.                                                                       |
+| `startIndex`      | Number                                                                      | Optional. The start index for the substring to be replaced. Defaults to `0`.                                       |
+| `numOfCharacters` | Number                                                                      | Optional. The length of the substring to be changed. Defaults to the number of characters until end of the string. |
 
 #### Type
 
@@ -658,12 +743,16 @@ None
 
 ## TextStyle.kerning
 
+`text.sourceText.style.kerning`
+
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Returns the Kerning Value for a Text Layer. For this value to be returned as anything other than zero, the [KerningType]() must not be set.
+Returns the Kerning Value for a Text Layer.
+
+For this value to be returned as anything other than zero, the [KerningType](#textstylekerningtype) must not be set.
 
 #### Type
 
@@ -673,20 +762,23 @@ Number. Read-only.
 
 ## TextStyle.setKerning()
 
-`textStyle.setKerning(value, characterIndex)`
+`text.sourceText.style.setKerning(value, characterIndex)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Kerning Value at the specifed character index. This will only affect the Text layer when [KerningType]() is not set for the character index.
+Used to set the Kerning Value at the specifed character index.
+
+This will only affect the Text layer when [KerningType](#textstylekerningtype) is not set for the character index.
 
 #### Parameters
 
-| `value`          | Required. Number. The value to set the Kerning Value.                  |
-|------------------|------------------------------------------------------------------------|
-| `characterIndex` | Required. Number. The character index for the substring to be applied. |
+|    Parameter     |  Type  |                          Description                           |
+| ---------------- | ------ | -------------------------------------------------------------- |
+| `value`          | Number | Required. The value to set the Kerning Value.                  |
+| `characterIndex` | Number | Required. The character index for the substring to be applied. |
 
 #### Type
 
@@ -695,6 +787,8 @@ None
 ---
 
 ## TextStyle.tsume
+
+`text.sourceText.style.tsume`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -705,27 +799,30 @@ Returns the Tsume value for a Text layer.
 
 #### Type
 
-Number (between 0 and 1).
+Number (between `0` and `1`).
 
 ---
 
 ## TextStyle.setTsume()
 
-`textStyle.setTsume(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setTsume(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Tsume to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Tsume to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Number (between 0 and 100). The value to set the Tsume.                                                           |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The value to set the Tsume, between `0` and `100`.                                                        |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Type
 
@@ -734,6 +831,8 @@ None
 ---
 
 ## TextStyle.verticalScaling
+
+`text.sourceText.style.verticalScaling`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -750,21 +849,24 @@ Number
 
 ## TextStyle.setVerticalScaling()
 
-`textStyle.setVerticalScaling(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setVerticalScaling(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Vertical Scaling to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Vertical Scaling to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Number. The value to set the Vertical Scaling.                                                                    |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The value to set the Vertical Scaling.                                                                    |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -773,6 +875,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.horizontalScaling
+
+`text.sourceText.style.horizontalScaling`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -789,21 +893,24 @@ Number
 
 ## TextStyle.setHorizontalScaling()
 
-`textStyle.setHorizontalScaling(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setHorizontalScaling(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Horizontal Scaling to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Horizontal Scaling to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Number. The value to set the Horizontal Scaling.                                                                  |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type  |                                                     Description                                                     |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Number | Required. The value to set the Horizontal Scaling.                                                                  |
+| `startIndex`      | Number | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -813,16 +920,18 @@ A [TextStyle object](#text-style).
 
 ## TextStyle.lineJoin
 
+`text.sourceText.style.lineJoin`
+
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Returns the Line Join Type for a Text layer. The returned value is a defined string in [LineJoinType]().
+Returns the Line Join Type for a Text layer.
 
 #### Type
 
-Predefined string as defined in [LineJoinType](). One of the following:
+Predefined string. One of:
 
 - `bevel`
 - `miter`
@@ -832,21 +941,24 @@ Predefined string as defined in [LineJoinType](). One of the following:
 
 ## TextStyle.setLineJoin()
 
-`textStyle.setLineJoin(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setLineJoin(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Line Join Type to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Line Join Type to a specified value.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Predefined string as defined in [LineJoinType](). The value to set for Line Join Type.                            |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |                              Type                              |                                                     Description                                                     |
+| ----------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Predefined string as defined in [LineJoin](#textstylelinejoin) | Required. The value to set for Line Join Type.                                                                      |
+| `startIndex`      | Number                                                         | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number                                                         | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -856,16 +968,18 @@ A [TextStyle object](#text-style).
 
 ## TextStyle.baselineOption
 
+`text.sourceText.style.baselineOption`
+
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Returns the Baseline Option Type for a Text layer. The returned value is a defined string in [BaselineOptionType]().
+Returns the Baseline Option Type for a Text layer.
 
 #### Type
 
-Predefined string as defined in [BaselineOptionType](). One of the following:
+Predefined string. One of:
 
 - `default`
 - `subscript`
@@ -875,21 +989,24 @@ Predefined string as defined in [BaselineOptionType](). One of the following:
 
 ## TextStyle.setBaselineOption()
 
-`textStyle.setBaselineOption(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setBaselineOption(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the baseline option to a specified predefined string. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the baseline option.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Predefined string as defined in [BaselineOptionType]() . The value to set for Baseline Option.                    |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |                                   Type                                    |                                                     Description                                                     |
+| ----------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Predefined string as defind in [BaselineOption](#textstylebaselineoption) | Required. The value to set for Baseline Option.                                                                     |
+| `startIndex`      | Number                                                                    | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number                                                                    | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -899,16 +1016,18 @@ A [TextStyle object](#text-style).
 
 ## TextStyle.digitSet
 
+`text.sourceText.style.digitSet`
+
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Returns the Digit Set for a Text layer. The returned value is a defined string in [DigitSetType]().
+Returns the Digit Set for a Text layer.
 
 #### Type
 
-Predefined string as defined in [DigitSetType](). One of the following:
+Predefined string. One of:
 
 - `default`
 - `hindidigits`
@@ -917,21 +1036,24 @@ Predefined string as defined in [DigitSetType](). One of the following:
 
 ## TextStyle.setDigitSet()
 
-`textStyle.setDigitSet(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setDigitSet(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Digit Set to a specified predefined string. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Digit Set.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Predefined string as defined in [DigitSetType]() . The value to use for Digit Set.                                |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |                             Type                              |                                                     Description                                                     |
+| ----------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Predefined string as defind in [DigitSet](#textstyledigitset) | Required. The value to use for Digit Set.                                                                           |
+| `startIndex`      | Number                                                        | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number                                                        | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -940,6 +1062,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isLigature
+
+`text.sourceText.style.isLigature`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -956,21 +1080,24 @@ Boolean
 
 ## TextStyle.setLigature()
 
-`textStyle.setLigature(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setLigature(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to enable or disable ligatures. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to enable or disable ligatures.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Boolean. Whether to enable or disable ligatures.                                                                  |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |  Type   |                                                     Description                                                     |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Boolean | Required. Whether to enable or disable ligatures.                                                                   |
+| `startIndex`      | Number  | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number  | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -980,16 +1107,18 @@ A [TextStyle object](#text-style).
 
 ## TextStyle.baselineDirection
 
+`text.sourceText.style.baselineDirection`
+
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Returns the Baseline Direction for a Text layer. The returned value is a defined string in [BaselineDirectionType]().
+Returns the Baseline Direction for a Text layer.
 
 #### Type
 
-Predefined string as defined in [BaselineDirectionType](). One of the following:
+Predefined string. One of:
 
 - `default`
 - `rotated`
@@ -999,21 +1128,24 @@ Predefined string as defined in [BaselineDirectionType](). One of the following:
 
 ## TextStyle.setBaselineDirection()
 
-`textStyle.setBaselineDirection(value, startIndex, numOfCharacters)`
+`text.sourceText.style.setBaselineDirection(value[, startIndex, numOfCharacters])`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
 #### Description
 
-Used to set the Baseline Direction to a specified predefined string. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
+Used to set the Baseline Direction.
+
+The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
 #### Parameters
 
-| `value`           | Required. Predefined string as defined in [BaselineDirectionType]() . The value to set for Baseline Direction.              |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `startIndex`      | Optional. Number. The start index for the substring to be replaced. Defaults to 0.                                          |
-| `numOfCharacters` | Optional. Number. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |                                      Type                                       |                                                     Description                                                     |
+| ----------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Predefined string as defind in [BaselineDirection](#textstylebaselinedirection) | The value to set for Baseline Direction.                                                                            |
+| `startIndex`      | Number                                                                          | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number                                                                          | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -1023,6 +1155,8 @@ A [TextStyle object](#text-style).
 
 ## TextStyle.justification
 
+`text.sourceText.style.justification`
+
 !!! note
     This functionality was added in After Effects 25.0.
 
@@ -1030,12 +1164,12 @@ A [TextStyle object](#text-style).
 
 Returns the value of Justification of the first paragraph of a Text layer.
 
-!!! WARNING
-    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyledirection) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstylesetdirection).
+!!! warning
+    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyledirection) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection()](#textstylesetdirection).
 
 #### Type
 
-Predefined string as defined in [JustificationType](). One of the following:
+Predefined string. One of:
 
 - `alignCenter`
 - `alignLeft`
@@ -1049,25 +1183,26 @@ Predefined string as defined in [JustificationType](). One of the following:
 
 ## TextStyle.setJustification()
 
-`textStyle.setJustification(value)`
+`text.sourceText.style.setJustification(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
 Used to set the Justification for the entire Text layer.
 
-!!! WARNING
-    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyledirection) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstylesetdirection).
+!!! warning
+    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyledirection) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection()](#textstylesetdirection).
 
 #### Parameters
 
-| `value`   | Predefined string as defined in [JustificationType](); the desired value for the Justification.   |
-|-----------|---------------------------------------------------------------------------------------------------|
+| Parameter |                                   Type                                   |               Description                |
+| --------- | ------------------------------------------------------------------------ | ---------------------------------------- |
+| `value`   | Predefined string as defined in [Justification](#textstylejustification) | The desired value for the Justification. |
 
 #### Returns
 
@@ -1076,6 +1211,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.direction
+
+`text.sourceText.style.direction`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1086,7 +1223,7 @@ Returns the value of Direction of the first paragraph of a Text layer.
 
 #### Type
 
-Predefined string as defined in [DirectionType](). One of the following:
+Predefined string. One of:
 
 - `left-to-right`
 - `right-to-left`
@@ -1095,13 +1232,13 @@ Predefined string as defined in [DirectionType](). One of the following:
 
 ## TextStyle.setDirection()
 
-`textStyle.setDirection(value)`
+`text.sourceText.style.setDirection(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1109,8 +1246,9 @@ Used to set the Direction for the entire Text layer, either `left-to-right` or `
 
 #### Parameters
 
-| `value`   | Predefined string as defined in [DirectionType](); the desired value for Direction.   |
-|-----------|---------------------------------------------------------------------------------------|
+| Parameter |                               Type                               |           Description            |
+| --------- | ---------------------------------------------------------------- | -------------------------------- |
+| `value`   | Predefined string as defined in [Direction](#textstyledirection) | The desired value for Direction. |
 
 #### Returns
 
@@ -1119,6 +1257,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.leftMargin
+
+`text.sourceText.style.leftMargin`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1135,13 +1275,13 @@ Number
 
 ## TextStyle.setLeftMargin()
 
-`textStyle.setLeftMargin(value)`
+`text.sourceText.style.setLeftMargin(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1149,8 +1289,9 @@ Used to set the Left Margin of a Text layer to a specified value.
 
 #### Parameters
 
-| `value`   | Number; the desired value for Left Margin.   |
-|-----------|----------------------------------------------|
+| Parameter |  Type  |            Description             |
+| --------- | ------ | ---------------------------------- |
+| `value`   | Number | The desired value for Left Margin. |
 
 #### Returns
 
@@ -1159,6 +1300,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.rightMargin
+
+`text.sourceText.style.rightMargin`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1175,13 +1318,13 @@ Number
 
 ## TextStyle.setRightMargin()
 
-`textStyle.setRightMargin(value)`
+`text.sourceText.style.setRightMargin(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1189,8 +1332,9 @@ Used to set the Right Margin of a Text layer to a specified value.
 
 #### Parameters
 
-| `value`   | Number; the desired value for Right Margin.   |
-|-----------|-----------------------------------------------|
+| Parameter |  Type  |             Description             |
+| --------- | ------ | ----------------------------------- |
+| `value`   | Number | The desired value for Right Margin. |
 
 #### Returns
 
@@ -1199,6 +1343,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.spaceAfter
+
+`text.sourceText.style.spaceAfter`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1215,13 +1361,13 @@ Number
 
 ## TextStyle.setSpaceAfter()
 
-`textStyle.setSpaceAfter(value)`
+`text.sourceText.style.setSpaceAfter(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1229,8 +1375,9 @@ Used to set the Space After attribute of a Text layer to a specified value.
 
 #### Parameters
 
-| `value`   | Number; the desired value for the Space After attribute.   |
-|-----------|------------------------------------------------------------|
+| Parameter |  Type  |                   Description                    |
+| --------- | ------ | ------------------------------------------------ |
+| `value`   | Number | The desired value for the Space After attribute. |
 
 #### Returns
 
@@ -1239,6 +1386,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.spaceBefore
+
+`text.sourceText.style.spaceBefore`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1255,13 +1404,13 @@ Number
 
 ## TextStyle.setSpaceBefore()
 
-`textStyle.setSpaceBefore(value)`
+`text.sourceText.style.setSpaceBefore(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1269,8 +1418,9 @@ Used to set the Space Before attribute of a Text layer to a specified value.
 
 #### Parameters
 
-| `value`   | Number; the desired value for the Space Before attribute.   |
-|-----------|-------------------------------------------------------------|
+| Parameter |  Type  |                    Description                    |
+| --------- | ------ | ------------------------------------------------- |
+| `value`   | Number | The desired value for the Space Before attribute. |
 
 #### Returns
 
@@ -1279,6 +1429,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.firstLineIndent
+
+`text.sourceText.style.firstLineIndent`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1295,13 +1447,13 @@ Number
 
 ## TextStyle.setFirstLineIndent()
 
-`textStyle.setFirstLineIndent(value)`
+`text.sourceText.style.setFirstLineIndent(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1309,8 +1461,9 @@ Used to set the First Line Indent of a Text layer to a specified value.
 
 #### Parameters
 
-| `value`   | Number; the desired value for First Line Indent.   |
-|-----------|----------------------------------------------------|
+| Parameter |  Type  |               Description                |
+| --------- | ------ | ---------------------------------------- |
+| `value`   | Number | The desired value for First Line Indent. |
 
 #### Returns
 
@@ -1319,6 +1472,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isEveryLineComposer
+
+`text.sourceText.style.isEveryLineComposer`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1335,13 +1490,13 @@ Boolean
 
 ## TextStyle.setEveryLineComposer()
 
-`textStyle.setEveryLineComposer(value)`
+`text.sourceText.style.setEveryLineComposer(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1349,8 +1504,9 @@ Used to enable or disable the Every-Line Composer for the entire Text layer.
 
 #### Parameters
 
-| `value`   | Boolean. Whether to enable or disable Every-Line Composer.   |
-|-----------|--------------------------------------------------------------|
+| Parameter |  Type   |                    Description                    |
+| --------- | ------- | ------------------------------------------------- |
+| `value`   | Boolean | Whether to enable or disable Every-Line Composer. |
 
 #### Returns
 
@@ -1359,6 +1515,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.isHangingRoman
+
+`text.sourceText.style.isHangingRoman`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1375,13 +1533,13 @@ Boolean
 
 ## TextStyle.setHangingRoman()
 
-`textStyle.setHangingRoman(value)`
+`text.sourceText.style.setHangingRoman(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1389,8 +1547,9 @@ Used to enable or disable Hanging Roman Punctuation for the entire Text layer.
 
 #### Parameters
 
-| `value`   | Boolean. Whether to enable or disable Roman Hanging Punctuation.   |
-|-----------|--------------------------------------------------------------------|
+| Parameter |  Type   |                       Description                       |
+| --------- | ------- | ------------------------------------------------------- |
+| `value`   | Boolean | Whether to enable or disable Roman Hanging Punctuation. |
 
 #### Returns
 
@@ -1399,6 +1558,8 @@ A [TextStyle object](#text-style).
 ---
 
 ## TextStyle.leadingType
+
+`text.sourceText.style.leadingType`
 
 !!! note
     This functionality was added in After Effects 25.0.
@@ -1409,7 +1570,7 @@ Returns the value of Leading Type for the first paragraph of a Text layer.
 
 #### Type
 
-Predefined string as defined in [LeadingType](). One of the following:
+Predefined string. One of:
 
 - `bottom-to-bottom`
 - `top-to-top`
@@ -1418,13 +1579,13 @@ Predefined string as defined in [LeadingType](). One of the following:
 
 ## TextStyle.setLeadingType()
 
-`textStyle.setLeadingType(value)`
+`text.sourceText.style.setLeadingType(value)`
 
 !!! note
     This functionality was added in After Effects 25.0.
 
-!!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
+!!! warning
+    This method must be called after [TextStyle.setText()](#textstylesettext) if both are being used.
 
 #### Description
 
@@ -1432,8 +1593,9 @@ Used to set the Leading Type for the entire Text layer.
 
 #### Parameters
 
-| `value`   | Predefined string as defined in [LeadingType](); the desired value for Leading Type.   |
-|-----------|----------------------------------------------------------------------------------------|
+| Parameter |                                 Type                                 |             Description             |     |
+| --------- | -------------------------------------------------------------------- | ----------------------------------- | --- |
+| `value`   | Predefined string as defined in [LeadingType](#textstyleleadingtype) | The desired value for Leading Type. |     |
 
 #### Returns
 
