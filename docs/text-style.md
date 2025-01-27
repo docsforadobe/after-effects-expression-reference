@@ -1,6 +1,6 @@
 # Text Style
 
-Most of these functions are accessible from the [SourceText.style](text-sourcetext.md#sourcetext-style) object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control per-character styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.
+Most of these functions are accessible from the [SourceText.style](text-sourcetext.md#sourcetextstyle) object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control percharacter styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.
 
 !!! note
     When using per-character styling, line breaks and spaces are also considered characters and must be accounted for (or skipped, if desired) when calcuating character indexes.
@@ -318,7 +318,7 @@ Number
 
 Used to set the Leading to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
-Keep in mind that [TextStyle.isAutoLeading](#textstyle-isautoleading) must be `false` in order for setLeading() to have any visible affect. You can set Leading to a value other than Auto in the Properties or Character panel, or via [TextStyle.setAutoLeading(value, startIndex, numOfCharacters)](#textstyle-setautoleading).
+Keep in mind that [TextStyle.isAutoLeading](#textstyleisautoleading) must be `false` in order for setLeading() to have any visible affect. You can set Leading to a value other than Auto in the Properties or Character panel, or via [TextStyle.setAutoLeading(value, startIndex, numOfCharacters)](#textstylesetautoleading).
 
 **Parameters**
 
@@ -444,7 +444,7 @@ Array of Numbers.
 
 Used to set the text Fill Color. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
-Keep in mind that [TextStyle.applyFill](#textstyle-applyfill) must be `true` in order for the fill color to show up. You can set it to `true` by enabling Fill in the Properties or Character panel, or by using [TextStyle.setApplyFill(value, startIndex, numOfCharacters)](#textstyle-setapplyfill).
+Keep in mind that [TextStyle.applyFill](#textstyleapplyfill) must be `true` in order for the fill color to show up. You can set it to `true` by enabling Fill in the Properties or Character panel, or by using [TextStyle.setApplyFill(value, startIndex, numOfCharacters)](#textstylesetapplyfill).
 
 **Parameters**
 
@@ -508,7 +508,7 @@ Array of numbers
 
 Used to set the Stroke Color. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
-Keep in mind that [TextStyle.applyStroke](#textstyle-applystroke) must be `true` and [TextStyle.strokeWidth](#textstyle-strokewidth) must be greater than zero in order for any stroke color to be shown. You can set these by enabling Stroke or increasing Stroke Width in the Properties or Character panel, or by using [TextStyle.setApplyStroke(value, startIndex, numOfCharacters)](#textstyle-setapplystroke) and [TextStyle.setStrokeWidth(value, startIndex, numOfCharacters)](#textstyle-setstrokewidth), respectively.
+Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` and [TextStyle.strokeWidth](#textstylestrokewidth) must be greater than zero in order for any stroke color to be shown. You can set these by enabling Stroke or increasing Stroke Width in the Properties or Character panel, or by using [TextStyle.setApplyStroke(value, startIndex, numOfCharacters)](#textstylesetapplystroke) and [TextStyle.setStrokeWidth(value, startIndex, numOfCharacters)](#textstylesetstrokewidth), respectively.
 
 **Parameters**
 
@@ -541,7 +541,7 @@ Number
 
 Used to set the Stroke Width to a specified value. The value will be set for the entire Text layer unless `startIndex` and `numOfCharacters` are specified.
 
-Keep in mind that [TextStyle.applyStroke](#textstyle-applystroke) must be `true` in order to see any change in stroke width. You can set this either by enabling Stroke in the Properties or Character panel, or via [TextStyle.setApplyStroke(value, startIndex, numOfCharacters)](#textstyle-setapplystroke).
+Keep in mind that [TextStyle.applyStroke](#textstyleapplystroke) must be `true` in order to see any change in stroke width. You can set this either by enabling Stroke in the Properties or Character panel, or via [TextStyle.setApplyStroke(value, startIndex, numOfCharacters)](#textstylesetapplystroke).
 
 **Parameters**
 
@@ -585,7 +585,7 @@ Predefined string as defined in [ReturnedKerningType](). Read-only. One of the f
 Used to set the Kerning Type. The value will be applied to the entire Text layer unless a start index and number of characters are specified.
 
 !!! note
-    `manual` is not a valid value for this method. To set manual kerning, use [TextStyle.setKerning(value, characterIndex)](#textstyle-setkerning).
+    `manual` is not a valid value for this method. To set manual kerning, use [TextStyle.setKerning(value, characterIndex)](#textstylesetkerning).
 
     Also, note that automatic kerning will take a precendence over manual kerning.
 
@@ -966,7 +966,7 @@ A [TextStyle object](#textstyle).
 Returns the value of Justification of the first paragraph of a Text layer.
 
 !!! WARNING
-    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
+    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyledirection) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstylesetdirection).
 
 **Type**
 
@@ -988,14 +988,14 @@ Predefined string as defined in [JustificationType](). One of the following:
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
 Used to set the Justification for the entire Text layer.
 
 !!! WARNING
-    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
+    The left and right values for alignment/justification will be reversed if the Text layer's [TextStyle.direction](#textstyledirection) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstylesetdirection).
 
 **Parameters**
 
@@ -1032,7 +1032,7 @@ Predefined string as defined in [DirectionType](). One of the following:
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1070,7 +1070,7 @@ Number
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1108,7 +1108,7 @@ Number
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1146,7 +1146,7 @@ Number
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1184,7 +1184,7 @@ Number
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1222,7 +1222,7 @@ Number
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1260,7 +1260,7 @@ Boolean
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1298,7 +1298,7 @@ Boolean
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 
@@ -1339,7 +1339,7 @@ Predefined string as defined in [LeadingType](). One of the following:
     This functionality was added in After Effects 25.0.
 
 !!! WARNING
-    This method must be called after [TextStyle.setText(value)](#textstyle-settext) if both are being used.
+    This method must be called after [TextStyle.setText(value)](#textstylesettext) if both are being used.
 
 **Description**
 

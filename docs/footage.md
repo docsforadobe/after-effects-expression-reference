@@ -96,7 +96,7 @@ String
 
 Returns the contents of a JSON file as a string.
 
-The `eval()` method can be used to convert the string to an array of sourceData objects, identical to the results of the [Footage.sourceData](#footage-sourcedata) attribute, from which the individual data streams can be referenced as hierarchal attributes of the data.
+The `eval()` method can be used to convert the string to an array of sourceData objects, identical to the results of the [Footage.sourceData](#footagesourcedata) attribute, from which the individual data streams can be referenced as hierarchal attributes of the data.
 
 For example:
 

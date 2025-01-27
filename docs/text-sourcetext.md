@@ -1,6 +1,6 @@
 # Source Text
 
-These functions are accessible on the [Text.sourceText](text.md#text-sourcetext) object in AE 17.0 and later.
+These functions are accessible on the [Text.sourceText](text.md#textsourcetext) object in AE 17.0 and later.
 
 ---
 
@@ -25,7 +25,7 @@ This function returns the [Text Style](text-style.md#textstyle) object of a part
 In case the style is keyframed and changes over time, use the second `time` parameter to specify the target time to get the style at.
 
 !!! note
-    Using [SourceText.style](#sourcetext-style) is the same as using `text.sourceText.getStyleAt(0,0)`
+    Using [SourceText.style](#sourcetextstyle) is the same as using `text.sourceText.getStyleAt(0,0)`
 
 For example, to get the style of the first character at the beginning of the timeline:
 

@@ -42,7 +42,7 @@ Number
 
 **Description**
 
-Returns a higher-level property group relative to the property group on which the method is called. See [propertyGroup(countUp=1)](property.md#property-propertygroup) for additional details.
+Returns a higher-level property group relative to the property group on which the method is called. See [propertyGroup(countUp=1)](property.md#propertypropertygroup) for additional details.
 
 **Type**
 
