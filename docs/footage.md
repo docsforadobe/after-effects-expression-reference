@@ -56,9 +56,12 @@ Number
 
 ## Footage.ntscDropFrame
 
+!!! note
+    This functionality was added in After Effects CS5.5
+
 #### Description
 
-Returns true if the timecode is in drop-frame format. (After Effects CS5.5 and later.)
+Returns true if the timecode is in drop-frame format.
 
 #### Type
 

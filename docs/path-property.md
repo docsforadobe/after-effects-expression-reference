@@ -1,12 +1,15 @@
 # Path Property
 
 !!! note
-    Available in After Effects CC18 and later.
+    This functionality was added in After Effects CC18
 
-**Example 1**
+### Examples
 
-Writes the list of point and tangent coordinates from Path 1 of Shape 1 on layer Shape Layer 1, at `time=0`, into a string. Apply this to
-the source text property of a text layer for a readout of the coordinates and incoming and outgoing tangents of the shape.
+#### Example 1
+
+Writes the list of point and tangent coordinates from Path 1 of Shape 1 on layer Shape Layer 1, at `time=0`, into a string.
+
+Apply this to the source text property of a text layer for a readout of the coordinates and incoming and outgoing tangents of the shape.
 
 ```javascript
 pointsList = "";
@@ -20,9 +23,13 @@ for (i = 0; i < myShape.points(sampleTime).length; i++) {
 pointsList;
 ```
 
-**Example 2**
+#### Example 2
 
-Reads the coordinates of the first vertex of Mask 1 on Dark Gray Solid 1 and converts them to composition coordinates. Apply this to a 2D point control of an effect, such as Write-on or CC Particle Systems II, to make the effect trace or track the first point of an animated mask. Duplicate the effect and change the path points index value ([0]) to trace or track the other points of the mask.
+Reads the coordinates of the first vertex of Mask 1 on Dark Gray Solid 1 and converts them to composition coordinates.
+
+Apply this to a 2D point control of an effect, such as Write-on or CC Particle Systems II, to make the effect trace or track the first point of an animated mask.
+
+Duplicate the effect and change the path points index value ([0]) to trace or track the other points of the mask.
 
 ```javascript
 myLayer = thisComp.layer("Dark Gray Solid 1");

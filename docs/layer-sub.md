@@ -30,7 +30,7 @@ Comp or Footage
 Returns the layer source corresponding to time `t`.
 
 !!! note
-    After Effects CS5.5 and later
+    This functionality was added in After Effects CS5.5
 
 #### Parameters
 
@@ -56,8 +56,8 @@ Shape layer extents increase the size of the layer bounds as necessary.
 Paragraph text layers returns the bounds of the paragraph box.
 
 !!! note
-    After Effects 13.2 and later.
-Paragraph text extents added in After Effects 15.1.
+    This functionality was added in After Effects 13.2
+    Paragraph text extents was added in After Effects 15.1.
 
 Example:
 

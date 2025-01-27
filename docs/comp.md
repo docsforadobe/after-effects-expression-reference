@@ -254,7 +254,7 @@ Number
 Returns true if the timecode is in drop-frame format.
 
 !!! note
-    Available in After Effects CS5.5 and later.
+    This functionality was added in After Effects CS5.5
 
 #### Type
 
