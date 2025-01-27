@@ -1,28 +1,26 @@
-.. _Camera:
+<a id="camera"></a>
 
-Camera
-######
+# Camera
 
 Camera objects have the same attributes and methods as Layer objects, except for:
 
-* ``source``
-* ``effect``
-* ``mask``
-* ``width``
-* ``height``
-* ``anchorPoint``
-* ``scale``
-* ``opacity``
-* ``audioLevels``
-* ``timeRemap``
+* `source`
+* `effect`
+* `mask`
+* `width`
+* `height`
+* `anchorPoint`
+* `scale`
+* `opacity`
+* `audioLevels`
+* `timeRemap`
 * all the material properties
 
-----
+---
 
-.. _Camera.pointOfInterest:
+<a id="camera-pointofinterest"></a>
 
-Camera.pointOfInterest
-**********************
+## Camera.pointOfInterest
 
 **Description**
 
@@ -32,48 +30,47 @@ Returns the point of interest values of a camera in world space.
 
 Array (3 dimensional)
 
-----
+---
 
-.. _Camera.zoom:
+<a id="camera-zoom"></a>
 
-Camera.zoom
-***********
+## Camera.zoom
 
 **Description**
 
 Returns the zoom values of a camera in pixels.
 
-Here's an expression for the Scale property of a layer that maintains the relative size of the layer in frame while changing the z position (depth) of a layer or the Zoom value of a camera::
+Here’s an expression for the Scale property of a layer that maintains the relative size of the layer in frame while changing the z position (depth) of a layer or the Zoom value of a camera:
 
-	cam = thisComp.activeCamera;
-	distance = length(sub(position, cam.position));
-	scale * distance / cam.zoom;
+```default
+cam = thisComp.activeCamera;
+distance = length(sub(position, cam.position));
+scale * distance / cam.zoom;
+```
 
 **Type**
 
 Number
 
-----
+---
 
-.. _Camera.depthOfField:
+<a id="camera-depthoffield"></a>
 
-Camera.depthOfField
-*******************
+## Camera.depthOfField
 
 **Description**
 
-Returns ``1`` if the Depth Of Field property of a camera is on, or returns ``0`` if the Depth Of Field property is off.
+Returns `1` if the Depth Of Field property of a camera is on, or returns `0` if the Depth Of Field property is off.
 
 **Type**
 
 Boolean Number
 
-----
+---
 
-.. _Camera.focusDistance:
+<a id="camera-focusdistance"></a>
 
-Camera.focusDistance
-********************
+## Camera.focusDistance
 
 **Description**
 
@@ -83,12 +80,11 @@ Returns the focus distance value of a camera, in pixels.
 
 Number
 
-----
+---
 
-.. _Camera.aperture:
+<a id="camera-aperture"></a>
 
-Camera.aperture
-***************
+## Camera.aperture
 
 **Description**
 
@@ -98,12 +94,11 @@ Returns the aperture value of a camera, in pixels.
 
 Number
 
-----
+---
 
-.. _Camera.blurLevel:
+<a id="camera-blurlevel"></a>
 
-Camera.blurLevel
-****************
+## Camera.blurLevel
 
 **Description**
 
@@ -113,29 +108,27 @@ Returns the blur level value of a camera as a percentage.
 
 Number
 
-----
+---
 
-.. _Camera.irisShape:
+<a id="camera-irisshape"></a>
 
-Camera.irisShape
-****************
+## Camera.irisShape
 
 **Description**
 
 Returns the iris shape value from 1-10, corresponding to the selected dropdown value.
 
-.. note: Value ``2`` is reserved for the divider.
+<!-- note: Value ``2`` is reserved for the divider. -->
 
 **Type**
 
 Number
 
-----
+---
 
-.. _Camera.irisRotation:
+<a id="camera-irisrotation"></a>
 
-Camera.irisRotation
-*******************
+## Camera.irisRotation
 
 **Description**
 
@@ -145,12 +138,11 @@ Returns the iris rotation value, in degrees.
 
 Number
 
-----
+---
 
-.. _Camera.irisRoundness:
+<a id="camera-irisroundness"></a>
 
-Camera.irisRoundness
-********************
+## Camera.irisRoundness
 
 **Description**
 
@@ -160,12 +152,11 @@ Returns the camera iris roundness value as a percentage.
 
 Number
 
-----
+---
 
-.. _Camera.irisAspectRatio:
+<a id="camera-irisaspectratio"></a>
 
-Camera.irisAspectRatio
-**********************
+## Camera.irisAspectRatio
 
 **Description**
 
@@ -175,12 +166,11 @@ Returns the camera iris aspect ratio, from 1 to 100.
 
 Number
 
-----
+---
 
-.. _Camera.irisDiffractionFringe:
+<a id="camera-irisdiffractionfringe"></a>
 
-Camera.irisDiffractionFringe
-****************************
+## Camera.irisDiffractionFringe
 
 **Description**
 
@@ -190,12 +180,11 @@ Returns the camera iris diffraction fringe, from 1 to 100.
 
 Number
 
-----
+---
 
-.. _Camera.highlightGain:
+<a id="camera-highlightgain"></a>
 
-Camera.highlightGain
-********************
+## Camera.highlightGain
 
 **Description**
 
@@ -205,12 +194,11 @@ Returns the camera highlight gain, from 1 to 100.
 
 Number
 
-----
+---
 
-.. _Camera.highlightThreshold:
+<a id="camera-highlightthreshold"></a>
 
-Camera.highlightThreshold
-*************************
+## Camera.highlightThreshold
 
 **Description**
 
@@ -224,12 +212,11 @@ Returns the camera highlight threshhold.
 
 Number
 
-----
+---
 
-.. _Camera.highlightSaturation:
+<a id="camera-highlightsaturation"></a>
 
-Camera.highlightSaturation
-**************************
+## Camera.highlightSaturation
 
 **Description**
 
@@ -239,22 +226,21 @@ Returns the camera highlight saturation, from 1 to 100.
 
 Number
 
-----
+---
 
-.. _Camera.active:
+<a id="camera-active"></a>
 
-Camera.active
-*************
+## Camera.active
 
 **Description**
 
-Returns ``true`` if the camera:
+Returns `true` if the camera:
 
-#. is the active camera for the composition at the current time: the *video switch* for the camera layer is on
-#. the current time is in the range from the *in point* of the camera layer to the *out point* of the camera layer
-#. and it is the first (topmost) such camera layer listed in the *timeline panel*
+1. is the active camera for the composition at the current time: the *video switch* for the camera layer is on
+2. the current time is in the range from the *in point* of the camera layer to the *out point* of the camera layer
+3. and it is the first (topmost) such camera layer listed in the *timeline panel*
 
-Returns ``false`` otherwise.
+Returns `false` otherwise.
 
 **Type**
 

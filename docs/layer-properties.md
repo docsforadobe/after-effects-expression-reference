@@ -1,18 +1,16 @@
-.. _LayerProperties:
+<a id="layerproperties"></a>
 
-Layer Properties
-################################################
+# Layer Properties
 
 **Description**
 
 When you add masks, effects, paint, or text to a layer, After Effects adds new properties to the Timeline panel. There are too many of these properties to list here, so use the pick whip to learn the syntax for referring to them in your expressions.
 
-----
+---
 
-.. _Layer.anchorPoint:
+<a id="layer-anchorpoint"></a>
 
-Layer.anchorPoint
-*********************************************
+## Layer.anchorPoint
 
 **Description**
 
@@ -22,12 +20,11 @@ Returns the anchor point value of the layer in the coordinate system of the laye
 
 Array of Numbers (2- or 3-dimensional)
 
-----
+---
 
-.. _Layer.position:
+<a id="layer-position"></a>
 
-Layer.position
-*********************************************
+## Layer.position
 
 **Description**
 
@@ -37,12 +34,11 @@ Returns the position value of the layer, in world space if the layer has no pare
 
 Array of Numbers (2- or 3-dimensional)
 
-----
+---
 
-.. _Layer.scale:
+<a id="layer-scale"></a>
 
-Layer.scale
-*********************************************
+## Layer.scale
 
 **Description**
 
@@ -52,12 +48,11 @@ Returns the scale value of the layer, expressed as a percentage.
 
 Array of Numbers (2- or 3-dimensional)
 
-----
+---
 
-.. _Layer.rotation:
+<a id="layer-rotation"></a>
 
-Layer.rotation
-*********************************************
+## Layer.rotation
 
 **Description**
 
@@ -67,12 +62,11 @@ Returns the rotation value of the layer in degrees. For a 3D layer, it returns t
 
 Number
 
-----
+---
 
-.. _Layer.opacity:
+<a id="layer-opacity"></a>
 
-Layer.opacity
-*********************************************
+## Layer.opacity
 
 **Description**
 
@@ -82,12 +76,11 @@ Returns the opacity value for the layer, expressed as a percentage.
 
 Number
 
-----
+---
 
-.. _Layer.audioLevels:
+<a id="layer-audiolevels"></a>
 
-Layer.audioLevels
-*********************************************
+## Layer.audioLevels
 
 **Description**
 
@@ -97,12 +90,11 @@ Returns the value of the Audio Levels property of the layer, in decibels. This v
 
 Array of Numbers (2-dimensional)
 
-----
+---
 
-.. _Layer.timeRemap:
+<a id="layer-timeremap"></a>
 
-Layer.timeRemap
-*********************************************
+## Layer.timeRemap
 
 **Description**
 
@@ -112,12 +104,11 @@ Returns the value of the Time Remap property, in seconds, if Time Remap is enabl
 
 Number
 
-----
+---
 
-.. _Layer.marker.key:
+<a id="layer-marker-key"></a>
 
-Layer.marker.key(``index``)
-*********************************************
+## Layer.marker.key(`index`)
 
 **Description**
 
@@ -125,74 +116,74 @@ Returns the MarkerKey object of the layer marker with the specified index.
 
 **Parameters**
 
-========= ======
-``index`` Number
-========= ======
+| `index`   | Number   |
+|-----------|----------|
 
 **Type**
 
 MarkerKey
 
-----
+---
 
-Layer.marker.key(``name``)
-*********************************************
+## Layer.marker.key(`name`)
 
 **Description**
 
-Returns the MarkerKey object of the layer marker with the specified name. The name value is the name of the marker, as typed in the comment field in the marker dialog box, for example, ``marker.key("ch1")``. If more than one marker on the layer has the same name, this method returns the marker that occurs first in time (in layer time). The value for a marker key is a ``String``, not a ``Number``.
+Returns the MarkerKey object of the layer marker with the specified name. The name value is the name of the marker, as typed in the comment field in the marker dialog box, for example, `marker.key("ch1")`. If more than one marker on the layer has the same name, this method returns the marker that occurs first in time (in layer time). The value for a marker key is a `String`, not a `Number`.
 
-This expression on a property ramps the value of the property from ``0`` to ``100`` between two markers identified by name::
+This expression on a property ramps the value of the property from `0` to `100` between two markers identified by name:
 
-	m1 = marker.key("Start").time;
-	m2 = marker.key("End").time;
-	linear(time, m1, m2, 0, 100);
+```default
+m1 = marker.key("Start").time;
+m2 = marker.key("End").time;
+linear(time, m1, m2, 0, 100);
+```
 
 **Parameters**
 
-======== ======
-``name`` String
-======== ======
+| `name`   | String   |
+|----------|----------|
 
 **Type**
 
 MarkerKey
 
-----
+---
 
-.. _Layer.marker.nearestKey:
+<a id="layer-marker-nearestkey"></a>
 
-Layer.marker.nearestKey(``t``)
-*********************************************
+## Layer.marker.nearestKey(`t`)
 
 **Description**
 
 Returns the layer marker that is nearest in time to t.
 
-For example, this expression returns the time of the marker on the layer nearest to the time of ``1`` second::
+For example, this expression returns the time of the marker on the layer nearest to the time of `1` second:
 
-	marker.nearestKey(1).time
+```default
+marker.nearestKey(1).time
+```
 
-This expression returns the time of the marker on the layer nearest to the current time::
+This expression returns the time of the marker on the layer nearest to the current time:
 
-	marker.nearestKey(time).time
+```default
+marker.nearestKey(time).time
+```
 
 **Parameters**
 
-===== ======
-``t`` Number
-===== ======
+| `t`   | Number   |
+|-------|----------|
 
 **Type**
 
 MarkerKey
 
-----
+---
 
-.. _Layer.marker.numKeys:
+<a id="layer-marker-numkeys"></a>
 
-Layer.marker.numKeys
-*********************************************
+## Layer.marker.numKeys
 
 **Description**
 
@@ -202,12 +193,11 @@ Returns the total number of markers on the layer.
 
 Number
 
-----
+---
 
-.. _Layer.name:
+<a id="layer-name"></a>
 
-Layer.name
-*********************************************
+## Layer.name
 
 **Description**
 

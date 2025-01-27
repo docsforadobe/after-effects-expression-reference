@@ -1,12 +1,10 @@
-.. _OtherMath:
+<a id="othermath"></a>
 
-Other Math
-##########
+# Other Math
 
-.. _degreesToRadians:
+<a id="degreestoradians"></a>
 
-degreesToRadians(``degrees``)
-*****************************
+## degreesToRadians(`degrees`)
 
 **Description**
 
@@ -14,20 +12,18 @@ Converts degrees to radians.
 
 **Parameters**
 
-=========== ======
-``degrees`` Number
-=========== ======
+| `degrees`   | Number   |
+|-------------|----------|
 
 **Type**
 
 Number
 
-----
+---
 
-.. _radiansToDegrees:
+<a id="radianstodegrees"></a>
 
-radiansToDegrees(``radians``)
-*****************************
+## radiansToDegrees(`radians`)
 
 **Description**
 
@@ -35,9 +31,8 @@ Converts radians to degrees.
 
 **Parameters**
 
-=========== ======
-``radians`` Number
-=========== ======
+| `radians`   | Number   |
+|-------------|----------|
 
 **Type**
 

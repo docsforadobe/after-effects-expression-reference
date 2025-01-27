@@ -1,12 +1,10 @@
-.. _Global:
+<a id="global"></a>
 
-Global
-######
+# Global
 
-.. _Global.comp:
+<a id="global-comp"></a>
 
-comp(``name``)
-**************
+## comp(`name`)
 
 **Description**
 
@@ -14,20 +12,18 @@ Retrieves another composition by name.
 
 **Parameters**
 
-======== ======
-``name`` String
-======== ======
+| `name`   | String   |
+|----------|----------|
 
 **Type**
 
 Comp
 
-----
+---
 
-.. _Global.footage:
+<a id="global-footage"></a>
 
-footage(``name``)
-*****************
+## footage(`name`)
 
 **Description**
 
@@ -35,20 +31,18 @@ Retrieves a footage item by name.
 
 **Parameters**
 
-======== ======
-``name`` String
-======== ======
+| `name`   | String   |
+|----------|----------|
 
 **Type**
 
 Footage
 
-----
+---
 
-.. _Global.thisProject:
+<a id="global-thisproject"></a>
 
-thisProject
-***********
+## thisProject
 
 **Description**
 
@@ -58,12 +52,11 @@ Represents the project which contains the expression.
 
 Project
 
-----
+---
 
-.. _Global.thisComp:
+<a id="global-thiscomp"></a>
 
-thisComp
-********
+## thisComp
 
 **Description**
 
@@ -73,12 +66,11 @@ Represents the composition containing the expression.
 
 Comp
 
-----
+---
 
-.. _Global.thisLayer:
+<a id="global-thislayer"></a>
 
-thisLayer
-*********
+## thisLayer
 
 **Description**
 
@@ -88,12 +80,11 @@ Represents the layer containing the expression. Because thisLayer is the default
 
 Layer, Light, or Camera
 
-----
+---
 
-.. _Global.thisProperty:
+<a id="global-thisproperty"></a>
 
-thisProperty
-************
+## thisProperty
 
 **Description**
 
@@ -103,12 +94,11 @@ Represents the property containing the expression. For example, if you write an 
 
 Property
 
-----
+---
 
-.. _Global.time:
+<a id="global-time"></a>
 
-time
-****
+## time
 
 **Description**
 
@@ -118,39 +108,36 @@ Represents the composition time, in seconds, at which the expression is being ev
 
 Number
 
-----
+---
 
-.. _Global.colorDepth:
+<a id="global-colordepth"></a>
 
-colorDepth
-**********
+## colorDepth
 
 **Description**
 
-Type the project color depth value. For example, colorDepth returns ``16`` when the project color depth is 16 bits per channel.
+Type the project color depth value. For example, colorDepth returns `16` when the project color depth is 16 bits per channel.
 
 **Type**
 
 Number
 
-----
+---
 
-.. _Global.posterizeTime:
+<a id="global-posterizetime"></a>
 
-posterizeTime(``updatesPerSecond``)
-***********************************
+## posterizeTime(`updatesPerSecond`)
 
 **Description**
 
 This expression allows you to set the frame rate for a property to be lower than the frame rate of the composition.
 
-The ``updatesPerSecond`` value passed in is *the number of times per second* the expression should evaluate.
+The `updatesPerSecond` value passed in is *the number of times per second* the expression should evaluate.
 
 **Parameters**
 
-====================  ======
-``updatesPerSecond``  Number
-====================  ======
+| `updatesPerSecond`   | Number   |
+|----------------------|----------|
 
 **Type**
 
@@ -158,36 +145,41 @@ Number
 
 **Examples**
 
-To change a property to a random value 1 time per second::
+To change a property to a random value 1 time per second:
 
-  posterizeTime(1);
+```default
+posterizeTime(1);
 
-  random()
+random()
+```
 
-To change a 2d property (such as Position or Scale) to a random value 3 times per second::
+To change a 2d property (such as Position or Scale) to a random value 3 times per second:
 
-  posterizeTime(3);
+```default
+posterizeTime(3);
 
-  var newValue = random(0, 100);
-  [newValue, newValue];
+var newValue = random(0, 100);
+[newValue, newValue];
+```
 
-To change a property to a random value within a specified range, every 12 frames::
+To change a property to a random value within a specified range, every 12 frames:
 
-  var holdFrames = 12;
-  var minValue = 50;
-  var maxValue = 100;
+```default
+var holdFrames = 12;
+var minValue = 50;
+var maxValue = 100;
 
-  posterizeTime(1 / framesToTime(holdFrames));
+posterizeTime(1 / framesToTime(holdFrames));
 
-  var newValue = random(minValue, maxValue);
-  newValue;
+var newValue = random(minValue, maxValue);
+newValue;
+```
 
-----
+---
 
-.. _Global.value:
+<a id="global-value"></a>
 
-value
-*****
+## value
 
 **Description**
 

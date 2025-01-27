@@ -1,12 +1,10 @@
-.. _Layer3D:
+<a id="layer3d"></a>
 
-Layer 3D
-#########
+# Layer 3D
 
-.. _Layer.orientation:
+<a id="layer-orientation"></a>
 
-Layer.orientation
-*********************************************
+## Layer.orientation
 
 **Description**
 
@@ -16,12 +14,11 @@ Returns the 3D orientation value, in degrees, for a 3D layer.
 
 Array (3-dimensional)
 
-----
+---
 
-.. _Layer.rotationX:
+<a id="layer-rotationx"></a>
 
-Layer.rotationX
-*********************************************
+## Layer.rotationX
 
 **Description**
 
@@ -31,12 +28,11 @@ Returns the x rotation value, in degrees, for a 3D layer.
 
 Number
 
-----
+---
 
-.. _Layer.rotationY:
+<a id="layer-rotationy"></a>
 
-Layer.rotationY
-*********************************************
+## Layer.rotationY
 
 **Description**
 
@@ -46,12 +42,11 @@ Returns the y rotation value, in degrees, for a 3D layer.
 
 Number
 
-----
+---
 
-.. _Layer.rotationZ:
+<a id="layer-rotationz"></a>
 
-Layer.rotationZ
-*********************************************
+## Layer.rotationZ
 
 **Description**
 
@@ -61,12 +56,11 @@ Returns the z rotation value, in degrees, for a 3D layer.
 
 Number
 
-----
+---
 
-.. _Layer.lightTransmission:
+<a id="layer-lighttransmission"></a>
 
-Layer.lightTransmission
-*********************************************
+## Layer.lightTransmission
 
 **Description**
 
@@ -76,57 +70,53 @@ Returns the value of the Light Transmission property for a 3D layer.
 
 Number
 
-----
+---
 
-.. _Layer.castsShadows:
+<a id="layer-castsshadows"></a>
 
-Layer.castsShadows
-*********************************************
+## Layer.castsShadows
 
 **Description**
 
-Returns a value of ``1.0`` if the layer casts shadows and ``2`` if the property is set to ``Only``.
+Returns a value of `1.0` if the layer casts shadows and `2` if the property is set to `Only`.
 
 **Type**
 
 Number
 
-----
+---
 
-.. _Layer.acceptsShadows:
+<a id="layer-acceptsshadows"></a>
 
-Layer.acceptsShadows
-*********************************************
+## Layer.acceptsShadows
 
 **Description**
 
-Returns a value of ``1`` if the layer accepts shadows and ``2`` if the property is set to ``Only``.
+Returns a value of `1` if the layer accepts shadows and `2` if the property is set to `Only`.
 
 **Type**
 
 Number
 
-----
+---
 
-.. _Layer.acceptsLights:
+<a id="layer-acceptslights"></a>
 
-Layer.acceptsLights
-*********************************************
+## Layer.acceptsLights
 
 **Description**
 
-Returns a value of ``1`` if the layer accepts lights.
+Returns a value of `1` if the layer accepts lights.
 
 **Type**
 
 Boolean Number
 
-----
+---
 
-.. _Layer.ambient:
+<a id="layer-ambient"></a>
 
-Layer.ambient
-*********************************************
+## Layer.ambient
 
 **Description**
 
@@ -136,12 +126,11 @@ Returns the ambient component value as a percentage.
 
 Number
 
-----
+---
 
-.. _Layer.diffuse:
+<a id="layer-diffuse"></a>
 
-Layer.diffuse
-*********************************************
+## Layer.diffuse
 
 **Description**
 
@@ -151,12 +140,11 @@ Returns the diffuse component value as a percentage.
 
 Number
 
-----
+---
 
-.. _Layer.specular:
+<a id="layer-specular"></a>
 
-Layer.specular
-*********************************************
+## Layer.specular
 
 **Description**
 
@@ -166,12 +154,11 @@ Returns the specular component value as a percentage.
 
 Number
 
-----
+---
 
-.. _Layer.shininess:
+<a id="layer-shininess"></a>
 
-Layer.shininess
-*********************************************
+## Layer.shininess
 
 **Description**
 
@@ -181,12 +168,11 @@ Returns the shininess component value as a percentage.
 
 Number
 
-----
+---
 
-.. _Layer.metal:
+<a id="layer-metal"></a>
 
-Layer.metal
-*********************************************
+## Layer.metal
 
 **Description**
 

@@ -1,93 +1,69 @@
-.. _SourceText:
+<a id="sourcetext"></a>
 
-Source Text
-###########
+# Source Text
 
-These functions are accessible on the :ref:`Text.sourceText` object in AE 17.0 and later.
+These functions are accessible on the [Text.sourceText](text.md#text-sourcetext) object in AE 17.0 and later.
 
-----
+---
 
-.. _SourceText.style:
+<a id="sourcetext-style"></a>
 
-SourceText.style
-****************
+## SourceText.style
 
 **Description**
 
-Returns the :ref:`TextStyle` object for a given ``sourceText`` property.
+Returns the [Text Style](text-style.md#textstyle) object for a given `sourceText` property.
 
 **Type**
 
-:ref:`TextStyle` object
+[Text Style](text-style.md#textstyle) object
 
-----
+---
 
-.. _SourceText.getStyleAt:
+<a id="sourcetext-getstyleat"></a>
 
-SourceText.getStyleAt(``charIndex``, ``t = time``)
-**************************************************
+## SourceText.getStyleAt(`charIndex`, `t = time`)
 
 **Description**
 
-This function returns the :ref:`TextStyle` object of a particular character at a specific time.
+This function returns the [Text Style](text-style.md#textstyle) object of a particular character at a specific time.
 
-In case the style is keyframed and changes over time, use the second ``time`` parameter to specify the target time to get the style at.
+In case the style is keyframed and changes over time, use the second `time` parameter to specify the target time to get the style at.
 
-.. note::
-  Using :ref:`SourceText.style` is the same as using ``text.sourceText.getStyleAt(0,0)``
+#### NOTE
+Using [SourceText.style](#sourcetext-style) is the same as using `text.sourceText.getStyleAt(0,0)`
 
-For example, to get the style of the first character at the beginning of the timeline::
+For example, to get the style of the first character at the beginning of the timeline:
 
-  text.sourceText.getStyleAt(0,0);
+```default
+text.sourceText.getStyleAt(0,0);
+```
 
 **Parameters**
 
-========= ==============================================================================================
-``index`` Number. The index of the letter or character whose style is needed
-``time``  Number, optional. The time within the composition to get the style from. Defaults to ``time``.
-========= ==============================================================================================
-
+| `index`   | Number. The index of the letter or character whose style is needed                           |
+|-----------|----------------------------------------------------------------------------------------------|
+| `time`    | Number, optional. The time within the composition to get the style from. Defaults to `time`. |
 
 **Type**
 
-:ref:`TextStyle` object
+[Text Style](text-style.md#textstyle) object
 
-----
+---
 
-.. _SourceText.createStyle:
+<a id="sourcetext-createstyle"></a>
 
-SourceText.createStyle()
-*************************
-
-**Description**
-
-Used to initialize an empty :ref:`TextStyle` object in which you'd manually bake in specific values.
-
-For example, to create a new style with font size 300 and the font Impact::
-
-  text.sourceText.createStyle().setFontSize(300).setFont("Impact");
-
-**Parameters**
-
-None.
-
-**Type**
-
-Empty :ref:`TextStyle` object.
-
-----
-
-.. _SourceText.isVerticalText:
-
-SourceText.isVerticalText
-**************************
-
-.. note::
-  This functionality was added in After Effects 25.0.
+## SourceText.createStyle()
 
 **Description**
 
-Returns ``true`` if the Text layer is vertical and ``false`` if it is horizontal.
+Used to initialize an empty [Text Style](text-style.md#textstyle) object in which you’d manually bake in specific values.
+
+For example, to create a new style with font size 300 and the font Impact:
+
+```default
+text.sourceText.createStyle().setFontSize(300).setFont("Impact");
+```
 
 **Parameters**
 
@@ -95,21 +71,20 @@ None.
 
 **Type**
 
-Boolean
+Empty [Text Style](text-style.md#textstyle) object.
 
-----
+---
 
-.. _SourceText.isHorizontalText:
+<a id="sourcetext-isverticaltext"></a>
 
-SourceText.isHorizontalText
-****************************
+## SourceText.isVerticalText
 
-.. note::
-  This functionality was added in After Effects 25.0.
+#### NOTE
+This functionality was added in After Effects 25.0.
 
 **Description**
 
-Returns ``true`` if the Text layer is horizontal and ``false`` if it is vertical.
+Returns `true` if the Text layer is vertical and `false` if it is horizontal.
 
 **Parameters**
 
@@ -119,19 +94,18 @@ None.
 
 Boolean
 
-----
+---
 
-.. _SourceText.isPointText:
+<a id="sourcetext-ishorizontaltext"></a>
 
-SourceText.isPointText
-***********************
+## SourceText.isHorizontalText
 
-.. note::
-  This functionality was added in After Effects 25.0.
+#### NOTE
+This functionality was added in After Effects 25.0.
 
 **Description**
 
-Returns ``true`` if a Text layer is Point text. If the Text layer is Paragraph text, it returns ``false``.
+Returns `true` if the Text layer is horizontal and `false` if it is vertical.
 
 **Parameters**
 
@@ -141,19 +115,18 @@ None.
 
 Boolean
 
-----
+---
 
-.. _SourceText.isParagraphText:
+<a id="sourcetext-ispointtext"></a>
 
-SourceText.isParagraphText
-***************************
+## SourceText.isPointText
 
-.. note::
-  This functionality was added in After Effects 25.0.
+#### NOTE
+This functionality was added in After Effects 25.0.
 
 **Description**
 
-Returns ``true`` if a Text layer is Paragraph text. If the Text layer is a Point text, it returns ``false``.
+Returns `true` if a Text layer is Point text. If the Text layer is Paragraph text, it returns `false`.
 
 **Parameters**
 
@@ -163,3 +136,23 @@ None.
 
 Boolean
 
+---
+
+<a id="sourcetext-isparagraphtext"></a>
+
+## SourceText.isParagraphText
+
+#### NOTE
+This functionality was added in After Effects 25.0.
+
+**Description**
+
+Returns `true` if a Text layer is Paragraph text. If the Text layer is a Point text, it returns `false`.
+
+**Parameters**
+
+None.
+
+**Type**
+
+Boolean

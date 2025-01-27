@@ -1,33 +1,31 @@
-.. _Light:
+<a id="light"></a>
 
-Light
-#####
+# Light
 
 **Description**
 
 Light objects have the same attributes and methods as Layer objects, except for:
 
-* ``source``
-* ``effect``
-* ``mask``
-* ``width``
-* ``height``
-* ``anchorPoint``
-* ``scale``
-* ``opacity``
-* ``audioLevels``
-* ``timeRemap``
+* `source`
+* `effect`
+* `mask`
+* `width`
+* `height`
+* `anchorPoint`
+* `scale`
+* `opacity`
+* `audioLevels`
+* `timeRemap`
 * all the material properties
 
-.. note::
-	David Van Brink provides an instructional article and sample project on his `omino pixel blog <http://www.adobe.com/go/learn_ae_ominoflashing>`_ that shows how to use expressions with lights.
+#### NOTE
+David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://www.adobe.com/go/learn_ae_ominoflashing) that shows how to use expressions with lights.
 
-----
+---
 
-.. _Light.pointOfInterest:
+<a id="light-pointofinterest"></a>
 
-Light.pointOfInterest
-**********************
+## Light.pointOfInterest
 
 **Description**
 
@@ -37,12 +35,11 @@ Returns the point of interest values for a light in world space.
 
 Array (3-dimensional)
 
-----
+---
 
-.. _Light.intensity:
+<a id="light-intensity"></a>
 
-Light.intensity
-***************
+## Light.intensity
 
 **Description**
 
@@ -52,12 +49,11 @@ Returns the intensity values of a light as a percentage.
 
 Number
 
-----
+---
 
-.. _Light.color:
+<a id="light-color"></a>
 
-Light.color
-*************
+## Light.color
 
 **Description**
 
@@ -67,12 +63,11 @@ Returns the color value of a light.
 
 Array (4-dimensional)
 
-----
+---
 
-.. _Light.coneAngle:
+<a id="light-coneangle"></a>
 
-Light.coneAngle
-***************
+## Light.coneAngle
 
 **Description**
 
@@ -82,12 +77,11 @@ Returns the cone angle of a light, in degrees.
 
 Number
 
-----
+---
 
-.. _Light.coneFeather:
+<a id="light-conefeather"></a>
 
-Light.coneFeather
-*****************
+## Light.coneFeather
 
 **Description**
 
@@ -97,12 +91,11 @@ Returns the cone feather value of a light as a percentage.
 
 Number
 
-----
+---
 
-.. _Light.shadowDarkness:
+<a id="light-shadowdarkness"></a>
 
-Light.shadowDarkness
-*********************
+## Light.shadowDarkness
 
 **Description**
 
@@ -112,12 +105,11 @@ Returns the shadow darkness value of a light as a percentage.
 
 Number
 
-----
+---
 
-.. _Light.shadowDiffusion:
+<a id="light-shadowdiffusion"></a>
 
-Light.shadowDiffusion
-*********************
+## Light.shadowDiffusion
 
 **Description**
 

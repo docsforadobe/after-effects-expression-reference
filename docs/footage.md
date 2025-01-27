@@ -1,18 +1,16 @@
-.. _Footage:
+<a id="footage"></a>
 
-Footage
-################################################
+# Footage
 
 **Description**
 
-To use a footage item from the Project panel as an object in an expression, use the global footage method, as in ``footage("file_name")``. You can also access a footage object using the source attribute on a layer whose source is a footage item.
+To use a footage item from the Project panel as an object in an expression, use the global footage method, as in `footage("file_name")`. You can also access a footage object using the source attribute on a layer whose source is a footage item.
 
-----
+---
 
-.. _Footage.width:
+<a id="footage-width"></a>
 
-Footage.width
-*********************************************
+## Footage.width
 
 **Description**
 
@@ -22,12 +20,11 @@ Returns the width of the footage item, in pixels.
 
 Number
 
-----
+---
 
-.. _Footage.height:
+<a id="footage-height"></a>
 
-Footage.height
-*********************************************
+## Footage.height
 
 **Description**
 
@@ -37,12 +34,11 @@ Returns the height of the footage item, in pixels.
 
 Number
 
-----
+---
 
-.. _Footage.duration:
+<a id="footage-duration"></a>
 
-Footage.duration
-*********************************************
+## Footage.duration
 
 **Description**
 
@@ -52,12 +48,11 @@ Returns the duration of the footage item, in seconds.
 
 Number
 
-----
+---
 
-.. _Footage.frameDuration:
+<a id="footage-frameduration"></a>
 
-Footage.frameDuration
-*********************************************
+## Footage.frameDuration
 
 **Description**
 
@@ -67,12 +62,11 @@ Returns the duration of a frame in the footage item, in seconds.
 
 Number
 
-----
+---
 
-.. _Footage.ntscDropFrame:
+<a id="footage-ntscdropframe"></a>
 
-Footage.ntscDropFrame
-*********************************************
+## Footage.ntscDropFrame
 
 **Description**
 
@@ -82,12 +76,11 @@ Returns true if the timecode is in drop-frame format. (After Effects CS5.5 and l
 
 Boolean
 
-----
+---
 
-.. _Footage.pixelAspect:
+<a id="footage-pixelaspect"></a>
 
-Footage.pixelAspect
-*********************************************
+## Footage.pixelAspect
 
 **Description**
 
@@ -97,12 +90,11 @@ Returns the pixel aspect ratio of the footage item.
 
 Number
 
-----
+---
 
-.. _Footage.name:
+<a id="footage-name"></a>
 
-Footage.name
-*********************************************
+## Footage.name
 
 **Description**
 
@@ -112,34 +104,34 @@ Returns the name of the footage item as shown in the Project panel.
 
 String
 
-----
+---
 
-.. _Footage.sourceText:
+<a id="footage-sourcetext"></a>
 
-Footage.sourceText
-*********************************************
+## Footage.sourceText
 
 **Description**
 
 Returns the contents of a JSON file as a string.
 
-The ``eval()`` method can be used to convert the string to an array of sourceData objects, identical to the results of the :ref:`Footage.sourceData` attribute, from which the individual data streams can be referenced as hierarchal attributes of the data.
+The `eval()` method can be used to convert the string to an array of sourceData objects, identical to the results of the [Footage.sourceData](#footage-sourcedata) attribute, from which the individual data streams can be referenced as hierarchal attributes of the data.
 
-For example::
+For example:
 
-  var myData = eval(footage("sample.json").sourceText);
-  myData.sampleValue;
+```default
+var myData = eval(footage("sample.json").sourceText);
+myData.sampleValue;
+```
 
 **Type**
 
 String, the contents of the JSON file; read-only.
 
-----
+---
 
-.. _Footage.sourceData:
+<a id="footage-sourcedata"></a>
 
-Footage.sourceData
-*********************************************
+## Footage.sourceData
 
 **Description**
 
@@ -149,25 +141,28 @@ The structure of the JSON file will determine the size and complexity of the arr
 
 Individual data streams can be referenced as hierarchal attributes of the data.
 
-For example, given a data stream named "Color", the following will return the value of "Color" from the first data object::
+For example, given a data stream named “Color”, the following will return the value of “Color” from the first data object:
 
-  footage("sample.json").sourceData[0].Color
+```default
+footage("sample.json").sourceData[0].Color
+```
 
-Typical use is to assign a JSON file's ``sourceData`` to a variable, and then reference the desired data stream. For example::
+Typical use is to assign a JSON file’s `sourceData` to a variable, and then reference the desired data stream. For example:
 
-  var myData = footage("sample.json").sourceData;
-  myData[0].Color;
+```default
+var myData = footage("sample.json").sourceData;
+myData[0].Color;
+```
 
 **Type**
 
 An array of sourceData objects; read-only.
 
-----
+---
 
-.. _Footage.dataValue:
+<a id="footage-datavalue"></a>
 
-Footage.dataValue(``dataPath``)
-*********************************************
+## Footage.dataValue(`dataPath`)
 
 **Description**
 
@@ -175,30 +170,32 @@ Returns the value of specificed static or dynamic data stream in a MGJSON file.
 
 Accepts a single array value to define the path in the hierarchy to the desired data stream.
 
-For example, to return data of the first child::
+For example, to return data of the first child:
 
-  footage("sample.mgjson").dataValue([0])
+```default
+footage("sample.mgjson").dataValue([0])
+```
 
-Or to return data of the first child in the second group::
+Or to return data of the first child in the second group:
 
-  footage("sample.mgjson").dataValue([1][0])
+```default
+footage("sample.mgjson").dataValue([1][0])
+```
 
 **Parameters**
 
-============ ==============================================================================
-``dataPath`` Array, required. The path in the hierarchy to a static or dynamic data stream.
-============ ==============================================================================
+| `dataPath`   | Array, required. The path in the hierarchy to a static or dynamic data stream.   |
+|--------------|----------------------------------------------------------------------------------|
 
 **Type**
 
 The value of the data stream.
 
-----
+---
 
-.. _Footage.dataKeyCount:
+<a id="footage-datakeycount"></a>
 
-Footage.dataKeyCount(``dataPath``)
-*********************************************
+## Footage.dataKeyCount(`dataPath`)
 
 **Description**
 
@@ -206,81 +203,84 @@ Returns the number of samples in a specificed dynamic data stream in a MGJSON fi
 
 Accepts a single array value to define the path in the hierarchy to the desired dynamic data stream.
 
-For example, to return the count of samples for the first child::
+For example, to return the count of samples for the first child:
 
-  footage("sample.mgjson").dataKeyCount([0])
+```default
+footage("sample.mgjson").dataKeyCount([0])
+```
 
-Or to return the count of samples for the second group::
+Or to return the count of samples for the second group:
 
-  footage("sample.mgjson").dataKeyCount([1][0])
+```default
+footage("sample.mgjson").dataKeyCount([1][0])
+```
 
 **Parameters**
 
-============ ==============================================================================
-``dataPath`` Array, required. The path in the hierarchy to a static or dynamic data stream.
-============ ==============================================================================
+| `dataPath`   | Array, required. The path in the hierarchy to a static or dynamic data stream.   |
+|--------------|----------------------------------------------------------------------------------|
 
 **Type**
 
 The number of samples in the dynamic data stream.
 
-----
+---
 
-.. _Footage.dataKeyTimes:
+<a id="footage-datakeytimes"></a>
 
-Footage.dataKeyTimes(``dataPath``, ``t0 = startTime``, ``t1 = endTime``)
-************************************************************************
+## Footage.dataKeyTimes(`dataPath`, `t0 = startTime`, `t1 = endTime`)
 
 **Description**
 
 Returns the time in seconds for the samples of a specificed dynamic data stream in a MGJSON file.
 
-Optionally specify the time span from which to return samples. By default the time for all samples between ``startTime`` and ``endTime`` in the dynamicdata stream are returned, as defined by the data stream's ``samplesTemporalExtent`` property in the MGJSON file.
+Optionally specify the time span from which to return samples. By default the time for all samples between `startTime` and `endTime` in the dynamicdata stream are returned, as defined by the data stream’s `samplesTemporalExtent` property in the MGJSON file.
 
 Accepts a single array value to define the path in the hierarchy to the desired dynamic data stream.
 
-The following example returns the times of samples between 1 second and 3 seconds for the first child::
+The following example returns the times of samples between 1 second and 3 seconds for the first child:
 
-  footage("sample.mgjson").dataKeyTimes([0], 1, 3)
+```default
+footage("sample.mgjson").dataKeyTimes([0], 1, 3)
+```
 
 **Parameters**
 
-============ ==================================================================================================================
-``dataPath`` Array, required. The path in the hierarchy to a static or dynamic data stream.
-``t0``       Number, optional. The start time, in seconds, of the span from which to return samples. Defaults to ``startTime``.
-``t1``       Number, optional. The end time, in seconds, of the span from which to return samples. Defaults to ``endTime``.
-============ ==================================================================================================================
+| `dataPath`   | Array, required. The path in the hierarchy to a static or dynamic data stream.                                   |
+|--------------|------------------------------------------------------------------------------------------------------------------|
+| `t0`         | Number, optional. The start time, in seconds, of the span from which to return samples. Defaults to `startTime`. |
+| `t1`         | Number, optional. The end time, in seconds, of the span from which to return samples. Defaults to `endTime`.     |
 
 **Type**
 
 Array of numbers representing the sample times.
 
-----
+---
 
-.. _Footage.dataKeyValues:
+<a id="footage-datakeyvalues"></a>
 
-Footage.dataKeyValues(``dataPath``, ``t0 = startTime``, ``t1 = endTime``)
-*************************************************************************
+## Footage.dataKeyValues(`dataPath`, `t0 = startTime`, `t1 = endTime`)
 
 **Description**
 
 Returns the values for the samples of a specificed dynamic data stream in a MGJSON file.
 
-Optionally specify the time span from which to return samples. By default the time for all samples between startTime and endTime in the dynamicdata stream are returned, as defined by the data stream's ``samplesTemporalExtent`` property in the MGJSON file.
+Optionally specify the time span from which to return samples. By default the time for all samples between startTime and endTime in the dynamicdata stream are returned, as defined by the data stream’s `samplesTemporalExtent` property in the MGJSON file.
 
 Accepts a single array value to define the path in the hierarchy to the desired dynamic data stream.
 
-The following example returns the values of samples between 1 second and 3 seconds for the first child::
+The following example returns the values of samples between 1 second and 3 seconds for the first child:
 
-  footage("sample.mgjson").dataKeyValues([0], 1, 3)
+```default
+footage("sample.mgjson").dataKeyValues([0], 1, 3)
+```
 
 **Parameters**
 
-============ ==================================================================================================================
-``dataPath`` Array, required. The path in the hierarchy to a static or dynamic data stream.
-``t0``       Number, optional. The start time, in seconds, of the span from which to return samples. Defaults to ``startTime``.
-``t1``       Number, optional. The end time, in seconds, of the span from which to return samples. Defaults to ``endTime``.
-============ ==================================================================================================================
+| `dataPath`   | Array, required. The path in the hierarchy to a static or dynamic data stream.                                   |
+|--------------|------------------------------------------------------------------------------------------------------------------|
+| `t0`         | Number, optional. The start time, in seconds, of the span from which to return samples. Defaults to `startTime`. |
+| `t1`         | Number, optional. The end time, in seconds, of the span from which to return samples. Defaults to `endTime`.     |
 
 **Type**
 

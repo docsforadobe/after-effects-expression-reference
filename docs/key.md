@@ -1,23 +1,23 @@
-.. _Key:
+<a id="key"></a>
 
-Key
-################################################
+# Key
 
 **Description**
 
 When you access a Key object, you can get time, index, and value properties from it. For example, the following expression gives you the value of the third Position keyframe: position.key(3).value.
 
-The following expression, when written on an Opacity property with keyframes, ignores the keyframe values and uses only the placement of the keyframes in time to determine where a flash should occur::
+The following expression, when written on an Opacity property with keyframes, ignores the keyframe values and uses only the placement of the keyframes in time to determine where a flash should occur:
 
-	d = Math.abs(time - nearestKey(time).time);
-	easeOut(d, 0, .1, 100, 0)
+```default
+d = Math.abs(time - nearestKey(time).time);
+easeOut(d, 0, .1, 100, 0)
+```
 
-----
+---
 
-.. _Key.value:
+<a id="key-value"></a>
 
-Key.value
-*********************************************
+## Key.value
 
 **Description**
 
@@ -27,12 +27,11 @@ Returns the value of the keyframe.
 
 Number or Array
 
-----
+---
 
-.. _Key.time:
+<a id="key-time"></a>
 
-Key.time
-*********************************************
+## Key.time
 
 **Description**
 
@@ -42,12 +41,11 @@ Returns the time of the keyframe.
 
 Number
 
-----
+---
 
-.. _Key.index:
+<a id="key-index"></a>
 
-Key.index
-*********************************************
+## Key.index
 
 **Description**
 
