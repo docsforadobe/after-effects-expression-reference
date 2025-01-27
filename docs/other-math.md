@@ -2,16 +2,16 @@
 
 ## degreesToRadians(`degrees`)
 
-**Description**
+#### Description
 
 Converts degrees to radians.
 
-**Parameters**
+#### Parameters
 
 | `degrees`   | Number   |
 |-------------|----------|
 
-**Type**
+#### Type
 
 Number
 
@@ -19,15 +19,15 @@ Number
 
 ## radiansToDegrees(`radians`)
 
-**Description**
+#### Description
 
 Converts radians to degrees.
 
-**Parameters**
+#### Parameters
 
 | `radians`   | Number   |
 |-------------|----------|
 
-**Type**
+#### Type
 
 Number

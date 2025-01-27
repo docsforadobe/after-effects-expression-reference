@@ -2,11 +2,11 @@
 
 ## Layer.width
 
-**Description**
+#### Description
 
 Returns the width of the layer, in pixels. It is the same as `source.width`.
 
-**Type**
+#### Type
 
 Number
 
@@ -14,11 +14,11 @@ Number
 
 ## Layer.height
 
-**Description**
+#### Description
 
 Returns the height of the layer, in pixels. It is the same as `source.height`.
 
-**Type**
+#### Type
 
 Number
 
@@ -26,11 +26,11 @@ Number
 
 ## Layer.index
 
-**Description**
+#### Description
 
 Returns the index number of the layer in the composition.
 
-**Type**
+#### Type
 
 Number
 
@@ -38,7 +38,7 @@ Number
 
 ## Layer.parent
 
-**Description**
+#### Description
 
 Returns the parent Layer object of the layer, if it has one.
 
@@ -48,7 +48,7 @@ Example:
 position[0] + parent.width
 ```
 
-**Type**
+#### Type
 
 Layer, Light, or Camera
 
@@ -56,7 +56,7 @@ Layer, Light, or Camera
 
 ## Layer.hasParent
 
-**Description**
+#### Description
 
 Returns true if the layer has a parent or false if it doesn't. Use the hasParent attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present. For example, the following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position.
 
@@ -70,7 +70,7 @@ if (hasParent) {
 thisComp.layer(idx).position.wiggle(5,20)
 ```
 
-**Type**
+#### Type
 
 Boolean
 
@@ -78,14 +78,14 @@ Boolean
 
 ## Layer.inPoint
 
-**Description**
+#### Description
 
 Returns the In point of the layer, in seconds.
 
 !!! note
     In general, the value of outPoint is greater than the value of inPoint. However, if a layer is reversed in time, the value of inPoint is greater than the value of outPoint. Similarly, the value of startTime can be greater than the value of inPoint.
 
-**Type**
+#### Type
 
 Number
 
@@ -93,11 +93,11 @@ Number
 
 ## Layer.outPoint
 
-**Description**
+#### Description
 
 Returns the Out point of the layer, in seconds.
 
-**Type**
+#### Type
 
 Number
 
@@ -105,11 +105,11 @@ Number
 
 ## Layer.startTime
 
-**Description**
+#### Description
 
 Returns the start time of the layer, in seconds.
 
-**Type**
+#### Type
 
 Number
 
@@ -117,11 +117,11 @@ Number
 
 ## Layer.hasVideo
 
-**Description**
+#### Description
 
 Returns `true` if the layer has video, or `false` if it doesn't.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -129,11 +129,11 @@ Boolean
 
 ## Layer.hasAudio
 
-**Description**
+#### Description
 
 Returns `true` if the layer has audio or `false` if it doesn't.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -141,11 +141,11 @@ Boolean
 
 ## Layer.active
 
-**Description**
+#### Description
 
 Returns `true` if the Video switch  is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -153,11 +153,11 @@ Boolean
 
 ## Layer.enabled
 
-**Description**
+#### Description
 
 Returns true if the Video switch  is on for the layer; false otherwise.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -165,11 +165,11 @@ Boolean
 
 ## Layer.audioActive
 
-**Description**
+#### Description
 
 Returns true if the Audio switch  is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; false otherwise.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -177,7 +177,7 @@ Boolean
 
 ## Layer.sampleImage(`point`, `radius=[0.5, 0.5]`, `postEffect=true`, `t=time`)
 
-**Description**
+#### Description
 
 Samples the color and alpha channel values of a layer and returns the average alpha-weighted value of the pixels within the specified distance of the point as an array: `[red, green, blue, alpha]`.
 
@@ -201,10 +201,10 @@ thisComp.layer(1).sampleImage([100, 100], [2, 1.5])
 !!! note
     Todd Kopriva provides instructions for using the sampleImage method and the Point Control effect to monitor colors for a specified point during color correction on his After Effects Region of Interest blog.
 
-**Parameters**
+#### Parameters
 
 Argument type: point is an Array [2], radius is an Array [2], postEffect is a Boolean, and t is a Number.
 
-**Type**
+#### Type
 
 Array (4-dimensional)

@@ -6,11 +6,11 @@ These functions are accessible on the [Text.sourceText](text.md#textsourcetext) 
 
 ## SourceText.style
 
-**Description**
+#### Description
 
 Returns the [Text Style](text-style.md#textstyle) object for a given `sourceText` property.
 
-**Type**
+#### Type
 
 [Text Style](text-style.md#textstyle) object
 
@@ -18,7 +18,7 @@ Returns the [Text Style](text-style.md#textstyle) object for a given `sourceText
 
 ## SourceText.getStyleAt(`charIndex`, `t = time`)
 
-**Description**
+#### Description
 
 This function returns the [Text Style](text-style.md#textstyle) object of a particular character at a specific time.
 
@@ -33,13 +33,13 @@ For example, to get the style of the first character at the beginning of the tim
 text.sourceText.getStyleAt(0,0);
 ```
 
-**Parameters**
+#### Parameters
 
 | `index`   | Number. The index of the letter or character whose style is needed                           |
 |-----------|----------------------------------------------------------------------------------------------|
 | `time`    | Number, optional. The time within the composition to get the style from. Defaults to `time`. |
 
-**Type**
+#### Type
 
 [Text Style](text-style.md#textstyle) object
 
@@ -47,7 +47,7 @@ text.sourceText.getStyleAt(0,0);
 
 ## SourceText.createStyle()
 
-**Description**
+#### Description
 
 Used to initialize an empty [Text Style](text-style.md#textstyle) object in which you'd manually bake in specific values.
 
@@ -57,11 +57,11 @@ For example, to create a new style with font size 300 and the font Impact:
 text.sourceText.createStyle().setFontSize(300).setFont("Impact");
 ```
 
-**Parameters**
+#### Parameters
 
 None.
 
-**Type**
+#### Type
 
 Empty [Text Style](text-style.md#textstyle) object.
 
@@ -72,15 +72,15 @@ Empty [Text Style](text-style.md#textstyle) object.
 !!! note
     This functionality was added in After Effects 25.0.
 
-**Description**
+#### Description
 
 Returns `true` if the Text layer is vertical and `false` if it is horizontal.
 
-**Parameters**
+#### Parameters
 
 None.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -91,15 +91,15 @@ Boolean
 !!! note
     This functionality was added in After Effects 25.0.
 
-**Description**
+#### Description
 
 Returns `true` if the Text layer is horizontal and `false` if it is vertical.
 
-**Parameters**
+#### Parameters
 
 None.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -110,15 +110,15 @@ Boolean
 !!! note
     This functionality was added in After Effects 25.0.
 
-**Description**
+#### Description
 
 Returns `true` if a Text layer is Point text. If the Text layer is Paragraph text, it returns `false`.
 
-**Parameters**
+#### Parameters
 
 None.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -129,14 +129,14 @@ Boolean
 !!! note
     This functionality was added in After Effects 25.0.
 
-**Description**
+#### Description
 
 Returns `true` if a Text layer is Paragraph text. If the Text layer is a Point text, it returns `false`.
 
-**Parameters**
+#### Parameters
 
 None.
 
-**Type**
+#### Type
 
 Boolean

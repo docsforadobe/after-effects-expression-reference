@@ -33,11 +33,11 @@ Dan Ebberts provides a tutorial on the [After Effects Developer Center](http://w
 
 ## Marker.duration
 
-**Description**
+#### Description
 
 Duration, in seconds, of marker.
 
-**Type**
+#### Type
 
 Number
 
@@ -45,11 +45,11 @@ Number
 
 ## Marker.comment
 
-**Description**
+#### Description
 
 Contents of Comment field in marker dialog box.
 
-**Type**
+#### Type
 
 String
 
@@ -57,11 +57,11 @@ String
 
 ## Marker.chapter
 
-**Description**
+#### Description
 
 Contents of Chapter field in marker dialog box.
 
-**Type**
+#### Type
 
 String
 
@@ -69,11 +69,11 @@ String
 
 ## Marker.url
 
-**Description**
+#### Description
 
 Contents of URL field in marker dialog box.
 
-**Type**
+#### Type
 
 String
 
@@ -81,11 +81,11 @@ String
 
 ## Marker.frameTarget
 
-**Description**
+#### Description
 
 Contents of Frame Target field in marker dialog box.
 
-**Type**
+#### Type
 
 String
 
@@ -93,11 +93,11 @@ String
 
 ## Marker.eventCuePoint
 
-**Description**
+#### Description
 
 Setting for cue point type in marker dialog box. True for Event; false for Navigation.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -105,11 +105,11 @@ Boolean
 
 ## Marker.cuePointName
 
-**Description**
+#### Description
 
 Contents of cue point Name field in marker dialog box.
 
-**Type**
+#### Type
 
 String
 
@@ -117,7 +117,7 @@ String
 
 ## Marker.parameters
 
-**Description**
+#### Description
 
 Contents of Parameter Name and Parameter Value fields in marker dialog box.
 
@@ -127,7 +127,7 @@ For example, if you have a parameter named �background color�, then you can 
 thisComp.marker.nearestKey(time).parameters["background color"]
 ```
 
-**Type**
+#### Type
 
 Associative array of String values
 
@@ -135,12 +135,12 @@ Associative array of String values
 
 ## Marker.protectedRegion
 
-**Description**
+#### Description
 
 State of the Protected Region option in the Composition Marker dialog box. When true, the composition marker behaves as a protected region. Will also return true for protected region markers on nested composition layers, but is otherwise not applicable to layer markers.
 
 Available in After Effects 16.0 or later.
 
-**Type**
+#### Type
 
 Boolean

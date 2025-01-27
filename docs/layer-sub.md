@@ -7,7 +7,7 @@
 
 ## Layer.source
 
-**Description**
+#### Description
 
 Returns the source Comp or source Footage object for the layer. Default time is adjusted to the time in the source.
 
@@ -17,7 +17,7 @@ Example:
 source.layer(1).position
 ```
 
-**Type**
+#### Type
 
 Comp or Footage
 
@@ -25,19 +25,19 @@ Comp or Footage
 
 ## Layer.sourceTime(`t=time`)
 
-**Description**
+#### Description
 
 Returns the layer source corresponding to time `t`.
 
 !!! note
     After Effects CS5.5 and later
 
-**Parameters**
+#### Parameters
 
 | `t`   | Number   |
 |-------|----------|
 
-**Type**
+#### Type
 
 Number
 
@@ -45,7 +45,7 @@ Number
 
 ## Layer.sourceRectAtTime(`t = time, includeExtents = false`)
 
-**Description**
+#### Description
 
 Returns a JavaScript object with four attributes: `[top, left, width, height]`
 
@@ -65,13 +65,13 @@ Example:
 myTextLayer.sourceRectAtTime().width
 ```
 
-**Parameters**
+#### Parameters
 
 | t              | Number   |
 |----------------|----------|
 | includeExtents | Bool     |
 
-**Type**
+#### Type
 
 Array (4-dimensional)
 
@@ -79,7 +79,7 @@ Array (4-dimensional)
 
 ## Layer.effect(`name`)
 
-**Description**
+#### Description
 
 After Effects finds the effect by its name in the Effect Controls panel. The name can be the default name or a user-defined name. If multiple effects have the same name, the effect closest to the top of the Effect Controls panel is used.
 
@@ -89,12 +89,12 @@ Example:
 effect("Fast Blur")("Blurriness")
 ```
 
-**Parameters**
+#### Parameters
 
 | `name`   | String   |
 |----------|----------|
 
-**Type**
+#### Type
 
 Effect
 
@@ -102,16 +102,16 @@ Effect
 
 ## Layer.effect(`index`)
 
-**Description**
+#### Description
 
 After Effects finds the effect by its index in the Effect Controls panel, starting at `1` and counting from the top.
 
-**Parameters**
+#### Parameters
 
 | `index`   | Number   |
 |-----------|----------|
 
-**Type**
+#### Type
 
 Effect
 
@@ -119,7 +119,7 @@ Effect
 
 ## Layer.mask(`name`)
 
-**Description**
+#### Description
 
 The name can be the default name or a user-defined name. If multiple masks have the same name, the first (topmost) mask is used.
 
@@ -129,12 +129,12 @@ Example:
 mask("Mask 1")
 ```
 
-**Parameters**
+#### Parameters
 
 | `name`   | String   |
 |----------|----------|
 
-**Type**
+#### Type
 
 Mask
 
@@ -142,15 +142,15 @@ Mask
 
 ## Layer.mask(`index`)
 
-**Description**
+#### Description
 
 After Effects finds the mask by its index in the Timeline panel, starting at `1` and counting from the top.
 
-**Parameters**
+#### Parameters
 
 | `index`   | Number   |
 |-----------|----------|
 
-**Type**
+#### Type
 
 Mask

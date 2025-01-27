@@ -18,11 +18,11 @@ propertyGroup(2).propertyIndex * time * 200
 
 ## value
 
-**Description**
+#### Description
 
 Returns the value of a property at the current time.
 
-**Type**
+#### Type
 
 Number, Array, or String
 
@@ -30,7 +30,7 @@ Number, Array, or String
 
 ## valueAtTime(`t`)
 
-**Description**
+#### Description
 
 Returns the value of a property at the specified time, in seconds.
 
@@ -43,12 +43,12 @@ valueAtTime(random(4))
 !!! note
     Dan Ebberts provides more examples and techniques for using the `valueAtTime` and `velocityAtTime` methods on [MotionScript](http://www.motionscript.com/mastering-expressions/follow-the-leader.html).
 
-**Parameters**
+#### Parameters
 
 | `t`   | Number   |
 |-------|----------|
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -56,11 +56,11 @@ Number or Array
 
 ## velocity
 
-**Description**
+#### Description
 
 Returns the temporal velocity value at the current time. For spatial properties, such as Position, it returns the tangent vector value. The result is the same dimension as the property.
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -68,16 +68,16 @@ Number or Array
 
 ## velocityAtTime(`t`)
 
-**Description**
+#### Description
 
 Returns the temporal velocity value at the specified time.
 
-**Parameters**
+#### Parameters
 
 | `t`   | Number   |
 |-------|----------|
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -85,11 +85,11 @@ Number or Array
 
 ## speed
 
-**Description**
+#### Description
 
 Returns a 1D, positive speed value equal to the speed at which the property is changing at the default time. This element can be used only for spatial properties.
 
-**Type**
+#### Type
 
 Number
 
@@ -97,16 +97,16 @@ Number
 
 ## speedAtTime(`t`)
 
-**Description**
+#### Description
 
 Returns the spatial speed value at the specified time.
 
-**Parameters**
+#### Parameters
 
 | `t`   | Number   |
 |-------|----------|
 
-**Type**
+#### Type
 
 Number
 
@@ -114,7 +114,7 @@ Number
 
 ## wiggle(`freq`, `amp`, `octaves=1`, `amp_mult=0.5`, `t=time`)
 
-**Description**
+#### Description
 
 Randomly shakes (wiggles) the value of the property.
 
@@ -155,7 +155,7 @@ w = wiggle(freq,amp);
 !!! note
     Dan Ebberts provides an example expression and a detailed explanation on his [website](http://www.motionscript.com/design-guide/looping-wiggle.html) that shows how to use the time parameter of the wiggle method to create a looping animation.
 
-**Parameters**
+#### Parameters
 
 | `freq`     | Number   |
 |------------|----------|
@@ -164,7 +164,7 @@ w = wiggle(freq,amp);
 | `amp_mult` | Number   |
 | `t`        | Number   |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -172,7 +172,7 @@ Number or Array
 
 ## temporalWiggle(`freq`, `amp`, `octaves=1`, `amp_mult=0.5`, `t=time`)
 
-**Description**
+#### Description
 
 Samples the property at a wiggled time.
 
@@ -194,7 +194,7 @@ Example:
 scale.temporalWiggle(5, 0.2)
 ```
 
-**Parameters**
+#### Parameters
 
 | `freq`     | Number   |
 |------------|----------|
@@ -203,7 +203,7 @@ scale.temporalWiggle(5, 0.2)
 | `amp_mult` | Number   |
 | `t`        | Number   |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -211,7 +211,7 @@ Number or Array
 
 ## smooth(`width=.2`, `samples=5`, `t=time`)
 
-**Description**
+#### Description
 
 Smooths the property values over time, converting large, brief deviations in the value to smaller, more evenly distributed deviations. This smoothing is accomplished by applying a box filter to the value of the property at the specified time. The width value is the range of time (in seconds) over which the filter is averaged. The samples value is the number of discrete samples evenly spaced over time; use a larger value for greater smoothness (but decreased performance). Generally, you'll want samples to be an odd number so that the value at the current time is included in the average.
 
@@ -221,14 +221,14 @@ Example:
 position.smooth(0.1, 5)
 ```
 
-**Parameters**
+#### Parameters
 
 | `width`   | Number   |
 |-----------|----------|
 | `samples` | Number   |
 | `t`       | Number   |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -236,7 +236,7 @@ Number or Array
 
 ## loopIn(`type="cycle"`, `numKeyframes=0`)
 
-**Description**
+#### Description
 
 Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer. The numKeyframes value determines what segment is looped: The segment looped is the portion of the layer from the first keyframe to the numKeyframes+1 keyframe. For example, loopIn("cycle", 3) loops the segment bounded by the first and fourth keyframes. The default value of 0 means that all keyframes loop. You can use keyframe-looping methods to repeat a series of keyframes. You can use these methods on most properties. Exceptions include properties that can't be expressed by simple numeric values in the Timeline panel, such as the Source Text property, path shape properties, and the Histogram property for the Levels effect. Keyframes or duration values that are too large are clipped to the maximum allowable value. Values that are too small result in a constant loop.
 
@@ -250,7 +250,7 @@ Loops a segment of time that is measured from the first keyframe on the layer fo
 !!! tip
     Use `loopIn("continue") + loopOut("continue") - value` to have a continued motion before and after the property's keyframes. *Tip from Paul Slemmer.*
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -258,7 +258,7 @@ Number or Array
 
 ## loopOut(`type="cycle"`, `numKeyframes=0`)
 
-**Description**
+#### Description
 
 Loops a segment of time that is measured from the last keyframe on the layer back toward the In point of the layer. The loop plays until the Out point of the layer. The specified number of keyframes determines the segment to loop. The numKeyframes value sets the number of keyframe segments to loop; the specified range is measured backward from the last keyframe.
 
@@ -267,7 +267,7 @@ For example, `loopOut("cycle", 1)` loops the segment bounded by the last keyfram
 !!! note
     David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://omino.com/pixelblog/2007/11/23/salmonella/) that show how to use the Echo effect, the Particle Playground effect, and the `loopOut` method to animate a swarm of stylized swimming bacteria.
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -275,13 +275,13 @@ Number or Array
 
 ## loopInDuration(`type="cycle"`, `duration=0`)
 
-**Description**
+#### Description
 
 Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer. Specified duration determines the segment to loop. The duration value sets the number of composition seconds in a segment to loop; the specified range is measured from the first keyframe.
 
 For example, `loopInDuration("cycle", 1)` loops the first second of the entire animation. The default of `0` means that the segment to loop begins at the layer Out point. See the entry for loopIn for more information.
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -289,13 +289,13 @@ Number or Array
 
 ## loopOutDuration(`type="cycle"`, `duration=0`)
 
-**Description**
+#### Description
 
 Loops a segment of time that is measured from the last keyframe on the layer back toward the In point of the layer. The loop plays until the Out point of the layer. Specified duration determines the segmetn to loop. The duration value sets the number of composition seconds in a segment to loop; the specified range is measured backward from the last keyframe.
 
 For example, `loopOutDuration("cycle", 1)` loops the last second of the entire animation. The default of `0` means that the segment to loop begins at the layer In point. See the entry for loopIn for more information.
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -303,18 +303,18 @@ Number or Array
 
 ## key(`index`)
 
-**Description**
+#### Description
 
 Returns the Key or MarkerKey object by number.
 
 For example, `key(1)` returns the first keyframe.
 
-**Parameters**
+#### Parameters
 
 | index   | Number   |
 |---------|----------|
 
-**Type**
+#### Type
 
 Key or MarkerKey
 
@@ -322,14 +322,14 @@ Key or MarkerKey
 
 ## key(`markerName`)
 
-**Description**
+#### Description
 
 Returns the MarkerKey object with this name. Use only on marker properties.
 
 | markerName   | String   |
 |--------------|----------|
 
-**Type**
+#### Type
 
 MarkerKey
 
@@ -337,16 +337,16 @@ MarkerKey
 
 ## nearestKey(`t`)
 
-**Description**
+#### Description
 
 Returns the Key or MarkerKey object nearest to a designated time `t`.
 
-**Parameters**
+#### Parameters
 
 | `t`   | Number   |
 |-------|----------|
 
-**Type**
+#### Type
 
 Key or MarkerKey
 
@@ -354,14 +354,14 @@ Key or MarkerKey
 
 ## numKeys
 
-**Description**
+#### Description
 
 Returns the number of keyframes on a property. Returns the number of markers on a marker property.
 
 !!! note
     If you use the Separate Dimensions command to separate the dimensions of the Position property into individual components, the number of keyframes changes, so the value returned by this method changes.
 
-**Type**
+#### Type
 
 Number
 
@@ -369,7 +369,7 @@ Number
 
 ## propertyGroup(`countUp=1`)
 
-**Description**
+#### Description
 
 Returns a group of properties relative to the property on which the expression is written.
 
@@ -383,7 +383,7 @@ This example returns the number of properties in the group that contains the pro
 thisProperty.propertyGroup(1).numProperties
 ```
 
-**Type**
+#### Type
 
 Group
 
@@ -391,11 +391,11 @@ Group
 
 ## propertyIndex
 
-**Description**
+#### Description
 
 Returns the index of a property relative to other properties in its property group, including property groups within masks, effects, text animators, selectors, shapes, trackers, and track points.
 
-**Type**
+#### Type
 
 Number
 
@@ -403,10 +403,10 @@ Number
 
 ## name
 
-**Description**
+#### Description
 
 Returns the name of the property or property group.
 
-**Type**
+#### Type
 
 String

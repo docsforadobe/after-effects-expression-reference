@@ -9,20 +9,20 @@ Create a text layer, add an expression to the Source Text property, and enter ti
 
 ## timeToFrames(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `isDuration=false`)
 
-**Desciption**
+#### Description
 
 Converts the value of t, which defaults to the current composition time, to an integer number of frames. The number of frames per second is specified in the fps argument, which defaults to the frame rate of the current composition (`1.0 / thisComp.frameDuration`).
 
 The `isDuration` argument, which defaults to `false`, should be `true` if the `t` value represents a difference between two times instead of an absolute time. Absolute times are rounded down toward negative infinity; durations are rounded away from zero (up for positive values).
 
-**Parameters**
+#### Parameters
 
 | `t`          | Number   |
 |--------------|----------|
 | `fps`        | Number   |
 | `isDuration` | Boolean  |
 
-**Type**
+#### Type
 
 Number
 
@@ -30,17 +30,17 @@ Number
 
 ## framesToTime(`frames`, `fps=1.0 / thisComp.frameDuration`)
 
-**Desciption**
+#### Description
 
 The inverse of timeToFrames. Returns the time corresponding to the frames argument, which is required. It doesn't have to be an integer. See timeToFrames for explanation of the `fps` argument.
 
-**Parameters**
+#### Parameters
 
 | `frames`   | Number   |
 |------------|----------|
 | `fps`      | Number   |
 
-**Type**
+#### Type
 
 Number
 
@@ -48,18 +48,18 @@ Number
 
 ## timeToTimecode(`t=time + thisComp.displayStartTime`, `timecodeBase=30`, `isDuration=false`)
 
-**Desciption**
+#### Description
 
 Converts the value of `t` to a String representing timecode. See timeToFrames for an explanation of the `t` and `isDuration` arguments. The `timecodeBase` value, which defaults to `30`, specifies the number of frames in one second.
 
-**Parameters**
+#### Parameters
 
 | `t`            | Number   |
 |----------------|----------|
 | `timecodeBase` | Number   |
 | `isDuration`   | Boolean  |
 
-**Type**
+#### Type
 
 String
 
@@ -67,18 +67,18 @@ String
 
 ## timeToNTSCTimecode(`t=time + thisComp.displayStartTime`, `ntscDropFrame=false`, `isDuration=false`)
 
-**Desciption**
+#### Description
 
 Converts `t` to a `String` representing NTSC timecode. See timeToFrames for an explanation of the `t` and `isDuration` arguments. If `ntscDropFrame` is `false` (the default), the result `String` is NTSC non-drop-frame timecode. If `ntscDropFrame` is `true`, the result `String` is NTSC drop-frame timecode.
 
-**Parameters**
+#### Parameters
 
 | `t`             | Number   |
 |-----------------|----------|
 | `ntscDropFrame` | Boolean  |
 | `isDuration`    | Boolean  |
 
-**Type**
+#### Type
 
 String
 
@@ -86,18 +86,18 @@ String
 
 ## timeToFeetAndFrames(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `framesPerFoot=16`, `isDuration=false`)
 
-**Desciption**
+#### Description
 
 Converts the value of `t` to a `String` representing feet of film and frames. See timeToFrames for an explanation of the `t`, `fps`, and `isDuration` arguments. The `framesPerFoot` argument specifies the number of frames in one foot of film. It defaults to `16`, which is the most common rate for 35mm footage.
 
-**Parameters**
+#### Parameters
 
 | `t`             | Number   |
 |-----------------|----------|
 | `framesPerFoot` | Number   |
 | `isDuration`    | Boolean  |
 
-**Type**
+#### Type
 
 String
 
@@ -105,20 +105,20 @@ String
 
 ## timeToCurrentFormat(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `isDuration=false`)
 
-**Desciption**
+#### Description
 
 Converts the value of `t` to a `String` representing time in the current Project Settings display format. See timeToFrames for a definition of all the arguments.
 
 !!! note
     An optional `ntscDropFrame` argument was added to the `timeToCurrentFormat()` function in After Effects CS5.5 and later. Default: `ntscDropFrame=thisComp.ntscDropFrame`.
 
-**Parameters**
+#### Parameters
 
 | `t`          | Number   |
 |--------------|----------|
 | `fps`        | Number   |
 | `isDuration` | Boolean  |
 
-**Type**
+#### Type
 
 String

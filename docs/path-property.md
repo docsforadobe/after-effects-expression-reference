@@ -33,11 +33,11 @@ myLayer.toComp(myLayer.mask("Mask 1").maskPath.points()[0]);
 
 ## name
 
-**Description**
+#### Description
 
 Returns the name of the property.
 
-**Type**
+#### Type
 
 String
 
@@ -45,18 +45,18 @@ String
 
 ## PathProperty.points(`t=time`)
 
-**Description**
+#### Description
 
 Get the x,y coordinates of all points on a path. Coordinates for layer mask path points are relative to the layer's origin in its upper-left hand corner. Coordinates for Bezier shape path points are are relative to the anchor point of the path's shape group (ex., "Transform: Shape 1 > Anchor Point"). Coordinates for brush stroke path points are relative to the start of the stroke; the first point is `[0,0]`. This method can be passed into the `createPath()` method for the points parameter when duplicating a path.
 
 Optionally specify the time at which sample to the path.
 
-**Parameters**
+#### Parameters
 
 | `t`   | Number   |
 |-------|----------|
 
-**Type**
+#### Type
 
 Array of number pair arrays, rounded to the fourth decimal place
 
@@ -64,13 +64,13 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ## PathProperty.inTangents(`t=time`)
 
-**Description**
+#### Description
 
 Get the x,y coordinates of the incoming tangent handle for all points on a path. Tangent coordinate values are offset relative to the parent point's coordinates. i.e., The value [0,0] creates no curvature at the incoming tangent. This method can be passed into the createPath() method for the inTangents parameter when duplicating a path.
 
 Optionally specify the time at which sample to the path.
 
-**Type**
+#### Type
 
 Array of number pair arrays, rounded to the fourth decimal place
 
@@ -78,18 +78,18 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ## PathProperty.outTangents(`t=time`)
 
-**Description**
+#### Description
 
 Get the x, y coordinates of the outgoing tangent handle for all points on a path. Tangent coordinate values are offset relative to the parent point's coordinates. i.e., The value `[0,0]` creates no curvature at the outgoing tangent. This method can be passed into the createPath() method for the outTangents parameter when duplicating a path.
 
 Optionally specify the time at which sample to the path.
 
-**Parameters**
+#### Parameters
 
 | `t`   | Number   |
 |-------|----------|
 
-**Type**
+#### Type
 
 Array of number pair arrays, rounded to the fourth decimal place
 
@@ -97,11 +97,11 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ## PathProperty.isClosed()
 
-**Description**
+#### Description
 
 Determines if the path is open or closed. Returns `true` if the path is closed, `false` if the path is open. This method can be passed into the `createPath()` method for the `is_closed` parameter when duplicating a path.
 
-**Type**
+#### Type
 
 Boolean
 
@@ -109,7 +109,7 @@ Boolean
 
 ## PathProperty.pointOnPath(`percentage=0.5`, `t=time`)
 
-**Description**
+#### Description
 
 Get the x, y coordinates of an arbitrary point along a path. The point is expressed as a percentage of the arc-length of the path. 0% is the first point and 100% is the last point. When the path is closed, 0%
 and 100% will return the same coordinates. Percentage of arc-length is used to ensure uniform speed along the path. Other than 0% and 100%, percentages do not necessarily correlate with
@@ -117,13 +117,13 @@ the Bezier points on the path. (i.e., For a path with three points, the second p
 
 Optionally specify the time at which sample to the path.
 
-**Parameters**
+#### Parameters
 
 | `percentage`   | Number   |
 |----------------|----------|
 | `t`            | Number   |
 
-**Type**
+#### Type
 
 A number pair array
 
@@ -131,20 +131,20 @@ A number pair array
 
 ## PathProperty.tangentOnPath(`percentage=0.5`, `t=time`)
 
-**Description**
+#### Description
 
 Get the calculated x,y coordinates of the outgoing tangent handle for an arbitrary point along a path. Tangent coordinate values are offset relative to the parent point's coordinates. i.e., The value [0,0] creates no curvature at the outgoing tangent. The incoming tangent handle is the inverse of this value (multiply the x,y coordinates by -1).  The tangent's parent point is expressed as a percentage of the arc-length of the path. Read the description of the pointOnPath() method for details about arc-length percentage. The coordinates returned by tangentOnPath() are calcuated from it's parent point and will differ from those returned by `outTangents()` if a
 user-defined point also exists at that arc-length pecentage. The linear distance between the parent point's coordinates and `tangentOnPath()` coordinates will always be 1. You can multiply the returned coordinates to create a longer tangent, for example `(myPath.tangentOnPath() * 100)`.
 
 Optionally specify the time at which sample to the path.
 
-**Parameters**
+#### Parameters
 
 | `percentage`   | Number   |
 |----------------|----------|
 | `t`            | Number   |
 
-**Type**
+#### Type
 
 A number pair array
 
@@ -152,20 +152,20 @@ A number pair array
 
 ## PathProperty.normalOnPath(`percentage=0.5`, `t=time`)
 
-**Description**
+#### Description
 
 Get the calculated x,y coordinates of the normal for an arbitrary point along a path. Coordinate values of normals are offset relative to the parent point's coordinates. i.e., The value `[0,0]` is the same as the parent point. The normal's parent point is expressed as a percentage of the arc-length of the path. Read the description of the `pointOnPath()` method for
 details about arc-length percentage. The coordinates returned by `normalOnPath()` are calcuated from its parent point. The linear distance between the parent point's coordinates and `normalOnPath()` coordinates will always be `1`. You can multiply the returned coordinates to create a longer normal, for example. `(myPath.normalOnPath() * 100)`.
 
 Optionally specify the time at which sample to the path.
 
-**Parameters**
+#### Parameters
 
 | `percentage`   | Number   |
 |----------------|----------|
 | `t`            | Number   |
 
-**Type**
+#### Type
 
 A number pair array
 
@@ -173,7 +173,7 @@ A number pair array
 
 ## PathProperty.createPath(`points=[[0,0], [100,0], [100,100], [0,100]]`, `inTangents=[]`, `outTangents=[]`, `is_closed=true`)
 
-**Description**
+#### Description
 
 Creates a path object from a set of points and tangents.
 The points are defined by an array of number pair arrays representing their `x`, `y` coordinates. The array length must be at least `1`, and can be of
@@ -193,7 +193,7 @@ myMask = mask("Mask 1").path;
 myMask.createPath(myMask.points(), myMask.inTangents(), myMask.outTangents(), false);
 ```
 
-**Parameters**
+#### Parameters
 
 | `points`      | Array   |
 |---------------|---------|
@@ -201,6 +201,6 @@ myMask.createPath(myMask.points(), myMask.inTangents(), myMask.outTangents(), fa
 | `outTangents` | Array   |
 | `is_closed`   | Boolean |
 
-**Type**
+#### Type
 
 Path

@@ -11,17 +11,17 @@ For example, the expression `add([10, 20], [1, 2, 3])` returns `[11, 22, 3]`.
 
 ## add(`vec1`, `vec2`)
 
-**Description**
+#### Description
 
 Adds two vectors.
 
-**Parameters**
+#### Parameters
 
 | `vec1`   | Array   |
 |----------|---------|
 | `vec2`   | Array   |
 
-**Type**
+#### Type
 
 Array
 
@@ -29,17 +29,17 @@ Array
 
 ## sub(`vec1`, `vec2`)
 
-**Description**
+#### Description
 
 Subtracts two vectors.
 
-**Parameters**
+#### Parameters
 
 | `vec1`   | Array   |
 |----------|---------|
 | `vec2`   | Array   |
 
-**Type**
+#### Type
 
 Array
 
@@ -47,17 +47,17 @@ Array
 
 ## mul(`vec`, `amount`)
 
-**Description**
+#### Description
 
 Multiplies every element of the vector by the amount.
 
-**Parameters**
+#### Parameters
 
 | `vec`    | Array   |
 |----------|---------|
 | `amount` | Number  |
 
-**Type**
+#### Type
 
 Array
 
@@ -65,17 +65,17 @@ Array
 
 ## div(`vec`, `amount`)
 
-**Description**
+#### Description
 
 Divides every element of the vector by the amount.
 
-**Parameters**
+#### Parameters
 
 | `vec`    | Array   |
 |----------|---------|
 | `amount` | Number  |
 
-**Type**
+#### Type
 
 Array
 
@@ -83,18 +83,18 @@ Array
 
 ## clamp(`value`, `limit1`, `limit2`)
 
-**Description**
+#### Description
 
 The value of each component of `value` is constrained to fall between the values of the corresponding values of `limit1` and `limit2`.
 
-**Parameters**
+#### Parameters
 
 | `value`   | Number or Array   |
 |-----------|-------------------|
 | `limit1`  | Number or Array   |
 | `limit2`  | Number or Array   |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -102,17 +102,17 @@ Number or Array
 
 ## dot(`vec1`, `vec2`)
 
-**Description**
+#### Description
 
 Returns the dot (inner) product of the vector arguments.
 
-**Parameters**
+#### Parameters
 
 | `vec1`   | Array   |
 |----------|---------|
 | `vec2`   | Array   |
 
-**Type**
+#### Type
 
 Number
 
@@ -120,17 +120,17 @@ Number
 
 ## cross(`vec1`, `vec2`)
 
-**Description**
+#### Description
 
 Returns the vector cross product of `vec1` and `vec2`. Refer to a math reference or JavaScript guide for more information.
 
-**Parameters**
+#### Parameters
 
 | `vec1`   | Array (2- or 3-dimensional)   |
 |----------|-------------------------------|
 | `vec2`   | Array (2- or 3-dimensional)   |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -138,16 +138,16 @@ Array (2- or 3-dimensional)
 
 ## normalize(`vec`)
 
-**Description**
+#### Description
 
 Normalizes the vector so that its length is `1.0`. Using the normalize method is a short way of performing the operation `div(vec, length(vec))`.
 
-**Parameters**
+#### Parameters
 
 | `vec`   | Array   |
 |---------|---------|
 
-**Type**
+#### Type
 
 Array
 
@@ -155,16 +155,16 @@ Array
 
 ## length(`vec`)
 
-**Description**
+#### Description
 
 Returns the length of vector `vec`.
 
-**Parameters**
+#### Parameters
 
 | `vec`   | Array   |
 |---------|---------|
 
-**Type**
+#### Type
 
 Number
 
@@ -172,7 +172,7 @@ Number
 
 ## length(`point1`, `point2`)
 
-**Description**
+#### Description
 
 Returns the distance between two points. The `point2` argument is optional.
 
@@ -184,13 +184,13 @@ For example, add this expression to the Focus Distance property of a camera to l
 length(position, pointOfInterest)
 ```
 
-**Parameters**
+#### Parameters
 
 | `point1`   | Array   |
 |------------|---------|
 | `point2`   | Array   |
 
-**Type**
+#### Type
 
 Number
 
@@ -198,7 +198,7 @@ Number
 
 ## lookAt(`fromPoint`, `atPoint`)
 
-**Description**
+#### Description
 
 The argument `fromPoint` is the location in world space of the layer you want to orient. The argument `atPoint` is the point in world space you want to point the layer at. The return value can be used as an expression for the Orientation property, making the z-axis of the layer point at atPoint.
 
@@ -210,12 +210,12 @@ For example, this expression on the Orientation property of a spot light makes t
 lookAt(position, thisComp.layer(1).position)
 ```
 
-**Parameters**
+#### Parameters
 
 | `fromPoint`   | Array (3-dimensional)   |
 |---------------|-------------------------|
 | `atPoint`     | Array (3-dimensional)   |
 
-**Type**
+#### Type
 
 Array (3-dimensional)

@@ -1,6 +1,6 @@
 # Key
 
-**Description**
+#### Description
 
 When you access a Key object, you can get time, index, and value properties from it. For example, the following expression gives you the value of the third Position keyframe: position.key(3).value.
 
@@ -15,11 +15,11 @@ easeOut(d, 0, .1, 100, 0)
 
 ## Key.value
 
-**Description**
+#### Description
 
 Returns the value of the keyframe.
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -27,11 +27,11 @@ Number or Array
 
 ## Key.time
 
-**Description**
+#### Description
 
 Returns the time of the keyframe.
 
-**Type**
+#### Type
 
 Number
 
@@ -39,10 +39,10 @@ Number
 
 ## Key.index
 
-**Description**
+#### Description
 
 Returns the index of the keyframe.
 
-**Type**
+#### Type
 
 Number

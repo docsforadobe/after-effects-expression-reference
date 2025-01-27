@@ -1,20 +1,20 @@
 # Light
 
-**Description**
+#### Description
 
 Light objects have the same attributes and methods as Layer objects, except for:
 
-* `source`
-* `effect`
-* `mask`
-* `width`
-* `height`
-* `anchorPoint`
-* `scale`
-* `opacity`
-* `audioLevels`
-* `timeRemap`
-* all the material properties
+- `source`
+- `effect`
+- `mask`
+- `width`
+- `height`
+- `anchorPoint`
+- `scale`
+- `opacity`
+- `audioLevels`
+- `timeRemap`
+- all the material properties
 
 !!! note
     David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://www.adobe.com/go/learn_ae_ominoflashing) that shows how to use expressions with lights.
@@ -23,11 +23,11 @@ Light objects have the same attributes and methods as Layer objects, except for:
 
 ## Light.pointOfInterest
 
-**Description**
+#### Description
 
 Returns the point of interest values for a light in world space.
 
-**Type**
+#### Type
 
 Array (3-dimensional)
 
@@ -35,11 +35,11 @@ Array (3-dimensional)
 
 ## Light.intensity
 
-**Description**
+#### Description
 
 Returns the intensity values of a light as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -47,11 +47,11 @@ Number
 
 ## Light.color
 
-**Description**
+#### Description
 
 Returns the color value of a light.
 
-**Type**
+#### Type
 
 Array (4-dimensional)
 
@@ -59,11 +59,11 @@ Array (4-dimensional)
 
 ## Light.coneAngle
 
-**Description**
+#### Description
 
 Returns the cone angle of a light, in degrees.
 
-**Type**
+#### Type
 
 Number
 
@@ -71,11 +71,11 @@ Number
 
 ## Light.coneFeather
 
-**Description**
+#### Description
 
 Returns the cone feather value of a light as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -83,11 +83,11 @@ Number
 
 ## Light.shadowDarkness
 
-**Description**
+#### Description
 
 Returns the shadow darkness value of a light as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -95,10 +95,10 @@ Number
 
 ## Light.shadowDiffusion
 
-**Description**
+#### Description
 
 Returns the shadow diffusion value of a light, in pixels.
 
-**Type**
+#### Type
 
 Number

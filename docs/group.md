@@ -2,7 +2,7 @@
 
 All properties in the Timeline are organized into groups, which share some attributes of properties like `name` and `propertyIndex`. Groups can have a fixed number of properties (e.g. an individual effect whose properties don't change) or a variable number of properties (e.g. the Effects group itself which can have any number of effect within it).
 
-* **Top-level groups in a Layer:**
+- **Top-level groups in a Layer:**
   : * Motion Trackers
     * Text
     * Contents
@@ -15,7 +15,7 @@ All properties in the Timeline are organized into groups, which share some attri
     * Audio
     * Data
     * Essential Properties
-* **Nested groups**
+- **Nested groups**
   : * Individual effects
     * Individual masks
     * Shape groups
@@ -25,14 +25,14 @@ All properties in the Timeline are organized into groups, which share some attri
 
 ## numProperties
 
-**Description**
+#### Description
 
 Returns the number of properties or groups directly within a group. This does not include properties nested inside child groups.
 
 !!! tip
     Find the number of effects applied to a layer with `thisLayer("ADBE Effect Parade").numProperties` using the match name to remain language-agnostic.
 
-**Type**
+#### Type
 
 Number
 
@@ -40,11 +40,11 @@ Number
 
 ## propertyGroup(`countUp=1`)
 
-**Description**
+#### Description
 
 Returns a higher-level property group relative to the property group on which the method is called. See [propertyGroup(countUp=1)](property.md#propertypropertygroup) for additional details.
 
-**Type**
+#### Type
 
 Group
 
@@ -52,11 +52,11 @@ Group
 
 ## propertyIndex
 
-**Description**
+#### Description
 
 Returns the index of a property group relative to other properties or groups in its property group.
 
-**Type**
+#### Type
 
 Number
 
@@ -64,10 +64,10 @@ Number
 
 ## name
 
-**Description**
+#### Description
 
 Returns the name of the property group.
 
-**Type**
+#### Type
 
 String

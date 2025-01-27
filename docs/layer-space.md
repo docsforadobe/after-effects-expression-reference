@@ -1,6 +1,6 @@
 # Layer Space Transforms
 
-**Description**
+#### Description
 
 Use layer space transform methods to transform values from one space to another, such as from layer space to world space. The `from` methods transform values from the named space (composition or world) to the layer space.
 
@@ -16,17 +16,17 @@ Composition (comp) and world space are the same for 2D layers. For 3D layers, ho
 
 ## toComp(`point`, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a point from layer space to composition space.
 
-**Parameters**
+#### Parameters
 
 | `point`   | Array (2- or 3-dimensional)   |
 |-----------|-------------------------------|
 | `t`       | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -34,7 +34,7 @@ Array (2- or 3-dimensional)
 
 ## fromComp(`point`, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a point from composition space to layer space. The resulting point in a 3D layer may have a nonzero value even though it is in layer space.
 
@@ -44,13 +44,13 @@ Example:
 fromComp(thisComp.layer(2).position)
 ```
 
-**Parameters**
+#### Parameters
 
 | `point`   | Array (2- or 3-dimensional)   |
 |-----------|-------------------------------|
 | `t`       | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -58,7 +58,7 @@ Array (2- or 3-dimensional)
 
 ## toWorld(`point`, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a point from layer space to view-independent world space.
 
@@ -74,13 +74,13 @@ toWorld.effect("Bulge")("Bulge Center")
 !!! tip
     Rich Young provides a set of expressions on his [AE Portal website](http://aeportal.blogspot.com/2010/02/fly-around-cc-sphered-layer-in-after.html) that use the toWorld method link a camera and light to a layer with the CC Sphere effect.
 
-**Parameters**
+#### Parameters
 
 | `point`   | Array (2- or 3-dimensional)   |
 |-----------|-------------------------------|
 | `t`       | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -88,7 +88,7 @@ Array (2- or 3-dimensional)
 
 ## fromWorld(`point`, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a point from world space to layer space.
 
@@ -100,13 +100,13 @@ fromWorld(thisComp.layer(2).position)
 
 See Expression example: Create a bulge between two layers for an example of how this method can be used.
 
-**Parameters**
+#### Parameters
 
 | `point`   | Array (2- or 3-dimensional)   |
 |-----------|-------------------------------|
 | `t`       | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -114,7 +114,7 @@ Array (2- or 3-dimensional)
 
 ## toCompVec(vec, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a vector from layer space to composition space.
 
@@ -124,13 +124,13 @@ Example:
 toCompVec([1,0])
 ```
 
-**Parameters**
+#### Parameters
 
 | `vec`   | Array (2- or 3-dimensional)   |
 |---------|-------------------------------|
 | `t`     | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -138,7 +138,7 @@ Array (2- or 3-dimensional)
 
 ## fromCompVec(vec, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a vector from composition space to layer space.
 
@@ -149,13 +149,13 @@ dir = sub(position, thisComp.layer(2).position);
 fromCompVec(dir)
 ```
 
-**Parameters**
+#### Parameters
 
 | `vec`   | Array (2- or 3-dimensional)   |
 |---------|-------------------------------|
 | `t`     | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -163,7 +163,7 @@ Array (2- or 3-dimensional)
 
 ## toWorldVec(vec, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a vector from layer space to world space.
 
@@ -175,13 +175,13 @@ p2 = effect("Eye Bulge 2")("Bulge Center");
 toWorld(sub(p1, p2))
 ```
 
-**Parameters**
+#### Parameters
 
 | `vec`   | Array (2- or 3-dimensional)   |
 |---------|-------------------------------|
 | `t`     | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -189,7 +189,7 @@ Array (2- or 3-dimensional)
 
 ## fromWorldVec(`vec`, `t=time`)
 
-**Description**
+#### Description
 
 Transforms a vector from world space to layer space.
 
@@ -199,13 +199,13 @@ Example:
 fromWorld(thisComp.layer(2).position)
 ```
 
-**Parameters**
+#### Parameters
 
 | `vec`   | Array (2- or 3-dimensional)   |
 |---------|-------------------------------|
 | `t`     | Number                        |
 
-**Type**
+#### Type
 
 Array (2- or 3-dimensional)
 
@@ -213,16 +213,16 @@ Array (2- or 3-dimensional)
 
 ## fromCompToSurface(`point`, `t=time`)
 
-**Description**
+#### Description
 
 Projects a point located in composition space to a point on the surface of the layer (zero z-value) at the location where it appears when viewed from the active camera. This method is useful for setting effect control points. Use with 3D layers only.
 
-**Parameters**
+#### Parameters
 
 | `point`   | Array (2- or 3-dimensional)   |
 |-----------|-------------------------------|
 | `t`       | Number                        |
 
-**Type**
+#### Type
 
 Array (2-dimensional)

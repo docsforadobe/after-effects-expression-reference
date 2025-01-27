@@ -2,16 +2,16 @@
 
 ## comp(`name`)
 
-**Description**
+#### Description
 
 Retrieves another composition by name.
 
-**Parameters**
+#### Parameters
 
 | `name`   | String   |
 |----------|----------|
 
-**Type**
+#### Type
 
 Comp
 
@@ -19,16 +19,16 @@ Comp
 
 ## footage(`name`)
 
-**Description**
+#### Description
 
 Retrieves a footage item by name.
 
-**Parameters**
+#### Parameters
 
 | `name`   | String   |
 |----------|----------|
 
-**Type**
+#### Type
 
 Footage
 
@@ -36,11 +36,11 @@ Footage
 
 ## thisProject
 
-**Description**
+#### Description
 
 Represents the project which contains the expression.
 
-**Type**
+#### Type
 
 Project
 
@@ -48,11 +48,11 @@ Project
 
 ## thisComp
 
-**Description**
+#### Description
 
 Represents the composition containing the expression.
 
-**Type**
+#### Type
 
 Comp
 
@@ -60,11 +60,11 @@ Comp
 
 ## thisLayer
 
-**Description**
+#### Description
 
 Represents the layer containing the expression. Because thisLayer is the default object, its use is optional. For example, you can start an expression with thisLayer.width or width and get the same result.
 
-**Type**
+#### Type
 
 Layer, Light, or Camera
 
@@ -72,11 +72,11 @@ Layer, Light, or Camera
 
 ## thisProperty
 
-**Description**
+#### Description
 
 Represents the property containing the expression. For example, if you write an expression on the Rotation property, you can start an expression with thisProperty to refer to the Rotation property.
 
-**Type**
+#### Type
 
 Property
 
@@ -84,11 +84,11 @@ Property
 
 ## time
 
-**Description**
+#### Description
 
 Represents the composition time, in seconds, at which the expression is being evaluated.
 
-**Type**
+#### Type
 
 Number
 
@@ -96,11 +96,11 @@ Number
 
 ## colorDepth
 
-**Description**
+#### Description
 
 Type the project color depth value. For example, colorDepth returns `16` when the project color depth is 16 bits per channel.
 
-**Type**
+#### Type
 
 Number
 
@@ -108,22 +108,22 @@ Number
 
 ## posterizeTime(`updatesPerSecond`)
 
-**Description**
+#### Description
 
 This expression allows you to set the frame rate for a property to be lower than the frame rate of the composition.
 
 The `updatesPerSecond` value passed in is *the number of times per second* the expression should evaluate.
 
-**Parameters**
+#### Parameters
 
 | `updatesPerSecond`   | Number   |
 |----------------------|----------|
 
-**Type**
+#### Type
 
 Number
 
-**Examples**
+#### Examples
 
 To change a property to a random value 1 time per second:
 
@@ -159,10 +159,10 @@ newValue;
 
 ## value
 
-**Description**
+#### Description
 
 Represents the value at the current time for the property containing the expression.
 
-**Type**
+#### Type
 
 Number, Array, or String

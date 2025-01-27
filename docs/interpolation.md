@@ -1,6 +1,6 @@
 # Interpolation
 
-**Description**
+#### Description
 
 For all the Interpolation methods, the argument `t` is often `time` or `value`, though it can have other values, instead. If `t` is `time`, the interpolation between values happens over a duration. If `t` is `value`, then the expression maps one range of values to a new range of values.
 
@@ -16,7 +16,7 @@ Andrew Devis provides a [pair of video tutorials](http://blogs.adobe.com/toddkop
 
 ## linear(`t`, `tMin`, `tMax`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Returns `value1` when `t <= tMin`. Returns `value2` when `t >= tMax`. Returns a linear interpolation between `value1` and `value2` when `tMin < t < tMax`.
 
@@ -34,7 +34,7 @@ For example, this expression on the Opacity property converts the Opacity values
 linear(value, 0, 100, 20, 80)
 ```
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
@@ -43,7 +43,7 @@ linear(value, 0, 100, 20, 80)
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -51,18 +51,18 @@ Number or Array
 
 ## linear(`t`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Returns a value that linearly interpolates from `value1` to `value2` as `t` ranges from `0` to `1`. Returns `value1` when `t <= 0`. Returns `value2` when `t >= 1`.
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -70,11 +70,11 @@ Number or Array
 
 ## ease(`t`, `tMin`, `tMax`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Similar to linear with the same arguments, except that the interpolation eases in and out so that the velocity is `0` at the start and end points. This method results in a smooth animation.
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
@@ -83,7 +83,7 @@ Similar to linear with the same arguments, except that the interpolation eases i
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -91,18 +91,18 @@ Number or Array
 
 ## ease(`t`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Similar to linear with the same arguments, except that the interpolation eases in and out so that the velocity is `0` at the start and end points. This method results in a smooth animation.
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -110,11 +110,11 @@ Number or Array
 
 ## easeIn(`t`, `tMin`, `tMax`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Similar to ease, except that the tangent is `0` only on the `tMin` side and interpolation is `linear` on the `tMax` side.
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
@@ -123,7 +123,7 @@ Similar to ease, except that the tangent is `0` only on the `tMin` side and inte
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -131,18 +131,18 @@ Number or Array
 
 ## easeIn(`t`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Similar to ease, except that the tangent is `0` only on the `value1` side and interpolation is `linear` on the `value2` side.
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -150,11 +150,11 @@ Number or Array
 
 ## easeOut(`t`, `tMin`, `tMax`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Similar to ease, except that the tangent is `0` only on the `tMax` side and interpolation is `linear` on the `tMin` side.
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
@@ -163,7 +163,7 @@ Similar to ease, except that the tangent is `0` only on the `tMax` side and inte
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array
 
@@ -171,17 +171,17 @@ Number or Array
 
 ## easeOut(`t`, `value1`, `value2`)
 
-**Description**
+#### Description
 
 Similar to ease, except that the tangent is `0` only on the `value2` side and interpolation is `linear` on the `value1` side.
 
-**Parameters**
+#### Parameters
 
 | `t`      | Number          |
 |----------|-----------------|
 | `value1` | Number or Array |
 | `value2` | Number or Array |
 
-**Type**
+#### Type
 
 Number or Array

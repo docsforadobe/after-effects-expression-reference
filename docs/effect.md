@@ -2,11 +2,11 @@
 
 ## Effect.active
 
-**Description**
+#### Description
 
 Returns `true` if the effect is turned on (the *effect switch* is selected).
 
-**Type**
+#### Type
 
 Boolean
 
@@ -14,7 +14,7 @@ Boolean
 
 ## Effect.param(`name`)
 
-**Description**
+#### Description
 
 Returns a property within an effect. Effect control points are always in layer space.
 
@@ -24,12 +24,12 @@ Example:
 effect("Bulge").param("Bulge Height")
 ```
 
-**Parameters**
+#### Parameters
 
 | `name`   | String   |
 |----------|----------|
 
-**Type**
+#### Type
 
 Property
 
@@ -37,15 +37,15 @@ Property
 
 ## Effect.param(`index`)
 
-**Description**
+#### Description
 
 Returns a property within an effect. Effect control points are always in layer space. For example, effect("Bulge").param(4) returns the Bulge Height property.
 
-**Parameters**
+#### Parameters
 
 | `index`   | Number   |
 |-----------|----------|
 
-**Type**
+#### Type
 
 Property

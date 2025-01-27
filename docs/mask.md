@@ -7,11 +7,11 @@
 
 ## Mask.maskOpacity
 
-**Description**
+#### Description
 
 Returns the opacity value of a mask as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -19,11 +19,11 @@ Number
 
 ## Mask.maskFeather
 
-**Description**
+#### Description
 
 Returns the feather value of a mask, in pixels.
 
-**Type**
+#### Type
 
 Number
 
@@ -31,11 +31,11 @@ Number
 
 ## Mask.maskExpansion
 
-**Description**
+#### Description
 
 Returns the expansion value of a mask, in pixels.
 
-**Type**
+#### Type
 
 Number
 
@@ -43,10 +43,10 @@ Number
 
 ## Mask.invert
 
-**Description**
+#### Description
 
 Returns `true` if the mask is inverted or `false` if it is not.
 
-**Type**
+#### Type
 
 Boolean

@@ -2,11 +2,11 @@
 
 ## Layer.orientation
 
-**Description**
+#### Description
 
 Returns the 3D orientation value, in degrees, for a 3D layer.
 
-**Type**
+#### Type
 
 Array (3-dimensional)
 
@@ -14,11 +14,11 @@ Array (3-dimensional)
 
 ## Layer.rotationX
 
-**Description**
+#### Description
 
 Returns the x rotation value, in degrees, for a 3D layer.
 
-**Type**
+#### Type
 
 Number
 
@@ -26,11 +26,11 @@ Number
 
 ## Layer.rotationY
 
-**Description**
+#### Description
 
 Returns the y rotation value, in degrees, for a 3D layer.
 
-**Type**
+#### Type
 
 Number
 
@@ -38,11 +38,11 @@ Number
 
 ## Layer.rotationZ
 
-**Description**
+#### Description
 
 Returns the z rotation value, in degrees, for a 3D layer.
 
-**Type**
+#### Type
 
 Number
 
@@ -50,11 +50,11 @@ Number
 
 ## Layer.lightTransmission
 
-**Description**
+#### Description
 
 Returns the value of the Light Transmission property for a 3D layer.
 
-**Type**
+#### Type
 
 Number
 
@@ -62,11 +62,11 @@ Number
 
 ## Layer.castsShadows
 
-**Description**
+#### Description
 
 Returns a value of `1.0` if the layer casts shadows and `2` if the property is set to `Only`.
 
-**Type**
+#### Type
 
 Number
 
@@ -74,11 +74,11 @@ Number
 
 ## Layer.acceptsShadows
 
-**Description**
+#### Description
 
 Returns a value of `1` if the layer accepts shadows and `2` if the property is set to `Only`.
 
-**Type**
+#### Type
 
 Number
 
@@ -86,11 +86,11 @@ Number
 
 ## Layer.acceptsLights
 
-**Description**
+#### Description
 
 Returns a value of `1` if the layer accepts lights.
 
-**Type**
+#### Type
 
 Boolean Number
 
@@ -98,11 +98,11 @@ Boolean Number
 
 ## Layer.ambient
 
-**Description**
+#### Description
 
 Returns the ambient component value as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -110,11 +110,11 @@ Number
 
 ## Layer.diffuse
 
-**Description**
+#### Description
 
 Returns the diffuse component value as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -122,11 +122,11 @@ Number
 
 ## Layer.specular
 
-**Description**
+#### Description
 
 Returns the specular component value as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -134,11 +134,11 @@ Number
 
 ## Layer.shininess
 
-**Description**
+#### Description
 
 Returns the shininess component value as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -146,10 +146,10 @@ Number
 
 ## Layer.metal
 
-**Description**
+#### Description
 
 Returns the metal component value as a percentage.
 
-**Type**
+#### Type
 
 Number

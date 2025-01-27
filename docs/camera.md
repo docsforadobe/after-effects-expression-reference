@@ -2,27 +2,27 @@
 
 Camera objects have the same attributes and methods as Layer objects, except for:
 
-* `source`
-* `effect`
-* `mask`
-* `width`
-* `height`
-* `anchorPoint`
-* `scale`
-* `opacity`
-* `audioLevels`
-* `timeRemap`
-* all the material properties
+- `source`
+- `effect`
+- `mask`
+- `width`
+- `height`
+- `anchorPoint`
+- `scale`
+- `opacity`
+- `audioLevels`
+- `timeRemap`
+- all the material properties
 
 ---
 
 ## Camera.pointOfInterest
 
-**Description**
+#### Description
 
 Returns the point of interest values of a camera in world space.
 
-**Type**
+#### Type
 
 Array (3 dimensional)
 
@@ -30,7 +30,7 @@ Array (3 dimensional)
 
 ## Camera.zoom
 
-**Description**
+#### Description
 
 Returns the zoom values of a camera in pixels.
 
@@ -42,7 +42,7 @@ distance = length(sub(position, cam.position));
 scale * distance / cam.zoom;
 ```
 
-**Type**
+#### Type
 
 Number
 
@@ -50,11 +50,11 @@ Number
 
 ## Camera.depthOfField
 
-**Description**
+#### Description
 
 Returns `1` if the Depth Of Field property of a camera is on, or returns `0` if the Depth Of Field property is off.
 
-**Type**
+#### Type
 
 Boolean Number
 
@@ -62,11 +62,11 @@ Boolean Number
 
 ## Camera.focusDistance
 
-**Description**
+#### Description
 
 Returns the focus distance value of a camera, in pixels.
 
-**Type**
+#### Type
 
 Number
 
@@ -74,11 +74,11 @@ Number
 
 ## Camera.aperture
 
-**Description**
+#### Description
 
 Returns the aperture value of a camera, in pixels.
 
-**Type**
+#### Type
 
 Number
 
@@ -86,11 +86,11 @@ Number
 
 ## Camera.blurLevel
 
-**Description**
+#### Description
 
 Returns the blur level value of a camera as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -98,14 +98,14 @@ Number
 
 ## Camera.irisShape
 
-**Description**
+#### Description
 
 Returns the iris shape value from 1-10, corresponding to the selected dropdown value.
 
 !!! note
     Value `2` is reserved for the divider.
 
-**Type**
+#### Type
 
 Number
 
@@ -113,11 +113,11 @@ Number
 
 ## Camera.irisRotation
 
-**Description**
+#### Description
 
 Returns the iris rotation value, in degrees.
 
-**Type**
+#### Type
 
 Number
 
@@ -125,11 +125,11 @@ Number
 
 ## Camera.irisRoundness
 
-**Description**
+#### Description
 
 Returns the camera iris roundness value as a percentage.
 
-**Type**
+#### Type
 
 Number
 
@@ -137,11 +137,11 @@ Number
 
 ## Camera.irisAspectRatio
 
-**Description**
+#### Description
 
 Returns the camera iris aspect ratio, from 1 to 100.
 
-**Type**
+#### Type
 
 Number
 
@@ -149,11 +149,11 @@ Number
 
 ## Camera.irisDiffractionFringe
 
-**Description**
+#### Description
 
 Returns the camera iris diffraction fringe, from 1 to 100.
 
-**Type**
+#### Type
 
 Number
 
@@ -161,11 +161,11 @@ Number
 
 ## Camera.highlightGain
 
-**Description**
+#### Description
 
 Returns the camera highlight gain, from 1 to 100.
 
-**Type**
+#### Type
 
 Number
 
@@ -173,7 +173,7 @@ Number
 
 ## Camera.highlightThreshold
 
-**Description**
+#### Description
 
 Returns the camera highlight threshhold.
 
@@ -181,7 +181,7 @@ Returns the camera highlight threshhold.
 - In a 16-bit comp, this value ranges from 0 to 32768
 - In a 32-bit comp, this value ranges from 0 to 1.0
 
-**Type**
+#### Type
 
 Number
 
@@ -189,11 +189,11 @@ Number
 
 ## Camera.highlightSaturation
 
-**Description**
+#### Description
 
 Returns the camera highlight saturation, from 1 to 100.
 
-**Type**
+#### Type
 
 Number
 
@@ -201,7 +201,7 @@ Number
 
 ## Camera.active
 
-**Description**
+#### Description
 
 Returns `true` if the camera:
 
@@ -211,6 +211,6 @@ Returns `true` if the camera:
 
 Returns `false` otherwise.
 
-**Type**
+#### Type
 
 Boolean
