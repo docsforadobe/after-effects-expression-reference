@@ -11,7 +11,7 @@ Writes the list of point and tangent coordinates from Path 1 of Shape 1 on layer
 
 Apply this to the source text property of a text layer for a readout of the coordinates and incoming and outgoing tangents of the shape.
 
-```javascript
+```js
 pointsList = "";
 sampleTime = 0;
 myShape = thisComp.layer("Shape Layer 1").content("Shape 1").content("Path 1").path;
@@ -31,7 +31,7 @@ Apply this to a 2D point control of an effect, such as Write-on or CC Particle S
 
 Duplicate the effect and change the path points index value ([0]) to trace or track the other points of the mask.
 
-```javascript
+```js
 myLayer = thisComp.layer("Dark Gray Solid 1");
 myLayer.toComp(myLayer.mask("Mask 1").maskPath.points()[0]);
 ```
