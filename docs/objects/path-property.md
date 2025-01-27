@@ -53,7 +53,7 @@ The points and tangents of the same path can be passed into `createPath()` with 
 | `outTangents` | Array of number pair arrays | Optional. See `inTangents`. Defaults to `[]`.                                                                                                                                                                                                                                                                                                     |
 | `is_closed`   | Boolean                     | Optional. Defaults to `true`.                                                                                                                                                                                                                                                                                                                     |
 
-#### Type
+#### Returns
 
 [Path](#)
 
@@ -94,7 +94,7 @@ This method can be passed into the [`createPath()`](#pathpropertycreatepath) met
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | `t`       | Number | Optional. The specified time (in comp seconds) to sample the tangents. Defaults to `time` (the current comp time, in seconds). |
 
-#### Type
+#### Returns
 
 Array of number pair arrays, rounded to the fourth decimal place
 
@@ -110,7 +110,7 @@ Determines if the path is open or closed. Returns `true` if the path is closed, 
 
 This method can be passed into the [`createPath()`](#pathpropertycreatepath) method for the `is_closed` parameter when duplicating a path.
 
-#### Type
+#### Returns
 
 Boolean
 
@@ -137,7 +137,7 @@ The linear distance between the parent point's coordinates and `normalOnPath()` 
 | `percentage` | Number | Optional. The percentage along the path at which to sample the normal. Defaults to `0.5` (50%).                            |
 | `t`          | Number | Optional. The specified time (in comp seconds) to sample the path. Defaults to `time` (the current comp time, in seconds). |
 
-#### Type
+#### Returns
 
 A number pair array
 
@@ -169,7 +169,7 @@ This method can be passed into the [`createPath()`](#pathpropertycreatepath) met
 | --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | `t`       | Number | Optional. The specified time (in comp seconds) to sample the tangents. Defaults to `time` (the current comp time, in seconds). |
 
-#### Type
+#### Returns
 
 Array of number pair arrays, rounded to the fourth decimal place
 
@@ -197,7 +197,7 @@ The point is expressed as a percentage of the arc-length of the path. `0.0` (0%)
 | `percentage` | Number | Optional. The percentage along the path at which to sample the point. Defaults to `0.5` (50%).                             |
 | `t`          | Number | Optional. The specified time (in comp seconds) to sample the path. Defaults to `time` (the current comp time, in seconds). |
 
-#### Type
+#### Returns
 
 A number pair array
 
@@ -224,7 +224,7 @@ The returned values are relative, depending on the context:
 | --------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
 | `t`       | Number | Optional. The specified time (in comp seconds) to sample the path. Defaults to `time` (the current comp time, in seconds). |
 
-#### Type
+#### Returns
 
 Array of number pair arrays, rounded to the fourth decimal place
 
@@ -267,7 +267,7 @@ The linear distance between the parent point's coordinates and `tangentOnPath()`
 | `percentage` | Number | Optional. The percentage along the path at which to sample the tangent. Defaults to `0.5` (50%).                           |
 | `t`          | Number | Optional. The specified time (in comp seconds) to sample the path. Defaults to `time` (the current comp time, in seconds). |
 
-#### Type
+#### Returns
 
 A number pair array
 

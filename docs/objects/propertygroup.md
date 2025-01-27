@@ -107,6 +107,6 @@ See [`propertyGroup()`](property.md#propertygroup) for additional details.
 | `countUp` | Number | Optional. The number of property groups "up" the hierarchy to climb. Defaults to `1`. |
 
 
-#### Type
+#### Returns
 
 [PropertyGroup object](#)
