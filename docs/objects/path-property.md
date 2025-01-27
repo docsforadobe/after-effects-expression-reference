@@ -7,7 +7,10 @@
 !!! note
     This functionality was added in After Effects 15.0 (CC)
 
-This category contains information relating to mask & shape *paths*. This is for working with actual path shapes (with vertices and tangents and such).
+This category contains information relating to mask & shape *paths*.
+
+!!! info
+    On this page, we're going to use `thisLayer.mask("Mask 1").maskPath` as a demonstration on how to call these attributes, however note that any method that returns a [Path](#) will work.
 
 ---
 
@@ -15,7 +18,7 @@ This category contains information relating to mask & shape *paths*. This is for
 
 ### name
 
-`path.name`
+`thisLayer.mask("Mask 1").maskPath.name`
 
 #### Description
 
@@ -31,7 +34,7 @@ String
 
 ### PathProperty.createPath()
 
-`path.createPath(points=[[0,0], [100,0], [100,100], [0,100]], inTangents=[], outTangents=[], is_closed=true)`
+`thisLayer.mask("Mask 1").maskPath.createPath(points=[[0,0], [100,0], [100,100], [0,100]], inTangents=[], outTangents=[], is_closed=true)`
 
 #### Description
 
@@ -74,7 +77,7 @@ myMask.createPath(myMask.points(), myMask.inTangents(), myMask.outTangents(), fa
 
 ### PathProperty.inTangents()
 
-`path.inTangents([t=time])`
+`thisLayer.mask("Mask 1").maskPath.inTangents([t=time])`
 
 #### Description
 
@@ -99,7 +102,7 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ### PathProperty.isClosed()
 
-`path.isClosed()`
+`thisLayer.mask("Mask 1").maskPath.isClosed()`
 
 #### Description
 
@@ -115,7 +118,7 @@ Boolean
 
 ### PathProperty.normalOnPath()
 
-`path.normalOnPath(percentage=0.5, t=time)`
+`thisLayer.mask("Mask 1").maskPath.normalOnPath(percentage=0.5, t=time)`
 
 #### Description
 
@@ -150,7 +153,7 @@ myPath.normalOnPath() * 100
 
 ### PathProperty.outTangents()
 
-`path.outTangents([t=time])`
+`thisLayer.mask("Mask 1").maskPath.outTangents([t=time])`
 
 #### Description
 
@@ -174,7 +177,7 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ### PathProperty.pointOnPath()
 
-`path.pointOnPath([percentage=0.5][, t=time])`
+`thisLayer.mask("Mask 1").maskPath.pointOnPath([percentage=0.5][, t=time])`
 
 #### Description
 
@@ -202,7 +205,7 @@ A number pair array
 
 ### PathProperty.points()
 
-`path.points([t=time])`
+`thisLayer.mask("Mask 1").maskPath.points([t=time])`
 
 #### Description
 
@@ -242,7 +245,7 @@ myLayer.toComp(myLayer.mask("Mask 1").maskPath.points()[0]);
 
 ### PathProperty.tangentOnPath()
 
-`path.tangentOnPath([percentage=0.5][, t=time])`
+`thisLayer.mask("Mask 1").maskPath.tangentOnPath([percentage=0.5][, t=time])`
 
 #### Description
 
