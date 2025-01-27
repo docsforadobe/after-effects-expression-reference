@@ -177,9 +177,9 @@ Number
 
 Returns the camera highlight threshhold.
 
-- In an 8-bit comp, this value ranges from 0 to 100
-- In a 16-bit comp, this value ranges from 0 to 32768
-- In a 32-bit comp, this value ranges from 0 to 1.0
+- In an 8-bit comp, this value ranges from `0` to `100`
+- In a 16-bit comp, this value ranges from `0` to `32768`
+- In a 32-bit comp, this value ranges from `0` to `1.0`
 
 #### Type
 
@@ -191,7 +191,7 @@ Number
 
 #### Description
 
-Returns the camera highlight saturation, from 1 to 100.
+Returns the camera highlight saturation, from `1` to `100`.
 
 #### Type
 
