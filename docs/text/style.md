@@ -76,9 +76,9 @@ Returns the Baseline Direction for a Text layer.
 
 Predefined string. One of:
 
-- `default`
-- `rotated`
-- `tate-chuu-yoko`
+- `"default"`
+- `"rotated"`
+- `"tate-chuu-yoko"`
 
 ---
 
@@ -97,9 +97,9 @@ Returns the Baseline Option Type for a Text layer.
 
 Predefined string. One of:
 
-- `default`
-- `subscript`
-- `superscript`
+- `"default"`
+- `"subscript"`
+- `"superscript"`
 
 ---
 
@@ -132,8 +132,8 @@ Returns the Digit Set for a Text layer.
 
 Predefined string. One of:
 
-- `default`
-- `hindidigits`
+- `"default"`
+- `"hindidigits"`
 
 ---
 
@@ -152,8 +152,8 @@ Returns the value of Direction of the first paragraph of a Text layer.
 
 Predefined string. One of:
 
-- `left-to-right`
-- `right-to-left`
+- `"left-to-right"`
+- `"right-to-left"`
 
 ---
 
@@ -372,13 +372,13 @@ Returns the value of Justification of the first paragraph of a Text layer.
 
 Predefined string. One of:
 
-- `alignCenter`
-- `alignLeft`
-- `alignRight`
-- `justifyFull`
-- `justifyLastCenter`
-- `justifyLastLeft`
-- `justifyLastRight`
+- `"alignCenter"`
+- `"alignLeft"`
+- `"alignRight"`
+- `"justifyFull"`
+- `"justifyLastCenter"`
+- `"justifyLastLeft"`
+- `"justifyLastRight"`
 
 ---
 
@@ -416,9 +416,9 @@ Returns the Kerning Type for a Text layer.
 
 Read-only. Predefined string. One of:
 
-- `manual`
-- `metrics`
-- `optical`
+- `"manual"`
+- `"metrics"`
+- `"optical"`
 
 ---
 
@@ -451,8 +451,8 @@ Returns the value of Leading Type for the first paragraph of a Text layer.
 
 Predefined string. One of:
 
-- `bottom-to-bottom`
-- `top-to-top`
+- `"bottom-to-bottom"`
+- `"top-to-top"`
 
 ---
 
@@ -488,9 +488,9 @@ Returns the Line Join Type for a Text layer.
 
 Predefined string. One of:
 
-- `bevel`
-- `miter`
-- `round`
+- `"bevel"`
+- `"miter"`
+- `"round"`
 
 ---
 
@@ -772,11 +772,11 @@ The value will be set for the entire Text layer unless `startIndex` and `numOfCh
 
 #### Parameters
 
-|     Parameter     |                                      Type                                       |                                                     Description                                                     |
-| ----------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `value`           | Predefined string as defind in [BaselineDirection](#textstylebaselinedirection) | The value to set for Baseline Direction.                                                                            |
-| `startIndex`      | Number                                                                          | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
-| `numOfCharacters` | Number                                                                          | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |                                       Type                                       |                                                     Description                                                     |
+| ----------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Predefined string as defined in [BaselineDirection](#textstylebaselinedirection) | The value to set for Baseline Direction.                                                                            |
+| `startIndex`      | Number                                                                           | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number                                                                           | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -823,11 +823,11 @@ The value will be set for the entire Text layer unless `startIndex` and `numOfCh
 
 #### Parameters
 
-|     Parameter     |                                   Type                                    |                                                     Description                                                     |
-| ----------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `value`           | Predefined string as defind in [BaselineOption](#textstylebaselineoption) | Required. The value to set for Baseline Option.                                                                     |
-| `startIndex`      | Number                                                                    | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
-| `numOfCharacters` | Number                                                                    | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |                                    Type                                    |                                                     Description                                                     |
+| ----------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Predefined string as defined in [BaselineOption](#textstylebaselineoption) | Required. The value to set for Baseline Option.                                                                     |
+| `startIndex`      | Number                                                                     | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number                                                                     | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
@@ -850,11 +850,11 @@ The value will be set for the entire Text layer unless `startIndex` and `numOfCh
 
 #### Parameters
 
-|     Parameter     |                             Type                              |                                                     Description                                                     |
-| ----------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `value`           | Predefined string as defind in [DigitSet](#textstyledigitset) | Required. The value to use for Digit Set.                                                                           |
-| `startIndex`      | Number                                                        | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
-| `numOfCharacters` | Number                                                        | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
+|     Parameter     |                              Type                              |                                                     Description                                                     |
+| ----------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `value`           | Predefined string as defined in [DigitSet](#textstyledigitset) | Required. The value to use for Digit Set.                                                                           |
+| `startIndex`      | Number                                                         | Optional. The start index for the substring to be replaced. Defaults to `0`.                                        |
+| `numOfCharacters` | Number                                                         | Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string. |
 
 #### Returns
 
