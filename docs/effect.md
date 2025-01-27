@@ -1,8 +1,4 @@
-<a id="effect"></a>
-
 # Effect
-
-<a id="effect-active"></a>
 
 ## Effect.active
 
@@ -15,8 +11,6 @@ Returns `true` if the effect is turned on (the *effect switch* is selected).
 Boolean
 
 ---
-
-<a id="effect-param"></a>
 
 ## Effect.param(`name`)
 

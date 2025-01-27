@@ -1,12 +1,8 @@
-<a id="sourcetext"></a>
-
 # Source Text
 
 These functions are accessible on the [Text.sourceText](text.md#text-sourcetext) object in AE 17.0 and later.
 
 ---
-
-<a id="sourcetext-style"></a>
 
 ## SourceText.style
 
@@ -19,8 +15,6 @@ Returns the [Text Style](text-style.md#textstyle) object for a given `sourceText
 [Text Style](text-style.md#textstyle) object
 
 ---
-
-<a id="sourcetext-getstyleat"></a>
 
 ## SourceText.getStyleAt(`charIndex`, `t = time`)
 
@@ -51,8 +45,6 @@ text.sourceText.getStyleAt(0,0);
 
 ---
 
-<a id="sourcetext-createstyle"></a>
-
 ## SourceText.createStyle()
 
 **Description**
@@ -75,8 +67,6 @@ Empty [Text Style](text-style.md#textstyle) object.
 
 ---
 
-<a id="sourcetext-isverticaltext"></a>
-
 ## SourceText.isVerticalText
 
 #### NOTE
@@ -95,8 +85,6 @@ None.
 Boolean
 
 ---
-
-<a id="sourcetext-ishorizontaltext"></a>
 
 ## SourceText.isHorizontalText
 
@@ -117,8 +105,6 @@ Boolean
 
 ---
 
-<a id="sourcetext-ispointtext"></a>
-
 ## SourceText.isPointText
 
 #### NOTE
@@ -137,8 +123,6 @@ None.
 Boolean
 
 ---
-
-<a id="sourcetext-isparagraphtext"></a>
 
 ## SourceText.isParagraphText
 

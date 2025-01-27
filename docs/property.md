@@ -1,5 +1,3 @@
-<a id="property"></a>
-
 # Property
 
 **Example:**
@@ -18,8 +16,6 @@ propertyGroup(2).propertyIndex * time * 200
 
 ---
 
-<a id="property-value"></a>
-
 ## value
 
 **Description**
@@ -31,8 +27,6 @@ Returns the value of a property at the current time.
 Number, Array, or String
 
 ---
-
-<a id="property-valueattime"></a>
 
 ## valueAtTime(`t`)
 
@@ -60,8 +54,6 @@ Number or Array
 
 ---
 
-<a id="property-velocity"></a>
-
 ## velocity
 
 **Description**
@@ -73,8 +65,6 @@ Returns the temporal velocity value at the current time. For spatial properties,
 Number or Array
 
 ---
-
-<a id="property-velocityattime"></a>
 
 ## velocityAtTime(`t`)
 
@@ -93,8 +83,6 @@ Number or Array
 
 ---
 
-<a id="property-speed"></a>
-
 ## speed
 
 **Description**
@@ -106,8 +94,6 @@ Returns a 1D, positive speed value equal to the speed at which the property is c
 Number
 
 ---
-
-<a id="property-speedattime"></a>
 
 ## speedAtTime(`t`)
 
@@ -125,8 +111,6 @@ Returns the spatial speed value at the specified time.
 Number
 
 ---
-
-<a id="property-wiggle"></a>
 
 ## wiggle(`freq`, `amp`, `octaves=1`, `amp_mult=0.5`, `t=time`)
 
@@ -186,8 +170,6 @@ Number or Array
 
 ---
 
-<a id="property-temporalwiggle"></a>
-
 ## temporalWiggle(`freq`, `amp`, `octaves=1`, `amp_mult=0.5`, `t=time`)
 
 **Description**
@@ -227,8 +209,6 @@ Number or Array
 
 ---
 
-<a id="property-smooth"></a>
-
 ## smooth(`width=.2`, `samples=5`, `t=time`)
 
 **Description**
@@ -254,8 +234,6 @@ Number or Array
 
 ---
 
-<a id="property-loopin"></a>
-
 ## loopIn(`type="cycle"`, `numKeyframes=0`)
 
 **Description**
@@ -278,8 +256,6 @@ Number or Array
 
 ---
 
-<a id="property-loopout"></a>
-
 ## loopOut(`type="cycle"`, `numKeyframes=0`)
 
 **Description**
@@ -297,8 +273,6 @@ Number or Array
 
 ---
 
-<a id="property-loopinduration"></a>
-
 ## loopInDuration(`type="cycle"`, `duration=0`)
 
 **Description**
@@ -313,8 +287,6 @@ Number or Array
 
 ---
 
-<a id="property-loopoutduration"></a>
-
 ## loopOutDuration(`type="cycle"`, `duration=0`)
 
 **Description**
@@ -328,8 +300,6 @@ For example, `loopOutDuration("cycle", 1)` loops the last second of the entire a
 Number or Array
 
 ---
-
-<a id="property-key"></a>
 
 ## key(`index`)
 
@@ -365,8 +335,6 @@ MarkerKey
 
 ---
 
-<a id="property-nearestkey"></a>
-
 ## nearestKey(`t`)
 
 **Description**
@@ -384,8 +352,6 @@ Key or MarkerKey
 
 ---
 
-<a id="property-numkeys"></a>
-
 ## numKeys
 
 **Description**
@@ -400,8 +366,6 @@ If you use the Separate Dimensions command to separate the dimensions of the Pos
 Number
 
 ---
-
-<a id="property-propertygroup"></a>
 
 ## propertyGroup(`countUp=1`)
 
@@ -425,8 +389,6 @@ Group
 
 ---
 
-<a id="property-propertyindex"></a>
-
 ## propertyIndex
 
 **Description**
@@ -438,8 +400,6 @@ Returns the index of a property relative to other properties in its property gro
 Number
 
 ---
-
-<a id="property-name"></a>
 
 ## name
 

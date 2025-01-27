@@ -1,8 +1,4 @@
-<a id="othermath"></a>
-
 # Other Math
-
-<a id="degreestoradians"></a>
 
 ## degreesToRadians(`degrees`)
 
@@ -20,8 +16,6 @@ Converts degrees to radians.
 Number
 
 ---
-
-<a id="radianstodegrees"></a>
 
 ## radiansToDegrees(`radians`)
 

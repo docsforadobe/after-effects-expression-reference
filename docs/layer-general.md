@@ -1,8 +1,4 @@
-<a id="layergeneral"></a>
-
 # Layer General
-
-<a id="layer-width"></a>
 
 ## Layer.width
 
@@ -16,8 +12,6 @@ Number
 
 ---
 
-<a id="layer-height"></a>
-
 ## Layer.height
 
 **Description**
@@ -30,8 +24,6 @@ Number
 
 ---
 
-<a id="layer-index"></a>
-
 ## Layer.index
 
 **Description**
@@ -43,8 +35,6 @@ Returns the index number of the layer in the composition.
 Number
 
 ---
-
-<a id="layer-parent"></a>
 
 ## Layer.parent
 
@@ -63,8 +53,6 @@ position[0] + parent.width
 Layer, Light, or Camera
 
 ---
-
-<a id="layer-hasparent"></a>
 
 ## Layer.hasParent
 
@@ -88,8 +76,6 @@ Boolean
 
 ---
 
-<a id="layer-inpoint"></a>
-
 ## Layer.inPoint
 
 **Description**
@@ -105,8 +91,6 @@ Number
 
 ---
 
-<a id="layer-outpoint"></a>
-
 ## Layer.outPoint
 
 **Description**
@@ -118,8 +102,6 @@ Returns the Out point of the layer, in seconds.
 Number
 
 ---
-
-<a id="layer-starttime"></a>
 
 ## Layer.startTime
 
@@ -133,8 +115,6 @@ Number
 
 ---
 
-<a id="layer-hasvideo"></a>
-
 ## Layer.hasVideo
 
 **Description**
@@ -146,8 +126,6 @@ Returns `true` if the layer has video, or `false` if it doesn’t.
 Boolean
 
 ---
-
-<a id="layer-hasaudio"></a>
 
 ## Layer.hasAudio
 
@@ -161,8 +139,6 @@ Boolean
 
 ---
 
-<a id="layer-active"></a>
-
 ## Layer.active
 
 **Description**
@@ -174,8 +150,6 @@ Returns `true` if the Video switch  is on for the layer and the current time is 
 Boolean
 
 ---
-
-<a id="layer-enabled"></a>
 
 ## Layer.enabled
 
@@ -189,8 +163,6 @@ Boolean
 
 ---
 
-<a id="layer-audioactive"></a>
-
 ## Layer.audioActive
 
 **Description**
@@ -202,8 +174,6 @@ Returns true if the Audio switch  is on for the layer and the current time is in
 Boolean
 
 ---
-
-<a id="layer-sampleimage"></a>
 
 ## Layer.sampleImage(`point`, `radius=[0.5, 0.5]`, `postEffect=true`, `t=time`)
 

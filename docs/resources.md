@@ -1,5 +1,3 @@
-<a id="resources"></a>
-
 # Resources
 
 The user ‘Beaver’ posted [5 Expressions that will change your life](http://mograph.net/board/index.php?showtopic=13954) on the Mograph forums.

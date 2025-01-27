@@ -1,5 +1,3 @@
-<a id="footage"></a>
-
 # Footage
 
 **Description**
@@ -7,8 +5,6 @@
 To use a footage item from the Project panel as an object in an expression, use the global footage method, as in `footage("file_name")`. You can also access a footage object using the source attribute on a layer whose source is a footage item.
 
 ---
-
-<a id="footage-width"></a>
 
 ## Footage.width
 
@@ -22,8 +18,6 @@ Number
 
 ---
 
-<a id="footage-height"></a>
-
 ## Footage.height
 
 **Description**
@@ -35,8 +29,6 @@ Returns the height of the footage item, in pixels.
 Number
 
 ---
-
-<a id="footage-duration"></a>
 
 ## Footage.duration
 
@@ -50,8 +42,6 @@ Number
 
 ---
 
-<a id="footage-frameduration"></a>
-
 ## Footage.frameDuration
 
 **Description**
@@ -63,8 +53,6 @@ Returns the duration of a frame in the footage item, in seconds.
 Number
 
 ---
-
-<a id="footage-ntscdropframe"></a>
 
 ## Footage.ntscDropFrame
 
@@ -78,8 +66,6 @@ Boolean
 
 ---
 
-<a id="footage-pixelaspect"></a>
-
 ## Footage.pixelAspect
 
 **Description**
@@ -92,8 +78,6 @@ Number
 
 ---
 
-<a id="footage-name"></a>
-
 ## Footage.name
 
 **Description**
@@ -105,8 +89,6 @@ Returns the name of the footage item as shown in the Project panel.
 String
 
 ---
-
-<a id="footage-sourcetext"></a>
 
 ## Footage.sourceText
 
@@ -128,8 +110,6 @@ myData.sampleValue;
 String, the contents of the JSON file; read-only.
 
 ---
-
-<a id="footage-sourcedata"></a>
 
 ## Footage.sourceData
 
@@ -159,8 +139,6 @@ myData[0].Color;
 An array of sourceData objects; read-only.
 
 ---
-
-<a id="footage-datavalue"></a>
 
 ## Footage.dataValue(`dataPath`)
 
@@ -193,8 +171,6 @@ The value of the data stream.
 
 ---
 
-<a id="footage-datakeycount"></a>
-
 ## Footage.dataKeyCount(`dataPath`)
 
 **Description**
@@ -226,8 +202,6 @@ The number of samples in the dynamic data stream.
 
 ---
 
-<a id="footage-datakeytimes"></a>
-
 ## Footage.dataKeyTimes(`dataPath`, `t0 = startTime`, `t1 = endTime`)
 
 **Description**
@@ -256,8 +230,6 @@ footage("sample.mgjson").dataKeyTimes([0], 1, 3)
 Array of numbers representing the sample times.
 
 ---
-
-<a id="footage-datakeyvalues"></a>
 
 ## Footage.dataKeyValues(`dataPath`, `t0 = startTime`, `t1 = endTime`)
 

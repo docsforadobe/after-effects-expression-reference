@@ -1,5 +1,3 @@
-<a id="key"></a>
-
 # Key
 
 **Description**
@@ -15,8 +13,6 @@ easeOut(d, 0, .1, 100, 0)
 
 ---
 
-<a id="key-value"></a>
-
 ## Key.value
 
 **Description**
@@ -29,8 +25,6 @@ Number or Array
 
 ---
 
-<a id="key-time"></a>
-
 ## Key.time
 
 **Description**
@@ -42,8 +36,6 @@ Returns the time of the keyframe.
 Number
 
 ---
-
-<a id="key-index"></a>
 
 ## Key.index
 

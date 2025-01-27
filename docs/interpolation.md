@@ -1,5 +1,3 @@
-<a id="interpolation"></a>
-
 # Interpolation
 
 **Description**
@@ -15,8 +13,6 @@ Ian Haigh provides a script on [After Effects Scripts website](http://aescripts.
 Andrew Devis provides a [pair of video tutorials](http://blogs.adobe.com/toddkopriva/2010/10/tutorials-on-using-linear-expression-method.html) on the Creative COW website that show in detail how to use the linear expression method along with the Convert Audio To Keyframes command.
 
 ---
-
-<a id="interpolation-linear"></a>
 
 ## linear(`t`, `tMin`, `tMax`, `value1`, `value2`)
 
@@ -72,8 +68,6 @@ Number or Array
 
 ---
 
-<a id="interpolation-ease"></a>
-
 ## ease(`t`, `tMin`, `tMax`, `value1`, `value2`)
 
 **Description**
@@ -114,8 +108,6 @@ Number or Array
 
 ---
 
-<a id="interpolation-easein"></a>
-
 ## easeIn(`t`, `tMin`, `tMax`, `value1`, `value2`)
 
 **Description**
@@ -155,8 +147,6 @@ Similar to ease, except that the tangent is `0` only on the `value1` side and in
 Number or Array
 
 ---
-
-<a id="interpolation-easeout"></a>
 
 ## easeOut(`t`, `tMin`, `tMax`, `value1`, `value2`)
 

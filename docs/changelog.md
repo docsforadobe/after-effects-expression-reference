@@ -1,12 +1,8 @@
-<a id="changelog"></a>
-
 # Changelog
 
 What’s new and changed for expressions?
 
 ---
-
-<a id="changelog-25-0"></a>
 
 ## [After Effects 25.0](https://helpx.adobe.com/after-effects/using/whats-new/2025.html) (October 2024)
 
@@ -75,15 +71,11 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-17-7"></a>
-
 ## [After Effects 17.7](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheFebruary2021releaseversion177) (Feb 2021)
 
 - Fixed: An issue where expression edits made in the Graph Editor were not applied consistently.
 
 ---
-
-<a id="changelog-17-6"></a>
 
 ## [After Effects 17.6](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheJanuary2021releaseversion176) (Jan 2021)
 
@@ -91,15 +83,11 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-17-1-2"></a>
-
 ## [After Effects 17.1.2](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheJuly2020releaseversion1712) (Jul 2020)
 
 - Fixed: An issue where Markers could not be referenced by name in the JavaScript Expressions Engine.
 
 ---
-
-<a id="changelog-17-1"></a>
 
 ## [After Effects 17.1](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheMay2020releaseversion171) (May 19 2020)
 
@@ -107,23 +95,17 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-17-0-5"></a>
-
 ## [After Effects 17.0.5](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheMarch2020releaseversion1705) (Mar 2020)
 
 - Fixed: An issue where the Link Focus to Layer command produced an expression that did not work with the JavaScript expression engine.
 
 ---
 
-<a id="changelog-17-0-2"></a>
-
 ## [After Effects 17.0.2](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheJanuary2020releaseversion1702) (Jan 2020)
 
 - Fixed: An issue where wrong line numbers would be displayed related to errors in JavaScript expressions.
 
 ---
-
-<a id="changelog-17-0"></a>
 
 ## [After Effects 17.0](https://helpx.adobe.com/after-effects/using/whats-new/2020.html) (Jan 24 2020)
 
@@ -144,15 +126,11 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-16-1-3"></a>
-
 ## [After Effects 16.1.3](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheearlierversionsofAfterEffects) (Sep 2019)
 
 - Fixed: Indentation of curly braces on new lines could be incorrect in the Expressions editor.
 
 ---
-
-<a id="changelog-16-1-2"></a>
 
 ## [After Effects 16.1.2](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheearlierversionsofAfterEffects) (June 2019)
 
@@ -164,8 +142,6 @@ Added many new text style properties and methods for both characters and paragra
 - Fixed: Crash when editing expressions in the Graph Editor expression field when AutoComplete is disabled.
 
 ---
-
-<a id="changelog-16-1"></a>
 
 ## [After Effects 16.1 (CC 19)](https://helpx.adobe.com/after-effects/kb/fixed-issues.html#BugsfixedintheearlierversionsofAfterEffects) (Apr 2 2019)
 
@@ -180,8 +156,6 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-16-0"></a>
-
 ## [After Effects 16.0 (CC 19)](https://helpx.adobe.com/after-effects/using/whats-new/2019.html) (Oct 15 2018)
 
 - Implemented new Javascript engine
@@ -190,16 +164,12 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-15-1-2"></a>
-
 ## [After Effects 15.1.2](https://helpx.adobe.com/after-effects/kb/bug-fixes-in-after-effects-cc.html) (Jul 16 2018)
 
 - Fixed: If your project contains multiple master properties by the same name, the expressions that refer to the master properties evaluate incorrectly.
 - Fixed: The Property Link pick whip incorrectly writes a self-referential expression for the other selected properties.
 
 ---
-
-<a id="changelog-15-1"></a>
 
 ## [After Effects 15.1](https://helpx.adobe.com/after-effects/using/whats-new/2018.html#AfterEffectsCCApril2018version151release) (Apr 3 2018)
 
@@ -211,8 +181,6 @@ Added many new text style properties and methods for both characters and paragra
   - Added: [Project.linearBlending](project.md#project-linearblending)
 
 ---
-
-<a id="changelog-15-0"></a>
 
 ## [After Effects 15.0 (CC)](https://community.adobe.com/t5/after-effects/expression-and-scripting-improvements-in-after-effects-october-2017-pdf/td-p/4787866) (Oct 18 2017)
 
@@ -235,8 +203,6 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-13-6"></a>
-
 ## [After Effects 13.6 (CC 2015)](https://helpx.adobe.com/after-effects/kb/ae-13-6.html) (Nov 30 2015)
 
 - Improved performance of expressions on time-remapped layers. This also reduces rendering time for audio on time-remapped layers with expressions.
@@ -245,8 +211,6 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-13-5"></a>
-
 ## [After Effects 13.5 (CC 2015)](https://helpx.adobe.com/after-effects/kb/what-s-new-and-changed-in-after-effects-cc-2015--13-5-.html) (Jun 15 2015)
 
 - More efficient expression evaluation
@@ -254,16 +218,12 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-13-2"></a>
-
 ## [After Effects 13.2 (CC 2014.2)](https://helpx.adobe.com/ca/after-effects/using/whats-new-2014.html) (Dec 16 2014)
 
 - Added: [sourceRectAtTime()](layer-sub.md#layer-sourcerectattime) method
 - Fixed: [sampleImage()](layer-general.md#layer-sampleimage) in an expression no longer disables multiprocessing
 
 ---
-
-<a id="changelog-12-1"></a>
 
 ## [After Effects 12.1 (CC)](https://helpx.adobe.com/after-effects/using/whats-new-12-1.html/) (Sep 8 2013)
 
@@ -279,8 +239,6 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-10-5"></a>
-
 ## [After Effects 10.5 (CS5.5)](https://helpx.adobe.com/ro/after-effects/user-guide.html/ro/after-effects/using/expression-language-reference.ug.html/) (Apr 11 2011)
 
 - Added: [Footage.ntscDropFrame](footage.md#footage-ntscdropframe)
@@ -289,16 +247,12 @@ Added many new text style properties and methods for both characters and paragra
 
 ---
 
-<a id="changelog-5-5"></a>
-
 ## [After Effects 5.5](https://en.wikipedia.org/wiki/Adobe_After_Effects#History/) (Jan 7 2002)
 
 - Added: Looping via expressions
 - Added: Expression controllers
 
 ---
-
-<a id="changelog-5-0"></a>
 
 ## [After Effects 5.0](https://en.wikipedia.org/wiki/Adobe_After_Effects#History/) (Apr 2001)
 

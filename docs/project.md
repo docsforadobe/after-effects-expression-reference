@@ -1,8 +1,4 @@
-<a id="project"></a>
-
 # Project
-
-<a id="project-fullpath"></a>
 
 ## Project.fullPath
 
@@ -22,8 +18,6 @@ String
 
 ---
 
-<a id="project-bitsperchannel"></a>
-
 ## Project.bitsPerChannel
 
 **Description**
@@ -42,8 +36,6 @@ thisProject.bitsPerChannel
 Number
 
 ---
-
-<a id="project-linearblending"></a>
 
 ## Project.linearBlending
 

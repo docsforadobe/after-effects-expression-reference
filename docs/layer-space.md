@@ -1,5 +1,3 @@
-<a id="layerspacetransforms"></a>
-
 # Layer Space Transforms
 
 **Description**
@@ -15,8 +13,6 @@ Use the plain (non-`Vec`) transform methods when transforming a point, such as p
 Composition (comp) and world space are the same for 2D layers. For 3D layers, however, composition space is relative to the active camera, and world space is independent of the camera.
 
 ---
-
-<a id="tocomp"></a>
 
 ## toComp(`point`, `t=time`)
 
@@ -35,8 +31,6 @@ Transforms a point from layer space to composition space.
 Array (2- or 3-dimensional)
 
 ---
-
-<a id="fromcomp"></a>
 
 ## fromComp(`point`, `t=time`)
 
@@ -61,8 +55,6 @@ fromComp(thisComp.layer(2).position)
 Array (2- or 3-dimensional)
 
 ---
-
-<a id="toworld"></a>
 
 ## toWorld(`point`, `t=time`)
 
@@ -94,8 +86,6 @@ Array (2- or 3-dimensional)
 
 ---
 
-<a id="fromworld"></a>
-
 ## fromWorld(`point`, `t=time`)
 
 **Description**
@@ -122,8 +112,6 @@ Array (2- or 3-dimensional)
 
 ---
 
-<a id="tocompvec"></a>
-
 ## toCompVec(vec, `t=time`)
 
 **Description**
@@ -147,8 +135,6 @@ toCompVec([1,0])
 Array (2- or 3-dimensional)
 
 ---
-
-<a id="fromcompvec"></a>
 
 ## fromCompVec(vec, `t=time`)
 
@@ -174,8 +160,6 @@ fromCompVec(dir)
 Array (2- or 3-dimensional)
 
 ---
-
-<a id="toworldvec"></a>
 
 ## toWorldVec(vec, `t=time`)
 
@@ -203,8 +187,6 @@ Array (2- or 3-dimensional)
 
 ---
 
-<a id="fromworldvec"></a>
-
 ## fromWorldVec(`vec`, `t=time`)
 
 **Description**
@@ -228,8 +210,6 @@ fromWorld(thisComp.layer(2).position)
 Array (2- or 3-dimensional)
 
 ---
-
-<a id="fromcomptosurface"></a>
 
 ## fromCompToSurface(`point`, `t=time`)
 

@@ -1,12 +1,8 @@
-<a id="text"></a>
-
 # Text
 
 This category holds generic text-related entries for text layers.
 
 ---
-
-<a id="text-sourcetext"></a>
 
 ## Text.sourceText
 
@@ -21,8 +17,6 @@ As of After Effects 17.0, this property returns the [Source Text](text-sourcetex
 String of text content, or [Source Text](text-sourcetext.md#sourcetext) (AE 17.0+)
 
 ---
-
-<a id="text-font"></a>
 
 ## Text.Font…
 

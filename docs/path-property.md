@@ -1,5 +1,3 @@
-<a id="pathproperty"></a>
-
 # Path Property
 
 #### NOTE
@@ -33,8 +31,6 @@ myLayer.toComp(myLayer.mask("Mask 1").maskPath.points()[0]);
 
 ---
 
-<a id="pathproperty-name"></a>
-
 ## name
 
 **Description**
@@ -46,8 +42,6 @@ Returns the name of the property.
 String
 
 ---
-
-<a id="pathproperty-points"></a>
 
 ## PathProperty.points(`t=time`)
 
@@ -68,8 +62,6 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ---
 
-<a id="pathproperty-intangents"></a>
-
 ## PathProperty.inTangents(`t=time`)
 
 **Description**
@@ -83,8 +75,6 @@ Optionally specify the time at which sample to the path.
 Array of number pair arrays, rounded to the fourth decimal place
 
 ---
-
-<a id="pathproperty-outtangents"></a>
 
 ## PathProperty.outTangents(`t=time`)
 
@@ -105,8 +95,6 @@ Array of number pair arrays, rounded to the fourth decimal place
 
 ---
 
-<a id="pathproperty-isclosed"></a>
-
 ## PathProperty.isClosed()
 
 **Description**
@@ -118,8 +106,6 @@ Determines if the path is open or closed. Returns `true` if the path is closed, 
 Boolean
 
 ---
-
-<a id="pathproperty-pointonpath"></a>
 
 ## PathProperty.pointOnPath(`percentage=0.5`, `t=time`)
 
@@ -143,8 +129,6 @@ A number pair array
 
 ---
 
-<a id="pathproperty-tangentonpath"></a>
-
 ## PathProperty.tangentOnPath(`percentage=0.5`, `t=time`)
 
 **Description**
@@ -166,8 +150,6 @@ A number pair array
 
 ---
 
-<a id="pathproperty-normalonpath"></a>
-
 ## PathProperty.normalOnPath(`percentage=0.5`, `t=time`)
 
 **Description**
@@ -188,8 +170,6 @@ Optionally specify the time at which sample to the path.
 A number pair array
 
 ---
-
-<a id="pathproperty-createpath"></a>
 
 ## PathProperty.createPath(`points=[[0,0], [100,0], [100,100], [0,100]]`, `inTangents=[]`, `outTangents=[]`, `is_closed=true`)
 

@@ -1,5 +1,3 @@
-<a id="light"></a>
-
 # Light
 
 **Description**
@@ -23,8 +21,6 @@ David Van Brink provides an instructional article and sample project on his [omi
 
 ---
 
-<a id="light-pointofinterest"></a>
-
 ## Light.pointOfInterest
 
 **Description**
@@ -36,8 +32,6 @@ Returns the point of interest values for a light in world space.
 Array (3-dimensional)
 
 ---
-
-<a id="light-intensity"></a>
 
 ## Light.intensity
 
@@ -51,8 +45,6 @@ Number
 
 ---
 
-<a id="light-color"></a>
-
 ## Light.color
 
 **Description**
@@ -64,8 +56,6 @@ Returns the color value of a light.
 Array (4-dimensional)
 
 ---
-
-<a id="light-coneangle"></a>
 
 ## Light.coneAngle
 
@@ -79,8 +69,6 @@ Number
 
 ---
 
-<a id="light-conefeather"></a>
-
 ## Light.coneFeather
 
 **Description**
@@ -93,8 +81,6 @@ Number
 
 ---
 
-<a id="light-shadowdarkness"></a>
-
 ## Light.shadowDarkness
 
 **Description**
@@ -106,8 +92,6 @@ Returns the shadow darkness value of a light as a percentage.
 Number
 
 ---
-
-<a id="light-shadowdiffusion"></a>
 
 ## Light.shadowDiffusion
 

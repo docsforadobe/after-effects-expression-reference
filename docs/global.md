@@ -1,8 +1,4 @@
-<a id="global"></a>
-
 # Global
-
-<a id="global-comp"></a>
 
 ## comp(`name`)
 
@@ -21,8 +17,6 @@ Comp
 
 ---
 
-<a id="global-footage"></a>
-
 ## footage(`name`)
 
 **Description**
@@ -40,8 +34,6 @@ Footage
 
 ---
 
-<a id="global-thisproject"></a>
-
 ## thisProject
 
 **Description**
@@ -53,8 +45,6 @@ Represents the project which contains the expression.
 Project
 
 ---
-
-<a id="global-thiscomp"></a>
 
 ## thisComp
 
@@ -68,8 +58,6 @@ Comp
 
 ---
 
-<a id="global-thislayer"></a>
-
 ## thisLayer
 
 **Description**
@@ -81,8 +69,6 @@ Represents the layer containing the expression. Because thisLayer is the default
 Layer, Light, or Camera
 
 ---
-
-<a id="global-thisproperty"></a>
 
 ## thisProperty
 
@@ -96,8 +82,6 @@ Property
 
 ---
 
-<a id="global-time"></a>
-
 ## time
 
 **Description**
@@ -110,8 +94,6 @@ Number
 
 ---
 
-<a id="global-colordepth"></a>
-
 ## colorDepth
 
 **Description**
@@ -123,8 +105,6 @@ Type the project color depth value. For example, colorDepth returns `16` when th
 Number
 
 ---
-
-<a id="global-posterizetime"></a>
 
 ## posterizeTime(`updatesPerSecond`)
 
@@ -176,8 +156,6 @@ newValue;
 ```
 
 ---
-
-<a id="global-value"></a>
 
 ## value
 

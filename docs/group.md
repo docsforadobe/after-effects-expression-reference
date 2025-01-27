@@ -1,5 +1,3 @@
-<a id="group"></a>
-
 # Group
 
 All properties in the Timeline are organized into groups, which share some attributes of properties like `name` and `propertyIndex`. Groups can have a fixed number of properties (e.g. an individual effect whose properties don’t change) or a variable number of properties (e.g. the Effects group itself which can have any number of effect within it).
@@ -25,8 +23,6 @@ All properties in the Timeline are organized into groups, which share some attri
 
 ---
 
-<a id="group-numproperties"></a>
-
 ## numProperties
 
 **Description**
@@ -42,8 +38,6 @@ Number
 
 ---
 
-<a id="group-propertygroup"></a>
-
 ## propertyGroup(`countUp=1`)
 
 **Description**
@@ -56,8 +50,6 @@ Group
 
 ---
 
-<a id="group-propertyindex"></a>
-
 ## propertyIndex
 
 **Description**
@@ -69,8 +61,6 @@ Returns the index of a property group relative to other properties or groups in 
 Number
 
 ---
-
-<a id="group-name"></a>
 
 ## name
 

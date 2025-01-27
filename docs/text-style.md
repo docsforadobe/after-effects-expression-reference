@@ -1,5 +1,3 @@
-<a id="textstyle"></a>
-
 # Text Style
 
 Most of these functions are accessible from the [SourceText.style](text-sourcetext.md#sourcetext-style) object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control per-character styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.
@@ -19,8 +17,6 @@ text.sourceText.style.setFont("Times New Roman").setFontSize(42).setText("New Te
 ```
 
 ---
-
-<a id="textstyle-settext"></a>
 
 ## TextStyle.setText(`value`)
 
@@ -53,8 +49,6 @@ text.sourceText.createStyle().setFontSize(300).setFont("Impact").setText("Hello 
 A [TextStyle object](#textstyle).
 
 ---
-
-<a id="textstyle-replacetext"></a>
 
 ## TextStyle.replaceText(`value`, `startIndex`, `numOfCharacters`)
 
@@ -89,8 +83,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-fontsize"></a>
-
 ## TextStyle.fontSize
 
 **Description**
@@ -102,8 +94,6 @@ Returns the value of Font Size for a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setfontsize"></a>
 
 ## TextStyle.setFontSize(`value`, `startIndex`, `numOfCharacters`)
 
@@ -124,8 +114,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-font"></a>
-
 ## TextStyle.font
 
 **Description**
@@ -137,8 +125,6 @@ Returns the font name for a Text layer.
 String
 
 ---
-
-<a id="textstyle-setfont"></a>
 
 ## TextStyle.setFont(`value`, `startIndex`, `numOfCharacters`)
 
@@ -159,8 +145,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-isfauxbold"></a>
-
 ## TextStyle.isFauxBold
 
 **Description**
@@ -172,8 +156,6 @@ Returns whether Faux Bold is enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setfauxbold"></a>
 
 ## TextStyle.setFauxBold(`value`, `startIndex`, `numOfCharacters`)
 
@@ -194,8 +176,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-isfauxitalic"></a>
-
 ## TextStyle.isFauxItalic
 
 **Description**
@@ -207,8 +187,6 @@ Returns whether Faux Italics are enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setfauxitalic"></a>
 
 ## TextStyle.setFauxItalic(`value`, `startIndex`, `numOfCharacters`)
 
@@ -229,8 +207,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-isallcaps"></a>
-
 ## TextStyle.isAllCaps
 
 **Description**
@@ -242,8 +218,6 @@ Returns whether All Caps is enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setallcaps"></a>
 
 ## TextStyle.setAllCaps(`value`, `startIndex`, `numOfCharacters`)
 
@@ -264,8 +238,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-issmallcaps"></a>
-
 ## TextStyle.isSmallCaps
 
 **Description**
@@ -277,8 +249,6 @@ Returns whether Small Caps is enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setsmallcaps"></a>
 
 ## TextStyle.setSmallCaps(`value`, `startIndex`, `numOfCharacters`)
 
@@ -299,8 +269,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-tracking"></a>
-
 ## TextStyle.tracking
 
 **Description**
@@ -312,8 +280,6 @@ Returns the value of Tracking for a Text layer.
 Number
 
 ---
-
-<a id="textstyle-settracking"></a>
 
 ## TextStyle.setTracking(`value`, `startIndex`, `numOfCharacters`)
 
@@ -334,8 +300,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-leading"></a>
-
 ## TextStyle.leading
 
 **Description**
@@ -347,8 +311,6 @@ Returns the value of Leading for a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setleading"></a>
 
 ## TextStyle.setLeading(`value`, `startIndex`, `numOfCharacters`)
 
@@ -371,8 +333,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-isautoleading"></a>
-
 ## TextStyle.isAutoLeading
 
 **Description**
@@ -384,8 +344,6 @@ Returns whether Auto Leading is enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setautoleading"></a>
 
 ## TextStyle.setAutoLeading(`value`, `startIndex`, `numOfCharacters`)
 
@@ -406,8 +364,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-baselineshift"></a>
-
 ## TextStyle.baselineShift
 
 **Description**
@@ -419,8 +375,6 @@ Returns the value of Baseline Shift for a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setbaselineshift"></a>
 
 ## TextStyle.setBaselineShift(`value`, `startIndex`, `numOfCharacters`)
 
@@ -441,8 +395,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-applyfill"></a>
-
 ## TextStyle.applyFill
 
 **Description**
@@ -454,8 +406,6 @@ Returns whether Fill Color is enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setapplyfill"></a>
 
 ## TextStyle.setApplyFill(`value`, `startIndex`, `numOfCharacters`)
 
@@ -476,8 +426,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-fillcolor"></a>
-
 ## TextStyle.fillColor
 
 **Description**
@@ -489,8 +437,6 @@ Returns the text Fill Color as RGB values on a scale from 0 - 1.0.
 Array of Numbers.
 
 ---
-
-<a id="textstyle-setfillcolor"></a>
 
 ## TextStyle.setFillColor(`value`, `startIndex`, `numOfCharacters`)
 
@@ -513,8 +459,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-applystroke"></a>
-
 ## TextStyle.applyStroke
 
 **Description**
@@ -526,8 +470,6 @@ Returns whether Stroke is enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setapplystroke"></a>
 
 ## TextStyle.setApplyStroke(`value`, `startIndex`, `numOfCharacters`)
 
@@ -548,8 +490,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-strokecolor"></a>
-
 ## TextStyle.strokeColor
 
 **Description**
@@ -561,8 +501,6 @@ Returns the Stroke Color as RGB values on a scale from 0 - 1.0.
 Array of numbers
 
 ---
-
-<a id="textstyle-setstrokecolor"></a>
 
 ## TextStyle.setStrokeColor(`value`, `startIndex`, `numOfCharacters`)
 
@@ -585,8 +523,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-strokewidth"></a>
-
 ## TextStyle.strokeWidth
 
 **Description**
@@ -598,8 +534,6 @@ Returns the Stroke Width value for a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setstrokewidth"></a>
 
 ## TextStyle.setStrokeWidth(`value`, `startIndex`, `numOfCharacters`)
 
@@ -622,8 +556,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-kerningtype"></a>
-
 ## TextStyle.kerningType
 
 #### NOTE
@@ -632,8 +564,6 @@ This functionality was added in After Effects 25.0.
 **Description**
 
 Returns the Kerning Type for a Text layer.
-
-<a id="returnedkerningtype"></a>
 
 **Type**
 
@@ -645,8 +575,6 @@ Predefined string as defined in [ReturnedKerningType](). Read-only. One of the f
 
 ---
 
-<a id="textstyle-setkerningtype"></a>
-
 ## TextStyle.setKerningType(`value`, `startIndex`, `numOfCharacters`)
 
 #### NOTE
@@ -657,8 +585,6 @@ This functionality was added in After Effects 25.0.
 Used to set the Kerning Type. The value will be applied to the entire Text layer unless a start index and number of characters are specified.
 Please note that `manual` is not a valid value for this method. To set manual kerning, use [TextStyle.setKerning(value, characterIndex)](#textstyle-setkerning).
 Also, please note that automatic kerning will take a precendence over manual kerning.
-
-<a id="kerningtype"></a>
 
 **Type**
 
@@ -680,8 +606,6 @@ None
 
 ---
 
-<a id="textstyle-kerning"></a>
-
 ## TextStyle.kerning
 
 #### NOTE
@@ -696,8 +620,6 @@ Returns the Kerning Value for a Text Layer. For this value to be returned as any
 Number. Read-only.
 
 ---
-
-<a id="textstyle-setkerning"></a>
 
 ## TextStyle.setKerning(`value`, `characterIndex`)
 
@@ -720,8 +642,6 @@ None
 
 ---
 
-<a id="textstyle-tsume"></a>
-
 ## TextStyle.tsume
 
 #### NOTE
@@ -736,8 +656,6 @@ Returns the Tsume value for a Text layer.
 Number (between 0 and 1).
 
 ---
-
-<a id="textstyle-settsume"></a>
 
 ## TextStyle.setTsume(`value`, `startIndex`, `numOfCharacters`)
 
@@ -761,8 +679,6 @@ None
 
 ---
 
-<a id="textstyle-verticalscaling"></a>
-
 ## TextStyle.verticalScaling
 
 #### NOTE
@@ -777,8 +693,6 @@ Returns the Vertical Scaling for a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setverticalscaling"></a>
 
 ## TextStyle.setVerticalScaling(`value`, `startIndex`, `numOfCharacters`)
 
@@ -802,8 +716,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-horizontalscaling"></a>
-
 ## TextStyle.horizontalScaling
 
 #### NOTE
@@ -818,8 +730,6 @@ Returns the Horizontal Scaling for a Text layer.
 Number
 
 ---
-
-<a id="textstyle-sethorizontalscaling"></a>
 
 ## TextStyle.setHorizontalScaling(`value`, `startIndex`, `numOfCharacters`)
 
@@ -843,8 +753,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-linejoin"></a>
-
 ## TextStyle.lineJoin
 
 #### NOTE
@@ -853,8 +761,6 @@ This functionality was added in After Effects 25.0.
 **Description**
 
 Returns the Line Join Type for a Text layer. The returned value is a defined string in [LineJoinType]().
-
-<a id="linejointype"></a>
 
 **Type**
 
@@ -865,8 +771,6 @@ Predefined string as defined in [LineJoinType](). One of the following:
 - `round`
 
 ---
-
-<a id="textstyle-setlinejoin"></a>
 
 ## TextStyle.setLineJoin(`value`, `startIndex`, `numOfCharacters`)
 
@@ -890,8 +794,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-baselineoption"></a>
-
 ## TextStyle.baselineOption
 
 #### NOTE
@@ -900,8 +802,6 @@ This functionality was added in After Effects 25.0.
 **Description**
 
 Returns the Baseline Option Type for a Text layer. The returned value is a defined string in [BaselineOptionType]().
-
-<a id="baselineoptiontype"></a>
 
 **Type**
 
@@ -912,8 +812,6 @@ Predefined string as defined in [BaselineOptionType](). One of the following:
 - `superscript`
 
 ---
-
-<a id="textstyle-setbaselineoption"></a>
 
 ## TextStyle.setBaselineOption(`value`, `startIndex`, `numOfCharacters`)
 
@@ -937,8 +835,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-digitset"></a>
-
 ## TextStyle.digitSet
 
 #### NOTE
@@ -948,8 +844,6 @@ This functionality was added in After Effects 25.0.
 
 Returns the Digit Set for a Text layer. The returned value is a defined string in [DigitSetType]().
 
-<a id="digitsettype"></a>
-
 **Type**
 
 Predefined string as defined in [DigitSetType](). One of the following:
@@ -958,8 +852,6 @@ Predefined string as defined in [DigitSetType](). One of the following:
 - `hindidigits`
 
 ---
-
-<a id="textstyle-setdigitset"></a>
 
 ## TextStyle.setDigitSet(`value`, `startIndex`, `numOfCharacters`)
 
@@ -983,8 +875,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-isligature"></a>
-
 ## TextStyle.isLigature
 
 #### NOTE
@@ -999,8 +889,6 @@ Returns whether ligatures are enabled.
 Boolean
 
 ---
-
-<a id="textstyle-setligature"></a>
 
 ## TextStyle.setLigature(`value`, `startIndex`, `numOfCharacters`)
 
@@ -1024,8 +912,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-baselinedirection"></a>
-
 ## TextStyle.baselineDirection
 
 #### NOTE
@@ -1034,8 +920,6 @@ This functionality was added in After Effects 25.0.
 **Description**
 
 Returns the Baseline Direction for a Text layer. The returned value is a defined string in [BaselineDirectionType]().
-
-<a id="baselinedirectiontype"></a>
 
 **Type**
 
@@ -1046,8 +930,6 @@ Predefined string as defined in [BaselineDirectionType](). One of the following:
 - `tate-chuu-yoko`
 
 ---
-
-<a id="textstyle-setbaselinedirection"></a>
 
 ## TextStyle.setBaselineDirection(`value`, `startIndex`, `numOfCharacters`)
 
@@ -1071,8 +953,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-justification"></a>
-
 ## TextStyle.justification
 
 #### NOTE
@@ -1084,8 +964,6 @@ Returns the value of Justification of the first paragraph of a Text layer.
 
 #### WARNING
 The left and right values for alignment/justification will be reversed if the Text layer’s [TextStyle.direction](#textstyle-direction) is set to use right-to-left. You can control this using the Property or Paragraph panel, or via [TextStyle.setDirection(value)](#textstyle-setdirection).
-
-<a id="justificationtype"></a>
 
 **Type**
 
@@ -1100,8 +978,6 @@ Predefined string as defined in [JustificationType](). One of the following:
 - `justifyLastRight`
 
 ---
-
-<a id="textstyle-setjustification"></a>
 
 ## TextStyle.setJustification(`value`)
 
@@ -1129,8 +1005,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-direction"></a>
-
 ## TextStyle.direction
 
 #### NOTE
@@ -1140,8 +1014,6 @@ This functionality was added in After Effects 25.0.
 
 Returns the value of Direction of the first paragraph of a Text layer.
 
-<a id="directiontype"></a>
-
 **Type**
 
 Predefined string as defined in [DirectionType](). One of the following:
@@ -1150,8 +1022,6 @@ Predefined string as defined in [DirectionType](). One of the following:
 - `right-to-left`
 
 ---
-
-<a id="textstyle-setdirection"></a>
 
 ## TextStyle.setDirection(`value`)
 
@@ -1176,8 +1046,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-leftmargin"></a>
-
 ## TextStyle.leftMargin
 
 #### NOTE
@@ -1192,8 +1060,6 @@ Returns the value of Left Margin of the first paragraph of a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setleftmargin"></a>
 
 ## TextStyle.setLeftMargin(`value`)
 
@@ -1218,8 +1084,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-rightmargin"></a>
-
 ## TextStyle.rightMargin
 
 #### NOTE
@@ -1234,8 +1098,6 @@ Returns the value of Right Margin of the first paragraph of a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setrightmargin"></a>
 
 ## TextStyle.setRightMargin(`value`)
 
@@ -1260,8 +1122,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-spaceafter"></a>
-
 ## TextStyle.spaceAfter
 
 #### NOTE
@@ -1276,8 +1136,6 @@ Returns the value of the Space After the first paragraph of a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setspaceafter"></a>
 
 ## TextStyle.setSpaceAfter(`value`)
 
@@ -1302,8 +1160,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-spacebefore"></a>
-
 ## TextStyle.spaceBefore
 
 #### NOTE
@@ -1318,8 +1174,6 @@ Returns the value of the Space Before the first paragraph of a Text layer.
 Number
 
 ---
-
-<a id="textstyle-setspacebefore"></a>
 
 ## TextStyle.setSpaceBefore(`value`)
 
@@ -1344,8 +1198,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-firstlineindent"></a>
-
 ## TextStyle.firstLineIndent
 
 #### NOTE
@@ -1360,8 +1212,6 @@ Returns the value of First Line Indent of the first line of the first paragraph 
 Number
 
 ---
-
-<a id="textstyle-setfirstlineindent"></a>
 
 ## TextStyle.setFirstLineIndent(`value`)
 
@@ -1386,8 +1236,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-iseverylinecomposer"></a>
-
 ## TextStyle.isEveryLineComposer
 
 #### NOTE
@@ -1402,8 +1250,6 @@ Returns ``true`` if the Text layer if Every-Line Composer is set for the first p
 Boolean
 
 ---
-
-<a id="textstyle-seteverylinecomposer"></a>
 
 ## TextStyle.setEveryLineComposer(`value`)
 
@@ -1428,8 +1274,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-ishangingroman"></a>
-
 ## TextStyle.isHangingRoman
 
 #### NOTE
@@ -1444,8 +1288,6 @@ Whether Hanging Roman Punctuation is set for the entire Text layer.
 Boolean
 
 ---
-
-<a id="textstyle-sethangingroman"></a>
 
 ## TextStyle.setHangingRoman(`value`)
 
@@ -1470,8 +1312,6 @@ A [TextStyle object](#textstyle).
 
 ---
 
-<a id="textstyle-leadingtype"></a>
-
 ## TextStyle.leadingType
 
 #### NOTE
@@ -1481,8 +1321,6 @@ This functionality was added in After Effects 25.0.
 
 Returns the value of Leading Type for the first paragraph of a Text layer.
 
-<a id="leadingtype"></a>
-
 **Type**
 
 Predefined string as defined in [LeadingType](). One of the following:
@@ -1491,8 +1329,6 @@ Predefined string as defined in [LeadingType](). One of the following:
 - `top-to-top`
 
 ---
-
-<a id="textstyle-setleadingtype"></a>
 
 ## TextStyle.setLeadingType(`value`)
 

@@ -1,5 +1,3 @@
-<a id="introduction"></a>
-
 # Introduction
 
 Use the After Effects expression elements along with standard JavaScript elements to write your expressions. You can use the Expression Language menu at any time to insert methods and attributes into an expression, and you can use the pick whip at any time to insert properties.

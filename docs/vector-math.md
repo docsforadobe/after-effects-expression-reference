@@ -1,5 +1,3 @@
-<a id="vectormath"></a>
-
 # Vector Math
 
 Vector Math functions are global methods that perform operations on arrays, treating them as mathematical vectors. Unlike built-in JavaScript methods, such as `Math.sin`, these methods are not used with the Math prefix. Unless otherwise specified, Vector Math methods are lenient about dimensions and return a value that is the dimension of the largest input Array object, filling in missing elements with zeros.
@@ -10,8 +8,6 @@ For example, the expression `add([10, 20], [1, 2, 3])` returns `[11, 22, 3]`.
 [JJ Gifford’s website](http://www.adobe.com/go/learn_ae_jjgiffordexpressionsgeometrytrig) provides explanations and examples that show how to use simple geometry and trigonometry with expressions.
 
 ---
-
-<a id="add"></a>
 
 ## add(`vec1`, `vec2`)
 
@@ -31,8 +27,6 @@ Array
 
 ---
 
-<a id="sub"></a>
-
 ## sub(`vec1`, `vec2`)
 
 **Description**
@@ -50,8 +44,6 @@ Subtracts two vectors.
 Array
 
 ---
-
-<a id="mul"></a>
 
 ## mul(`vec`, `amount`)
 
@@ -71,8 +63,6 @@ Array
 
 ---
 
-<a id="div"></a>
-
 ## div(`vec`, `amount`)
 
 **Description**
@@ -90,8 +80,6 @@ Divides every element of the vector by the amount.
 Array
 
 ---
-
-<a id="clamp"></a>
 
 ## clamp(`value`, `limit1`, `limit2`)
 
@@ -112,8 +100,6 @@ Number or Array
 
 ---
 
-<a id="dot"></a>
-
 ## dot(`vec1`, `vec2`)
 
 **Description**
@@ -131,8 +117,6 @@ Returns the dot (inner) product of the vector arguments.
 Number
 
 ---
-
-<a id="cross"></a>
 
 ## cross(`vec1`, `vec2`)
 
@@ -152,8 +136,6 @@ Array (2- or 3-dimensional)
 
 ---
 
-<a id="normalize"></a>
-
 ## normalize(`vec`)
 
 **Description**
@@ -170,8 +152,6 @@ Normalizes the vector so that its length is `1.0`. Using the normalize method is
 Array
 
 ---
-
-<a id="length"></a>
 
 ## length(`vec`)
 
@@ -215,8 +195,6 @@ length(position, pointOfInterest)
 Number
 
 ---
-
-<a id="lookat"></a>
 
 ## lookAt(`fromPoint`, `atPoint`)
 

@@ -1,5 +1,3 @@
-<a id="timeconversion"></a>
-
 # Time Conversion
 
 #### NOTE
@@ -8,8 +6,6 @@ If you want more control over the look of timecode in your footage, use the time
 Create a text layer, add an expression to the Source Text property, and enter timeToCurrentFormat() in the expression field. With this method, you can format and animate the timecode text. In addition, the timecode uses the same display style defined by the current project settings.
 
 ---
-
-<a id="timetoframes"></a>
 
 ## timeToFrames(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `isDuration=false`)
 
@@ -32,8 +28,6 @@ Number
 
 ---
 
-<a id="framestotime"></a>
-
 ## framesToTime(`frames`, `fps=1.0 / thisComp.frameDuration`)
 
 **Desciption**
@@ -51,8 +45,6 @@ The inverse of timeToFrames. Returns the time corresponding to the frames argume
 Number
 
 ---
-
-<a id="timetotimecode"></a>
 
 ## timeToTimecode(`t=time + thisComp.displayStartTime`, `timecodeBase=30`, `isDuration=false`)
 
@@ -73,8 +65,6 @@ String
 
 ---
 
-<a id="timetontsctimecode"></a>
-
 ## timeToNTSCTimecode(`t=time + thisComp.displayStartTime`, `ntscDropFrame=false`, `isDuration=false`)
 
 **Desciption**
@@ -94,8 +84,6 @@ String
 
 ---
 
-<a id="timetofeetandframes"></a>
-
 ## timeToFeetAndFrames(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `framesPerFoot=16`, `isDuration=false`)
 
 **Desciption**
@@ -114,8 +102,6 @@ Converts the value of `t` to a `String` representing feet of film and frames. Se
 String
 
 ---
-
-<a id="timetocurrentformat"></a>
 
 ## timeToCurrentFormat(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `isDuration=false`)
 

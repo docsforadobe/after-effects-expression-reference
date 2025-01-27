@@ -1,5 +1,3 @@
-<a id="markerkey"></a>
-
 # MarkerKey
 
 You can access values for composition markers and layer markers using the same methods. Access layer markers through the thisLayer.marker object; access composition markers through the thisComp.marker object.
@@ -33,8 +31,6 @@ Dan Ebberts provides a tutorial on the [After Effects Developer Center](http://w
 
 ---
 
-<a id="marker-duration"></a>
-
 ## Marker.duration
 
 **Description**
@@ -46,8 +42,6 @@ Duration, in seconds, of marker.
 Number
 
 ---
-
-<a id="marker-comment"></a>
 
 ## Marker.comment
 
@@ -61,8 +55,6 @@ String
 
 ---
 
-<a id="marker-chapter"></a>
-
 ## Marker.chapter
 
 **Description**
@@ -74,8 +66,6 @@ Contents of Chapter field in marker dialog box.
 String
 
 ---
-
-<a id="marker-url"></a>
 
 ## Marker.url
 
@@ -89,8 +79,6 @@ String
 
 ---
 
-<a id="marker-frametarget"></a>
-
 ## Marker.frameTarget
 
 **Description**
@@ -102,8 +90,6 @@ Contents of Frame Target field in marker dialog box.
 String
 
 ---
-
-<a id="marker-eventcuepoint"></a>
 
 ## Marker.eventCuePoint
 
@@ -117,8 +103,6 @@ Boolean
 
 ---
 
-<a id="marker-cuepointname"></a>
-
 ## Marker.cuePointName
 
 **Description**
@@ -130,8 +114,6 @@ Contents of cue point Name field in marker dialog box.
 String
 
 ---
-
-<a id="marker-parameters"></a>
 
 ## Marker.parameters
 
@@ -150,8 +132,6 @@ thisComp.marker.nearestKey(time).parameters["background color"]
 Associative array of String values
 
 ---
-
-<a id="marker-protectedregion"></a>
 
 ## Marker.protectedRegion
 

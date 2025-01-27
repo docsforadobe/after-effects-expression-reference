@@ -1,5 +1,3 @@
-<a id="examples"></a>
-
 # Examples
 
 #### NOTE

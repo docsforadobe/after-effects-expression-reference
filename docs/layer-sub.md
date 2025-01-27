@@ -1,13 +1,9 @@
-<a id="layersubobjects"></a>
-
 # Layer Sub-objects
 
 #### NOTE
 For After Effects CC and CS6, the Expression language menu, the “Layer Sub-objects”, “Layer General”, “Layer Properties”, “Layer 3D”, and “Layer Space Transforms” have been arranged into a “Layer” submenu.
 
 ---
-
-<a id="layer-source"></a>
 
 ## Layer.source
 
@@ -26,8 +22,6 @@ source.layer(1).position
 Comp or Footage
 
 ---
-
-<a id="layer-sourcetime"></a>
 
 ## Layer.sourceTime(`t=time`)
 
@@ -48,8 +42,6 @@ After Effects CS5.5 and later
 Number
 
 ---
-
-<a id="layer-sourcerectattime"></a>
 
 ## Layer.sourceRectAtTime(`t = time, includeExtents = false`)
 
@@ -84,8 +76,6 @@ myTextLayer.sourceRectAtTime().width
 Array (4-dimensional)
 
 ---
-
-<a id="layer-effect"></a>
 
 ## Layer.effect(`name`)
 
@@ -126,8 +116,6 @@ After Effects finds the effect by its index in the Effect Controls panel, starti
 Effect
 
 ---
-
-<a id="layer-mask"></a>
 
 ## Layer.mask(`name`)
 

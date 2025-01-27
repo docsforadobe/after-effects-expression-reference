@@ -1,12 +1,8 @@
-<a id="colorconversion"></a>
-
 # Color Conversion
 
 Harry Frank provides a video tutorial on his [graymachine website](http://www.graymachine.com/tutorials/rgb-to-hsl-expressions/) that shows how to use these color conversion methods to change the color of the waves produced by the Radio Waves effect.
 
 ---
-
-<a id="rgbtohsl"></a>
 
 ## rgbToHsl(`rgbaArray`)
 
@@ -31,8 +27,6 @@ Array (4-dimensional)
 
 ---
 
-<a id="hsltorgb"></a>
-
 ## hslToRgb(`hslaArray`)
 
 **Description**
@@ -49,8 +43,6 @@ Converts a color in HSLA space to RGBA space. This conversion is the opposite of
 Array (4-dimensional)
 
 ---
-
-<a id="hextorgb"></a>
 
 ## hexToRgb(`hexString`)
 

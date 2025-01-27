@@ -1,8 +1,4 @@
-<a id="comp"></a>
-
 # Comp
-
-<a id="comp-layer"></a>
 
 ## Comp.layer(`index`)
 
@@ -68,8 +64,6 @@ Layer, Light, or Camera
 
 ---
 
-<a id="comp-layerbycomment"></a>
-
 ## Comp.layerByComment(`comment`)
 
 **Description**
@@ -93,8 +87,6 @@ Layer, Light, or Camera
 
 ---
 
-<a id="comp-marker"></a>
-
 ## Comp.marker
 
 **Description**
@@ -107,8 +99,6 @@ You cannot access a composition marker by marker number. If you have a project c
 MarkerProperty
 
 ---
-
-<a id="comp-marker-key"></a>
 
 ## Comp.marker.key(`index`)
 
@@ -156,8 +146,6 @@ MarkerKey
 
 ---
 
-<a id="comp-marker-nearestkey"></a>
-
 ## Comp.marker.nearestKey(`t`)
 
 **Description**
@@ -187,8 +175,6 @@ MarkerKey
 
 ---
 
-<a id="comp-marker-numkeys"></a>
-
 ## Comp.marker.numKeys
 
 **Description**
@@ -200,8 +186,6 @@ Returns the total number of composition markers in the composition.
 Number
 
 ---
-
-<a id="comp-numlayers"></a>
 
 ## Comp.numLayers
 
@@ -215,8 +199,6 @@ Number
 
 ---
 
-<a id="comp-activecamera"></a>
-
 ## Comp.activeCamera
 
 **Description**
@@ -228,8 +210,6 @@ Returns the Camera object for the camera through which the composition is render
 Camera
 
 ---
-
-<a id="comp-width"></a>
 
 ## Comp.width
 
@@ -243,8 +223,6 @@ Number
 
 ---
 
-<a id="comp-height"></a>
-
 ## Comp.height
 
 **Description**
@@ -257,8 +235,6 @@ Number
 
 ---
 
-<a id="comp-duration"></a>
-
 ## Comp.duration
 
 **Description**
@@ -270,8 +246,6 @@ Returns the composition duration, in seconds.
 Number
 
 ---
-
-<a id="comp-ntscdropframe"></a>
 
 ## Comp.ntscDropFrame
 
@@ -288,8 +262,6 @@ Boolean
 
 ---
 
-<a id="comp-displaystarttime"></a>
-
 ## Comp.displayStartTime
 
 **Description**
@@ -301,8 +273,6 @@ Returns the composition start time, in seconds.
 Number
 
 ---
-
-<a id="comp-frameduration"></a>
 
 ## Comp.frameDuration
 
@@ -316,8 +286,6 @@ Number
 
 ---
 
-<a id="comp-shutterangle"></a>
-
 ## Comp.shutterAngle
 
 **Description**
@@ -329,8 +297,6 @@ Returns the shutter-angle value of the composition, in degrees.
 Number
 
 ---
-
-<a id="comp-shutterphase"></a>
 
 ## Comp.shutterPhase
 
@@ -344,8 +310,6 @@ Number
 
 ---
 
-<a id="comp-bgcolor"></a>
-
 ## Comp.bgColor
 
 **Description**
@@ -358,8 +322,6 @@ Array (4-dimensional)
 
 ---
 
-<a id="comp-pixelaspect"></a>
-
 ## Comp.pixelAspect
 
 **Description**
@@ -371,8 +333,6 @@ Returns the pixel aspect ratio of the composition.
 Number
 
 ---
-
-<a id="comp-name"></a>
 
 ## Comp.name
 

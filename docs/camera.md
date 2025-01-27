@@ -1,5 +1,3 @@
-<a id="camera"></a>
-
 # Camera
 
 Camera objects have the same attributes and methods as Layer objects, except for:
@@ -18,8 +16,6 @@ Camera objects have the same attributes and methods as Layer objects, except for
 
 ---
 
-<a id="camera-pointofinterest"></a>
-
 ## Camera.pointOfInterest
 
 **Description**
@@ -31,8 +27,6 @@ Returns the point of interest values of a camera in world space.
 Array (3 dimensional)
 
 ---
-
-<a id="camera-zoom"></a>
 
 ## Camera.zoom
 
@@ -54,8 +48,6 @@ Number
 
 ---
 
-<a id="camera-depthoffield"></a>
-
 ## Camera.depthOfField
 
 **Description**
@@ -67,8 +59,6 @@ Returns `1` if the Depth Of Field property of a camera is on, or returns `0` if 
 Boolean Number
 
 ---
-
-<a id="camera-focusdistance"></a>
 
 ## Camera.focusDistance
 
@@ -82,8 +72,6 @@ Number
 
 ---
 
-<a id="camera-aperture"></a>
-
 ## Camera.aperture
 
 **Description**
@@ -96,8 +84,6 @@ Number
 
 ---
 
-<a id="camera-blurlevel"></a>
-
 ## Camera.blurLevel
 
 **Description**
@@ -109,8 +95,6 @@ Returns the blur level value of a camera as a percentage.
 Number
 
 ---
-
-<a id="camera-irisshape"></a>
 
 ## Camera.irisShape
 
@@ -126,8 +110,6 @@ Number
 
 ---
 
-<a id="camera-irisrotation"></a>
-
 ## Camera.irisRotation
 
 **Description**
@@ -139,8 +121,6 @@ Returns the iris rotation value, in degrees.
 Number
 
 ---
-
-<a id="camera-irisroundness"></a>
 
 ## Camera.irisRoundness
 
@@ -154,8 +134,6 @@ Number
 
 ---
 
-<a id="camera-irisaspectratio"></a>
-
 ## Camera.irisAspectRatio
 
 **Description**
@@ -167,8 +145,6 @@ Returns the camera iris aspect ratio, from 1 to 100.
 Number
 
 ---
-
-<a id="camera-irisdiffractionfringe"></a>
 
 ## Camera.irisDiffractionFringe
 
@@ -182,8 +158,6 @@ Number
 
 ---
 
-<a id="camera-highlightgain"></a>
-
 ## Camera.highlightGain
 
 **Description**
@@ -195,8 +169,6 @@ Returns the camera highlight gain, from 1 to 100.
 Number
 
 ---
-
-<a id="camera-highlightthreshold"></a>
 
 ## Camera.highlightThreshold
 
@@ -214,8 +186,6 @@ Number
 
 ---
 
-<a id="camera-highlightsaturation"></a>
-
 ## Camera.highlightSaturation
 
 **Description**
@@ -227,8 +197,6 @@ Returns the camera highlight saturation, from 1 to 100.
 Number
 
 ---
-
-<a id="camera-active"></a>
 
 ## Camera.active
 

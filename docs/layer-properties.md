@@ -1,5 +1,3 @@
-<a id="layerproperties"></a>
-
 # Layer Properties
 
 **Description**
@@ -7,8 +5,6 @@
 When you add masks, effects, paint, or text to a layer, After Effects adds new properties to the Timeline panel. There are too many of these properties to list here, so use the pick whip to learn the syntax for referring to them in your expressions.
 
 ---
-
-<a id="layer-anchorpoint"></a>
 
 ## Layer.anchorPoint
 
@@ -22,8 +18,6 @@ Array of Numbers (2- or 3-dimensional)
 
 ---
 
-<a id="layer-position"></a>
-
 ## Layer.position
 
 **Description**
@@ -35,8 +29,6 @@ Returns the position value of the layer, in world space if the layer has no pare
 Array of Numbers (2- or 3-dimensional)
 
 ---
-
-<a id="layer-scale"></a>
 
 ## Layer.scale
 
@@ -50,8 +42,6 @@ Array of Numbers (2- or 3-dimensional)
 
 ---
 
-<a id="layer-rotation"></a>
-
 ## Layer.rotation
 
 **Description**
@@ -63,8 +53,6 @@ Returns the rotation value of the layer in degrees. For a 3D layer, it returns t
 Number
 
 ---
-
-<a id="layer-opacity"></a>
 
 ## Layer.opacity
 
@@ -78,8 +66,6 @@ Number
 
 ---
 
-<a id="layer-audiolevels"></a>
-
 ## Layer.audioLevels
 
 **Description**
@@ -92,8 +78,6 @@ Array of Numbers (2-dimensional)
 
 ---
 
-<a id="layer-timeremap"></a>
-
 ## Layer.timeRemap
 
 **Description**
@@ -105,8 +89,6 @@ Returns the value of the Time Remap property, in seconds, if Time Remap is enabl
 Number
 
 ---
-
-<a id="layer-marker-key"></a>
 
 ## Layer.marker.key(`index`)
 
@@ -150,8 +132,6 @@ MarkerKey
 
 ---
 
-<a id="layer-marker-nearestkey"></a>
-
 ## Layer.marker.nearestKey(`t`)
 
 **Description**
@@ -181,8 +161,6 @@ MarkerKey
 
 ---
 
-<a id="layer-marker-numkeys"></a>
-
 ## Layer.marker.numKeys
 
 **Description**
@@ -194,8 +172,6 @@ Returns the total number of markers on the layer.
 Number
 
 ---
-
-<a id="layer-name"></a>
 
 ## Layer.name
 

@@ -1,13 +1,9 @@
-<a id="randomnumbers"></a>
-
 # Random Numbers
 
 #### NOTE
 The wiggle method—which is used to randomly vary a property value—is in the Property attributes and methods category. See Property attributes and methods.
 
 ---
-
-<a id="seedrandom"></a>
 
 ## seedRandom(`offset`, `timeless=false`)
 
@@ -35,8 +31,6 @@ The multiplication by `100` in this example converts the value in the range `0�
 None
 
 ---
-
-<a id="random"></a>
 
 ## random()
 
@@ -92,8 +86,6 @@ Number or Array
 
 ---
 
-<a id="gaussrandom"></a>
-
 ## gaussRandom()
 
 **Description**
@@ -148,8 +140,6 @@ The results have a Gaussian (bell-shaped) distribution.
 Number or Array
 
 ---
-
-<a id="noise"></a>
 
 ## noise(`valOrArray`)
 
