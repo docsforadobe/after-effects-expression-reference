@@ -18,4 +18,4 @@ Chris Zwar provides an example project on [chriszwar.com](http://chriszwar.com/w
 
 Maltaannon (Jerzy Drozda, Jr.) provides a video tutorial on [maltaanon.com](http://maltaannon.com/articles/after-effects/smart-volume-meter/) that shows how to use expressions to create a volume meter using the results of the Convert Audio To Keyframes command.
 
-<!-- Harry Frank provides a tutorial on his graymachine website that shows how to use expressions to read data from an external text file. -->
+The W3Schools JavaScript reference website provides information for the standard JavaScript language, including pages for the JavaScript Math and String objects.

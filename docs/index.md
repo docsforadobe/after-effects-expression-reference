@@ -2,8 +2,9 @@
 
 Use the After Effects expression elements along with standard JavaScript elements to write your expressions. You can use the Expression Language menu at any time to insert methods and attributes into an expression, and you can use the pick whip at any time to insert properties.
 
-
-The W3Schools JavaScript reference website provides information for the standard JavaScript language, including pages for the JavaScript Math and String objects.
+- For resources on how to get started with expressions, see [Resources](./introduction/resources.md).
+- For some broad examples, see [Examples](./introduction/examples.md).
+- For info on changes to the expression engine over the years, see [Changelog](./introduction/changelog.md).
 
 ---
 
