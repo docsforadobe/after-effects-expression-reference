@@ -176,17 +176,17 @@ thisComp.marker.key("0").time
 
 ---
 
-## Comp.marker.nearestKey(`time`)
+## Comp.marker.nearestKey(`t`)
 
 #### Description
 
-Returns the marker that is nearest in comp time to the provided time.
+Returns the marker that is nearest in comp time to the provided time `t`.
 
 #### Parameters
 
 | Parameter |  Type  |               Description                |
 | --------- | ------ | ---------------------------------------- |
-| `time`    | Number | The time to find the nearest marker from |
+| `t`    | Number | The time to find the nearest marker from |
 
 #### Type
 

@@ -1,6 +1,7 @@
 # Key
 
-#### Description
+!!! info
+    In expressions, "Key" (and `key`) refers to Keyframes.
 
 When you access a Key object, you can get time, index, and value properties from it. For example, the following expression gives you the value of the third Position keyframe: position.key(3).value.
 
