@@ -5,7 +5,7 @@
 This category contains information relating to Effects.
 
 !!! info
-    On this page, we're going to use `thisLayer.effect("Bulge")` as a demonstration on how to use these items, however note that any method that returns an [Effect](#) will work.
+    On this page, we're going to use `thisLayer.effect("Bulge")` as a sample on how to call these items, however note that any method that returns an [Effect](#) will work.
 
 ---
 

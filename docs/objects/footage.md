@@ -7,7 +7,7 @@ To use a footage item from the Project panel as an object in an expression, use 
 You can also access a footage object using the source attribute on a layer whose source is a footage item (i.e. `thisLayer.source`)
 
 !!! info
-    On this page, we're going to use `footage("myFile")` as a demonstration on how to use these items, however note that any method that returns a [Footage object](#) will work.
+    On this page, we're going to use `footage("myFile")` as a sample on how to call these items, however note that any method that returns a [Footage object](#) will work.
 
 ---
 

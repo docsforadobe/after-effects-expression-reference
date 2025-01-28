@@ -15,7 +15,7 @@ In expressions, a Property is *typically* anything that exists in the timeline (
         - *Note that in this case, Text also has its own special items, found in the above link.*
 
 !!! info
-    On this page, we're going to use `thisLayer.position` as a demonstration on how to use these items, however note that any method that returns a [Property](#) will work.
+    On this page, we're going to use `thisLayer.position` as a sample on how to call these items, however note that any method that returns a [Property](#) will work.
 
 ---
 

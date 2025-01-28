@@ -15,7 +15,7 @@ These are typically accessed in a few ways, most commonly:
 - `layer("layerName").source`, **if referring to a precomp layer**, to get the targeted precomp layer's source comp
 
 !!! info
-    On this page, we're going to use `thisComp` as a demonstration on how to use these items, however note that any method that returns a [Comp](#) will work.
+    On this page, we're going to use `thisComp` as a sample on how to call these items, however note that any method that returns a [Comp](#) will work.
 
 ---
 

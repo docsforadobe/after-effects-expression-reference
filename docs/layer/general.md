@@ -3,7 +3,7 @@
 `thisLayer`
 
 !!! info
-    On this page, we're going to use `thisLayer` as a demonstration on how to use these items, however note that any method that returns a [Layer](./layer.md) will work.
+    On this page, we're going to use `thisLayer` as a sample on how to call these items, however note that any method that returns a [Layer](./layer.md) will work.
 
 ---
 

@@ -8,7 +8,7 @@ This category contains information relating to mask objects. To manipulate the a
     You can link Mask Path properties to other path properties (paths in a shape layer and brush strokes), but the properties are not accessible for direct numerical manipulation through expressions.
 
 !!! info
-    On this page, we're going to use `thisLayer.mask("Mask 1")` as a demonstration on how to use these items, however note that any method that returns a [Mask](#) will work.
+    On this page, we're going to use `thisLayer.mask("Mask 1")` as a sample on how to call these items, however note that any method that returns a [Mask](#) will work.
 
 ---
 

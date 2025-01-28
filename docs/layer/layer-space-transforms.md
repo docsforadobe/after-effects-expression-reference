@@ -13,7 +13,7 @@ Use the plain (non-`Vec`) transform methods when transforming a point, such as p
 Composition (comp) and world space are the same for 2D layers. For 3D layers, however, composition space is relative to the active camera, and world space is independent of the camera.
 
 !!! info
-    On this page, we're going to use `thisLayer` as a demonstration on how to use these items, however note that any method that returns a [Layer](./layer.md) will work.
+    On this page, we're going to use `thisLayer` as a sample on how to call these items, however note that any method that returns a [Layer](./layer.md) will work.
 
 ---
 

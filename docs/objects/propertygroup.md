@@ -29,7 +29,7 @@ Property Groups can have a fixed number of properties (e.g. an individual effect
 - Text Animators
 
 !!! info
-    On this page, we're going to use `thisLayer("ADBE Effect Parade")` (the "Effects" group) as a demonstration on how to use these items, however note that any method that returns a [PropertyGroup](#) will work.
+    On this page, we're going to use `thisLayer("ADBE Effect Parade")` (the "Effects" group) as a sample on how to call these items, however note that any method that returns a [PropertyGroup](#) will work.
 
 ---
 

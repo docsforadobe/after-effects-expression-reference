@@ -10,7 +10,7 @@
 This category contains information relating to mask & shape *paths*.
 
 !!! info
-    On this page, we're going to use `thisLayer.mask("Mask 1").maskPath` as a demonstration on how to use these items, however note that any method that returns a [Path](#) will work.
+    On this page, we're going to use `thisLayer.mask("Mask 1").maskPath` as a sample on how to call these items, however note that any method that returns a [Path](#) will work.
 
 ---
 
