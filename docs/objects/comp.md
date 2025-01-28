@@ -209,20 +209,6 @@ Apply the following expression to the Position property of a layer to center the
 
 ## Methods
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Comp.layer()
 
 `thisComp.layer(index)`
@@ -251,7 +237,7 @@ If using the `otherLayer, relIndex` call, this retrieves the layer that is `relI
 | `otherLayer`       | [Layer](../layer/general.md) | The "other" layer to start getting layers relative to        |
 | `relIndex`         | Number                       | The number of layers to move above or below the `otherLayer` |
 
-#### Type
+#### Returns
 
 [Layer](../layer/general.md), [Light](./light.md), or [Camera](./camera.md) object
 
@@ -294,7 +280,7 @@ The matches are simple text matches. They will match partial words, and are case
 | --------- | ------ | -------------------------------- |
 | `comment` | String | The comment to find a layer from |
 
-#### Type
+#### Returns
 
 [Layer](../layer/general.md), [Light](./light.md), or [Camera](./camera.md) object
 
