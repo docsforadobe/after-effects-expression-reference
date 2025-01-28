@@ -1,6 +1,10 @@
 # Global
 
-## comp(`name`)
+---
+
+### comp()
+
+`comp(name)`
 
 #### Description
 
@@ -17,7 +21,9 @@ Comp
 
 ---
 
-## footage(`name`)
+### footage()
+
+`footage(name)`
 
 #### Description
 
@@ -34,7 +40,9 @@ Footage
 
 ---
 
-## thisProject
+### thisProject
+
+`thisProject`
 
 #### Description
 
@@ -46,7 +54,9 @@ Project
 
 ---
 
-## thisComp
+### thisComp
+
+`thisComp`
 
 #### Description
 
@@ -58,7 +68,9 @@ Comp
 
 ---
 
-## thisLayer
+### thisLayer
+
+`thisLayer`
 
 #### Description
 
@@ -70,7 +82,9 @@ Layer, Light, or Camera
 
 ---
 
-## thisProperty
+### thisProperty
+
+`thisProperty`
 
 #### Description
 
@@ -82,7 +96,9 @@ Property
 
 ---
 
-## time
+### time
+
+`time`
 
 #### Description
 
@@ -94,7 +110,9 @@ Number
 
 ---
 
-## colorDepth
+### colorDepth
+
+`colorDepth`
 
 #### Description
 
@@ -106,7 +124,9 @@ Number
 
 ---
 
-## posterizeTime(`updatesPerSecond`)
+### posterizeTime()
+
+`posterizeTime(updatesPerSecond)`
 
 #### Description
 
@@ -157,7 +177,9 @@ newValue;
 
 ---
 
-## value
+### value
+
+`value`
 
 #### Description
 

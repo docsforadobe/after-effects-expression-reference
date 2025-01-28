@@ -7,7 +7,9 @@ Create a text layer, add an expression to the Source Text property, and enter ti
 
 ---
 
-## timeToFrames(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `isDuration=false`)
+### timeToFrames()
+
+`timeToFrames(t=time + thisComp.displayStartTime, fps=1.0 / thisComp.frameDuration, isDuration=false)`
 
 #### Description
 
@@ -28,7 +30,9 @@ Number
 
 ---
 
-## framesToTime(`frames`, `fps=1.0 / thisComp.frameDuration`)
+### framesToTime()
+
+`framesToTime(frames, fps=1.0 / thisComp.frameDuration)`
 
 #### Description
 
@@ -46,7 +50,9 @@ Number
 
 ---
 
-## timeToTimecode(`t=time + thisComp.displayStartTime`, `timecodeBase=30`, `isDuration=false`)
+### timeToTimecode()
+
+`timeToTimecode(t=time + thisComp.displayStartTime, timecodeBase=30, isDuration=false)`
 
 #### Description
 
@@ -65,7 +71,9 @@ String
 
 ---
 
-## timeToNTSCTimecode(`t=time + thisComp.displayStartTime`, `ntscDropFrame=false`, `isDuration=false`)
+### timeToNTSCTimecode()
+
+`timeToNTSCTimecode(t=time + thisComp.displayStartTime, ntscDropFrame=false, isDuration=false)`
 
 #### Description
 
@@ -84,7 +92,9 @@ String
 
 ---
 
-## timeToFeetAndFrames(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `framesPerFoot=16`, `isDuration=false`)
+### timeToFeetAndFrames()
+
+`timeToFeetAndFrames(t=time + thisComp.displayStartTime, fps=1.0 / thisComp.frameDuration, framesPerFoot=16, isDuration=false)
 
 #### Description
 
@@ -103,7 +113,9 @@ String
 
 ---
 
-## timeToCurrentFormat(`t=time + thisComp.displayStartTime`, `fps=1.0 / thisComp.frameDuration`, `isDuration=false`)
+### timeToCurrentFormat()
+
+`timeToCurrentFormat(t=time + thisComp.displayStartTime, fps=1.0 / thisComp.frameDuration, isDuration=false)`
 
 #### Description
 

@@ -45,11 +45,11 @@ Array of Numbers (2-dimensional)
 
 #### Description
 
-Returns a given layer's [Marker](./marker-property.md) property.
+Returns a given layer's [Marker](../objects/marker-property.md) property.
 
 #### Type
 
-[Marker Property](./marker-property.md)
+[Marker Property](../objects/marker-property.md)
 
 ---
 
