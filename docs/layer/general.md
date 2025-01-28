@@ -1,64 +1,85 @@
 # Layer General
 
-## Layer.width
+`thisLayer`
 
-#### Description
-
-Returns the width of the layer, in pixels. It is the same as `source.width`.
-
-#### Type
-
-Number
+!!! info
+    On this page, we're going to use `thisLayer` as a demonstration on how to use these items, however note that any method that returns a [Layer](./layer.md) will work.
 
 ---
 
-## Layer.height
+## Attributes
+
+### Layer.active
+
+`thisLayer.active`
 
 #### Description
 
-Returns the height of the layer, in pixels. It is the same as `source.height`.
+Returns `true` if the Video switch is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
 
 #### Type
 
-Number
+Boolean
 
 ---
 
-## Layer.index
+### Layer.audioActive
+
+`thisLayer.audioActive`
 
 #### Description
 
-Returns the index number of the layer in the composition.
+Returns `true` if the Audio switch is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
 
 #### Type
 
-Number
+Boolean
 
 ---
 
-## Layer.parent
+### Layer.enabled
+
+`thisLayer.enabled`
 
 #### Description
 
-Returns the parent Layer object of the layer, if it has one.
-
-Example:
-
-```js
-position[0] + parent.width
-```
+Whether the layer is enabled.
 
 #### Type
 
-Layer, Light, or Camera
+Boolean. `true` if the Video switch is on for the layer; `false` otherwise.
 
 ---
 
-## Layer.hasParent
+### Layer.hasAudio
+
+`thisLayer.hasAudio`
 
 #### Description
 
-Returns `true` if the layer has a parent or `false` if it doesn't. Use the hasParent attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present. For example, the following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position.
+Whether the layer has audio.
+
+#### Type
+
+Boolean. `true` if the layer has audio or `false` if it doesn't.
+
+---
+
+### Layer.hasParent
+
+`thisLayer.hasParent`
+
+#### Description
+
+Use the `hasParent` attribute to determine if a layer has a parent layer. You can use this attribute even if the layer has no parent layer at present.
+
+#### Type
+
+Boolean. `true` if the layer has a parent, `false` if it doesn't.
+
+#### Example
+
+The following expression indicates that the layer to which you apply it wiggles based on the position of the parent. If the layer has no parent, then it wiggles based on its own position.
 
 If the layer is given a parent later, then the behavior of the layer changes accordingly:
 
@@ -70,13 +91,55 @@ if (hasParent) {
 thisComp.layer(idx).position.wiggle(5,20)
 ```
 
+---
+
+### Layer.hasVideo
+
+`thisLayer.hasVideo`
+
+#### Description
+
+Whether the layer has video.
+
 #### Type
 
-Boolean
+Boolean. `true` if the layer has audio or `false` if it doesn't.
 
 ---
 
-## Layer.inPoint
+### Layer.height
+
+`thisLayer.height`
+
+#### Description
+
+Returns the height of the layer, in pixels.
+
+If the layer has a [source](./sub-objects.md#layersource), this is the same as either the source [comp height](../objects/comp.md#compheight) or the source [footage height](../objects/footage.md#footageheight) (as applicable).
+
+#### Type
+
+Number
+
+---
+
+### Layer.index
+
+`thisLayer.index`
+
+#### Description
+
+Returns the index number of the layer in the composition.
+
+#### Type
+
+Number
+
+---
+
+### Layer.inPoint
+
+`thisLayer.inPoint`
 
 #### Description
 
@@ -91,7 +154,9 @@ Number
 
 ---
 
-## Layer.outPoint
+### Layer.outPoint
+
+`thisLayer.outPoint`
 
 #### Description
 
@@ -103,7 +168,31 @@ Number
 
 ---
 
-## Layer.startTime
+### Layer.parent
+
+`thisLayer.parent`
+
+#### Description
+
+Returns the parent Layer object of the layer, if it has one.
+
+You can check whether a layer has a parent with the [`Layer.hasParent`](#layerhasparent) attribute.
+
+#### Type
+
+[Layer](../layer/layer.md), [Light](../objects/light.md), or [Camera](../objects/camera.md) object
+
+#### Example
+
+```js
+position[0] + parent.width
+```
+
+---
+
+### Layer.startTime
+
+`thisLayer.startTime`
 
 #### Description
 
@@ -115,96 +204,53 @@ Number
 
 ---
 
-## Layer.hasVideo
+### Layer.width
+
+`thisLayer.width`
 
 #### Description
 
-Returns `true` if the layer has video, or `false` if it doesn't.
+Returns the width of the layer, in pixels.
+
+If the layer has a [source](./sub-objects.md#layersource), this is the same as either the source [comp width](../objects/comp.md#compwidth) or the source [footage width](../objects/footage.md#footagewidth) (as applicable).
 
 #### Type
 
-Boolean
+Number
 
 ---
 
-## Layer.hasAudio
+## Methods
 
-#### Description
+### Layer.sampleImage()
 
-Returns `true` if the layer has audio or `false` if it doesn't.
-
-#### Type
-
-Boolean
-
----
-
-## Layer.active
-
-#### Description
-
-Returns `true` if the Video switch is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
-
-#### Type
-
-Boolean
-
----
-
-## Layer.enabled
-
-#### Description
-
-Returns `true` if the Video switch is on for the layer; `false` otherwise.
-
-#### Type
-
-Boolean
-
----
-
-## Layer.audioActive
-
-#### Description
-
-Returns `true` if the Audio switch is on for the layer and the current time is in the range from the In point of the layer to the Out point of the layer; `false` otherwise.
-
-#### Type
-
-Boolean
-
----
-
-## Layer.sampleImage(`point`, `radius=[0.5, 0.5]`, `postEffect=true`, `t=time`)
+`thisLayer.sampleImage(point[, radius=[0.5, 0.5]][, postEffect=true][, t=time])`
 
 #### Description
 
 Samples the color and alpha channel values of a layer and returns the average alpha-weighted value of the pixels within the specified distance of the point as an array: `[red, green, blue, alpha]`.
 
-If `postEffect` is `true`, the sampled values are for the layer after masks and effects on that layer have been rendered; if `postEffect` is `false`, the sampled values are for the layer before masks and effects have been rendered. The input value point is in layer space; the point `[0, 0]` is the center of the upper-left pixel in the layer. The input value `radius` specifies the horizontal and vertical distance from the sample center to the edges of the sampled rectangle. The default value samples one pixel.
-
-This example samples a rectangle 4 pixels wide and 3 pixels high, centered around a point 100 pixels down and to the right of the upper-left corner of the layer:
-
-```js
-thisComp.layer(1).sampleImage([100, 100], [2, 1.5])
-```
-
 !!! note
-    The postEffect parameter refers to effects applied directly to the layer, not to effects applied indirectly, such as with an adjustment layer.
-
-!!! note
-    Using sampleImage in an expression no longer disables multiprocessing.
-
-!!! note
-    Dan Ebberts provides an example of how to use the sampleImage method on his MotionScript website.
-
-!!! note
-    Todd Kopriva provides instructions for using the sampleImage method and the Point Control effect to monitor colors for a specified point during color correction on his After Effects Region of Interest blog.
+    Using `sampleImage()` in an expression no longer disables multiprocessing.
 
 #### Parameters
 
-Argument type: point is an Array [2], radius is an Array [2], postEffect is a Boolean, and t is a Number.
+|  Parameter   |            Type            |                                                                                                   Description                                                                                                   |
+| ------------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `point`      | 2-dimensional Number array | Required. The point at which to sample, im layer space. The point `[0, 0]` is the center of the upper-left pixel in the layer.                                                                                  |
+| `radius`     | 2-dimensional Number array | Optional. Specifies the horizontal and vertical distance from the sample center to the edges of the sampled rectangle. The default value samples one pixel. Defaults to `[0.5, 0.5]`.                           |
+| `postEffect` | Boolean                    | Optional. If `true`, to sample the values *after* layer masks and effects **directly applied to the layer** have been rendered. If `false`, sample values *before* layer masks and effects. Defaults to `true`. |
+| `t`          | Number                     | Optional. Defaults to `time`.                                                                                                                                                                                   |
+
 
 #### Type
 
 Array (4-dimensional)
+
+#### Examples
+
+This samples a rectangle 4 pixels wide and 3 pixels high, centered around a point 100 pixels down and to the right of the upper-left corner of the layer:
+
+```js
+thisComp.layer(1).sampleImage([100, 100], [2, 1.5])
+```

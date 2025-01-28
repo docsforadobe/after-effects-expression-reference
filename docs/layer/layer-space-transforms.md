@@ -1,6 +1,6 @@
 # Layer Space Transforms
 
-#### Description
+`thisLayer`
 
 Use layer space transform methods to transform values from one space to another, such as from layer space to world space. The `from` methods transform values from the named space (composition or world) to the layer space.
 
@@ -11,6 +11,9 @@ Use `Vec` transform methods when transforming a direction vector, such as the di
 Use the plain (non-`Vec`) transform methods when transforming a point, such as position.
 
 Composition (comp) and world space are the same for 2D layers. For 3D layers, however, composition space is relative to the active camera, and world space is independent of the camera.
+
+!!! info
+    On this page, we're going to use `thisLayer` as a demonstration on how to use these items, however note that any method that returns a [Layer](./layer.md) will work.
 
 ---
 

@@ -13,7 +13,7 @@ The Marker Property is a special version of the [Property](./property.md) object
 It contains a special version of some of the same attributes and methods as the standard Property object, however most elements are not applicable here.
 
 !!! info
-    On this page, we're going to use `thisComp.marker` for the example on how to use these items, however note that any method that returns a [Marker Property](#) will work.
+    On this page, we're going to use `thisComp.marker` as a demonstration on how to use these items, however note that any method that returns a [Marker Property](#) will work.
 
 ---
 
