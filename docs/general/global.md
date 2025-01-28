@@ -50,7 +50,7 @@ For example, you can start an expression with `thisLayer.width` or `width` and g
 
 #### Type
 
-[Layer](../layer/layer.md), [Light](./light.md), or [Camera](./camera.md) object
+[Layer](../layer/layer.md), [Light](../objects/light.md), or [Camera](../objects/camera.md) object
 
 ---
 

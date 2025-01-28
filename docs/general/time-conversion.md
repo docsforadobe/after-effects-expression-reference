@@ -1,92 +1,66 @@
 # Time Conversion
 
-!!! note
-    If you want more control over the look of timecode in your footage, use the timeToCurrentFormat method or other timeTo methods to generate the timecode instead of using the Timecode or Numbers effect.
+These methods are all about converting between various time formats.
 
-Create a text layer, add an expression to the Source Text property, and enter timeToCurrentFormat() in the expression field. With this method, you can format and animate the timecode text. In addition, the timecode uses the same display style defined by the current project settings.
+!!! tip
+    If you want more control over the look of timecode in your footage, use the `timeToCurrentFormat()` method or other `timeTo` methods to generate the timecode instead of using the Timecode or Numbers effect.
 
----
+#### Example
 
-### timeToFrames()
+You can easily format and animate the timecode text by creating a text layer, applying whatever text styling you'd like, and adding this expression to the Source Text property:
 
-`timeToFrames(t=time + thisComp.displayStartTime, fps=1.0 / thisComp.frameDuration, isDuration=false)`
-
-#### Description
-
-Converts the value of t, which defaults to the current composition time, to an integer number of frames. The number of frames per second is specified in the fps argument, which defaults to the frame rate of the current composition (`1.0 / thisComp.frameDuration`).
-
-The `isDuration` argument, which defaults to `false`, should be `true` if the `t` value represents a difference between two times instead of an absolute time. Absolute times are rounded down toward negative infinity; durations are rounded away from zero (up for positive values).
-
-#### Parameters
-
-| `t`          | Number   |
-|--------------|----------|
-| `fps`        | Number   |
-| `isDuration` | Boolean  |
-
-#### Type
-
-Number
+```js
+timeToCurrentFormat();
+```
 
 ---
+
+## Methods
 
 ### framesToTime()
 
-`framesToTime(frames, fps=1.0 / thisComp.frameDuration)`
+`framesToTime(frames[, fps=1.0 / thisComp.frameDuration])`
 
 #### Description
 
-The inverse of timeToFrames. Returns the time corresponding to the frames argument, which is required. It doesn't have to be an integer. See timeToFrames for explanation of the `fps` argument.
+Returns the time corresponding to the frames argument. It doesn't have to be an integer.
+
+The inverse of [`timeToFrames()`](#timetoframes).
 
 #### Parameters
 
-| `frames`   | Number   |
-|------------|----------|
-| `fps`      | Number   |
+|    Parameter    |      Type       |                        Description                         |
+| --------------- | --------------- | ---------------------------------------------------------- |
+| `frames`   | Number   | The amount of frames to convert.
+| `fps`        | Number   | Optional. The number of frames per second to use to convert. Defaults to `1.0 / thisComp.frameDuration` (the frame rate of the current composition).
 
-#### Type
+#### Returns
 
 Number
 
 ---
 
-### timeToTimecode()
+### timeToCurrentFormat()
 
-`timeToTimecode(t=time + thisComp.displayStartTime, timecodeBase=30, isDuration=false)`
-
-#### Description
-
-Converts the value of `t` to a String representing timecode. See timeToFrames for an explanation of the `t` and `isDuration` arguments. The `timecodeBase` value, which defaults to `30`, specifies the number of frames in one second.
-
-#### Parameters
-
-| `t`            | Number   |
-|----------------|----------|
-| `timecodeBase` | Number   |
-| `isDuration`   | Boolean  |
-
-#### Type
-
-String
-
----
-
-### timeToNTSCTimecode()
-
-`timeToNTSCTimecode(t=time + thisComp.displayStartTime, ntscDropFrame=false, isDuration=false)`
+`timeToCurrentFormat([t=time + thisComp.displayStartTime][, fps=1.0 / thisComp.frameDuration][, isDuration=false][, ntscDropFrame=thisComp.ntscDropFrame])`
 
 #### Description
 
-Converts `t` to a `String` representing NTSC timecode. See timeToFrames for an explanation of the `t` and `isDuration` arguments. If `ntscDropFrame` is `false` (the default), the result `String` is NTSC non-drop-frame timecode. If `ntscDropFrame` is `true`, the result `String` is NTSC drop-frame timecode.
+Converts the value of `t` to a String representing time in the current Project Settings display format.
 
 #### Parameters
 
-| `t`             | Number   |
-|-----------------|----------|
-| `ntscDropFrame` | Boolean  |
-| `isDuration`    | Boolean  |
+|    Parameter    |      Type       |                        Description                         |
+| --------------- | --------------- | ---------------------------------------------------------- |
+| `t`          | Number   | Optional. The time (in seconds) to convert. Defaults to `time + thisComp.displayStartTime`.
+| `fps`        | Number   | Optional. Defaults to `1.0 / thisComp.frameDuration` (the frame rate of the current composition).
+| `isDuration` | Boolean  | Optional. Whether `t` represents a difference between two times, vs an absolute time. Absolute times are rounded down toward negative infinity; durations are rounded away from zero (up for positive values). Defaults to `false`.
+| `ntscDropFrame` | Boolean  | Optional. If `false`, the result is NTSC non-drop-frame timecode. If `true`, the result is NTSC drop-frame timecode. Defaults to `thisComp.ntscDropFrame`.
 
-#### Type
+!!! note
+    The `ntscDropFrame` argument was added in After Effects CS5.5.
+
+#### Returns
 
 String
 
@@ -94,43 +68,86 @@ String
 
 ### timeToFeetAndFrames()
 
-`timeToFeetAndFrames(t=time + thisComp.displayStartTime, fps=1.0 / thisComp.frameDuration, framesPerFoot=16, isDuration=false)
+`timeToFeetAndFrames([t=time + thisComp.displayStartTime][, fps=1.0 / thisComp.frameDuration][, framesPerFoot=16][, isDuration=false])`
 
 #### Description
 
-Converts the value of `t` to a `String` representing feet of film and frames. See timeToFrames for an explanation of the `t`, `fps`, and `isDuration` arguments. The `framesPerFoot` argument specifies the number of frames in one foot of film. It defaults to `16`, which is the most common rate for 35mm footage.
+Converts the value of `t` to a String representing feet of film and frames.
 
 #### Parameters
 
-| `t`             | Number   |
-|-----------------|----------|
-| `framesPerFoot` | Number   |
-| `isDuration`    | Boolean  |
+|    Parameter    |      Type       |                        Description                         |
+| --------------- | --------------- | ---------------------------------------------------------- |
+| `t`          | Number   | Optional. The time (in seconds) to convert. Defaults to `time + thisComp.displayStartTime`.
+| `framesPerFoot` | Number   | Optional. Specifies the number of frames in one foot of film. Defaults to `16` (the most common rate for 35mm footage).
+| `isDuration`    | Boolean  | Optional. Whether `t` represents a difference between two times, vs an absolute time. Absolute times are rounded down toward negative infinity; durations are rounded away from zero (up for positive values). Defaults to `false`.
 
-#### Type
+#### Returns
 
 String
 
 ---
 
-### timeToCurrentFormat()
+### timeToFrames()
 
-`timeToCurrentFormat(t=time + thisComp.displayStartTime, fps=1.0 / thisComp.frameDuration, isDuration=false)`
+`timeToFrames([t=time + thisComp.displayStartTime][, fps=1.0 / thisComp.frameDuration][, isDuration=false])`
 
 #### Description
 
-Converts the value of `t` to a `String` representing time in the current Project Settings display format. See timeToFrames for a definition of all the arguments.
-
-!!! note
-    An optional `ntscDropFrame` argument was added to the `timeToCurrentFormat()` function in After Effects CS5.5 and later. Default: `ntscDropFrame=thisComp.ntscDropFrame`.
+Converts the value of `t` (some amount of time, in seconds) to an integer number of frames.
 
 #### Parameters
 
-| `t`          | Number   |
-|--------------|----------|
-| `fps`        | Number   |
-| `isDuration` | Boolean  |
+|    Parameter    |      Type       |                        Description                         |
+| --------------- | --------------- | ---------------------------------------------------------- |
+| `t`          | Number   | Optional. The time (in seconds) to convert. Defaults to `time + thisComp.displayStartTime`.
+| `fps`        | Number   | Optional. The number of frames per second to use to convert. Defaults to `1.0 / thisComp.frameDuration` (the frame rate of the current composition).
+| `isDuration` | Boolean  | Optional. Whether `t` represents a difference between two times, vs an absolute time. Absolute times are rounded down toward negative infinity; durations are rounded away from zero (up for positive values). Defaults to `false`.
 
-#### Type
+#### Returns
+
+Number
+
+---
+
+### timeToNTSCTimecode()
+
+`timeToNTSCTimecode([t=time + thisComp.displayStartTime][, ntscDropFrame=false][, isDuration=false])`
+
+#### Description
+
+Converts `t` to a String representing NTSC timecode.
+
+#### Parameters
+
+|    Parameter    |      Type       |                        Description                         |
+| --------------- | --------------- | ---------------------------------------------------------- |
+| `t`          | Number   | Optional. The time (in seconds) to convert. Defaults to `time + thisComp.displayStartTime`.
+| `ntscDropFrame` | Boolean  | Optional. If `false`, the result is NTSC non-drop-frame timecode. If `true`, the result is NTSC drop-frame timecode. Defaults to `false`.
+| `isDuration`    | Boolean  | Optional. Whether `t` represents a difference between two times, vs an absolute time. Absolute times are rounded down toward negative infinity; durations are rounded away from zero (up for positive values). Defaults to `false`.
+
+#### Returns
+
+String
+
+---
+
+### timeToTimecode()
+
+`timeToTimecode([t=time + thisComp.displayStartTime][, timecodeBase=30][, isDuration=false])`
+
+#### Description
+
+Converts the value of `t` to a String representing timecode.
+
+#### Parameters
+
+|    Parameter    |      Type       |                        Description                         |
+| --------------- | --------------- | ---------------------------------------------------------- |
+| `t`          | Number   | Optional. The time (in seconds) to convert. Defaults to `time + thisComp.displayStartTime`.
+| `timecodeBase` | Number   | Optional. Specifies the number of frames in one second. Defaults to `30`.
+| `isDuration`   | Boolean  | Optional. Whether `t` represents a difference between two times, vs an absolute time. Absolute times are rounded down toward negative infinity; durations are rounded away from zero (up for positive values). Defaults to `false`.
+
+#### Returns
 
 String
