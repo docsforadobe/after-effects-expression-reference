@@ -2,7 +2,7 @@
 
 `thisComp.marker.key(1)`
 
-You can access values for composition markers and layer markers using the same methods. Access layer markers through the thisLayer.marker object; access composition markers through the thisComp.marker object.
+You can access values for composition markers and layer markers using the same methods. Access layer markers through the thisLayer.marker object; access composition markers through the [Marker Property](./marker-property.md) object.
 
 For the purpose of expressions, markers are a special type of [Key](./key.md) object, so you can use methods such as [`nearestKey(time)`](./property.md#nearestkey) to access markers, and markers also have `time` and `index` attributes. The `index` attribute is not the number (name) of the marker; it is the keyframe *index* number, representing the order of the marker in the time ruler.
 
@@ -19,7 +19,7 @@ Dan Ebberts provides a tutorial on the [After Effects Developer Center](http://w
 
 ## Attributes
 
-### Marker.chapter
+### MarkerKey.chapter
 
 `thisComp.marker.key(1).chapter`
 
@@ -33,7 +33,7 @@ String
 
 ---
 
-### Marker.comment
+### MarkerKey.comment
 
 `thisComp.marker.key(1).comment`
 
@@ -47,7 +47,7 @@ String
 
 ---
 
-### Marker.cuePointName
+### MarkerKey.cuePointName
 
 `thisComp.marker.key(1).cuePointName`
 
@@ -61,7 +61,7 @@ String
 
 ---
 
-### Marker.duration
+### MarkerKey.duration
 
 `thisComp.marker.key(1).duration`
 
@@ -75,7 +75,7 @@ Number
 
 ---
 
-### Marker.eventCuePoint
+### MarkerKey.eventCuePoint
 
 `thisComp.marker.key(1).eventCuePoint`
 
@@ -91,7 +91,7 @@ Boolean
 
 ---
 
-### Marker.frameTarget
+### MarkerKey.frameTarget
 
 `thisComp.marker.key(1).frameTarget`
 
@@ -105,7 +105,7 @@ String
 
 ---
 
-### Marker.parameters
+### MarkerKey.parameters
 
 `thisComp.marker.key(1).parameters`
 
@@ -127,7 +127,7 @@ thisComp.marker.nearestKey(time).parameters["background color"];
 
 ---
 
-### Marker.protectedRegion
+### MarkerKey.protectedRegion
 
 `thisComp.marker.key(1).protectedRegion`
 
@@ -148,7 +148,7 @@ Boolean
 
 ---
 
-### Marker.url
+### MarkerKey.url
 
 `thisComp.marker.key(1).url`
 

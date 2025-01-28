@@ -29,6 +29,7 @@ nav:
         - Effect: objects/effect.md
         - Mask: objects/mask.md
         - Property: objects/property.md
+        - Marker Property: objects/marker-property.md
         - Path Property: objects/path-property.md
         - Key: objects/key.md
         - MarkerKey: objects/markerkey.md
