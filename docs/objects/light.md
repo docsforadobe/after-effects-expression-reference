@@ -4,7 +4,7 @@
 
 This category is for items specific to Light Layers.
 
-Light objects have the same attributes and methods as Layer objects, except for:
+Light objects have the same attributes and methods as [Layer](../layer/general.md) objects, except for:
 
 - `source`
 - `effect`
@@ -24,8 +24,6 @@ Light objects have the same attributes and methods as Layer objects, except for:
 ---
 
 ## Attributes
-
----
 
 ### Light.castsShadows
 
