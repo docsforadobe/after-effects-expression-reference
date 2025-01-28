@@ -99,7 +99,7 @@ Number
 
 #### Description
 
-Returns a given composition's Marker property.
+Returns a given composition's [Marker](./marker-property.md) property.
 
 !!! note
     You can no longer access a composition marker by marker number.

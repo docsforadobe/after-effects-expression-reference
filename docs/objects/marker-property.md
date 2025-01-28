@@ -47,7 +47,9 @@ Returns the [MarkerKey](./markerkey.md) object of the marker with the specified 
 
 The `index` refers to the order of the marker in composition time, not to the numbered name of the marker.
 
-The `name` value is the name of the marker, as typed in the comment field in the marker dialog box. For example, `marker.key("1")`. For a composition marker, the default name is a number. If more than one marker in the composition has the same name, this method returns the marker that occurs first in time (in composition time).
+The `name` value is the name of the marker, as typed in the comment field in the marker dialog box. For example, `marker.key("1")`.
+
+If more than one marker has the same name, this method returns the marker that occurs first in time (in composition or layer time, depending on whether this is a composition or layer marker).
 
 #### Parameters
 
@@ -74,6 +76,14 @@ Return the time of the layer marker with the name "0":
 thisLayer.marker.key("0").time;
 ```
 
+On a layer, ramp the value of the property from `0` to `100` between two markers identified by name:
+
+```js
+const m1 = thisLayr.marker.key("Start").time;
+const m2 = thisLayr.marker.key("End").time;
+linear(time, m1, m2, 0, 100);
+```
+
 ---
 
 ### Marker.nearestKey()
@@ -82,7 +92,7 @@ thisLayer.marker.key("0").time;
 
 #### Description
 
-Returns the marker that is nearest in comp time to the provided time `t`.
+Returns the marker that is nearest in comp or layer time to the provided time `t`.
 
 #### Parameters
 
