@@ -1,10 +1,12 @@
 # Color Conversion
 
-Harry Frank provides a video tutorial on his [graymachine website](http://www.graymachine.com/tutorials/rgb-to-hsl-expressions/) that shows how to use these color conversion methods to change the color of the waves produced by the Radio Waves effect.
+These methods are all around converting colours from one format to another. Think converting a hex code to RGB, so you can use your client's brand colours in an expression in the project, or converting a value to HSL so you can adjust the lightness or saturation procedurally.
 
 ---
 
-## rgbToHsl()
+## Methods
+
+### rgbToHsl()
 
 `rgbToHsl(rgbaArray)`
 
@@ -22,7 +24,7 @@ The resulting value is an Array of hue, saturation, lightness, and alpha channel
 | ----------- | -------------------------------- | -------------------------------------- |
 | `rgbaArray` | Array of numbers (4-dimensional) | RGBA values, in the range `[0.0..1.0]` |
 
-#### Type
+#### Returns
 
 HSLA Array (4-dimensional)
 
@@ -34,7 +36,7 @@ rgbToHsl.effect("Change Color")("Color To Change")
 
 ---
 
-## hslToRgb()
+### hslToRgb()
 
 `hslToRgb(hslaArray)`
 
@@ -50,13 +52,13 @@ This conversion is the opposite of the conversion performed by the [rgbToHsl()](
 | ----------- | -------------------------------- | -------------------------------------- |
 | `hslaArray` | Array of numbers (4-dimensional) | HSLA values, in the range `[0.0..1.0]` |
 
-#### Type
+#### Returns
 
 RGBA Array (4-dimensional)
 
 ---
 
-## hexToRgb()
+### hexToRgb()
 
 `hexToRgb(hexString)`
 
@@ -75,7 +77,7 @@ For hex triplets, the alpha channel defaults to 1.0.
 | ----------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `hexString` | String | Hex triplet (6 digits, no alpha channel) or quartet (8 digits, includes alpha channel) containing only numerals or characters A–F.<br/><br/>Optional leading characters 0x, 0X, or # will be ignored.<br/>Characters beyond 8 digits will be ignored. |
 
-#### Type
+#### Returns
 
 Array (4-dimensional)
 

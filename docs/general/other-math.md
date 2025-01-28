@@ -1,6 +1,14 @@
 # Other Math
 
-## degreesToRadians(`degrees`)
+This category holds other math functions not otherwise covered.
+
+---
+
+## Methods
+
+### degreesToRadians()
+
+`degreesToRadians(degrees)`
 
 #### Description
 
@@ -8,16 +16,18 @@ Converts degrees to radians.
 
 #### Parameters
 
-| `degrees`   | Number   |
-|-------------|----------|
+| Parameter | Type   | Description                                  |
+| `degrees` | Number | The value (in degrees) to convert to radians |
 
-#### Type
+#### Returns
 
 Number
 
 ---
 
-## radiansToDegrees(`radians`)
+### radiansToDegrees()
+
+`radiansToDegrees(radians)`
 
 #### Description
 
@@ -25,9 +35,9 @@ Converts radians to degrees.
 
 #### Parameters
 
-| `radians`   | Number   |
-|-------------|----------|
+| --------- | ------ | -------------------------------------------- |
+| `radians` | Number | The value (in radians) to convert to degrees |
 
-#### Type
+#### Returns
 
 Number
