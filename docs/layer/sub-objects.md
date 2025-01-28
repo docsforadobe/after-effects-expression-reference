@@ -1,15 +1,28 @@
 # Layer Sub-objects
 
+`thisLayer`
+
+This category describes items that give you *other objects* based on the current layer; things like the source (for precomps or footage), effects, masks, sourceRect, etc.
+
+!!! info
+    On this page, we're going to use `thisLayer` as a sample on how to call these items, however note that any method that returns a [Layer](./layer.md) will work.
+
 !!! note
     For After Effects CC and CS6, the Expression language menu, the "Layer Sub-objects", "Layer General", "Layer Properties", "Layer 3D", and "Layer Space Transforms" have been arranged into a "Layer" submenu.
 
 ---
 
-## Layer.source
+## Attributes
+
+### Layer.source
+
+`thisLayer.source`
 
 #### Description
 
-Returns the source Comp or source Footage object for the layer. Default time is adjusted to the time in the source.
+Returns the source [Comp](../objects/comp.md) or [Footage](../objects/footage.md) object for the layer.
+
+Default time is adjusted to the time in the source.
 
 Example:
 
@@ -19,138 +32,137 @@ source.layer(1).position
 
 #### Type
 
-Comp or Footage
+[Comp](../objects/comp.md) or [Footage](../objects/footage.md)
 
 ---
 
-## Layer.sourceTime(`t=time`)
+## Methods
+
+### Layer.effect()
+
+`thisLayer.effect(name)`
+</br>
+`thisLayer.effect(index)`
 
 #### Description
 
-Returns the layer source corresponding to time `t`.
+The `name` value will have After Effects find the effect by its name in the Effect Controls panel. The name can be the default name or a user-defined name. If multiple effects have the same name, the effect closest to the top of the Effect Controls panel is used.
 
-!!! note
-    This functionality was added in After Effects CS5.5
+The `index` value will have After Effects finds the effect by its index in the Effect Controls panel, starting at `1` and counting from the top.
 
 #### Parameters
 
-| `t`   | Number   |
-|-------|----------|
+|     Parameter      |       Type        |         Description          |
+| ------------------ | ----------------- | ---------------------------- |
+| `name`<br/>`index` | String<br/>Number | Effect name or index to get. |
 
-#### Type
+#### Returns
 
-Number
+[Effect](../objects/effect.md)
+
+#### Example
+
+Get the "Blurriness" effect by name:
+
+```js
+thisLayer.effect("Fast Blur")
+```
+
+Get the first effect on the layer:
+
+```js
+thisLayer.effect(1)
+```
 
 ---
 
-## Layer.sourceRectAtTime(`t = time, includeExtents = false`)
+### Layer.mask()
+
+`thisLayer.mask(name)`
+</br>
+`thisLayer.mask(index)`
 
 #### Description
 
-Returns a JavaScript object with four attributes: `[top, left, width, height]`
+The `name` value can be the default name or a user-defined name. If multiple masks have the same name, the first (topmost) mask is used.
 
-Extents apply only to shape layers and paragraph text layers.
+The `index` value will have After Effects finds the mask by its index in the Timeline panel, starting at `1` and counting from the top.
 
-Shape layer extents increase the size of the layer bounds as necessary.
+#### Parameters
 
-Paragraph text layers returns the bounds of the paragraph box.
+|     Parameter      |       Type        |         Description          |
+| ------------------ | ----------------- | ---------------------------- |
+| `name`<br/>`index` | String<br/>Number | Effect name or index to get. |
+
+#### Returns
+
+[Effect](../objects/effect.md)
+
+#### Example
+
+Get the mask "Mask 1" by name:
+
+```js
+thisLayer.mask("Mask 1")
+```
+
+Get the first mask on the layer:
+
+```js
+thisLayer.mask(1)
+```
+
+---
+
+### Layer.sourceRectAtTime()
+
+`thisLayer.sourceRectAtTime(t = time, includeExtents = false)`
 
 !!! note
     This functionality was added in After Effects 13.2
     Paragraph text extents was added in After Effects 15.1.
 
-Example:
+#### Description
+
+Returns the bounding box of the layer (or the layer's source).
+
+#### Parameters
+
+|   Parameter    |  Type   |                                                                                                                          Description                                                                                                                          |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `t`            | Number  | Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to `time` (the current comp time, in seconds).                                                                                                                      |
+| includeExtents | Boolean | Optional. Only applies to shape layers and paragraph text layers.<br/><ul><li>For shape layers: Increases the size of the layer bounds as necessary.</li><li>For paragraph text layers: Returns the bounds of the paragraph box</li></ul>Defaults to `false`. |
+
+#### Returns
+
+An object with four attributes: `{top, left, width, height}`
+
+#### Example
 
 ```js
 myTextLayer.sourceRectAtTime().width
 ```
 
-#### Parameters
-
-| t              | Number   |
-|----------------|----------|
-| includeExtents | Bool     |
-
-#### Type
-
-Array (4-dimensional)
-
 ---
 
-## Layer.effect(`name`)
+### Layer.sourceTime()
+
+`thisLayer.sourceTime([t=time])`
+
+
+!!! note
+    This functionality was added in After Effects CS5.5
 
 #### Description
 
-After Effects finds the effect by its name in the Effect Controls panel. The name can be the default name or a user-defined name. If multiple effects have the same name, the effect closest to the top of the Effect Controls panel is used.
-
-Example:
-
-```js
-effect("Fast Blur")("Blurriness")
-```
+Returns the layer source corresponding to time `t`.
 
 #### Parameters
 
-| `name`   | String   |
-|----------|----------|
+| Parameter |  Type  |                                                               Description                                                                |
+| --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `t`       | Number | Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to `time` (the current comp time, in seconds). |
 
-#### Type
+#### Returns
 
-Effect
-
----
-
-## Layer.effect(`index`)
-
-#### Description
-
-After Effects finds the effect by its index in the Effect Controls panel, starting at `1` and counting from the top.
-
-#### Parameters
-
-| `index`   | Number   |
-|-----------|----------|
-
-#### Type
-
-Effect
-
----
-
-## Layer.mask(`name`)
-
-#### Description
-
-The name can be the default name or a user-defined name. If multiple masks have the same name, the first (topmost) mask is used.
-
-Example:
-
-```js
-mask("Mask 1")
-```
-
-#### Parameters
-
-| `name`   | String   |
-|----------|----------|
-
-#### Type
-
-Mask
-
----
-
-## Layer.mask(`index`)
-
-#### Description
-
-After Effects finds the mask by its index in the Timeline panel, starting at `1` and counting from the top.
-
-#### Parameters
-
-| `index`   | Number   |
-|-----------|----------|
-
-#### Type
-
-Mask
+Number
