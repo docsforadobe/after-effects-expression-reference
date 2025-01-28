@@ -219,7 +219,7 @@ Apply the following expression to the Position property of a layer to center the
 
 #### Description
 
-Return the [Layer](../layer/general.md) object with the specified `index` or `name`.
+Return the [Layer](../layer/layer.md) object with the specified `index` or `name`.
 
 The `index` value refers to the layer order in the Timeline panel.
 
@@ -231,15 +231,15 @@ If using the `otherLayer, relIndex` call, this retrieves the layer that is `relI
 
 #### Parameters
 
-|     Parameter      |             Type             |                         Description                          |
-| ------------------ | ---------------------------- | ------------------------------------------------------------ |
-| `index`<br/>`name` | Number<br/>String            | Layer name or index to get.                                  |
-| `otherLayer`       | [Layer](../layer/general.md) | The "other" layer to start getting layers relative to        |
-| `relIndex`         | Number                       | The number of layers to move above or below the `otherLayer` |
+|     Parameter      |            Type            |                         Description                          |
+| ------------------ | -------------------------- | ------------------------------------------------------------ |
+| `index`<br/>`name` | Number<br/>String          | Layer name or index to get.                                  |
+| `otherLayer`       | [Layer](../layer/layer.md) | The "other" layer to start getting layers relative to        |
+| `relIndex`         | Number                     | The number of layers to move above or below the `otherLayer` |
 
 #### Returns
 
-[Layer](../layer/general.md), [Light](./light.md), or [Camera](./camera.md) object
+[Layer](../layer/layer.md), [Light](./light.md), or [Camera](./camera.md) object
 
 #### Example
 
@@ -282,7 +282,7 @@ The matches are simple text matches. They will match partial words, and are case
 
 #### Returns
 
-[Layer](../layer/general.md), [Light](./light.md), or [Camera](./camera.md) object
+[Layer](../layer/layer.md), [Light](./light.md), or [Camera](./camera.md) object
 
 #### Example
 

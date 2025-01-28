@@ -4,19 +4,20 @@
 
 This category is for items specific to Camera Layers.
 
-Camera objects have the same attributes and methods as [Layer](../layer/general.md) objects, except for:
+!!! info
+    Camera is a subclass of the [Layer object](../layer/layer.md). All methods and attributes of Layer are available when working with Camera, except:
 
-- `source`
-- `effect`
-- `mask`
-- `width`
-- `height`
-- `anchorPoint`
-- `scale`
-- `opacity`
-- `audioLevels`
-- `timeRemap`
-- all the material properties
+    - `source`
+    - `effect`
+    - `mask`
+    - `width`
+    - `height`
+    - `anchorPoint`
+    - `scale`
+    - `opacity`
+    - `audioLevels`
+    - `timeRemap`
+    - all the 3d material properties
 
 ---
 

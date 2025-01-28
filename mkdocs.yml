@@ -34,6 +34,7 @@ nav:
         - Key: objects/key.md
         - MarkerKey: objects/markerkey.md
     - Layer:
+        - Layer: layer/layer.md
         - Layer Sub-objects: layer/sub-objects.md
         - Layer General: layer/general.md
         - Layer Properties: layer/properties.md

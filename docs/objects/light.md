@@ -4,19 +4,20 @@
 
 This category is for items specific to Light Layers.
 
-Light objects have the same attributes and methods as [Layer](../layer/general.md) objects, except for:
+!!! info
+    Light is a subclass of the [Layer object](../layer/layer.md). All methods and attributes of Layer are available when working with Light, except:
 
-- `source`
-- `effect`
-- `mask`
-- `width`
-- `height`
-- `anchorPoint`
-- `scale`
-- `opacity`
-- `audioLevels`
-- `timeRemap`
-- all the material properties
+    - `source`
+    - `effect`
+    - `mask`
+    - `width`
+    - `height`
+    - `anchorPoint`
+    - `scale`
+    - `opacity`
+    - `audioLevels`
+    - `timeRemap`
+    - all the material properties
 
 !!! note
     David Van Brink provides an instructional article and sample project on his [omino pixel blog](http://www.adobe.com/go/learn_ae_ominoflashing) that shows how to use expressions with lights.
