@@ -356,7 +356,7 @@ This method lets you establish name-independent relationships in the property hi
 
 #### Returns
 
-[PropertyGroup object](./group.md)
+[PropertyGroup object](./propertygroup.md)
 
 #### Example
 
