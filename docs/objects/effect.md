@@ -1,6 +1,19 @@
 # Effect
 
-## Effect.active
+`thisLayer.effect("Bulge")`
+
+This category contains information relating to Effects.
+
+!!! info
+    On this page, we're going to use `thisLayer.effect("Bulge")` as a demonstration on how to use these items, however note that any method that returns an [Effect](#) will work.
+
+---
+
+## Attributes
+
+### Effect.active
+
+`thisLayer.effect("Bulge").active`
 
 #### Description
 
@@ -12,40 +25,40 @@ Boolean
 
 ---
 
-## Effect.param(`name`)
+## Methods
+
+### Effect.param()
+
+`thisLayer.effect("Bulge").param(name)`
+</br>
+`thisLayer.effect("Bulge").param(index)`
 
 #### Description
 
 Returns a property within an effect. Effect control points are always in layer space.
 
-Example:
+This method can be called using *either* the property's `name` or its `index`.
+
+#### Parameters
+
+|     Parameter      |       Type        |                  Description                  |
+| ------------------ | ----------------- | --------------------------------------------- |
+| `name`<br/>`index` | String<br/>Number | Property name or index to access property by. |
+
+#### Type
+
+[Property object](./property.md)
+
+#### Example
+
+To return the "Bulge Height" property from the "Bulge" effect by name:
 
 ```js
-effect("Bulge").param("Bulge Height")
+thisLayer.effect("Bulge").param("Bulge Height");
 ```
 
-#### Parameters
+To return the "Bulge Height" property from the "Bulge" effect by index:
 
-| `name`   | String   |
-|----------|----------|
-
-#### Type
-
-Property
-
----
-
-## Effect.param(`index`)
-
-#### Description
-
-Returns a property within an effect. Effect control points are always in layer space. For example, effect("Bulge").param(4) returns the Bulge Height property.
-
-#### Parameters
-
-| `index`   | Number   |
-|-----------|----------|
-
-#### Type
-
-Property
+```js
+thisLayer.effect("Bulge").param(4);
+```
