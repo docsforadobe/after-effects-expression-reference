@@ -45,7 +45,7 @@ This method can be called using *either* the property's `name` or its `index`.
 | ------------------ | ----------------- | --------------------------------------------- |
 | `name`<br/>`index` | String<br/>Number | Property name or index to access property by. |
 
-#### Type
+#### Returns
 
 [Property object](./property.md)
 

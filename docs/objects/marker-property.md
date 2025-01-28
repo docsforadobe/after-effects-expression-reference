@@ -90,7 +90,7 @@ Returns the marker that is nearest in comp time to the provided time `t`.
 | --------- | ------ | ---------------------------------------- |
 | `t`       | Number | The time to find the nearest marker from |
 
-#### Type
+#### Returns
 
 [MarkerKey](./markerkey.md)
 
