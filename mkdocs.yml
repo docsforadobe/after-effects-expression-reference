@@ -1,0 +1,115 @@
+# Site metadata
+site_name: After Effects Expression Reference
+site_url: https://ae-expressions.docsforadobe.dev/
+repo_url: https://github.com/docsforadobe/after-effects-expression-reference/
+repo_name: "after-effects-expression-reference"
+
+# Customize navigation
+nav:
+    - Home: index.md
+    - Introduction:
+        - Changelog: introduction/changelog.md
+        - Resources: introduction/resources.md
+        - Examples: introduction/examples.md
+    - General:
+        - General: general/general.md
+        - Global: general/global.md
+        - Time Conversion: general/time-conversion.md
+        - Vector Math: general/vector-math.md
+        - Random Numbers: general/random-numbers.md
+        - Interpolation: general/interpolation.md
+        - Color Conversion: general/color-conversion.md
+        - Other Math: general/other-math.md
+    - Objects:
+        - Project: objects/project.md
+        - Comp: objects/comp.md
+        - Footage: objects/footage.md
+        - Camera: objects/camera.md
+        - Light: objects/light.md
+        - Property Group: objects/propertygroup.md
+        - Effect: objects/effect.md
+        - Mask: objects/mask.md
+        - Property: objects/property.md
+        - Marker Property: objects/marker-property.md
+        - Path Property: objects/path-property.md
+        - Key: objects/key.md
+        - MarkerKey: objects/markerkey.md
+    - Layer:
+        - Layer: layer/layer.md
+        - Layer Sub-objects: layer/sub-objects.md
+        - Layer General: layer/general.md
+        - Layer Properties: layer/properties.md
+        - Layer Space Transforms: layer/layer-space-transforms.md
+        - Layer 3D: layer/threed.md
+    - Text:
+        - Text: text/text.md
+        - Source Text: text/sourcetext.md
+        - Text Style: text/style.md
+
+
+# Do not touch below-- shared for all docs
+
+copyright: All content is copyright Adobe Systems Incorporated.
+
+extra:
+    homepage: https://docsforadobe.dev
+
+theme:
+    name: material
+    custom_dir: overrides
+    icon:
+        annotation: material/plus-circle-outline
+    features:
+        - announce.dismiss
+        - content.action.edit
+        - content.action.view
+        - search.highlight
+        - search.suggest
+        - toc.follow
+    palette:
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          primary: black
+          scheme: slate
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          primary: white
+          scheme: default
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+
+extra_css:
+    # CSS shared between the whole org
+    - https://docsforadobe.dev/_global/global.css
+    - https://docsforadobe.dev/_global/global-syntax-highlight.css
+
+    # CSS specific to this file
+    - _static/extra.css
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - pymdownx.details
+    - pymdownx.superfences
+    - toc:
+        title: Page Contents
+        permalink: true
+        toc_depth: 3
+
+plugins:
+    - git-revision-date-localized
+    - search:
+        separator: '[\s\-,\.:!=\[\]()"/]+'
+
+    # Note: print-site must be last!
+    - print-site:
+        add_cover_page: true
+        add_print_site_banner: true
+        cover_page_template: "overrides/templates/print_site_cover_page.tpl"
+        print_page_title: "Offline Docs"
+        print_site_banner_template: "overrides/templates/print_site_banner.tpl"
