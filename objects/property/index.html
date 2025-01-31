@@ -2318,12 +2318,6 @@
 <p><strong>Return the number of properties in the group that contains the property on which this expression is written:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nx">thisProperty</span><span class="p">.</span><span class="nx">propertyGroup</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">numProperties</span><span class="p">;</span>
 </code></pre></div>
-<p><strong>Animating with the propertyGroup method and propertyIndex attribute</strong></p>
-<p><em>todo: fix this</em></p>
-<p>In this example, the propertyGroup method for each brush stroke targets the Brush property group because that group is two property groups up from the Rotation property. The propertyIndex attribute in each Brush stroke then returns a unique value for each Brush stroke. The resulting value is then multiplied by the <code>time</code> and <code>200</code> and applied to each rotation value, rotating each brush stroke differently, creating swirling paint strokes:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">propertyGroup</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span><span class="nx">propertyIndex</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">time</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">200</span>
-<span class="nx">propertyGroup</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span><span class="nx">propertyIndex</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">time</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">200</span>
-</code></pre></div>
 <hr />
 <h3 id="smooth">smooth()<a class="headerlink" href="#smooth" title="Permanent link">&para;</a></h3>
 <p><code>thisLayer.position.smooth([width=.2][, samples=5][, t=time])</code></p>
@@ -2610,7 +2604,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 28, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 31, 2025</span>
   </span>
 
     
