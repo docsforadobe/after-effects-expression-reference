@@ -3,7 +3,7 @@
 These items deal with randomness in expressions.
 
 !!! note
-    The [wiggle](../objects/property.md#wiggle) method—which is used to randomly vary a property value—is in the [Property](../objects/property.md) attributes and methods category.
+    The [wiggle()](../objects/property.md#wiggle) method—which is used to randomly vary a property value—is in the [Property](../objects/property.md) attributes and methods category.
 
 ---
 
