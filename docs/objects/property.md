@@ -366,17 +366,6 @@ This method lets you establish name-independent relationships in the property hi
 thisProperty.propertyGroup(1).numProperties;
 ```
 
-**Animating with the propertyGroup method and propertyIndex attribute**
-
-*todo: fix this*
-
-In this example, the propertyGroup method for each brush stroke targets the Brush property group because that group is two property groups up from the Rotation property. The propertyIndex attribute in each Brush stroke then returns a unique value for each Brush stroke. The resulting value is then multiplied by the `time` and `200` and applied to each rotation value, rotating each brush stroke differently, creating swirling paint strokes:
-
-```js
-propertyGroup(2).propertyIndex * time * 200
-propertyGroup(2).propertyIndex * time * 200
-```
-
 ---
 
 ### smooth()
