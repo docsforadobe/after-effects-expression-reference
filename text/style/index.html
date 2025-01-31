@@ -1,0 +1,5157 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ae-expressions.docsforadobe.dev/text/style/">
+      
+      
+        <link rel="prev" href="../sourcetext/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
+    
+    
+      
+        <title>Text Style - After Effects Expression Reference</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings1.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="https://docsforadobe.dev/_global/global.css">
+    
+      <link rel="stylesheet" href="https://docsforadobe.dev/_global/global-syntax-highlight.css">
+    
+      <link rel="stylesheet" href="../../_static/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#text-style" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  Welcome to the new scripting guide!
+
+  This is a work in progress.
+
+  Please provide all feedback via
+  <a ref="me" href="https://github.com/orgs/docsforadobe/discussions">
+    <span class="twemoji">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>
+    </span>
+    <strong>the org's discussion forum</strong>
+  </a>.
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://docsforadobe.dev" title="After Effects Expression Reference" class="md-header__button md-logo" aria-label="After Effects Expression Reference" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            After Effects Expression Reference
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Text Style
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/docsforadobe/after-effects-expression-reference/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    after-effects-expression-reference
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://docsforadobe.dev" title="After Effects Expression Reference" class="md-nav__button md-logo" aria-label="After Effects Expression Reference" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    After Effects Expression Reference
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/docsforadobe/after-effects-expression-reference/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    after-effects-expression-reference
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            General
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/global/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Global
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/time-conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time Conversion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/vector-math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector Math
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/random-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/interpolation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interpolation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/color-conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Color Conversion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/other-math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other Math
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Objects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Objects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/comp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comp
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/footage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Footage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/camera/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Camera
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/light/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Light
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/propertygroup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Property Group
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/effect/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Effect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/mask/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mask
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Property
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/marker-property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marker Property
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/path-property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Property
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/key/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objects/markerkey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MarkerKey
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Layer
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Layer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layer/layer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layer/sub-objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layer Sub-objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layer/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layer General
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layer/properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layer Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layer/layer-space-transforms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layer Space Transforms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layer/threed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layer 3D
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Text
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Text
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sourcetext/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Source Text
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Text Style
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Text Style
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Page Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+	<a href="#chaining" class="md-nav__link">
+		<span class="md-ellipsis">
+			Chaining
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+      
+        <li class="md-nav__item">
+	<a href="#attributes" class="md-nav__link">
+		<span class="md-ellipsis">
+			Attributes
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+		<nav class="md-nav" aria-label="Attributes">
+			<ul class="md-nav__list">
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleapplyfill" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.applyFill
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleapplystroke" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.applyStroke
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylebaselinedirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.baselineDirection
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylebaselineoption" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.baselineOption
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylebaselineshift" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.baselineShift
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyledigitset" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.digitSet
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyledirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.direction
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefillcolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.fillColor
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefirstlineindent" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.firstLineIndent
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefont" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.font
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefontsize" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.fontSize
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylehorizontalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.horizontalScaling
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isAllCaps
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisautoleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isAutoLeading
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleiseverylinecomposer" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isEveryLineComposer
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisfauxbold" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isFauxBold
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisfauxitalic" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isFauxItalic
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleishangingroman" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isHangingRoman
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisligature" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isLigature
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleissmallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isSmallCaps
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylejustification" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.justification
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylekerning" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.kerning
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylekerningtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.kerningType
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.leading
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleleadingtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.leadingType
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleleftmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.leftMargin
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylelinejoin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.lineJoin
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylerightmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.rightMargin
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylespaceafter" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.spaceAfter
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylespacebefore" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.spaceBefore
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylestrokecolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.strokeColor
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylestrokewidth" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.strokeWidth
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyletracking" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.tracking
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyletsume" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.tsume
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleverticalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.verticalScaling
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+			</ul>
+		</nav>
+	
+</li>
+      
+        <li class="md-nav__item">
+	<a href="#methods" class="md-nav__link">
+		<span class="md-ellipsis">
+			Methods
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+		<nav class="md-nav" aria-label="Methods">
+			<ul class="md-nav__list">
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylereplacetext" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.replaceText()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setAllCaps()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetapplyfill" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setApplyFill()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetapplystroke" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setApplyStroke()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetautoleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setAutoLeading()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetbaselinedirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setBaselineDirection()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetbaselineshift" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setBaselineShift()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetbaselineoption" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setBaselineOption()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetdigitset" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setDigitSet()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetdirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setDirection()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleseteverylinecomposer" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setEveryLineComposer()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfauxbold" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFauxBold()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfauxitalic" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFauxItalic()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfillcolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFillColor()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfirstlineindent" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFirstLineIndent()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfont" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFont()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfontsize" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFontSize()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesethangingroman" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setHangingRoman()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesethorizontalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setHorizontalScaling()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetjustification" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setJustification()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetkerning" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setKerning()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetkerningtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setKerningType()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLeading()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetleadingtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLeadingType()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetleftmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLeftMargin()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetligature" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLigature()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetlinejoin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLineJoin()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetrightmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setRightMargin()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetsmallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setSmallCaps()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetspaceafter" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setSpaceAfter()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetspacebefore" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setSpaceBefore()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetstrokecolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setStrokeColor()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetstrokewidth" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setStrokeWidth()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesettext" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setText()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesettracking" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setTracking()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesettsume" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setTsume()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetverticalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setVerticalScaling()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+			</ul>
+		</nav>
+	
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Page Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+	<a href="#chaining" class="md-nav__link">
+		<span class="md-ellipsis">
+			Chaining
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+      
+        <li class="md-nav__item">
+	<a href="#attributes" class="md-nav__link">
+		<span class="md-ellipsis">
+			Attributes
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+		<nav class="md-nav" aria-label="Attributes">
+			<ul class="md-nav__list">
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleapplyfill" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.applyFill
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleapplystroke" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.applyStroke
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylebaselinedirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.baselineDirection
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylebaselineoption" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.baselineOption
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylebaselineshift" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.baselineShift
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyledigitset" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.digitSet
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyledirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.direction
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefillcolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.fillColor
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefirstlineindent" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.firstLineIndent
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefont" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.font
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylefontsize" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.fontSize
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylehorizontalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.horizontalScaling
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isAllCaps
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisautoleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isAutoLeading
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleiseverylinecomposer" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isEveryLineComposer
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisfauxbold" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isFauxBold
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisfauxitalic" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isFauxItalic
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleishangingroman" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isHangingRoman
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleisligature" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isLigature
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleissmallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.isSmallCaps
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylejustification" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.justification
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylekerning" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.kerning
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylekerningtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.kerningType
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.leading
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleleadingtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.leadingType
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleleftmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.leftMargin
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylelinejoin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.lineJoin
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylerightmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.rightMargin
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylespaceafter" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.spaceAfter
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylespacebefore" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.spaceBefore
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylestrokecolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.strokeColor
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylestrokewidth" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.strokeWidth
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyletracking" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.tracking
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyletsume" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.tsume
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleverticalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.verticalScaling
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+			</ul>
+		</nav>
+	
+</li>
+      
+        <li class="md-nav__item">
+	<a href="#methods" class="md-nav__link">
+		<span class="md-ellipsis">
+			Methods
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+		<nav class="md-nav" aria-label="Methods">
+			<ul class="md-nav__list">
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylereplacetext" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.replaceText()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setAllCaps()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetapplyfill" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setApplyFill()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetapplystroke" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setApplyStroke()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetautoleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setAutoLeading()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetbaselinedirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setBaselineDirection()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetbaselineshift" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setBaselineShift()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetbaselineoption" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setBaselineOption()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetdigitset" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setDigitSet()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetdirection" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setDirection()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstyleseteverylinecomposer" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setEveryLineComposer()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfauxbold" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFauxBold()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfauxitalic" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFauxItalic()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfillcolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFillColor()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfirstlineindent" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFirstLineIndent()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfont" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFont()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetfontsize" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setFontSize()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesethangingroman" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setHangingRoman()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesethorizontalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setHorizontalScaling()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetjustification" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setJustification()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetkerning" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setKerning()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetkerningtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setKerningType()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetleading" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLeading()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetleadingtype" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLeadingType()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetleftmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLeftMargin()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetligature" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLigature()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetlinejoin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setLineJoin()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetrightmargin" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setRightMargin()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetsmallcaps" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setSmallCaps()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetspaceafter" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setSpaceAfter()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetspacebefore" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setSpaceBefore()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetstrokecolor" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setStrokeColor()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetstrokewidth" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setStrokeWidth()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesettext" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setText()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesettracking" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setTracking()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesettsume" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setTsume()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+				
+					<li class="md-nav__item">
+	<a href="#textstylesetverticalscaling" class="md-nav__link">
+		<span class="md-ellipsis">
+			TextStyle.setVerticalScaling()
+		</span>
+	</a>
+
+	<!-- Table of contents list -->
+	
+</li>
+				
+				
+			</ul>
+		</nav>
+	
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/docsforadobe/after-effects-expression-reference/edit/master/docs/text/style.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/docsforadobe/after-effects-expression-reference/raw/master/docs/text/style.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="text-style">Text Style<a class="headerlink" href="#text-style" title="Permanent link">&para;</a></h1>
+<p><code>text.sourceText.style</code></p>
+<p>Most of these functions are accessible from the <a href="../sourcetext/#sourcetextstyle">SourceText.style</a> object in AE 17.0 and later. Where noted, additional methods were added in AE 25.0. The ability to control percharacter styling was also added in 25.0. Use the second and third arguments (when available) to control per-character styling.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using per-character styling, line breaks and spaces are also considered characters and must be accounted for (or skipped, if desired) when calcuating character indexes.</p>
+</div>
+<p>For more info on working with text styles, see:</p>
+<ul>
+<li><a href="https://helpx.adobe.com/after-effects/user-guide.html/after-effects/using/expressions-text-properties.ug.html">Use Expressions to Edit and Access Text Properties on helpx.adobe.com</a></li>
+<li><a href="https://blog.adobe.com/en/publish/2020/01/24/after-effects-2020-express-yourself-and-your-text">After Effects 2020: Express Yourself (and Your Text) on blog.adobe.com</a></li>
+</ul>
+<h3 id="chaining">Chaining<a class="headerlink" href="#chaining" title="Permanent link">&para;</a></h3>
+<p>All the methods for <a href="#text-style">Text Style</a> will return a <a href="#text-style">Text Style</a> object, so you can call them in a chain, e.g.:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">text</span><span class="p">.</span><span class="nx">sourceText</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">setFont</span><span class="p">(</span><span class="s2">&quot;Times New Roman&quot;</span><span class="p">).</span><span class="nx">setFontSize</span><span class="p">(</span><span class="mf">42</span><span class="p">).</span><span class="nx">setText</span><span class="p">(</span><span class="s2">&quot;New Text&quot;</span><span class="p">);</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also format this chain with line breaks to make it easier to read:
+<div class="highlight"><pre><span></span><code><span class="nx">text</span><span class="p">.</span><span class="nx">sourceText</span><span class="p">.</span><span class="nx">style</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">setFont</span><span class="p">(</span><span class="s2">&quot;Times New Roman&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">setFontSize</span><span class="p">(</span><span class="mf">42</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s2">&quot;New Text&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+</div>
+<hr />
+<h2 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">&para;</a></h2>
+<h3 id="textstyleapplyfill">TextStyle.applyFill<a class="headerlink" href="#textstyleapplyfill" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.applyFill</code></p>
+<h4 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h4>
+<p>Returns whether Fill Color is enabled.</p>
+<h4 id="type">Type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleapplystroke">TextStyle.applyStroke<a class="headerlink" href="#textstyleapplystroke" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.applyStroke</code></p>
+<h4 id="description_1">Description<a class="headerlink" href="#description_1" title="Permanent link">&para;</a></h4>
+<p>Returns whether Stroke is enabled.</p>
+<h4 id="type_1">Type<a class="headerlink" href="#type_1" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstylebaselinedirection">TextStyle.baselineDirection<a class="headerlink" href="#textstylebaselinedirection" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.baselineDirection</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_2">Description<a class="headerlink" href="#description_2" title="Permanent link">&para;</a></h4>
+<p>Returns the Baseline Direction for a Text layer.</p>
+<h4 id="type_2">Type<a class="headerlink" href="#type_2" title="Permanent link">&para;</a></h4>
+<p>Predefined string. One of:</p>
+<ul>
+<li><code>"default"</code></li>
+<li><code>"rotated"</code></li>
+<li><code>"tate-chuu-yoko"</code></li>
+</ul>
+<hr />
+<h3 id="textstylebaselineoption">TextStyle.baselineOption<a class="headerlink" href="#textstylebaselineoption" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.baselineOption</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_3">Description<a class="headerlink" href="#description_3" title="Permanent link">&para;</a></h4>
+<p>Returns the Baseline Option Type for a Text layer.</p>
+<h4 id="type_3">Type<a class="headerlink" href="#type_3" title="Permanent link">&para;</a></h4>
+<p>Predefined string. One of:</p>
+<ul>
+<li><code>"default"</code></li>
+<li><code>"subscript"</code></li>
+<li><code>"superscript"</code></li>
+</ul>
+<hr />
+<h3 id="textstylebaselineshift">TextStyle.baselineShift<a class="headerlink" href="#textstylebaselineshift" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.baselineShift</code></p>
+<h4 id="description_4">Description<a class="headerlink" href="#description_4" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Baseline Shift for a Text layer.</p>
+<h4 id="type_4">Type<a class="headerlink" href="#type_4" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstyledigitset">TextStyle.digitSet<a class="headerlink" href="#textstyledigitset" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.digitSet</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_5">Description<a class="headerlink" href="#description_5" title="Permanent link">&para;</a></h4>
+<p>Returns the Digit Set for a Text layer.</p>
+<h4 id="type_5">Type<a class="headerlink" href="#type_5" title="Permanent link">&para;</a></h4>
+<p>Predefined string. One of:</p>
+<ul>
+<li><code>"default"</code></li>
+<li><code>"hindidigits"</code></li>
+</ul>
+<hr />
+<h3 id="textstyledirection">TextStyle.direction<a class="headerlink" href="#textstyledirection" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.direction</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_6">Description<a class="headerlink" href="#description_6" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Direction of the first paragraph of a Text layer.</p>
+<h4 id="type_6">Type<a class="headerlink" href="#type_6" title="Permanent link">&para;</a></h4>
+<p>Predefined string. One of:</p>
+<ul>
+<li><code>"left-to-right"</code></li>
+<li><code>"right-to-left"</code></li>
+</ul>
+<hr />
+<h3 id="textstylefillcolor">TextStyle.fillColor<a class="headerlink" href="#textstylefillcolor" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.fillColor</code></p>
+<h4 id="description_7">Description<a class="headerlink" href="#description_7" title="Permanent link">&para;</a></h4>
+<p>Returns the text Fill Color as RGB values on a scale from 0 - 1.0.</p>
+<h4 id="type_7">Type<a class="headerlink" href="#type_7" title="Permanent link">&para;</a></h4>
+<p>Array of Numbers.</p>
+<hr />
+<h3 id="textstylefirstlineindent">TextStyle.firstLineIndent<a class="headerlink" href="#textstylefirstlineindent" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.firstLineIndent</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_8">Description<a class="headerlink" href="#description_8" title="Permanent link">&para;</a></h4>
+<p>Returns the value of First Line Indent of the first line of the first paragraph of a Text layer.</p>
+<h4 id="type_8">Type<a class="headerlink" href="#type_8" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstylefont">TextStyle.font<a class="headerlink" href="#textstylefont" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.font</code></p>
+<h4 id="description_9">Description<a class="headerlink" href="#description_9" title="Permanent link">&para;</a></h4>
+<p>Returns the font name for a Text layer.</p>
+<h4 id="type_9">Type<a class="headerlink" href="#type_9" title="Permanent link">&para;</a></h4>
+<p>String</p>
+<hr />
+<h3 id="textstylefontsize">TextStyle.fontSize<a class="headerlink" href="#textstylefontsize" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.fontSize</code></p>
+<h4 id="description_10">Description<a class="headerlink" href="#description_10" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Font Size for a Text layer.</p>
+<h4 id="type_10">Type<a class="headerlink" href="#type_10" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstylehorizontalscaling">TextStyle.horizontalScaling<a class="headerlink" href="#textstylehorizontalscaling" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.horizontalScaling</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_11">Description<a class="headerlink" href="#description_11" title="Permanent link">&para;</a></h4>
+<p>Returns the Horizontal Scaling for a Text layer.</p>
+<h4 id="type_11">Type<a class="headerlink" href="#type_11" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstyleisallcaps">TextStyle.isAllCaps<a class="headerlink" href="#textstyleisallcaps" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isAllCaps</code></p>
+<h4 id="description_12">Description<a class="headerlink" href="#description_12" title="Permanent link">&para;</a></h4>
+<p>Returns whether All Caps is enabled.</p>
+<h4 id="type_12">Type<a class="headerlink" href="#type_12" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleisautoleading">TextStyle.isAutoLeading<a class="headerlink" href="#textstyleisautoleading" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isAutoLeading</code></p>
+<h4 id="description_13">Description<a class="headerlink" href="#description_13" title="Permanent link">&para;</a></h4>
+<p>Returns whether Auto Leading is enabled.</p>
+<h4 id="type_13">Type<a class="headerlink" href="#type_13" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleiseverylinecomposer">TextStyle.isEveryLineComposer<a class="headerlink" href="#textstyleiseverylinecomposer" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isEveryLineComposer</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_14">Description<a class="headerlink" href="#description_14" title="Permanent link">&para;</a></h4>
+<p>Returns <code>true</code> if the Text layer if Every-Line Composer is set for the first paragraph of a Text layer and <code>false</code> if Single-Line Composer is set for the first paragraph of a Text layer</p>
+<h4 id="type_14">Type<a class="headerlink" href="#type_14" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleisfauxbold">TextStyle.isFauxBold<a class="headerlink" href="#textstyleisfauxbold" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isFauxBold</code></p>
+<h4 id="description_15">Description<a class="headerlink" href="#description_15" title="Permanent link">&para;</a></h4>
+<p>Returns whether Faux Bold is enabled.</p>
+<h4 id="type_15">Type<a class="headerlink" href="#type_15" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleisfauxitalic">TextStyle.isFauxItalic<a class="headerlink" href="#textstyleisfauxitalic" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isFauxItalic</code></p>
+<h4 id="description_16">Description<a class="headerlink" href="#description_16" title="Permanent link">&para;</a></h4>
+<p>Returns whether Faux Italics are enabled.</p>
+<h4 id="type_16">Type<a class="headerlink" href="#type_16" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleishangingroman">TextStyle.isHangingRoman<a class="headerlink" href="#textstyleishangingroman" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isHangingRoman</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_17">Description<a class="headerlink" href="#description_17" title="Permanent link">&para;</a></h4>
+<p>Whether Hanging Roman Punctuation is set for the entire Text layer.</p>
+<h4 id="type_17">Type<a class="headerlink" href="#type_17" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleisligature">TextStyle.isLigature<a class="headerlink" href="#textstyleisligature" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isLigature</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_18">Description<a class="headerlink" href="#description_18" title="Permanent link">&para;</a></h4>
+<p>Returns whether ligatures are enabled.</p>
+<h4 id="type_18">Type<a class="headerlink" href="#type_18" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstyleissmallcaps">TextStyle.isSmallCaps<a class="headerlink" href="#textstyleissmallcaps" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.isSmallCaps</code></p>
+<h4 id="description_19">Description<a class="headerlink" href="#description_19" title="Permanent link">&para;</a></h4>
+<p>Returns whether Small Caps is enabled.</p>
+<h4 id="type_19">Type<a class="headerlink" href="#type_19" title="Permanent link">&para;</a></h4>
+<p>Boolean</p>
+<hr />
+<h3 id="textstylejustification">TextStyle.justification<a class="headerlink" href="#textstylejustification" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.justification</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_20">Description<a class="headerlink" href="#description_20" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Justification of the first paragraph of a Text layer.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The left and right values for alignment/justification will be reversed if the Text layer's <a href="#textstyledirection">TextStyle.direction</a> is set to use right-to-left. You can control this using the Property or Paragraph panel, or via <a href="#textstylesetdirection">TextStyle.setDirection()</a>.</p>
+</div>
+<h4 id="type_20">Type<a class="headerlink" href="#type_20" title="Permanent link">&para;</a></h4>
+<p>Predefined string. One of:</p>
+<ul>
+<li><code>"alignCenter"</code></li>
+<li><code>"alignLeft"</code></li>
+<li><code>"alignRight"</code></li>
+<li><code>"justifyFull"</code></li>
+<li><code>"justifyLastCenter"</code></li>
+<li><code>"justifyLastLeft"</code></li>
+<li><code>"justifyLastRight"</code></li>
+</ul>
+<hr />
+<h3 id="textstylekerning">TextStyle.kerning<a class="headerlink" href="#textstylekerning" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.kerning</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_21">Description<a class="headerlink" href="#description_21" title="Permanent link">&para;</a></h4>
+<p>Returns the Kerning Value for a Text Layer.</p>
+<p>For this value to be returned as anything other than zero, the <a href="#textstylekerningtype">KerningType</a> must not be set.</p>
+<h4 id="type_21">Type<a class="headerlink" href="#type_21" title="Permanent link">&para;</a></h4>
+<p>Number. Read-only.</p>
+<hr />
+<h3 id="textstylekerningtype">TextStyle.kerningType<a class="headerlink" href="#textstylekerningtype" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.kerningType</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_22">Description<a class="headerlink" href="#description_22" title="Permanent link">&para;</a></h4>
+<p>Returns the Kerning Type for a Text layer.</p>
+<h4 id="type_22">Type<a class="headerlink" href="#type_22" title="Permanent link">&para;</a></h4>
+<p>Read-only. Predefined string. One of:</p>
+<ul>
+<li><code>"manual"</code></li>
+<li><code>"metrics"</code></li>
+<li><code>"optical"</code></li>
+</ul>
+<hr />
+<h3 id="textstyleleading">TextStyle.leading<a class="headerlink" href="#textstyleleading" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.leading</code></p>
+<h4 id="description_23">Description<a class="headerlink" href="#description_23" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Leading for a Text layer.</p>
+<h4 id="type_23">Type<a class="headerlink" href="#type_23" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstyleleadingtype">TextStyle.leadingType<a class="headerlink" href="#textstyleleadingtype" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.leadingType</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_24">Description<a class="headerlink" href="#description_24" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Leading Type for the first paragraph of a Text layer.</p>
+<h4 id="type_24">Type<a class="headerlink" href="#type_24" title="Permanent link">&para;</a></h4>
+<p>Predefined string. One of:</p>
+<ul>
+<li><code>"bottom-to-bottom"</code></li>
+<li><code>"top-to-top"</code></li>
+</ul>
+<hr />
+<h3 id="textstyleleftmargin">TextStyle.leftMargin<a class="headerlink" href="#textstyleleftmargin" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.leftMargin</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_25">Description<a class="headerlink" href="#description_25" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Left Margin of the first paragraph of a Text layer.</p>
+<h4 id="type_25">Type<a class="headerlink" href="#type_25" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstylelinejoin">TextStyle.lineJoin<a class="headerlink" href="#textstylelinejoin" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.lineJoin</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_26">Description<a class="headerlink" href="#description_26" title="Permanent link">&para;</a></h4>
+<p>Returns the Line Join Type for a Text layer.</p>
+<h4 id="type_26">Type<a class="headerlink" href="#type_26" title="Permanent link">&para;</a></h4>
+<p>Predefined string. One of:</p>
+<ul>
+<li><code>"bevel"</code></li>
+<li><code>"miter"</code></li>
+<li><code>"round"</code></li>
+</ul>
+<hr />
+<h3 id="textstylerightmargin">TextStyle.rightMargin<a class="headerlink" href="#textstylerightmargin" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.rightMargin</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_27">Description<a class="headerlink" href="#description_27" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Right Margin of the first paragraph of a Text layer.</p>
+<h4 id="type_27">Type<a class="headerlink" href="#type_27" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstylespaceafter">TextStyle.spaceAfter<a class="headerlink" href="#textstylespaceafter" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.spaceAfter</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_28">Description<a class="headerlink" href="#description_28" title="Permanent link">&para;</a></h4>
+<p>Returns the value of the Space After the first paragraph of a Text layer.</p>
+<h4 id="type_28">Type<a class="headerlink" href="#type_28" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstylespacebefore">TextStyle.spaceBefore<a class="headerlink" href="#textstylespacebefore" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.spaceBefore</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_29">Description<a class="headerlink" href="#description_29" title="Permanent link">&para;</a></h4>
+<p>Returns the value of the Space Before the first paragraph of a Text layer.</p>
+<h4 id="type_29">Type<a class="headerlink" href="#type_29" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstylestrokecolor">TextStyle.strokeColor<a class="headerlink" href="#textstylestrokecolor" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.strokeColor</code></p>
+<h4 id="description_30">Description<a class="headerlink" href="#description_30" title="Permanent link">&para;</a></h4>
+<p>Returns the Stroke Color as RGB values on a scale from 0 - 1.0.</p>
+<h4 id="type_30">Type<a class="headerlink" href="#type_30" title="Permanent link">&para;</a></h4>
+<p>Array of numbers</p>
+<hr />
+<h3 id="textstylestrokewidth">TextStyle.strokeWidth<a class="headerlink" href="#textstylestrokewidth" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.strokeWidth</code></p>
+<h4 id="description_31">Description<a class="headerlink" href="#description_31" title="Permanent link">&para;</a></h4>
+<p>Returns the Stroke Width value for a Text layer.</p>
+<h4 id="type_31">Type<a class="headerlink" href="#type_31" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstyletracking">TextStyle.tracking<a class="headerlink" href="#textstyletracking" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.tracking</code></p>
+<h4 id="description_32">Description<a class="headerlink" href="#description_32" title="Permanent link">&para;</a></h4>
+<p>Returns the value of Tracking for a Text layer.</p>
+<h4 id="type_32">Type<a class="headerlink" href="#type_32" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h3 id="textstyletsume">TextStyle.tsume<a class="headerlink" href="#textstyletsume" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.tsume</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_33">Description<a class="headerlink" href="#description_33" title="Permanent link">&para;</a></h4>
+<p>Returns the Tsume value for a Text layer.</p>
+<h4 id="type_33">Type<a class="headerlink" href="#type_33" title="Permanent link">&para;</a></h4>
+<p>Number (between <code>0</code> and <code>1</code>).</p>
+<hr />
+<h3 id="textstyleverticalscaling">TextStyle.verticalScaling<a class="headerlink" href="#textstyleverticalscaling" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.verticalScaling</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_34">Description<a class="headerlink" href="#description_34" title="Permanent link">&para;</a></h4>
+<p>Returns the Vertical Scaling for a Text layer.</p>
+<h4 id="type_34">Type<a class="headerlink" href="#type_34" title="Permanent link">&para;</a></h4>
+<p>Number</p>
+<hr />
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<h3 id="textstylereplacetext">TextStyle.replaceText()<a class="headerlink" href="#textstylereplacetext" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.replaceText(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_35">Description<a class="headerlink" href="#description_35" title="Permanent link">&para;</a></h4>
+<p>This is used when you want to define (or inherit) a <a href="#text-style">Text Style</a>, while setting the content for a substring of the text.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>Required.</td>
+<td>The text to set.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional.</td>
+<td>The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional.</td>
+<td>The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<p>To create a custom style and then set a substring of the text within the expression:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// assume the value of the source text is &quot;Old Text&quot;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">referenceText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;Source Layer Name&quot;</span><span class="p">).</span><span class="nx">text</span><span class="p">.</span><span class="nx">sourceText</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">referenceText</span><span class="p">.</span><span class="nx">getStyleAt</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">);</span>
+
+<span class="c1">// This will change the text from &quot;Old Text&quot; to &quot;NewText&quot; as the first 4 characters are replaced.</span>
+<span class="nx">style</span><span class="p">.</span><span class="nx">replaceText</span><span class="p">(</span><span class="s2">&quot;New&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h3 id="textstylesetallcaps">TextStyle.setAllCaps()<a class="headerlink" href="#textstylesetallcaps" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setAllCaps(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_36">Description<a class="headerlink" href="#description_36" title="Permanent link">&para;</a></h4>
+<p>Used to set the All Caps status.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable All Caps.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetapplyfill">TextStyle.setApplyFill()<a class="headerlink" href="#textstylesetapplyfill" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setApplyFill(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_37">Description<a class="headerlink" href="#description_37" title="Permanent link">&para;</a></h4>
+<p>Used to set whether Fill Color is enabled.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable Fill.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetapplystroke">TextStyle.setApplyStroke()<a class="headerlink" href="#textstylesetapplystroke" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setApplyStroke(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_38">Description<a class="headerlink" href="#description_38" title="Permanent link">&para;</a></h4>
+<p>Used to set whether Stroke is enabled.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable Stroke.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetautoleading">TextStyle.setAutoLeading()<a class="headerlink" href="#textstylesetautoleading" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setAutoLeading(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_39">Description<a class="headerlink" href="#description_39" title="Permanent link">&para;</a></h4>
+<p>Used to set the Auto Leading status.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable Auto Leading.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetbaselinedirection">TextStyle.setBaselineDirection()<a class="headerlink" href="#textstylesetbaselinedirection" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setBaselineDirection(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_40">Description<a class="headerlink" href="#description_40" title="Permanent link">&para;</a></h4>
+<p>Used to set the Baseline Direction.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Predefined string as defined in <a href="#textstylebaselinedirection">BaselineDirection</a></td>
+<td>The value to set for Baseline Direction.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_5">Returns<a class="headerlink" href="#returns_5" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetbaselineshift">TextStyle.setBaselineShift()<a class="headerlink" href="#textstylesetbaselineshift" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setBaselineShift(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_41">Description<a class="headerlink" href="#description_41" title="Permanent link">&para;</a></h4>
+<p>Used to set the Baseline Shift to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_6">Parameters<a class="headerlink" href="#parameters_6" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The Baseline Shift value to set.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_6">Returns<a class="headerlink" href="#returns_6" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetbaselineoption">TextStyle.setBaselineOption()<a class="headerlink" href="#textstylesetbaselineoption" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setBaselineOption(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_42">Description<a class="headerlink" href="#description_42" title="Permanent link">&para;</a></h4>
+<p>Used to set the baseline option.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_7">Parameters<a class="headerlink" href="#parameters_7" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Predefined string as defined in <a href="#textstylebaselineoption">BaselineOption</a></td>
+<td>Required. The value to set for Baseline Option.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_7">Returns<a class="headerlink" href="#returns_7" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetdigitset">TextStyle.setDigitSet()<a class="headerlink" href="#textstylesetdigitset" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setDigitSet(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_43">Description<a class="headerlink" href="#description_43" title="Permanent link">&para;</a></h4>
+<p>Used to set the Digit Set.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_8">Parameters<a class="headerlink" href="#parameters_8" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Predefined string as defined in <a href="#textstyledigitset">DigitSet</a></td>
+<td>Required. The value to use for Digit Set.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_8">Returns<a class="headerlink" href="#returns_8" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetdirection">TextStyle.setDirection()<a class="headerlink" href="#textstylesetdirection" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setDirection(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_44">Description<a class="headerlink" href="#description_44" title="Permanent link">&para;</a></h4>
+<p>Used to set the Direction for the entire Text layer, either <code>left-to-right</code> or <code>right-to-left</code>.</p>
+<h4 id="parameters_9">Parameters<a class="headerlink" href="#parameters_9" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Predefined string as defined in <a href="#textstyledirection">Direction</a></td>
+<td>The desired value for Direction.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_9">Returns<a class="headerlink" href="#returns_9" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstyleseteverylinecomposer">TextStyle.setEveryLineComposer()<a class="headerlink" href="#textstyleseteverylinecomposer" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setEveryLineComposer(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_45">Description<a class="headerlink" href="#description_45" title="Permanent link">&para;</a></h4>
+<p>Used to enable or disable the Every-Line Composer for the entire Text layer.</p>
+<h4 id="parameters_10">Parameters<a class="headerlink" href="#parameters_10" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Whether to enable or disable Every-Line Composer.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_10">Returns<a class="headerlink" href="#returns_10" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetfauxbold">TextStyle.setFauxBold()<a class="headerlink" href="#textstylesetfauxbold" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setFauxBold(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_46">Description<a class="headerlink" href="#description_46" title="Permanent link">&para;</a></h4>
+<p>Used to set the Faux Bold status.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_11">Parameters<a class="headerlink" href="#parameters_11" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable Faux Bold.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_11">Returns<a class="headerlink" href="#returns_11" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetfauxitalic">TextStyle.setFauxItalic()<a class="headerlink" href="#textstylesetfauxitalic" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setFauxItalic(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_47">Description<a class="headerlink" href="#description_47" title="Permanent link">&para;</a></h4>
+<p>Used to set the Faux Italics status.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_12">Parameters<a class="headerlink" href="#parameters_12" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable Faux Italics.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_12">Returns<a class="headerlink" href="#returns_12" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetfillcolor">TextStyle.setFillColor()<a class="headerlink" href="#textstylesetfillcolor" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setFillColor(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_48">Description<a class="headerlink" href="#description_48" title="Permanent link">&para;</a></h4>
+<p>Used to set the text Fill Color.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<p>Keep in mind that <a href="#textstyleapplyfill">TextStyle.applyFill</a> must be <code>true</code> in order for the fill color to show up. You can set it to <code>true</code> by enabling Fill in the Properties or Character panel, or by using <a href="#textstylesetapplyfill">TextStyle.setApplyFill()</a>.</p>
+<h4 id="parameters_13">Parameters<a class="headerlink" href="#parameters_13" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Array of numbers</td>
+<td>Required. <code>[R, G, B]</code> with each value between <code>0.0</code> and <code>1.0</code>.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_13">Returns<a class="headerlink" href="#returns_13" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetfirstlineindent">TextStyle.setFirstLineIndent()<a class="headerlink" href="#textstylesetfirstlineindent" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setFirstLineIndent(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_49">Description<a class="headerlink" href="#description_49" title="Permanent link">&para;</a></h4>
+<p>Used to set the First Line Indent of a Text layer to a specified value.</p>
+<h4 id="parameters_14">Parameters<a class="headerlink" href="#parameters_14" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>The desired value for First Line Indent.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_14">Returns<a class="headerlink" href="#returns_14" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetfont">TextStyle.setFont()<a class="headerlink" href="#textstylesetfont" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setFont(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_50">Description<a class="headerlink" href="#description_50" title="Permanent link">&para;</a></h4>
+<p>Used to set the font to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_15">Parameters<a class="headerlink" href="#parameters_15" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>Required. The font to set.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_15">Returns<a class="headerlink" href="#returns_15" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetfontsize">TextStyle.setFontSize()<a class="headerlink" href="#textstylesetfontsize" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setFontSize(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_51">Description<a class="headerlink" href="#description_51" title="Permanent link">&para;</a></h4>
+<p>Used to set the Font Size to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_16">Parameters<a class="headerlink" href="#parameters_16" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The Font Size to set.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_16">Returns<a class="headerlink" href="#returns_16" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesethangingroman">TextStyle.setHangingRoman()<a class="headerlink" href="#textstylesethangingroman" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setHangingRoman(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_52">Description<a class="headerlink" href="#description_52" title="Permanent link">&para;</a></h4>
+<p>Used to enable or disable Hanging Roman Punctuation for the entire Text layer.</p>
+<h4 id="parameters_17">Parameters<a class="headerlink" href="#parameters_17" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Whether to enable or disable Roman Hanging Punctuation.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_17">Returns<a class="headerlink" href="#returns_17" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesethorizontalscaling">TextStyle.setHorizontalScaling()<a class="headerlink" href="#textstylesethorizontalscaling" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setHorizontalScaling(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_53">Description<a class="headerlink" href="#description_53" title="Permanent link">&para;</a></h4>
+<p>Used to set the Horizontal Scaling to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_18">Parameters<a class="headerlink" href="#parameters_18" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The value to set the Horizontal Scaling.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_18">Returns<a class="headerlink" href="#returns_18" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetjustification">TextStyle.setJustification()<a class="headerlink" href="#textstylesetjustification" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setJustification(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_54">Description<a class="headerlink" href="#description_54" title="Permanent link">&para;</a></h4>
+<p>Used to set the Justification for the entire Text layer.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The left and right values for alignment/justification will be reversed if the Text layer's <a href="#textstyledirection">TextStyle.direction</a> is set to use right-to-left. You can control this using the Property or Paragraph panel, or via <a href="#textstylesetdirection">TextStyle.setDirection()</a>.</p>
+</div>
+<h4 id="parameters_19">Parameters<a class="headerlink" href="#parameters_19" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Predefined string as defined in <a href="#textstylejustification">Justification</a></td>
+<td>The desired value for the Justification.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_19">Returns<a class="headerlink" href="#returns_19" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetkerning">TextStyle.setKerning()<a class="headerlink" href="#textstylesetkerning" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setKerning(value, characterIndex)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_55">Description<a class="headerlink" href="#description_55" title="Permanent link">&para;</a></h4>
+<p>Used to set the Kerning Value at the specifed character index.</p>
+<p>This will only affect the Text layer when <a href="#textstylekerningtype">KerningType</a> is not set for the character index.</p>
+<h4 id="parameters_20">Parameters<a class="headerlink" href="#parameters_20" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The value to set the Kerning Value.</td>
+</tr>
+<tr>
+<td><code>characterIndex</code></td>
+<td>Number</td>
+<td>Required. The character index for the substring to be applied.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_20">Returns<a class="headerlink" href="#returns_20" title="Permanent link">&para;</a></h4>
+<p>None</p>
+<hr />
+<h3 id="textstylesetkerningtype">TextStyle.setKerningType()<a class="headerlink" href="#textstylesetkerningtype" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setKerningType(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_56">Description<a class="headerlink" href="#description_56" title="Permanent link">&para;</a></h4>
+<p>Used to set the Kerning Type.</p>
+<p>The value will be applied to the entire Text layer unless a start index and number of characters are specified.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>manual</code> is not a valid value for this method. To set manual kerning, use <a href="#textstylesetkerning">TextStyle.setKerning()</a>.</p>
+<p>Also, note that automatic kerning will take a precendence over manual kerning.</p>
+</div>
+<h4 id="parameters_21">Parameters<a class="headerlink" href="#parameters_21" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td><code>metrics</code> or <code>optical</code>, as defined in <a href="#textstylekerningtype">KerningType</a>.</td>
+<td>Required. The value to set for Kerning Type.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be changed. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_21">Returns<a class="headerlink" href="#returns_21" title="Permanent link">&para;</a></h4>
+<p>None</p>
+<hr />
+<h3 id="textstylesetleading">TextStyle.setLeading()<a class="headerlink" href="#textstylesetleading" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setLeading(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_57">Description<a class="headerlink" href="#description_57" title="Permanent link">&para;</a></h4>
+<p>Used to set the Leading to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<p>Keep in mind that <a href="#textstyleisautoleading">TextStyle.isAutoLeading</a> must be <code>false</code> in order for <code>setLeading()</code> to have any visible affect. You can set Leading to a value other than Auto in the Properties or Character panel, or via <a href="#textstylesetautoleading">TextStyle.setAutoLeading()</a>.</p>
+<h4 id="parameters_22">Parameters<a class="headerlink" href="#parameters_22" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The Leading value to set.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_22">Returns<a class="headerlink" href="#returns_22" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetleadingtype">TextStyle.setLeadingType()<a class="headerlink" href="#textstylesetleadingtype" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setLeadingType(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_58">Description<a class="headerlink" href="#description_58" title="Permanent link">&para;</a></h4>
+<p>Used to set the Leading Type for the entire Text layer.</p>
+<h4 id="parameters_23">Parameters<a class="headerlink" href="#parameters_23" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Predefined string as defined in <a href="#textstyleleadingtype">LeadingType</a></td>
+<td>The desired value for Leading Type.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_23">Returns<a class="headerlink" href="#returns_23" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetleftmargin">TextStyle.setLeftMargin()<a class="headerlink" href="#textstylesetleftmargin" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setLeftMargin(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_59">Description<a class="headerlink" href="#description_59" title="Permanent link">&para;</a></h4>
+<p>Used to set the Left Margin of a Text layer to a specified value.</p>
+<h4 id="parameters_24">Parameters<a class="headerlink" href="#parameters_24" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>The desired value for Left Margin.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_24">Returns<a class="headerlink" href="#returns_24" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetligature">TextStyle.setLigature()<a class="headerlink" href="#textstylesetligature" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setLigature(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_60">Description<a class="headerlink" href="#description_60" title="Permanent link">&para;</a></h4>
+<p>Used to enable or disable ligatures.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_25">Parameters<a class="headerlink" href="#parameters_25" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable ligatures.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_25">Returns<a class="headerlink" href="#returns_25" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetlinejoin">TextStyle.setLineJoin()<a class="headerlink" href="#textstylesetlinejoin" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setLineJoin(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_61">Description<a class="headerlink" href="#description_61" title="Permanent link">&para;</a></h4>
+<p>Used to set the Line Join Type to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_26">Parameters<a class="headerlink" href="#parameters_26" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Predefined string as defined in <a href="#textstylelinejoin">LineJoin</a></td>
+<td>Required. The value to set for Line Join Type.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_26">Returns<a class="headerlink" href="#returns_26" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetrightmargin">TextStyle.setRightMargin()<a class="headerlink" href="#textstylesetrightmargin" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setRightMargin(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_62">Description<a class="headerlink" href="#description_62" title="Permanent link">&para;</a></h4>
+<p>Used to set the Right Margin of a Text layer to a specified value.</p>
+<h4 id="parameters_27">Parameters<a class="headerlink" href="#parameters_27" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>The desired value for Right Margin.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_27">Returns<a class="headerlink" href="#returns_27" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetsmallcaps">TextStyle.setSmallCaps()<a class="headerlink" href="#textstylesetsmallcaps" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setSmallCaps(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_63">Description<a class="headerlink" href="#description_63" title="Permanent link">&para;</a></h4>
+<p>Used to set the Small Caps status.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_28">Parameters<a class="headerlink" href="#parameters_28" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Boolean</td>
+<td>Required. Whether to enable or disable Small Caps.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_28">Returns<a class="headerlink" href="#returns_28" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetspaceafter">TextStyle.setSpaceAfter()<a class="headerlink" href="#textstylesetspaceafter" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setSpaceAfter(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_64">Description<a class="headerlink" href="#description_64" title="Permanent link">&para;</a></h4>
+<p>Used to set the Space After attribute of a Text layer to a specified value.</p>
+<h4 id="parameters_29">Parameters<a class="headerlink" href="#parameters_29" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>The desired value for the Space After attribute.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_29">Returns<a class="headerlink" href="#returns_29" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetspacebefore">TextStyle.setSpaceBefore()<a class="headerlink" href="#textstylesetspacebefore" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setSpaceBefore(value)</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This method must be called after <a href="#textstylesettext">TextStyle.setText()</a> if both are being used.</p>
+</div>
+<h4 id="description_65">Description<a class="headerlink" href="#description_65" title="Permanent link">&para;</a></h4>
+<p>Used to set the Space Before attribute of a Text layer to a specified value.</p>
+<h4 id="parameters_30">Parameters<a class="headerlink" href="#parameters_30" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>The desired value for the Space Before attribute.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_30">Returns<a class="headerlink" href="#returns_30" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetstrokecolor">TextStyle.setStrokeColor()<a class="headerlink" href="#textstylesetstrokecolor" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setStrokeColor(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_66">Description<a class="headerlink" href="#description_66" title="Permanent link">&para;</a></h4>
+<p>Used to set the Stroke Color.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<p>Keep in mind that <a href="#textstyleapplystroke">TextStyle.applyStroke</a> must be <code>true</code> and <a href="#textstylestrokewidth">TextStyle.strokeWidth</a> must be greater than zero in order for any stroke color to be shown. You can set these by enabling Stroke or increasing Stroke Width in the Properties or Character panel, or by using <a href="#textstylesetapplystroke">TextStyle.setApplyStroke()</a> and <a href="#textstylesetstrokewidth">TextStyle.setStrokeWidth()</a>, respectively.</p>
+<h4 id="parameters_31">Parameters<a class="headerlink" href="#parameters_31" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Array of numbers</td>
+<td>Required. <code>[R, G, B]</code> with each value between <code>0.0</code> and <code>1.0</code>.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_31">Returns<a class="headerlink" href="#returns_31" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesetstrokewidth">TextStyle.setStrokeWidth()<a class="headerlink" href="#textstylesetstrokewidth" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setStrokeWidth(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_67">Description<a class="headerlink" href="#description_67" title="Permanent link">&para;</a></h4>
+<p>Used to set the Stroke Width to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<p>Keep in mind that <a href="#textstyleapplystroke">TextStyle.applyStroke</a> must be <code>true</code> in order to see any change in stroke width. You can set this either by enabling Stroke in the Properties or Character panel, or via <a href="#textstylesetapplystroke">TextStyle.setApplyStroke()</a>.</p>
+<h4 id="parameters_32">Parameters<a class="headerlink" href="#parameters_32" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The value to set the Stroke Width.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_32">Returns<a class="headerlink" href="#returns_32" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesettext">TextStyle.setText()<a class="headerlink" href="#textstylesettext" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setText(value)</code></p>
+<h4 id="description_68">Description<a class="headerlink" href="#description_68" title="Permanent link">&para;</a></h4>
+<p>This is used when you want to define (or inherit) a <a href="#text-style">Text Style</a> while setting the text content separately.</p>
+<h4 id="parameters_33">Parameters<a class="headerlink" href="#parameters_33" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>String</td>
+<td>The text to set.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_33">Returns<a class="headerlink" href="#returns_33" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<p>To inherit the style and content from another layer:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">referenceText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;Source Layer Name&quot;</span><span class="p">).</span><span class="nx">text</span><span class="p">.</span><span class="nx">sourceText</span><span class="p">;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">referenceText</span><span class="p">.</span><span class="nx">getStyleAt</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<span class="nx">style</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="nx">referenceText</span><span class="p">);</span>
+</code></pre></div>
+<p>To create a custom style and then set the text within the expression:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">text</span><span class="p">.</span><span class="nx">sourceText</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">createStyle</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">setFontSize</span><span class="p">(</span><span class="mf">300</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">setFont</span><span class="p">(</span><span class="s2">&quot;Impact&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h3 id="textstylesettracking">TextStyle.setTracking()<a class="headerlink" href="#textstylesettracking" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setTracking(value[, startIndex, numOfCharacters])</code></p>
+<h4 id="description_69">Description<a class="headerlink" href="#description_69" title="Permanent link">&para;</a></h4>
+<p>Used to set the Tracking to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_34">Parameters<a class="headerlink" href="#parameters_34" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The Tracking value to set.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_34">Returns<a class="headerlink" href="#returns_34" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+<hr />
+<h3 id="textstylesettsume">TextStyle.setTsume()<a class="headerlink" href="#textstylesettsume" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setTsume(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_70">Description<a class="headerlink" href="#description_70" title="Permanent link">&para;</a></h4>
+<p>Used to set the Tsume to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_35">Parameters<a class="headerlink" href="#parameters_35" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The value to set the Tsume, between <code>0</code> and <code>100</code>.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_35">Returns<a class="headerlink" href="#returns_35" title="Permanent link">&para;</a></h4>
+<p>None</p>
+<hr />
+<h3 id="textstylesetverticalscaling">TextStyle.setVerticalScaling()<a class="headerlink" href="#textstylesetverticalscaling" title="Permanent link">&para;</a></h3>
+<p><code>text.sourceText.style.setVerticalScaling(value[, startIndex, numOfCharacters])</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality was added in After Effects 25.0.</p>
+</div>
+<h4 id="description_71">Description<a class="headerlink" href="#description_71" title="Permanent link">&para;</a></h4>
+<p>Used to set the Vertical Scaling to a specified value.</p>
+<p>The value will be set for the entire Text layer unless <code>startIndex</code> and <code>numOfCharacters</code> are specified.</p>
+<h4 id="parameters_36">Parameters<a class="headerlink" href="#parameters_36" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value</code></td>
+<td>Number</td>
+<td>Required. The value to set the Vertical Scaling.</td>
+</tr>
+<tr>
+<td><code>startIndex</code></td>
+<td>Number</td>
+<td>Optional. The start index for the substring to be replaced. Defaults to <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>numOfCharacters</code></td>
+<td>Number</td>
+<td>Optional. The length of the substring to be replaced. Defaults to the number of characters until end of the string.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="returns_36">Returns<a class="headerlink" href="#returns_36" title="Permanent link">&para;</a></h4>
+<p>A <a href="#text-style">TextStyle object</a>.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      All content is copyright Adobe Systems Incorporated.
+    </div>
+  
+  
+    Made with
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+      target="_blank" rel="noopener"
+    >
+      Material for MkDocs
+    </a>
+  
+</div>
+
+<!-- Print button -->
+<div class="md-copyright">
+  
+  <a href="../../print_page/" title="Print Site" class="md-content__button md-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3"/></svg>
+  </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5090c770.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
