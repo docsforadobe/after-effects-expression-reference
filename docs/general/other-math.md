@@ -16,7 +16,8 @@ Converts degrees to radians.
 
 #### Parameters
 
-| Parameter | Type   | Description                                  |
+| Parameter |  Type  |                 Description                  |
+| --------- | ------ | -------------------------------------------- |
 | `degrees` | Number | The value (in degrees) to convert to radians |
 
 #### Returns
@@ -35,6 +36,7 @@ Converts radians to degrees.
 
 #### Parameters
 
+| Parameter |  Type  |                 Description                  |
 | --------- | ------ | -------------------------------------------- |
 | `radians` | Number | The value (in radians) to convert to degrees |
 
