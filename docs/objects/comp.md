@@ -23,6 +23,8 @@ These are typically accessed in a few ways, most commonly:
 
 ### Comp.activeCamera
 
+`thisComp.activeCamera`
+
 #### Description
 
 Returns the [Camera object](./camera.md) for the camera through which the composition is rendered at the current frame.
@@ -37,6 +39,8 @@ This camera is not necessarily the camera through which you are looking in the C
 
 ### Comp.bgColor
 
+`thisComp.bgColor`
+
 #### Description
 
 Returns the background color of the composition.
@@ -48,6 +52,8 @@ Array (4-dimensional)
 ---
 
 ### Comp.displayStartTime
+
+`thisComp.displayStartTime`
 
 #### Description
 
@@ -61,6 +67,8 @@ Number
 
 ### Comp.duration
 
+`thisComp.duration`
+
 #### Description
 
 Returns the composition duration, in seconds.
@@ -72,6 +80,8 @@ Number
 ---
 
 ### Comp.frameDuration
+
+`thisComp.frameDuration`
 
 #### Description
 
@@ -85,6 +95,8 @@ Number
 
 ### Comp.height
 
+`thisComp.height`
+
 #### Description
 
 Returns the composition height, in pixels.
@@ -96,6 +108,8 @@ Number
 ---
 
 ### Comp.marker
+
+`thisComp.marker`
 
 #### Description
 
@@ -114,6 +128,8 @@ Returns a given composition's [Marker](./marker-property.md) property.
 
 ### Comp.name
 
+`thisComp.name`
+
 #### Description
 
 Returns the name of the composition.
@@ -125,6 +141,8 @@ String
 ---
 
 ### Comp.ntscDropFrame
+
+`thisComp.ntscDropFrame`
 
 !!! note
     This functionality was added in After Effects CS5.5
@@ -141,6 +159,8 @@ Boolean
 
 ### Comp.numLayers
 
+`thisComp.numLayers`
+
 #### Description
 
 Returns the number of layers in the composition.
@@ -152,6 +172,8 @@ Number
 ---
 
 ### Comp.pixelAspect
+
+`thisComp.pixelAspect`
 
 #### Description
 
@@ -165,6 +187,8 @@ Number
 
 ### Comp.shutterAngle
 
+`thisComp.shutterAngle`
+
 #### Description
 
 Returns the shutter-angle value of the composition, in degrees.
@@ -177,6 +201,8 @@ Number
 
 ### Comp.shutterPhase
 
+`thisComp.shutterPhase`
+
 #### Description
 
 Returns the shutter phase of the composition, in degrees.
@@ -188,6 +214,8 @@ Number
 ---
 
 ### Comp.width
+
+`thisComp.width`
 
 #### Description
 
