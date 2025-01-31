@@ -2,7 +2,7 @@
 
 This repo hosts the After Effects Expression Reference community docs.
 
-The original documentation can be found over at `Adobe <https://helpx.adobe.com/after-effects/using/expression-language-reference.html>`_
+The original documentation can be found over at [Adobe's Expression Language Reference](https://helpx.adobe.com/after-effects/using/expression-language-reference.html).
 
 ---
 
