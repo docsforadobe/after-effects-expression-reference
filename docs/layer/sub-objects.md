@@ -52,9 +52,13 @@ The `index` value will have After Effects finds the effect by its index in the E
 
 #### Parameters
 
-|     Parameter      |       Type        |         Description          |
-| ------------------ | ----------------- | ---------------------------- |
-| `name`<br/>`index` | String<br/>Number | Effect name or index to get. |
++-----------+--------+------------------------------+
+| Parameter |  Type  |         Description          |
++===========+========+==============================+
+| `name`    | String | Effect name or index to get. |
+|           |        |                              |
+| `index`   | Number |                              |
++-----------+--------+------------------------------+
 
 #### Returns
 
@@ -90,9 +94,13 @@ The `index` value will have After Effects finds the mask by its index in the Tim
 
 #### Parameters
 
-|     Parameter      |       Type        |         Description          |
-| ------------------ | ----------------- | ---------------------------- |
-| `name`<br/>`index` | String<br/>Number | Effect name or index to get. |
++-----------+--------+------------------------------+
+| Parameter |  Type  |         Description          |
++===========+========+==============================+
+| `name`    | String | Effect name or index to get. |
+|           |        |                              |
+| `index`   | Number |                              |
++-----------+--------+------------------------------+
 
 #### Returns
 
@@ -128,10 +136,16 @@ Returns the bounding box of the layer (or the layer's source).
 
 #### Parameters
 
-|   Parameter    |  Type   |                                                                                                                          Description                                                                                                                          |
-| -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `t`            | Number  | Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to `time` (the current comp time, in seconds).                                                                                                                      |
-| includeExtents | Boolean | Optional. Only applies to shape layers and paragraph text layers.<br/><ul><li>For shape layers: Increases the size of the layer bounds as necessary.</li><li>For paragraph text layers: Returns the bounds of the paragraph box</li></ul>Defaults to `false`. |
++------------------+---------+------------------------------------------------------------------------------------------------------------------------------------------+
+|    Parameter     |  Type   |                                                               Description                                                                |
++==================+=========+==========================================================================================================================================+
+| `t`              | Number  | Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to `time` (the current comp time, in seconds). |
++------------------+---------+------------------------------------------------------------------------------------------------------------------------------------------+
+| `includeExtents` | Boolean | Optional. Only applies to shape layers and paragraph text layers. Defaults to `false`.                                                   |
+|                  |         |                                                                                                                                          |
+|                  |         | - For shape layers: Increases the size of the layer bounds as necessary.                                                                 |
+|                  |         | - For paragraph text layers: Returns the bounds of the paragraph box                                                                     |
++------------------+---------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 #### Returns
 

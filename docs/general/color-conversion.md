@@ -73,9 +73,13 @@ For hex triplets, the alpha channel defaults to 1.0.
 
 #### Parameters
 
-|  Parameter  |  Type  |                                                                                                                      Description                                                                                                                      |
-| ----------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hexString` | String | Hex triplet (6 digits, no alpha channel) or quartet (8 digits, includes alpha channel) containing only numerals or characters A–F.<br/><br/>Optional leading characters 0x, 0X, or # will be ignored.<br/>Characters beyond 8 digits will be ignored. |
++-------------------------------------------------------------------------------------------------------+--------+------------------------------------------------------------------------------------------------------------------------------------+
+|                                               Parameter                                               |  Type  |                                                            Description                                                             |
++=======================================================================================================+========+====================================================================================================================================+
+| `hexString`                                                                                           | String | Hex triplet (6 digits, no alpha channel) or quartet (8 digits, includes alpha channel) containing only numerals or characters A–F. |
+|                                                                                                       |        |                                                                                                                                    |
+| Optional leading characters 0x, 0X, or # will be ignored. Characters beyond 8 digits will be ignored. |        |                                                                                                                                    |
++-------------------------------------------------------------------------------------------------------+--------+------------------------------------------------------------------------------------------------------------------------------------+
 
 #### Returns
 

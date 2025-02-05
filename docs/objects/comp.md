@@ -259,11 +259,17 @@ If using the `otherLayer, relIndex` call, this retrieves the layer that is `relI
 
 #### Parameters
 
-|     Parameter      |            Type            |                         Description                          |
-| ------------------ | -------------------------- | ------------------------------------------------------------ |
-| `index`<br/>`name` | Number<br/>String          | Layer name or index to get.                                  |
-| `otherLayer`       | [Layer](../layer/layer.md) | The "other" layer to start getting layers relative to        |
-| `relIndex`         | Number                     | The number of layers to move above or below the `otherLayer` |
++--------------+----------------------------+--------------------------------------------------------------+
+|  Parameter   |            Type            |                         Description                          |
++==============+============================+==============================================================+
+| `index`      | Number                     | Layer name or index to get.                                  |
+|              |                            |                                                              |
+| `name`       | String                     |                                                              |
++--------------+----------------------------+--------------------------------------------------------------+
+| `otherLayer` | [Layer](../layer/layer.md) | The "other" layer to start getting layers relative to        |
++--------------+----------------------------+--------------------------------------------------------------+
+| `relIndex`   | Number                     | The number of layers to move above or below the `otherLayer` |
++--------------+----------------------------+--------------------------------------------------------------+
 
 #### Returns
 

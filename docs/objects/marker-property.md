@@ -53,10 +53,15 @@ If more than one marker has the same name, this method returns the marker that o
 
 #### Parameters
 
-|     Parameter      |       Type        |                Description                |
-| ------------------ | ----------------- | ----------------------------------------- |
-| `index`            | Number            | The marker index to get                   |
-| `name`<br/>`index` | String<br/>Number | Marker name or index to access marker by. |
++-----------+--------+-------------------------------------------+
+| Parameter |  Type  |                Description                |
++===========+========+===========================================+
+| `index`   | Number | The marker index to get                   |
++-----------+--------+-------------------------------------------+
+| `name`    | String | Marker name or index to access marker by. |
+|           |        |                                           |
+| `index`   | Number |                                           |
++-----------+--------+-------------------------------------------+
 
 #### Type
 

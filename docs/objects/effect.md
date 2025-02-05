@@ -41,9 +41,13 @@ This method can be called using *either* the property's `name` or its `index`.
 
 #### Parameters
 
-|     Parameter      |       Type        |                  Description                  |
-| ------------------ | ----------------- | --------------------------------------------- |
-| `name`<br/>`index` | String<br/>Number | Property name or index to access property by. |
++-----------+--------+-----------------------------------------------+
+| Parameter |  Type  |                  Description                  |
++===========+========+===============================================+
+| `name`    | String | Property name or index to access property by. |
+|           |        |                                               |
+| `index`   | Number |                                               |
++-----------+--------+-----------------------------------------------+
 
 #### Returns
 
