@@ -16,12 +16,12 @@ When you open a page, you'll be presented with:
 
 - A brief introduction to that topic ("This is what the page is about")
 - Headers for **Attributes** and **Methods**
-  - **Attributes** are accessible bits of information:
-    - `thisComp.name` gets the name of the comp!
-    - `text.sourceText.fontSize` gets the font size of the text
-  - **Methods** are functions that you run, to either get some other info or generate a result:
-    - `thisComp.layer("Banana")` retrieves a layer called Banana, or
-    - `text.sourceText.setFontSize(123)` will set the font size to 123
+    - **Attributes** are accessible bits of information:
+        - `thisComp.name` gets the name of the comp!
+        - `text.sourceText.fontSize` gets the font size of the text
+    - **Methods** are functions that you run, to either get some other info or generate a result:
+        - `thisComp.layer("Banana")` retrieves a layer called Banana, or
+        - `text.sourceText.setFontSize(123)` will set the font size to 123
 - A list of each expression method or attribute alphabetically sorted under its header, which includes:
     - The name of the item
     - At least one way of how to access it from an expression (ie if you want to use the "TextStyle.font" item, you access it via `text.sourceText.style.font`)

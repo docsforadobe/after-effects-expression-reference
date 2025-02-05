@@ -92,7 +92,7 @@ Number
 
 ### PropertyGroup.propertyGroup()
 
- `propertyGroup([countUp=1])`
+`propertyGroup([countUp=1])`
 
 #### Description
 

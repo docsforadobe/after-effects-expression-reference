@@ -30,9 +30,9 @@ You can create an expression without using properties from other layers. For exa
 
 1. Select a layer, press P to reveal its Position property in the Timeline panel, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch to the left of the property name.
 2. Enter the following in the expression field:
-   ```js
-   [(thisComp.width/2), (thisComp.height/2)] + [Math.sin(time)*50, -Math.cos(time)*50]
-   ```
+    ```js
+    [(thisComp.width/2), (thisComp.height/2)] + [Math.sin(time)*50, -Math.cos(time)*50]
+    ```
 
 ---
 
@@ -46,13 +46,13 @@ You can use the pick whip to link rotation values between layers to animate the 
 4. Set Rotation keyframes for the hour hand.
 5. Select the Rotation property for the minute hand and choose `Animation > Add Expression.`
 6. Drag the pick whip to the Rotation property for the hour hand. The following expression appears:
-   ```js
-   thisComp.layer("hour hand").rotation
-   ```
+    ```js
+    thisComp.layer("hour hand").rotation
+    ```
 7. To make the minute hand rotate 12 times as fast as the hour hand, add `* 12` at the end of the expression as follows:
-   ```js
-   thisComp.layer("hour hand").rotation * 12
-   ```
+    ```js
+    thisComp.layer("hour hand").rotation * 12
+    ```
 
 ---
 
@@ -64,9 +64,9 @@ This example expression positions and maintains one layer at a balanced distance
 2. Animate the positions of the first two layers in the Timeline panel.
 3. Select the third layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.
 4. Enter the following in the expression field:
-   ```js
-   (thisComp.layer(1).position + thisComp.layer(2).position)/2
-   ```
+    ```js
+    (thisComp.layer(1).position + thisComp.layer(2).position)/2
+    ```
 
 ---
 
@@ -78,9 +78,9 @@ This example expression instructs a layer to be at the same position as the next
 2. Animate the position of the first layer.
 3. Select the second layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.
 4. Enter the following in the expression field:
-   ```js
-   thisComp.layer(thisLayer, -1).position.valueAtTime(time - .5)
-   ```
+    ```js
+    thisComp.layer(thisLayer, -1).position.valueAtTime(time - .5)
+    ```
 5. Duplicate the last layer five times by selecting it and pressing Ctrl+D (Windows) or Command+D (Mac OS) five times.
 
 All layers follow the same path, and each is delayed 0.5 seconds from the previous.
@@ -101,9 +101,9 @@ You can also use other effects, such as Ripple, with this expression.
 3. Apply the Bulge effect to the other layer. (See Apply an effect or animation preset.)
 4. Select the Bulge Center property of the Bulge effect in the Timeline panel and choose Animation > Add Expression, or Alt-click (Windows) or Option-click (Mac OS) the stopwatch button for the property.
 5. Select the default expression text and type the following:
-   ```js
-   fromWorld(thisComp.layer("Magnifier").position)
-   ```
+    ```js
+    fromWorld(thisComp.layer("Magnifier").position)
+    ```
 
 ---
 
@@ -216,9 +216,9 @@ timeToStart = 2;
 timeToStop = 4;
 
 if ((time > timeToStart) && (time < timeToStop)) {
-  wiggle(3,25);
+    wiggle(3,25);
 } else {
-  value;
+    value;
 }
 ```
 

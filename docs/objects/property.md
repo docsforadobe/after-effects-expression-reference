@@ -180,9 +180,9 @@ Loops a segment of time that is measured from the first keyframe on the layer fo
 
 You can use keyframe-looping methods to repeat a series of keyframes. You can use these methods on most properties. Exceptions include:
     - properties that can't be expressed by simple numeric values in the Timeline panel, such as:
-      - the Source Text property,
-      - path shape properties, and
-      - the Histogram property for the Levels effect.
+        - the Source Text property,
+        - path shape properties, and
+        - the Histogram property for the Levels effect.
 
 Keyframes or duration values that are too large are clipped to the maximum allowable value. Values that are too small result in a constant loop.
 
