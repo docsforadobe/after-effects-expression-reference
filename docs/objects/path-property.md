@@ -1,7 +1,7 @@
 # Path Property
 
 `thisLayer.mask("Mask 1").maskPath`
-<br/>
+
 `thisLayer.content("Shape 1").content("Path 1").path;`
 
 !!! note
@@ -49,7 +49,7 @@ The points and tangents of the same path can be passed into `createPath()` with 
 |   Parameter   |            Type             |                                                                                                                                                                    Description                                                                                                                                                                    |
 | ------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `points`      | Array of number pair arrays | Optional. An array of number pair arrays representing the `[x, y]` coordinates of the points. The array must contain at least 1 item, and can be of any greater length. Defaults to `[[0,0], [100,0], [100,100], [0,100]]`.                                                                                                                       |
-| `inTangents`  | Array of number pair arrays | Optional. An array of number pair arrays representing their `[x, y]` *offset* coordinates. The length of this array must be exactly the same as the `points` parameter. Defaults to `[]`.</br></br>Coordinate values are offset relative to the parent point's coordinates. i.e. The value `[0, 0]` creates no curvature at the incoming tangent. |
+| `inTangents`  | Array of number pair arrays | Optional. An array of number pair arrays representing their `[x, y]` *offset* coordinates. The length of this array must be exactly the same as the `points` parameter. Defaults to `[]`.<br/><br/>Coordinate values are offset relative to the parent point's coordinates. i.e. The value `[0, 0]` creates no curvature at the incoming tangent. |
 | `outTangents` | Array of number pair arrays | Optional. See `inTangents`. Defaults to `[]`.                                                                                                                                                                                                                                                                                                     |
 | `is_closed`   | Boolean                     | Optional. Defaults to `true`.                                                                                                                                                                                                                                                                                                                     |
 

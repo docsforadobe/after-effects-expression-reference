@@ -30,7 +30,7 @@ Boolean
 ### Effect.param()
 
 `thisLayer.effect("Bulge").param(name)`
-</br>
+
 `thisLayer.effect("Bulge").param(index)`
 
 #### Description

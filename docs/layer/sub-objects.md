@@ -41,7 +41,7 @@ source.layer(1).position
 ### Layer.effect()
 
 `thisLayer.effect(name)`
-</br>
+
 `thisLayer.effect(index)`
 
 #### Description
@@ -79,7 +79,7 @@ thisLayer.effect(1)
 ### Layer.mask()
 
 `thisLayer.mask(name)`
-</br>
+
 `thisLayer.mask(index)`
 
 #### Description

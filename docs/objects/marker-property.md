@@ -1,11 +1,11 @@
 # Marker Property
 
 `thisComp.marker`
-<br/>
+
 `comp("CompName").marker`
-<br/>
+
 `layer("precompName").source.marker`
-<br/>
+
 `thisLayer.marker`
 
 The Marker Property is a special version of the [Property](./property.md) object *specifically* for composition & layer markers.
@@ -38,7 +38,7 @@ Number
 ### Marker.key(index)
 
 `thisComp.marker.key(index)`
-</br>
+
 `thisComp.marker.key(name)`
 
 #### Description

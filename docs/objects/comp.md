@@ -1,9 +1,9 @@
 # Comp
 
 `thisComp`
-<br/>
+
 `comp("CompName")`
-<br/>
+
 `layer("layerName").source`
 
 These attributes and methods can be called on Comp objects.
@@ -240,9 +240,9 @@ Apply the following expression to the Position property of a layer to center the
 ### Comp.layer()
 
 `thisComp.layer(index)`
-<br/>
+
 `thisComp.layer(name)`
-<br/>
+
 `thisComp.layer(otherLayer, relIndex)`
 
 #### Description
