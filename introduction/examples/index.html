@@ -1655,7 +1655,7 @@
 <ol>
 <li>Select a layer, press P to reveal its Position property in the Timeline panel, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch to the left of the property name.</li>
 <li>Enter the following in the expression field:
-   <div class="highlight"><pre><span></span><code><span class="p">[(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">width</span><span class="o">/</span><span class="mf">2</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">height</span><span class="o">/</span><span class="mf">2</span><span class="p">)]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">]</span>
+    <div class="highlight"><pre><span></span><code><span class="p">[(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">width</span><span class="o">/</span><span class="mf">2</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">height</span><span class="o">/</span><span class="mf">2</span><span class="p">)]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">]</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -1668,10 +1668,10 @@
 <li>Set Rotation keyframes for the hour hand.</li>
 <li>Select the Rotation property for the minute hand and choose <code>Animation &gt; Add Expression.</code></li>
 <li>Drag the pick whip to the Rotation property for the hour hand. The following expression appears:
-   <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span>
 </code></pre></div></li>
 <li>To make the minute hand rotate 12 times as fast as the hour hand, add <code>* 12</code> at the end of the expression as follows:
-   <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">12</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">12</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -1682,7 +1682,7 @@
 <li>Animate the positions of the first two layers in the Timeline panel.</li>
 <li>Select the third layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.</li>
 <li>Enter the following in the expression field:
-   <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span><span class="o">/</span><span class="mf">2</span>
+    <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span><span class="o">/</span><span class="mf">2</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -1693,7 +1693,7 @@
 <li>Animate the position of the first layer.</li>
 <li>Select the second layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.</li>
 <li>Enter the following in the expression field:
-   <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="nx">thisLayer</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="p">.</span><span class="nx">valueAtTime</span><span class="p">(</span><span class="nx">time</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">.5</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="nx">thisLayer</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="p">.</span><span class="nx">valueAtTime</span><span class="p">(</span><span class="nx">time</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">.5</span><span class="p">)</span>
 </code></pre></div></li>
 <li>Duplicate the last layer five times by selecting it and pressing Ctrl+D (Windows) or Command+D (Mac OS) five times.</li>
 </ol>
@@ -1712,7 +1712,7 @@
 <li>Apply the Bulge effect to the other layer. (See Apply an effect or animation preset.)</li>
 <li>Select the Bulge Center property of the Bulge effect in the Timeline panel and choose Animation &gt; Add Expression, or Alt-click (Windows) or Option-click (Mac OS) the stopwatch button for the property.</li>
 <li>Select the default expression text and type the following:
-   <div class="highlight"><pre><span></span><code><span class="nx">fromWorld</span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;Magnifier&quot;</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">fromWorld</span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;Magnifier&quot;</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -1795,9 +1795,9 @@
 <span class="nx">timeToStop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span>
 
 <span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="nx">time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">timeToStart</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="nx">time</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">timeToStop</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">wiggle</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="mf">25</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">wiggle</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="mf">25</span><span class="p">);</span>
 <span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">value</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -1832,7 +1832,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2025</span>
   </span>
 
     

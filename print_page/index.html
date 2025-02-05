@@ -1921,7 +1921,7 @@
 <p>When you open a page, you'll be presented with:</p>
 <ul>
 <li>A brief introduction to that topic ("This is what the page is about")</li>
-<li>Headers for <strong>Attributes</strong> and <strong>Methods</strong></li>
+<li>Headers for <strong>Attributes</strong> and <strong>Methods</strong><ul>
 <li><strong>Attributes</strong> are accessible bits of information:<ul>
 <li><code>thisComp.name</code> gets the name of the comp!</li>
 <li><code>text.sourceText.fontSize</code> gets the font size of the text</li>
@@ -1930,6 +1930,8 @@
 <li><strong>Methods</strong> are functions that you run, to either get some other info or generate a result:<ul>
 <li><code>thisComp.layer("Banana")</code> retrieves a layer called Banana, or</li>
 <li><code>text.sourceText.setFontSize(123)</code> will set the font size to 123</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -2262,7 +2264,7 @@
 <ol>
 <li>Select a layer, press P to reveal its Position property in the Timeline panel, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch to the left of the property name.</li>
 <li>Enter the following in the expression field:
-   <div class="highlight"><pre><span></span><code><span class="p">[(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">width</span><span class="o">/</span><span class="mf">2</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">height</span><span class="o">/</span><span class="mf">2</span><span class="p">)]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">]</span>
+    <div class="highlight"><pre><span></span><code><span class="p">[(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">width</span><span class="o">/</span><span class="mf">2</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">height</span><span class="o">/</span><span class="mf">2</span><span class="p">)]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span><span class="o">*</span><span class="mf">50</span><span class="p">]</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -2275,10 +2277,10 @@
 <li>Set Rotation keyframes for the hour hand.</li>
 <li>Select the Rotation property for the minute hand and choose <code>Animation &gt; Add Expression.</code></li>
 <li>Drag the pick whip to the Rotation property for the hour hand. The following expression appears:
-   <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span>
 </code></pre></div></li>
 <li>To make the minute hand rotate 12 times as fast as the hour hand, add <code>* 12</code> at the end of the expression as follows:
-   <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">12</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;hour hand&quot;</span><span class="p">).</span><span class="nx">rotation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">12</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -2289,7 +2291,7 @@
 <li>Animate the positions of the first two layers in the Timeline panel.</li>
 <li>Select the third layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.</li>
 <li>Enter the following in the expression field:
-   <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span><span class="o">/</span><span class="mf">2</span>
+    <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span><span class="o">/</span><span class="mf">2</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -2300,7 +2302,7 @@
 <li>Animate the position of the first layer.</li>
 <li>Select the second layer, press P to reveal the Position property, and Alt-click (Windows) or Option-click (Mac OS) the stopwatch button to the left of the property name.</li>
 <li>Enter the following in the expression field:
-   <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="nx">thisLayer</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="p">.</span><span class="nx">valueAtTime</span><span class="p">(</span><span class="nx">time</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">.5</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="nx">thisLayer</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="p">.</span><span class="nx">valueAtTime</span><span class="p">(</span><span class="nx">time</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">.5</span><span class="p">)</span>
 </code></pre></div></li>
 <li>Duplicate the last layer five times by selecting it and pressing Ctrl+D (Windows) or Command+D (Mac OS) five times.</li>
 </ol>
@@ -2319,7 +2321,7 @@
 <li>Apply the Bulge effect to the other layer. (See Apply an effect or animation preset.)</li>
 <li>Select the Bulge Center property of the Bulge effect in the Timeline panel and choose Animation &gt; Add Expression, or Alt-click (Windows) or Option-click (Mac OS) the stopwatch button for the property.</li>
 <li>Select the default expression text and type the following:
-   <div class="highlight"><pre><span></span><code><span class="nx">fromWorld</span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;Magnifier&quot;</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><code><span class="nx">fromWorld</span><span class="p">(</span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="s2">&quot;Magnifier&quot;</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span>
 </code></pre></div></li>
 </ol>
 <hr />
@@ -2402,9 +2404,9 @@
 <span class="nx">timeToStop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span>
 
 <span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="nx">time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">timeToStart</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="nx">time</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">timeToStop</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">wiggle</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="mf">25</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">wiggle</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="mf">25</span><span class="p">);</span>
 <span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">value</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">value</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -3711,16 +3713,29 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>hexString</code></td>
-<td>String</td>
-<td>Hex triplet (6 digits, no alpha channel) or quartet (8 digits, includes alpha channel) containing only numerals or characters A–F.<br/><br/>Optional leading characters 0x, 0X, or # will be ignored.<br/>Characters beyond 8 digits will be ignored.</td>
+<td colspan="1" rowspan="1">
+<p><code>hexString</code></p>
+<p>Optional leading characters 0x, 0X, or # will be ignored. Characters beyond 8 digits will be ignored.</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>String</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Hex triplet (6 digits, no alpha channel) or quartet (8 digits, includes alpha channel) containing only numerals or characters A–F.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -3826,11 +3841,9 @@
 <h4 id="objects-project-example_2">Example<a class="headerlink" href="#objects-project-example_2" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="nx">thisProject</span><span class="p">.</span><span class="nx">linearBlending</span>
 </code></pre></div></section><section class="print-page" id="objects-comp"><h1 id="objects-comp-comp">Comp<a class="headerlink" href="#objects-comp-comp" title="Permanent link">&para;</a></h1>
-<p><code>thisComp</code>
-<br/>
-<code>comp("CompName")</code>
-<br/>
-<code>layer("layerName").source</code></p>
+<p><code>thisComp</code></p>
+<p><code>comp("CompName")</code></p>
+<p><code>layer("layerName").source</code></p>
 <p>These attributes and methods can be called on Comp objects.</p>
 <p>These are typically accessed in a few ways, most commonly:</p>
 <ul>
@@ -3958,11 +3971,9 @@
 <hr />
 <h2 id="objects-comp-methods">Methods<a class="headerlink" href="#objects-comp-methods" title="Permanent link">&para;</a></h2>
 <h3 id="objects-comp-complayer">Comp.layer()<a class="headerlink" href="#objects-comp-complayer" title="Permanent link">&para;</a></h3>
-<p><code>thisComp.layer(index)</code>
-<br/>
-<code>thisComp.layer(name)</code>
-<br/>
-<code>thisComp.layer(otherLayer, relIndex)</code></p>
+<p><code>thisComp.layer(index)</code></p>
+<p><code>thisComp.layer(name)</code></p>
+<p><code>thisComp.layer(otherLayer, relIndex)</code></p>
 <h4 id="objects-comp-description_14">Description<a class="headerlink" href="#objects-comp-description_14" title="Permanent link">&para;</a></h4>
 <p>Return the <a href="#layer-layer">Layer</a> object with the specified <code>index</code> or <code>name</code>.</p>
 <p>The <code>index</code> value refers to the layer order in the Timeline panel.</p>
@@ -3973,26 +3984,52 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>index</code><br/><code>name</code></td>
-<td>Number<br/>String</td>
-<td>Layer name or index to get.</td>
+<td colspan="1" rowspan="1">
+<p><code>index</code></p>
+<p><code>name</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+<p>String</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Layer name or index to get.</p>
+</td>
 </tr>
 <tr>
-<td><code>otherLayer</code></td>
-<td><a href="#layer-layer">Layer</a></td>
-<td>The "other" layer to start getting layers relative to</td>
+<td colspan="1" rowspan="1">
+<p><code>otherLayer</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p><a href="#layer-layer">Layer</a></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The "other" layer to start getting layers relative to</p>
+</td>
 </tr>
 <tr>
-<td><code>relIndex</code></td>
-<td>Number</td>
-<td>The number of layers to move above or below the <code>otherLayer</code></td>
+<td colspan="1" rowspan="1">
+<p><code>relIndex</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The number of layers to move above or below the <code>otherLayer</code></p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -4622,9 +4659,8 @@
 <hr />
 <h2 id="objects-effect-methods">Methods<a class="headerlink" href="#objects-effect-methods" title="Permanent link">&para;</a></h2>
 <h3 id="objects-effect-effectparam">Effect.param()<a class="headerlink" href="#objects-effect-effectparam" title="Permanent link">&para;</a></h3>
-<p><code>thisLayer.effect("Bulge").param(name)</code>
-</br>
-<code>thisLayer.effect("Bulge").param(index)</code></p>
+<p><code>thisLayer.effect("Bulge").param(name)</code></p>
+<p><code>thisLayer.effect("Bulge").param(index)</code></p>
 <h4 id="objects-effect-description_1">Description<a class="headerlink" href="#objects-effect-description_1" title="Permanent link">&para;</a></h4>
 <p>Returns a property within an effect. Effect control points are always in layer space.</p>
 <p>This method can be called using <em>either</em> the property's <code>name</code> or its <code>index</code>.</p>
@@ -4632,16 +4668,30 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>name</code><br/><code>index</code></td>
-<td>String<br/>Number</td>
-<td>Property name or index to access property by.</td>
+<td colspan="1" rowspan="1">
+<p><code>name</code></p>
+<p><code>index</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>String</p>
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Property name or index to access property by.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -4837,9 +4887,9 @@
 <p>Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer.</p>
 <p>You can use keyframe-looping methods to repeat a series of keyframes. You can use these methods on most properties. Exceptions include:
     - properties that can't be expressed by simple numeric values in the Timeline panel, such as:
-      - the Source Text property,
-      - path shape properties, and
-      - the Histogram property for the Levels effect.</p>
+        - the Source Text property,
+        - path shape properties, and
+        - the Histogram property for the Levels effect.</p>
 <p>Keyframes or duration values that are too large are clipped to the maximum allowable value. Values that are too small result in a constant loop.</p>
 <h4 id="objects-property-parameters_2">Parameters<a class="headerlink" href="#objects-property-parameters_2" title="Permanent link">&para;</a></h4>
 <table>
@@ -5046,26 +5096,51 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>width</code></td>
-<td>Number</td>
-<td>Optional. The range of time (in seconds) over which the filter is averaged. Defaults to <code>0.2</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>width</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. The range of time (in seconds) over which the filter is averaged. Defaults to <code>0.2</code>.</p>
+</td>
 </tr>
 <tr>
-<td><code>samples</code></td>
-<td>Number</td>
-<td>Optional. The number of discrete samples evenly spaced over time. Use a larger value for greater smoothness (but decreased performance).<br/><br/>Generally, you'll want samples to be an odd number so that the value at the current time is included in the average. Defaults to <code>5</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>samples</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. The number of discrete samples evenly spaced over time. Use a larger value for greater smoothness (but decreased performance). Defaults to <code>5</code>.</p>
+<p>Generally, you'll want samples to be an odd number so that the value at the current time is included in the average.</p>
+</td>
 </tr>
 <tr>
-<td><code>t</code></td>
-<td>Number</td>
-<td>Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to <code>time</code> (the current comp time, in seconds).</td>
+<td colspan="1" rowspan="1">
+<p><code>t</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to <code>time</code> (the current comp time, in seconds).</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -5217,36 +5292,74 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>freq</code></td>
-<td>Number</td>
-<td>Frequency, in wiggles per second.</td>
+<td colspan="1" rowspan="1">
+<p><code>freq</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Frequency, in wiggles per second.</p>
+</td>
 </tr>
 <tr>
-<td><code>amp</code></td>
-<td>Number</td>
-<td>Amplitude, in units of the property to which it is applied.</td>
+<td colspan="1" rowspan="1">
+<p><code>amp</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Amplitude, in units of the property to which it is applied.</p>
+</td>
 </tr>
 <tr>
-<td><code>octaves</code></td>
-<td>Number</td>
-<td>Optional. Number of octaves of noise to add together. This value controls how much detail is in the wiggle.<br/><br/>Make this value higher than the default to include higher frequencies or lower to include amplitude harmonics in the wiggle. Defaults to <code>1</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>octaves</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. Number of octaves of noise to add together. This value controls how much detail is in the wiggle.</p>
+<p>Make this value higher than the default to include higher frequencies or lower to include amplitude harmonics in the wiggle. Defaults to <code>1</code>.</p>
+</td>
 </tr>
 <tr>
-<td><code>amp_mult</code></td>
-<td>Number</td>
-<td>Optional. Amount that <code>amp</code> is multiplied by for each octave. This value controls how fast the harmonics drop off.<br/><br/>Make this value closer to <code>1</code> to have the harmonics added at the same amplitude as the base frequency, or closer to <code>0</code> to add in less detail. Defaults to <code>0.5</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>amp_mult</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. Amount that <code>amp</code> is multiplied by for each octave. This value controls how fast the harmonics drop off.</p>
+<p>Make this value closer to <code>1</code> to have the harmonics added at the same amplitude as the base frequency, or closer to <code>0</code> to add in less detail. Defaults to <code>0.5</code>.</p>
+</td>
 </tr>
 <tr>
-<td><code>t</code></td>
-<td>Number</td>
-<td>Optional. Base start time. This value defaults to the current time. Use this parameter if you want the output to be a wiggle of the property value sampled at a different time. Defaults to <code>time</code> (the current comp time, in seconds).</td>
+<td colspan="1" rowspan="1">
+<p><code>t</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. Base start time. This value defaults to the current time. Use this parameter if you want the output to be a wiggle of the property value sampled at a different time. Defaults to <code>time</code> (the current comp time, in seconds).</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -5280,36 +5393,59 @@
 <table>
 <thead>
 <tr>
-<th>Type</th>
-<th>Behaviour</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Behaviour</p>
+</th>
+<th colspan="1" rowspan="1"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>"cycle"</code></td>
-<td>Default. Repeats the specified segment.</td>
+<td colspan="1" rowspan="1">
+<p><code>"cycle"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Default. Repeats the specified segment.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 <tr>
-<td><code>"pingpong"</code></td>
-<td>Repeats the specified segment, alternating between forward and backward.</td>
+<td colspan="1" rowspan="1">
+<p><code>"pingpong"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Repeats the specified segment, alternating between forward and backward.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 <tr>
-<td><code>"offset"</code></td>
-<td>Repeats the specified segment, but offsets each cycle by the difference in the value of the property at the start and end of the segment, multiplied by the number of times the segment has looped.</td>
+<td colspan="1" rowspan="1">
+<p><code>"offset"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Repeats the specified segment, but offsets each cycle by the difference in the value of the property at the start and end of the segment, multiplied by the number of times the segment has looped.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 <tr>
-<td><code>"continue"</code></td>
-<td>Does not repeat the specified segment, but continues to animate a property based on the velocity at the first or last keyframe.<br/><br/>For example, if the last keyframe of a Scale property of a layer is <code>100%</code>, the layer continues to scale from <code>100%</code> to the Out point, instead of looping directly back to the Out point. This type does not accept a keyframes or duration argument.</td>
+<td colspan="1" rowspan="1">
+<p><code>"continue"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Does not repeat the specified segment, but continues to animate a property based on the velocity at the first or last keyframe.</p>
+<p>For example, if the last keyframe of a Scale property of a layer is <code>100%</code>, the layer continues to scale from <code>100%</code> to the Out point, instead of looping directly back to the Out point. This type does not accept a keyframes or duration argument.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 </tbody>
 </table></section><section class="print-page" id="objects-marker-property"><h1 id="objects-marker-property-marker-property">Marker Property<a class="headerlink" href="#objects-marker-property-marker-property" title="Permanent link">&para;</a></h1>
-<p><code>thisComp.marker</code>
-<br/>
-<code>comp("CompName").marker</code>
-<br/>
-<code>layer("precompName").source.marker</code>
-<br/>
-<code>thisLayer.marker</code></p>
+<p><code>thisComp.marker</code></p>
+<p><code>comp("CompName").marker</code></p>
+<p><code>layer("precompName").source.marker</code></p>
+<p><code>thisLayer.marker</code></p>
 <p>The Marker Property is a special version of the <a href="#objects-property">Property</a> object <em>specifically</em> for composition &amp; layer markers.</p>
 <p>It contains a special version of some of the same attributes and methods as the standard Property object, however most elements are not applicable here.</p>
 <div class="admonition info">
@@ -5327,9 +5463,8 @@
 <hr />
 <h2 id="objects-marker-property-methods">Methods<a class="headerlink" href="#objects-marker-property-methods" title="Permanent link">&para;</a></h2>
 <h3 id="objects-marker-property-markerkeyindex">Marker.key(index)<a class="headerlink" href="#objects-marker-property-markerkeyindex" title="Permanent link">&para;</a></h3>
-<p><code>thisComp.marker.key(index)</code>
-</br>
-<code>thisComp.marker.key(name)</code></p>
+<p><code>thisComp.marker.key(index)</code></p>
+<p><code>thisComp.marker.key(name)</code></p>
 <h4 id="objects-marker-property-description_1">Description<a class="headerlink" href="#objects-marker-property-description_1" title="Permanent link">&para;</a></h4>
 <p>Returns the <a href="#objects-markerkey">MarkerKey</a> object of the marker with the specified <code>index</code> or <code>name</code>.</p>
 <p>The <code>index</code> refers to the order of the marker in composition time, not to the numbered name of the marker.</p>
@@ -5339,21 +5474,41 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>index</code></td>
-<td>Number</td>
-<td>The marker index to get</td>
+<td colspan="1" rowspan="1">
+<p><code>index</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>The marker index to get</p>
+</td>
 </tr>
 <tr>
-<td><code>name</code><br/><code>index</code></td>
-<td>String<br/>Number</td>
-<td>Marker name or index to access marker by.</td>
+<td colspan="1" rowspan="1">
+<p><code>name</code></p>
+<p><code>index</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>String</p>
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Marker name or index to access marker by.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -5402,9 +5557,8 @@
 <p>This expression returns the time of the layer marker nearest to the current comp time:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">thisLayer</span><span class="p">.</span><span class="nx">marker</span><span class="p">.</span><span class="nx">nearestKey</span><span class="p">(</span><span class="nx">time</span><span class="p">).</span><span class="nx">time</span><span class="p">;</span>
 </code></pre></div></section><section class="print-page" id="objects-path-property"><h1 id="objects-path-property-path-property">Path Property<a class="headerlink" href="#objects-path-property-path-property" title="Permanent link">&para;</a></h1>
-<p><code>thisLayer.mask("Mask 1").maskPath</code>
-<br/>
-<code>thisLayer.content("Shape 1").content("Path 1").path;</code></p>
+<p><code>thisLayer.mask("Mask 1").maskPath</code></p>
+<p><code>thisLayer.content("Shape 1").content("Path 1").path;</code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This functionality was added in After Effects 15.0 (CC)</p>
@@ -5434,31 +5588,54 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>points</code></td>
-<td>Array of number pair arrays</td>
-<td>Optional. An array of number pair arrays representing the <code>[x, y]</code> coordinates of the points. The array must contain at least 1 item, and can be of any greater length. Defaults to <code>[[0,0], [100,0], [100,100], [0,100]]</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>points</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Array of number pair arrays</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. An array of number pair arrays representing the <code>[x, y]</code> coordinates of the points. The array must contain at least 1 item, and can be of any greater length. Defaults to <code>[[0,0], [100,0], [100,100], [0,100]]</code>.</p>
+</td>
 </tr>
 <tr>
-<td><code>inTangents</code></td>
-<td>Array of number pair arrays</td>
-<td>Optional. An array of number pair arrays representing their <code>[x, y]</code> <em>offset</em> coordinates. The length of this array must be exactly the same as the <code>points</code> parameter. Defaults to <code>[]</code>.</br></br>Coordinate values are offset relative to the parent point's coordinates. i.e. The value <code>[0, 0]</code> creates no curvature at the incoming tangent.</td>
+<td colspan="1" rowspan="1">
+<p><code>inTangents</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Array of number pair arrays</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. An array of number pair arrays representing their <code>[x, y]</code> <em>offset</em> coordinates. The length of this array must be exactly the same as the <code>points</code> parameter. Defaults to <code>[]</code>.</p>
+<p>Coordinate values are offset relative to the parent point's coordinates. i.e. The value <code>[0, 0]</code> creates no curvature at the incoming tangent.</p>
+</td>
 </tr>
 <tr>
-<td><code>outTangents</code></td>
-<td>Array of number pair arrays</td>
-<td>Optional. See <code>inTangents</code>. Defaults to <code>[]</code>.</td>
-</tr>
-<tr>
-<td><code>is_closed</code></td>
-<td>Boolean</td>
-<td>Optional. Defaults to <code>true</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>outTangents</code>
+<code>is_closed</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Array of number pair arrays
+Boolean</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. See <code>inTangents</code>. Defaults to <code>[]</code>.
+Optional. Defaults to <code>true</code>.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -5885,9 +6062,8 @@
 <hr />
 <h2 id="layer-sub-objects-methods">Methods<a class="headerlink" href="#layer-sub-objects-methods" title="Permanent link">&para;</a></h2>
 <h3 id="layer-sub-objects-layereffect">Layer.effect()<a class="headerlink" href="#layer-sub-objects-layereffect" title="Permanent link">&para;</a></h3>
-<p><code>thisLayer.effect(name)</code>
-</br>
-<code>thisLayer.effect(index)</code></p>
+<p><code>thisLayer.effect(name)</code></p>
+<p><code>thisLayer.effect(index)</code></p>
 <h4 id="layer-sub-objects-description_1">Description<a class="headerlink" href="#layer-sub-objects-description_1" title="Permanent link">&para;</a></h4>
 <p>The <code>name</code> value will have After Effects find the effect by its name in the Effect Controls panel. The name can be the default name or a user-defined name. If multiple effects have the same name, the effect closest to the top of the Effect Controls panel is used.</p>
 <p>The <code>index</code> value will have After Effects finds the effect by its index in the Effect Controls panel, starting at <code>1</code> and counting from the top.</p>
@@ -5895,16 +6071,30 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>name</code><br/><code>index</code></td>
-<td>String<br/>Number</td>
-<td>Effect name or index to get.</td>
+<td colspan="1" rowspan="1">
+<p><code>name</code></p>
+<p><code>index</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>String</p>
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Effect name or index to get.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -5919,9 +6109,8 @@
 </code></pre></div>
 <hr />
 <h3 id="layer-sub-objects-layermask">Layer.mask()<a class="headerlink" href="#layer-sub-objects-layermask" title="Permanent link">&para;</a></h3>
-<p><code>thisLayer.mask(name)</code>
-</br>
-<code>thisLayer.mask(index)</code></p>
+<p><code>thisLayer.mask(name)</code></p>
+<p><code>thisLayer.mask(index)</code></p>
 <h4 id="layer-sub-objects-description_2">Description<a class="headerlink" href="#layer-sub-objects-description_2" title="Permanent link">&para;</a></h4>
 <p>The <code>name</code> value can be the default name or a user-defined name. If multiple masks have the same name, the first (topmost) mask is used.</p>
 <p>The <code>index</code> value will have After Effects finds the mask by its index in the Timeline panel, starting at <code>1</code> and counting from the top.</p>
@@ -5929,16 +6118,30 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>name</code><br/><code>index</code></td>
-<td>String<br/>Number</td>
-<td>Effect name or index to get.</td>
+<td colspan="1" rowspan="1">
+<p><code>name</code></p>
+<p><code>index</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>String</p>
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Effect name or index to get.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -5965,21 +6168,43 @@ Paragraph text extents was added in After Effects 15.1.</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>t</code></td>
-<td>Number</td>
-<td>Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to <code>time</code> (the current comp time, in seconds).</td>
+<td colspan="1" rowspan="1">
+<p><code>t</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to <code>time</code> (the current comp time, in seconds).</p>
+</td>
 </tr>
 <tr>
-<td>includeExtents</td>
-<td>Boolean</td>
-<td>Optional. Only applies to shape layers and paragraph text layers.<br/><ul><li>For shape layers: Increases the size of the layer bounds as necessary.</li><li>For paragraph text layers: Returns the bounds of the paragraph box</li></ul>Defaults to <code>false</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>includeExtents</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Boolean</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. Only applies to shape layers and paragraph text layers. Defaults to <code>false</code>.</p>
+<ul>
+<li>For shape layers: Increases the size of the layer bounds as necessary.</li>
+<li>For paragraph text layers: Returns the bounds of the paragraph box</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>

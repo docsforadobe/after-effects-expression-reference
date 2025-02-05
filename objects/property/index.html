@@ -2118,9 +2118,9 @@
 <p>Loops a segment of time that is measured from the first keyframe on the layer forward toward the Out point of the layer. The loop plays from the In point of the layer.</p>
 <p>You can use keyframe-looping methods to repeat a series of keyframes. You can use these methods on most properties. Exceptions include:
     - properties that can't be expressed by simple numeric values in the Timeline panel, such as:
-      - the Source Text property,
-      - path shape properties, and
-      - the Histogram property for the Levels effect.</p>
+        - the Source Text property,
+        - path shape properties, and
+        - the Histogram property for the Levels effect.</p>
 <p>Keyframes or duration values that are too large are clipped to the maximum allowable value. Values that are too small result in a constant loop.</p>
 <h4 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h4>
 <table>
@@ -2327,26 +2327,51 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>width</code></td>
-<td>Number</td>
-<td>Optional. The range of time (in seconds) over which the filter is averaged. Defaults to <code>0.2</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>width</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. The range of time (in seconds) over which the filter is averaged. Defaults to <code>0.2</code>.</p>
+</td>
 </tr>
 <tr>
-<td><code>samples</code></td>
-<td>Number</td>
-<td>Optional. The number of discrete samples evenly spaced over time. Use a larger value for greater smoothness (but decreased performance).<br/><br/>Generally, you'll want samples to be an odd number so that the value at the current time is included in the average. Defaults to <code>5</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>samples</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. The number of discrete samples evenly spaced over time. Use a larger value for greater smoothness (but decreased performance). Defaults to <code>5</code>.</p>
+<p>Generally, you'll want samples to be an odd number so that the value at the current time is included in the average.</p>
+</td>
 </tr>
 <tr>
-<td><code>t</code></td>
-<td>Number</td>
-<td>Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to <code>time</code> (the current comp time, in seconds).</td>
+<td colspan="1" rowspan="1">
+<p><code>t</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. The specified time (in comp seconds) to apply the smoothing filter to. Defaults to <code>time</code> (the current comp time, in seconds).</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -2498,36 +2523,74 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th colspan="1" rowspan="1">
+<p>Parameter</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Description</p>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>freq</code></td>
-<td>Number</td>
-<td>Frequency, in wiggles per second.</td>
+<td colspan="1" rowspan="1">
+<p><code>freq</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Frequency, in wiggles per second.</p>
+</td>
 </tr>
 <tr>
-<td><code>amp</code></td>
-<td>Number</td>
-<td>Amplitude, in units of the property to which it is applied.</td>
+<td colspan="1" rowspan="1">
+<p><code>amp</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Amplitude, in units of the property to which it is applied.</p>
+</td>
 </tr>
 <tr>
-<td><code>octaves</code></td>
-<td>Number</td>
-<td>Optional. Number of octaves of noise to add together. This value controls how much detail is in the wiggle.<br/><br/>Make this value higher than the default to include higher frequencies or lower to include amplitude harmonics in the wiggle. Defaults to <code>1</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>octaves</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. Number of octaves of noise to add together. This value controls how much detail is in the wiggle.</p>
+<p>Make this value higher than the default to include higher frequencies or lower to include amplitude harmonics in the wiggle. Defaults to <code>1</code>.</p>
+</td>
 </tr>
 <tr>
-<td><code>amp_mult</code></td>
-<td>Number</td>
-<td>Optional. Amount that <code>amp</code> is multiplied by for each octave. This value controls how fast the harmonics drop off.<br/><br/>Make this value closer to <code>1</code> to have the harmonics added at the same amplitude as the base frequency, or closer to <code>0</code> to add in less detail. Defaults to <code>0.5</code>.</td>
+<td colspan="1" rowspan="1">
+<p><code>amp_mult</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. Amount that <code>amp</code> is multiplied by for each octave. This value controls how fast the harmonics drop off.</p>
+<p>Make this value closer to <code>1</code> to have the harmonics added at the same amplitude as the base frequency, or closer to <code>0</code> to add in less detail. Defaults to <code>0.5</code>.</p>
+</td>
 </tr>
 <tr>
-<td><code>t</code></td>
-<td>Number</td>
-<td>Optional. Base start time. This value defaults to the current time. Use this parameter if you want the output to be a wiggle of the property value sampled at a different time. Defaults to <code>time</code> (the current comp time, in seconds).</td>
+<td colspan="1" rowspan="1">
+<p><code>t</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Number</p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Optional. Base start time. This value defaults to the current time. Use this parameter if you want the output to be a wiggle of the property value sampled at a different time. Defaults to <code>time</code> (the current comp time, in seconds).</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -2561,26 +2624,52 @@
 <table>
 <thead>
 <tr>
-<th>Type</th>
-<th>Behaviour</th>
+<th colspan="1" rowspan="1">
+<p>Type</p>
+</th>
+<th colspan="1" rowspan="1">
+<p>Behaviour</p>
+</th>
+<th colspan="1" rowspan="1"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>"cycle"</code></td>
-<td>Default. Repeats the specified segment.</td>
+<td colspan="1" rowspan="1">
+<p><code>"cycle"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Default. Repeats the specified segment.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 <tr>
-<td><code>"pingpong"</code></td>
-<td>Repeats the specified segment, alternating between forward and backward.</td>
+<td colspan="1" rowspan="1">
+<p><code>"pingpong"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Repeats the specified segment, alternating between forward and backward.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 <tr>
-<td><code>"offset"</code></td>
-<td>Repeats the specified segment, but offsets each cycle by the difference in the value of the property at the start and end of the segment, multiplied by the number of times the segment has looped.</td>
+<td colspan="1" rowspan="1">
+<p><code>"offset"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Repeats the specified segment, but offsets each cycle by the difference in the value of the property at the start and end of the segment, multiplied by the number of times the segment has looped.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 <tr>
-<td><code>"continue"</code></td>
-<td>Does not repeat the specified segment, but continues to animate a property based on the velocity at the first or last keyframe.<br/><br/>For example, if the last keyframe of a Scale property of a layer is <code>100%</code>, the layer continues to scale from <code>100%</code> to the Out point, instead of looping directly back to the Out point. This type does not accept a keyframes or duration argument.</td>
+<td colspan="1" rowspan="1">
+<p><code>"continue"</code></p>
+</td>
+<td colspan="1" rowspan="1">
+<p>Does not repeat the specified segment, but continues to animate a property based on the velocity at the first or last keyframe.</p>
+<p>For example, if the last keyframe of a Scale property of a layer is <code>100%</code>, the layer continues to scale from <code>100%</code> to the Out point, instead of looping directly back to the Out point. This type does not accept a keyframes or duration argument.</p>
+</td>
+<td colspan="1" rowspan="1"></td>
 </tr>
 </tbody>
 </table>
@@ -2604,7 +2693,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 31, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2025</span>
   </span>
 
     
