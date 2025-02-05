@@ -65,6 +65,7 @@ extra_css:
 markdown_extensions:
     - admonition
     - attr_list
+    - markdown_grid_tables
     - pymdownx.details
     - pymdownx.superfences
     - toc:
