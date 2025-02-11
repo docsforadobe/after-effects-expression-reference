@@ -1670,8 +1670,8 @@
 <p>Unlike built-in JavaScript methods, such as <code>Math.sin</code>, these methods are not used with the <code>Math</code> prefix.</p>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <p>This expression returns <code>[11, 22, 3]</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">add</span><span class="p">([</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">])</span>
-</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><span class="nx">add</span><span class="p">([</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">])</span>
+</span></code></pre></div>
 <hr />
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
 <h3 id="add">add()<a class="headerlink" href="#add" title="Permanent link">&para;</a></h3>
@@ -1738,9 +1738,9 @@
 <p>Number or Array</p>
 <h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h4>
 <p>Ensure that a wiggled amount never exceeds the 0-100 range:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">wiggled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">wiggle</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
-<span class="nx">clamp</span><span class="p">(</span><span class="nx">wiggled</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
-</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><span class="kd">const</span><span class="w"> </span><span class="nx">wiggled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">wiggle</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
+</span><span id="__span-1-2"><span class="nx">clamp</span><span class="p">(</span><span class="nx">wiggled</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">500</span><span class="p">);</span>
+</span></code></pre></div>
 <hr />
 <h3 id="cross">cross()<a class="headerlink" href="#cross" title="Permanent link">&para;</a></h3>
 <p><code>cross(vec1, vec2)</code></p>
@@ -1865,8 +1865,8 @@
 <p>Number</p>
 <h4 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h4>
 <p>For example, add this expression to the Focus Distance property of a camera to lock the focal plane to the camera's point of interest so that the point of interest is in focus:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">length</span><span class="p">(</span><span class="nx">position</span><span class="p">,</span><span class="w"> </span><span class="nx">pointOfInterest</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><span class="nx">length</span><span class="p">(</span><span class="nx">position</span><span class="p">,</span><span class="w"> </span><span class="nx">pointOfInterest</span><span class="p">)</span>
+</span></code></pre></div>
 <hr />
 <h3 id="lookat">lookAt()<a class="headerlink" href="#lookat" title="Permanent link">&para;</a></h3>
 <p><code>lookAt(fromPoint, atPoint)</code></p>
@@ -1904,8 +1904,8 @@
 <p>Array (3-dimensional)</p>
 <h4 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h4>
 <p>This expression on the Orientation property of a spot light makes the light point at the anchor point of layer number 1 in the same composition:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">lookAt</span><span class="p">(</span><span class="nx">position</span><span class="p">,</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span>
-</code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><span class="nx">lookAt</span><span class="p">(</span><span class="nx">position</span><span class="p">,</span><span class="w"> </span><span class="nx">thisComp</span><span class="p">.</span><span class="nx">layer</span><span class="p">(</span><span class="mf">1</span><span class="p">).</span><span class="nx">position</span><span class="p">)</span>
+</span></code></pre></div>
 <hr />
 <h3 id="mul">mul()<a class="headerlink" href="#mul" title="Permanent link">&para;</a></h3>
 <p><code>mul(vec, amount)</code></p>
@@ -2072,7 +2072,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "search.highlight", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.copy", "search.highlight", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
