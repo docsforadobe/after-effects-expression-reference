@@ -9,7 +9,7 @@ Most of these functions are accessible from the [SourceText.style](./sourcetext.
 
 For more info on working with text styles, see:
 
-- [Use Expressions to Edit and Access Text Properties on helpx.adobe.com](https://helpx.adobe.com/after-effects/user-guide.html/after-effects/using/expressions-text-properties.ug.html)
+- [Use Expressions to Edit and Access Text Properties on helpx.adobe.com](https://helpx.adobe.com/after-effects/using/expressions-text-properties.html)
 - [After Effects 2020: Express Yourself (and Your Text) on blog.adobe.com](https://blog.adobe.com/en/publish/2020/01/24/after-effects-2020-express-yourself-and-your-text)
 - [After Effects 2025: Per-Character Text Style Expressions on youtube.com](https://www.youtube.com/watch?v=yG8UbiKKeYw)
 
