@@ -97,14 +97,14 @@ The `index` value will have After Effects finds the mask by its index in the Tim
 +-----------+--------+------------------------------+
 | Parameter |  Type  |         Description          |
 +===========+========+==============================+
-| `name`    | String | Effect name or index to get. |
+| `name`    | String | Mask name or index to get.   |
 |           |        |                              |
 | `index`   | Number |                              |
 +-----------+--------+------------------------------+
 
 #### Returns
 
-[Effect](../objects/effect.md)
+[Mask](../objects/mask.md)
 
 #### Example
 
