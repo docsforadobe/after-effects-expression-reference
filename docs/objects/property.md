@@ -336,6 +336,69 @@ twoSecondKey.value;
 
 ---
 
+### nextKey()
+
+`thisLayer.position.nextKey(time)`
+
+!!! note
+    This functionality was added in After Effects (Beta) 26.0 and is subject to change while it remains in Beta.
+
+#### Description
+
+Returns the keyframe or marker after the specified time. If the specified time is after the last keyframe or marker, returns the last keyframe or marker.
+
+This method is available only in expressions using the JavaScript expression engine.
+
+#### Parameters
+
+| Parameter |  Type  |                    Description                    |
+| --------- | ------ | ------------------------------------------------- |
+| `time`    | Number | The time, in seconds, to find the next key from |
+
+#### Returns
+
+Key or MarkerKey
+
+---
+
+### previousKey()
+
+`thisLayer.position.previousKey(time)`
+
+!!! note
+    This functionality was added in After Effects (Beta) 26.0 and is subject to change while it remains in Beta.
+
+#### Description
+
+Returns the keyframe or marker at or before the specified time. If none exist before the specified time, returns the first keyframe or marker.
+
+This method is available only in expressions using the JavaScript expression engine.
+
+#### Parameters
+
+| Parameter |  Type  |                      Description                      |
+| --------- | ------ | ------------------------------------------------------ |
+| `time`    | Number | The time, in seconds, to find the previous key from |
+
+#### Returns
+
+Key or MarkerKey
+
+#### Example
+
+**Trigger property's keyframes at each layer marker:**
+
+```js
+const animDuration = key(numKeys).time - key(1).time;
+const animTime = time - marker.previousKey(time).time;
+
+const animRemap = linear(animTime, 0, animDuration, key(1).time, key(numKeys).time);
+
+valueAtTime(animRemap);
+```
+
+---
+
 ### propertyGroup()
 
 `thisLayer.position.propertyGroup([countUp=1])`
