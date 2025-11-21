@@ -4,6 +4,21 @@ What's new and changed for expressions?
 
 ---
 
+## [After Effects 26.0 (Beta)](https://helpx.adobe.com/after-effects/using/whats-new.html) (November 2025)
+
+- Added: Expression access to variable font axes through text animators
+    - Added: [Variable Font Axes](../text/variable-fonts.md) - Access variable font axes (Weight, Width, Slant, etc.) via `text.animator("Animator Name").property.fontAxis[Tag]`
+- Added: Property methods for finding neighboring keyframes and markers
+    - Added: [Property.previousKey()](../objects/property.md#previouskey)
+    - Added: [Property.nextKey()](../objects/property.md#nextkey)
+- Added: Expression access to dropdown menu text strings
+    - Added: [Dropdown Menus](../objects/dropdown.md)
+        - Added: [Dropdown Menu.items](../objects/dropdown.md#items)
+        - Added: [Dropdown Menu.text](../objects/dropdown.md#text)
+        - Added: [Dropdown Menu.textAtTime()](../objects/dropdown.md#textattime)
+
+---
+
 ## [After Effects 25.0](https://helpx.adobe.com/after-effects/using/whats-new/2025.html) (October 2024)
 
 Added many new text style properties and methods for both characters and paragraphs, as well as the ability to control per-character styling through expressions.

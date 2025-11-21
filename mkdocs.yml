@@ -33,6 +33,7 @@ nav:
         - Effect: objects/effect.md
         - Mask: objects/mask.md
         - Property: objects/property.md
+        - Dropdown Menus: objects/dropdown.md
         - Marker Property: objects/marker-property.md
         - Path Property: objects/path-property.md
         - Key: objects/key.md
@@ -48,6 +49,7 @@ nav:
         - Text: text/text.md
         - Source Text: text/sourcetext.md
         - Text Style: text/style.md
+        - Variable Fonts: text/variable-fonts.md
 
 #### Additional config below - modify sparingly!
 
