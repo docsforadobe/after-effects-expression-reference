@@ -3,7 +3,7 @@
 This category contains information relating to dropdown menu properties.
 
 !!! note
-    These APIs were added in After Effects (Beta) 26.0 and are subject to change while they remain in Beta.
+    These APIs were added in After Effects 26.0.
 
 In expressions, the `.value` of a dropdown menu is returned as an index (a number). This is true of both customized Menu properties of Dropdown Menu Controls and dropdown menus of other effects and layers. **The strings in dropdown menu properties of effects and layers are also accessible via the properties/methods below.**
 
