@@ -4,7 +4,7 @@ What's new and changed for expressions?
 
 ---
 
-## [After Effects 26.0 (Beta)](https://helpx.adobe.com/after-effects/using/whats-new.html) (November 2025)
+## [After Effects 26.0](https://helpx.adobe.com/after-effects/using/whats-new.html) (January 2026)
 
 - Added: Expression access to variable font axes through text animators
     - Added: [Variable Font Axes](../text/variable-fonts.md) - Access variable font axes (Weight, Width, Slant, etc.) via `text.animator("Animator Name").property.fontAxis[Tag]`
