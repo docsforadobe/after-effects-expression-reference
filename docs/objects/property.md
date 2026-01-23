@@ -341,7 +341,7 @@ twoSecondKey.value;
 `thisLayer.position.nextKey(time)`
 
 !!! note
-    This functionality was added in After Effects (Beta) 26.0 and is subject to change while it remains in Beta.
+    This functionality was added in After Effects 26.0.
 
 #### Description
 
@@ -366,7 +366,7 @@ Key or MarkerKey
 `thisLayer.position.previousKey(time)`
 
 !!! note
-    This functionality was added in After Effects (Beta) 26.0 and is subject to change while it remains in Beta.
+    This functionality was added in After Effects 26.0.
 
 #### Description
 

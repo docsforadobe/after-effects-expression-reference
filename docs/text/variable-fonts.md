@@ -3,7 +3,7 @@
 `text.animator("Animator Name").property.fontAxis[Tag]`
 
 !!! note
-    This functionality was added in After Effects (Beta) 26.0 and is subject to change while it remains in Beta.
+    This functionality was added in After Effects 26.0.
 
 Variable font axes can be accessed in expressions through Text Animator groups. Each added axis is accessed using the pattern `fontAxis[Tag]` where `Tag` is the **4-character axis tag**. 
 
