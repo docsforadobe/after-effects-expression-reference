@@ -6,9 +6,9 @@ These functions are accessible on the [Text.sourceText](text.md#textsourcetext) 
 
 ---
 
-## JavaScript String methods
+## `repeat()` shorthand
 
-When the JavaScript expression engine is active, After Effects interprets a Source Text value as a JavaScript String. Because the current property is the default object for an expression, supported String instance methods can be called without an explicit receiver.
+When the JavaScript expression engine is active, After Effects interprets a Source Text value as a JavaScript String. In a Source Text expression, `repeat()` can be called without an explicit receiver to repeat the current text value.
 
 For example, if the Source Text value is `"AE"`, each of these expressions returns `"AEAEAE"`:
 
@@ -20,6 +20,9 @@ text.sourceText.repeat(3);
 
 !!! note
     `repeat()` is the standard JavaScript [`String.prototype.repeat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) method, not a global After Effects method. The receiver-less form is specific to a Source Text expression and is undefined on numeric properties. To repeat a different string, call the method on that string explicitly, such as `"AE".repeat(3)`.
+
+!!! warning
+    Adobe documents Source Text's JavaScript String behavior, but does not explicitly document receiver-less dispatch for standard JavaScript methods. This shorthand has been verified in After Effects 26.3 and 27.0 Beta; use the explicit `value.repeat(3)` form when clarity or portability is preferred.
 
 ---
 
